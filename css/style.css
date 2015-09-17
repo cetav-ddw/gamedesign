@@ -41,7 +41,7 @@ header nav {
 .main-nav {
   float: left;
   overflow: hidden;
-  width: 80%; }
+  width: 70%; }
 
 .sub-nav {
   display: none;
@@ -83,6 +83,10 @@ header nav {
   width: 60%; }
 
 /*Partners*/
+.partners {
+  width: 100%;
+  margin: 30px 0; }
+
 .experts {
   max-width: 1280px;
   margin: 0 auto; }
