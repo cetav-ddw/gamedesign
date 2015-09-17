@@ -4,11 +4,6 @@
 	max-width:$max-width;
 	margin:0 auto;	
 }
-.title-experts {
-	font-size:5rem;
-	text-align:center;
-	font-family:$title-text;
-}
 .info-experts {
 	width:100%;
 	display:inline-block;
@@ -39,6 +34,7 @@
 .img-experts {
 	width:490px;
 	height:450px;
+	max-width:100%;
 }
 .content-img-experts {
 	width:44%;

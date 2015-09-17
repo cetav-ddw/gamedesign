@@ -11,6 +11,11 @@ a {
 li {
   list-style: none; }
 
+.title-main {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Iceland", serif; }
+
 header {
   background-color: #353535;
   font-family: "Iceland", serif;
@@ -62,11 +67,6 @@ header nav {
   max-width: 1280px;
   margin: 0 auto; }
 
-.title-experts {
-  font-size: 5rem;
-  text-align: center;
-  font-family: "Iceland", serif; }
-
 .info-experts {
   width: 100%;
   display: inline-block; }
@@ -95,10 +95,47 @@ header nav {
 
 .img-experts {
   width: 490px;
-  height: 450px; }
+  height: 450px;
+  max-width: 100%; }
 
 .content-img-experts {
   width: 44%;
   display: inline-block; }
+
+.games {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.text-games {
+  font-size: 1.5rem;
+  font-family: "Iceland", serif;
+  display: inline-block; }
+
+.content-banners-games {
+  text-align: center;
+  display: inline-block; }
+
+.banner-game {
+  margin-bottom: 60px;
+  margin-top: 60px;
+  width: 1000px;
+  max-width: 100%;
+  height: auto; }
+
+.footer-main {
+  background: #353535;
+  height: 140px;
+  text-align: center; }
+
+.text-footer {
+  font-size: 1.5rem;
+  font-family: "Iceland", serif;
+  display: inline-block;
+  width: 60%;
+  color: #E8EBED;
+  margin-top: 44px; }
+
+.content-info-footer {
+  margin-top: 60px; }
 
 /*# sourceMappingURL=style.css.map */
