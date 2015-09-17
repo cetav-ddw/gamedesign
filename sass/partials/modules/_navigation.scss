@@ -7,6 +7,8 @@ header nav{
 	width: 85%;
 }
 
+/*Navbar Styles*/
+
 .nav-logo{
 	float: left;
 	height: auto;
@@ -17,20 +19,19 @@ header nav{
 .main-nav{
 	float: left;
 	overflow: hidden;
-	width: 60%;
+	width: 70%;
+}
+
+.sub-nav{
+	display: none;
+	width: 100%;
+	padding: 10px 0 0;
 }
 
 .nav-item{
 	display: inline-block;
 	float: left;
 	margin: 5px 2%;
-
-	.sub-nav{
-		display: none;
-		width: 100%;
-		margin-left: 10%;
-		padding: 10px;
-	}
 
 	&:hover{
 		& .sub-nav{
@@ -42,4 +43,18 @@ header nav{
 .sub-nav-item{
 	margin: 2% 0;
 	width: 100%;
+}
+
+/*Language Toggle*/
+
+.lang-toggle{
+	float: right;
+	overflow: hidden;
+	padding: 10px;
+	width: 10%;
+}
+
+.lang-item{
+	float: left;
+	margin-right: 10%; 
 }
