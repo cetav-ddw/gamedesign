@@ -3,4 +3,47 @@ header {
   background-color: #020202;
   overflow: hidden; }
 
+.experts {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.title-experts {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Iceland", serif; }
+
+.info-experts {
+  width: 100%;
+  display: inline-block; }
+
+.content-text-experts {
+  width: 41%;
+  display: inline-block;
+  float: left; }
+
+.content-text-experts:nth-child(2n-1) {
+  float: right;
+  margin: 0px 49px;
+  display: inline-block; }
+
+.content-img-experts:nth-child(2n-1) {
+  float: right; }
+
+.name-experts {
+  font-size: 2.5rem;
+  font-family: "Iceland", serif; }
+
+.text-experts {
+  font-size: 1.5rem;
+  font-family: "Iceland", serif;
+  display: inline-block; }
+
+.img-experts {
+  width: 490px;
+  height: 450px; }
+
+.content-img-experts {
+  width: 44%;
+  display: inline-block; }
+
 /*# sourceMappingURL=style.css.map */
