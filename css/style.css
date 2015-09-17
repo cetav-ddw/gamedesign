@@ -69,7 +69,8 @@ header nav {
 
 .info-experts {
   width: 100%;
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 40px; }
 
 .content-text-experts {
   width: 41%;
