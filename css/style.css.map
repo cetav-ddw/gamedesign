@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAKQ,iEAAyD",
-"sources": ["../sass/partials/_variables.scss"],
+"mappings": "AAKQ,iEAAyD;ACHjE,MAAM;EACL,gBAAgB,EAAE,IAAI;EACtB,QAAQ,EAAE,MAAM",
+"sources": ["../sass/partials/_variables.scss","../sass/partials/modules/_header.scss"],
 "names": [],
 "file": "style.css"
 }
