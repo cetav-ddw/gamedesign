@@ -19,7 +19,7 @@ header nav{
 .main-nav{
 	float: left;
 	overflow: hidden;
-	width: 70%;
+	width: 65%;
 }
 
 .sub-nav{
@@ -58,3 +58,60 @@ header nav{
 	float: left;
 	margin-right: 10%; 
 }
+
+.mobile-logo{
+	display: none;
+	margin: 20px auto;
+	text-align: center;
+	width: 100%;
+}
+
+/*Navigation Menu Button*/
+.show-menu {
+	color: #fff;
+	background: rgba(255,255,255,0.5);
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Responsive Styles*/
+
+@media (max-width: 1365px){
+	
+	.nav-item a, .lang-item a{
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 1024px){
+	
+	.nav-item a, .lang-item a{
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 799px){
+	header nav, .nav-logo{
+		display: none;
+	}
+
+	.mobile-logo{
+		display: block;
+	}
+
+	.show-menu {
+		display:block;
+	}
+
+	input[type=checkbox]:checked ~ nav{
+		display: block;
+	}
+}
+
+/*Show menu when invisible checkbox is checked*/

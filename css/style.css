@@ -1,11 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Iceland|Coda);
-a {
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+li a {
   color: #fff;
   font-size: 2rem;
   padding: 2px;
   text-decoration: none;
   text-transform: capitalize; }
-  a:hover {
+  li a:hover {
     border-bottom: 2px solid #f2f2f2; }
 
 li {
@@ -46,7 +47,7 @@ header nav {
 .main-nav {
   float: left;
   overflow: hidden;
-  width: 70%; }
+  width: 65%; }
 
 .sub-nav {
   display: none;
@@ -75,9 +76,47 @@ header nav {
   float: left;
   margin-right: 10%; }
 
+.mobile-logo {
+  display: none;
+  margin: 20px auto;
+  text-align: center;
+  width: 100%; }
+
+/*Navigation Menu Button*/
+.show-menu {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 10px 0;
+  display: none; }
+
+/*Hide checkbox*/
+input[type=checkbox] {
+  display: none; }
+
+/*Responsive Styles*/
+@media (max-width: 1365px) {
+  .nav-item a, .lang-item a {
+    font-size: 1.5rem; } }
+@media (max-width: 1024px) {
+  .nav-item a, .lang-item a {
+    font-size: 1rem; } }
+@media (max-width: 799px) {
+  header nav, .nav-logo {
+    display: none; }
+
+  .mobile-logo {
+    display: block; }
+
+  .show-menu {
+    display: block; }
+
+  input[type=checkbox]:checked ~ nav {
+    display: block; } }
+/*Show menu when invisible checkbox is checked*/
 /*About Section*/
 .about {
-  font-family: "Coda", sans-serif;
+  font-family: "Muli", sans-serif;
   margin: 0 auto;
   padding: 60px 2%;
   width: 85%; }
