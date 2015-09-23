@@ -102,6 +102,16 @@ input[type=checkbox]{
 		width: 100%;
 	}
 
+	header nav{
+		background-color: #353535;
+		height: auto;
+	}
+
+	.nav-item{
+		border-bottom: 1px solid #f2f2f2;
+		padding: 20px 0;
+	}
+
 	.lang-toggle{
 		float: none;
 		margin: 0;
@@ -115,6 +125,7 @@ input[type=checkbox]{
 
 	.show-menu {
 		display:block;
+		background-color: #353535;
 	}
 
 	input[type=checkbox]:checked ~ nav{
