@@ -188,6 +188,10 @@ input[type=checkbox] {
   width: 50%;
   display: inline-block; }
 
+.grid {
+  margin: 0 auto;
+  width: 90%; }
+
 .games {
   max-width: 1280px;
   margin: 0 auto; }
