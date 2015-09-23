@@ -102,7 +102,15 @@ input[type=checkbox] {
   header nav, .nav-logo {
     display: none; }
 
-  nav {
+  header nav, .main-nav, .nav-item {
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%; }
+
+  .lang-toggle {
+    float: none;
     margin: 0;
     padding: 0;
     width: 100%; }
