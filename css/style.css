@@ -102,6 +102,11 @@ input[type=checkbox] {
   header nav, .nav-logo {
     display: none; }
 
+  nav {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+
   .mobile-logo {
     display: block; }
 
