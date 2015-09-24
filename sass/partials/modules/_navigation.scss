@@ -1,7 +1,7 @@
 header nav{
 	box-sizing: border-box;
 	display: block;
-	height: 80px;
+	height: 90px;
 	margin: 0 auto;
 	padding: 10px 2%;
 	width: 85%;
@@ -40,6 +40,18 @@ header nav{
 	}
 }
 
+.nav-item a{
+	color: $link-colors;
+	font-size: 2rem;
+	padding: 2px;
+	text-decoration: none;
+	text-transform: capitalize;
+
+	&:hover{
+		border-bottom: 2px solid #f2f2f2;
+	}
+}
+
 .sub-nav-item{
 	margin: 2% 0;
 	width: 100%;
@@ -59,6 +71,18 @@ header nav{
 	margin-right: 10%; 
 }
 
+.lang-item a{
+	color: $link-colors;
+	font-size: 2rem;
+	padding: 2px;
+	text-decoration: none;
+	text-transform: capitalize;
+
+	&:hover{
+		border-bottom: 2px solid #f2f2f2;
+	}
+}
+
 .mobile-logo{
 	display: none;
 	margin: 20px auto;
@@ -68,8 +92,9 @@ header nav{
 
 /*Navigation Menu Button*/
 .show-menu {
-	color: #fff;
 	background: rgba(255,255,255,0.5);
+	color: #fff;
+	font-size: 16px;
 	text-align: center;
 	padding: 10px 0;
 	display: none;
@@ -82,14 +107,13 @@ input[type=checkbox]{
 
 /*Responsive Styles*/
 
-@media (max-width: 1365px){
-	
+@media screen and (max-width: 1365px){
 	.nav-item a, .lang-item a{
 		font-size: 1.5rem;
 	}
 }
 
-@media (max-width: 1023px){
+@media screen and (max-width: 1023px){
 	header nav, .nav-logo{
 		display: none;
 	}
@@ -112,6 +136,10 @@ input[type=checkbox]{
 		padding: 20px 0;
 	}
 
+	.nav-item a{
+		font-size: 2rem;
+	}
+
 	.lang-toggle{
 		float: none;
 		margin: 0;
@@ -128,6 +156,10 @@ input[type=checkbox]{
 		width: 50%;
 	}
 
+	.lang-item a{
+		font-size: 2rem;
+	}
+
 	.lang-item:first-child{
 		border-right: 1px solid #f2f2f2;
 	}
@@ -137,12 +169,19 @@ input[type=checkbox]{
 	}
 
 	.show-menu {
-		display:block;
-		background-color: #353535;
+		display: block;
+		font-size: 2rem;
+		margin: 0 auto;
 	}
 
 	input[type=checkbox]:checked ~ nav{
 		display: block;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.nav-item a, .lang-toggle a{
+		font-size: 4rem;
 	}
 }
 

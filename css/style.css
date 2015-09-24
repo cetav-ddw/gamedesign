@@ -1,14 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Iceland|Coda);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
-li a {
-  color: #fff;
-  font-size: 2rem;
-  padding: 2px;
-  text-decoration: none;
-  text-transform: capitalize; }
-  li a:hover {
-    border-bottom: 2px solid #f2f2f2; }
-
 li {
   list-style: none; }
 
@@ -26,13 +17,13 @@ header {
 .header-logo {
   display: block;
   height: auto;
-  margin: 10% auto;
+  margin: 20% auto;
   width: 35%; }
 
 header nav {
   box-sizing: border-box;
   display: block;
-  height: 80px;
+  height: 90px;
   margin: 0 auto;
   padding: 10px 2%;
   width: 85%; }
@@ -61,6 +52,15 @@ header nav {
   .nav-item:hover .sub-nav {
     display: inline-block; }
 
+.nav-item a {
+  color: #fff;
+  font-size: 2rem;
+  padding: 2px;
+  text-decoration: none;
+  text-transform: capitalize; }
+  .nav-item a:hover {
+    border-bottom: 2px solid #f2f2f2; }
+
 .sub-nav-item {
   margin: 2% 0;
   width: 100%; }
@@ -76,6 +76,15 @@ header nav {
   float: left;
   margin-right: 10%; }
 
+.lang-item a {
+  color: #fff;
+  font-size: 2rem;
+  padding: 2px;
+  text-decoration: none;
+  text-transform: capitalize; }
+  .lang-item a:hover {
+    border-bottom: 2px solid #f2f2f2; }
+
 .mobile-logo {
   display: none;
   margin: 20px auto;
@@ -84,8 +93,9 @@ header nav {
 
 /*Navigation Menu Button*/
 .show-menu {
-  color: #fff;
   background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font-size: 16px;
   text-align: center;
   padding: 10px 0;
   display: none; }
@@ -95,10 +105,10 @@ input[type=checkbox] {
   display: none; }
 
 /*Responsive Styles*/
-@media (max-width: 1365px) {
+@media screen and (max-width: 1365px) {
   .nav-item a, .lang-item a {
     font-size: 1.5rem; } }
-@media (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   header nav, .nav-logo {
     display: none; }
 
@@ -117,6 +127,9 @@ input[type=checkbox] {
     border-bottom: 1px solid #f2f2f2;
     padding: 20px 0; }
 
+  .nav-item a {
+    font-size: 2rem; }
+
   .lang-toggle {
     float: none;
     margin: 0;
@@ -131,6 +144,9 @@ input[type=checkbox] {
     text-align: center;
     width: 50%; }
 
+  .lang-item a {
+    font-size: 2rem; }
+
   .lang-item:first-child {
     border-right: 1px solid #f2f2f2; }
 
@@ -139,22 +155,26 @@ input[type=checkbox] {
 
   .show-menu {
     display: block;
-    background-color: #353535; }
+    font-size: 2rem;
+    margin: 0 auto; }
 
   input[type=checkbox]:checked ~ nav {
     display: block; } }
+@media screen and (max-width: 480px) {
+  .nav-item a, .lang-toggle a {
+    font-size: 4rem; } }
 /*Show menu when invisible checkbox is checked*/
 /*About Section*/
 .about {
   font-family: "Muli", sans-serif;
   margin: 0 auto;
   padding: 60px 2%;
-  width: 85%; }
+  width: 80%; }
 
 .about-brief {
   font-size: 1.5rem;
   margin: 60px auto;
-  width: 60%; }
+  width: 100%; }
 
 /*Partners*/
 .partners {
@@ -322,6 +342,7 @@ input[type=checkbox] {
   position: absolute;
   margin-left: -4%; }
 
+
 @media screen and (max-width: 1366px) {
   .overlay-games {
     width: 336px; }
@@ -341,8 +362,22 @@ input[type=checkbox] {
 
   .overlay-games-text {
     font-size: 1.5rem; } }
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; }
+
+.video iframe {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .footer-main {
   background: #353535;
+  background-image: url(../img/footer-background.png);
   height: 140px;
   text-align: center; }
 
