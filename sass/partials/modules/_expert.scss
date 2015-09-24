@@ -1,7 +1,7 @@
 //
 // Estilos de Expertos
 .experts {
-	max-width:$max-width;
+  max-width: $max-width;
 	margin:0 auto;	
 }
 .info-experts {
@@ -12,7 +12,7 @@
 .content-text-experts {
   width: 50%;
   display: inline-block;
-  float: left;
+  margin: 0 0 0 12%;
 }
 .content-text-experts:nth-child(2n-1) {
 	float:right;
@@ -23,10 +23,9 @@
 	float: left;
 }
 .move-left-image {
-	float: left;
-  width: 502px;
-  height: 458px;
+  float: left;
   max-width: 100%;
+  margin: 0 0 0 12%;
 }
 .name-experts {
 	font-size:2.5rem;
@@ -39,15 +38,45 @@
 	display:inline-block;
 }
 .img-experts {
-   width: 502px;
-   height: 458px;
-   max-width: 100%;
-   float: right;
-}
-.content-img-experts {
-  width: 41%;
-  display: inline-block;
+  max-width: 100%;
+  float: right;
+  margin: 0 12% 0 0;
 }
 .move-right {
 	float: right;
+}
+.margin-extra-experts {
+  margin: 0 0 0 3%;
+}
+/////////////////////// queries ////////////////
+
+@media screen and (max-width: 1024px) {
+  .margin-extra-experts {
+    margin: 0 0 0 7%;
+  }
+  .move-left-image {
+    margin: 0 0 0 7%;
+  }
+  .img-experts {
+    margin: 0 7% 0 0;
+  }
+  .content-text-experts {
+    margin: 0 0 0 7%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img-experts {
+    margin: 0 29% 0 0;
+  }
+  .content-text-experts {
+    margin: 0 0 0 17%;
+    margin-top: 6%;
+    width:75%;
+  }
+  .name-experts {
+    display: inline-block;
+  }
+  .move-left-image {
+    margin: 0 0 0 32%;
+}
 }
