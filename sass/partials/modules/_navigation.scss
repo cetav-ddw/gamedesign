@@ -169,9 +169,9 @@ input[type=checkbox]{
 	}
 
 	.show-menu {
-		display:block;
+		display: block;
 		font-size: 2rem;
-		background-color: #353535;
+		margin: 0 auto;
 	}
 
 	input[type=checkbox]:checked ~ nav{

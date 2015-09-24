@@ -156,7 +156,7 @@ input[type=checkbox] {
   .show-menu {
     display: block;
     font-size: 2rem;
-    background-color: #353535; }
+    margin: 0 auto; }
 
   input[type=checkbox]:checked ~ nav {
     display: block; } }
@@ -332,6 +332,7 @@ input[type=checkbox] {
 
 .footer-main {
   background: #353535;
+  background-image: url(../img/footer-background.png);
   height: 140px;
   text-align: center; }
 
