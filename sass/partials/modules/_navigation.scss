@@ -92,7 +92,7 @@ header nav{
 
 /*Navigation Menu Button*/
 .show-menu {
-	background: rgba(255,255,255,0.5);
+	background-color: #353535;
 	color: #fff;
 	font-size: 16px;
 	text-align: center;
@@ -169,6 +169,7 @@ input[type=checkbox]{
 	}
 
 	.show-menu {
+		background: url(../img/menu-icon.svg) no-repeat center center;
 		display: block;
 		font-size: 2rem;
 		margin: 0 auto;
@@ -176,12 +177,6 @@ input[type=checkbox]{
 
 	input[type=checkbox]:checked ~ nav{
 		display: block;
-	}
-}
-
-@media screen and (max-width: 480px){
-	.nav-item a, .lang-toggle a{
-		font-size: 4rem;
 	}
 }
 
