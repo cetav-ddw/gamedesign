@@ -4,6 +4,7 @@
 .games {
 	max-width:$max-width;
 	margin:0 auto;
+	width: 60%;
 }
 .text-games {
 	font-size:1.5rem;
@@ -73,4 +74,30 @@
     height: 140px;
     position: absolute;
     margin-left: -4%;
+}
+///////// Queries //////////
+@media screen and (max-width: 1366px){
+.overlay-games {
+	 width: 336px;
+	 &:hover {
+	 	width: 336px;
+	 }
+}
+.cont-game {
+	width: 360px;
+}
+}
+@media screen and (max-width: 1024px) {
+.overlay-games {
+	 width: 256px;
+	 &:hover {
+	 	width: 256px;
+	 }
+}
+.cont-game {
+	width: 280px;
+}
+.overlay-games-text {
+	font-size: 1.5rem;
+}
 }
