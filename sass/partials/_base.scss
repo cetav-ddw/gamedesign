@@ -2,6 +2,12 @@
 // Estilos para los elementos base y footer
 //
 
+body{
+	background-color: #000;
+	background-image: url(../img/background.jpg);
+	color: #fff;
+}
+
 li a{
 	color: $link-colors;
 	font-size: 2rem;

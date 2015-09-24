@@ -137,8 +137,10 @@ input[type=checkbox]{
 	}
 
 	.show-menu {
-		display:block;
-		background-color: #353535;
+		// background-color: #353535;
+		display: block;
+		font-size: 2rem;
+		margin: 0 auto;
 	}
 
 	input[type=checkbox]:checked ~ nav{

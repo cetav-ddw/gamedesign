@@ -1,6 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Iceland|Coda);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
 /* line 5, ../sass/partials/_base.scss */
+body {
+  background-color: #000;
+  background-image: url(../img/background.jpg);
+  color: #fff;
+}
+
+/* line 11, ../sass/partials/_base.scss */
 li a {
   color: white;
   font-size: 2rem;
@@ -8,17 +15,17 @@ li a {
   text-decoration: none;
   text-transform: capitalize;
 }
-/* line 12, ../sass/partials/_base.scss */
+/* line 18, ../sass/partials/_base.scss */
 li a:hover {
   border-bottom: 2px solid #f2f2f2;
 }
 
-/* line 17, ../sass/partials/_base.scss */
+/* line 23, ../sass/partials/_base.scss */
 li {
   list-style: none;
 }
 
-/* line 21, ../sass/partials/_base.scss */
+/* line 27, ../sass/partials/_base.scss */
 .title-main {
   font-size: 5rem;
   text-align: center;
@@ -195,10 +202,11 @@ input[type=checkbox] {
   /* line 139, ../sass/partials/modules/_navigation.scss */
   .show-menu {
     display: block;
-    background-color: #353535;
+    font-size: 2rem;
+    margin: 0 auto;
   }
 
-  /* line 144, ../sass/partials/modules/_navigation.scss */
+  /* line 146, ../sass/partials/modules/_navigation.scss */
   input[type=checkbox]:checked ~ nav {
     display: block;
   }
@@ -437,11 +445,12 @@ input[type=checkbox] {
 /* line 1, ../sass/partials/modules/_footer.scss */
 .footer-main {
   background: #353535;
+  background-image: url(../img/footer-background.png);
   height: 140px;
   text-align: center;
 }
 
-/* line 6, ../sass/partials/modules/_footer.scss */
+/* line 7, ../sass/partials/modules/_footer.scss */
 .text-footer {
   font-size: 1.5rem;
   font-family: "Iceland", serif;
@@ -451,7 +460,7 @@ input[type=checkbox] {
   margin-top: 44px;
 }
 
-/* line 14, ../sass/partials/modules/_footer.scss */
+/* line 15, ../sass/partials/modules/_footer.scss */
 .content-info-footer {
   margin-top: 60px;
 }
