@@ -2,18 +2,6 @@
 // Estilos para los elementos base y footer
 //
 
-li a{
-	color: $link-colors;
-	font-size: 2rem;
-	padding: 2px;
-	text-decoration: none;
-	text-transform: capitalize;
-
-	&:hover{
-		border-bottom: 2px solid #f2f2f2;
-	}
-}
-
 li{
 	list-style: none;
 }
