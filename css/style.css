@@ -461,12 +461,12 @@ input[type=checkbox] {
 /*Games*/
 @media screen and (max-width: 1365px) {
   .overlay-games {
-    width: 336px; }
+    width: 94%; }
     .overlay-games:hover {
-      width: 336px; }
+      width: 94%; }
 
   .cont-game {
-    width: 360px; } }
+    width: 47%; } }
 @media screen and (max-width: 1023px) {
   .overlay-games {
     width: 256px; }
