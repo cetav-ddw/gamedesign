@@ -3,27 +3,33 @@
 //
 
 .info-game{ 
-	overflow: hidden;
 	margin: 0;
+	overflow: hidden;
+	
 	img{
 		float: right;
     		display: inline-block;
-    		width: 100%;
     		margin: 50px 0;
+    		width: 100%;
+    		
 	}
 	li{
 		font-family: "Muli";
 		 font-size: 1.2rem;
 		 line-height: 2.5rem;
 	} 
-	h2{
+	h2 {
 		margin: 20px 0;
 	}
 }
 
 .text-info-game{
 	float: left;
-  display: inline-block;
+  	display: inline-block;
+  	
+  	h3{
+  		margin: 31px 0;
+	}
 }
 
 .play-game{
@@ -44,10 +50,16 @@
 	}
 }
 
+/*Estilos de los Botones*/
+
 .main{
 	background: url(../img/button.png) no-repeat;
 	background-size: contain;
 	&:active{
+    		background: url(../img/button-pressed.png) no-repeat;
+    		background-size: contain;
+    	}
+    	&:hover{
     		background: url(../img/button-pressed.png) no-repeat;
     		background-size: contain;
     	}
