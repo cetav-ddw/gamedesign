@@ -181,6 +181,10 @@
 /*Games Pages*/
 
 @media (min-width: 1365px){
+
+}
+
+@media (min-width: 768px){
 	.btn{
     		width: 155px;
     		height: 51px;
@@ -191,10 +195,45 @@
 	.controls-btn{
 		width: 353px;
 	}
-}
 
-@media (min-width: 1023px){
-	
+
+
+	.info-game{ 
+		margin: 100px 0;
+		img{
+			float: left;
+    			display: inline-block;
+    			margin: 0 10% 0 0;
+    			width: 40%;
+    		
+		}
+		li{
+			font-family: "Muli";
+		 	font-size: 1.2rem;
+			line-height: 2.5rem;
+		} 
+
+		h2{
+			margin-bottom: 20px;
+		}
+	}
+
+	.text-info-game{
+		float: right;
+  		display: inline-block;
+  		width: 50%;
+  	
+  		h3{
+  			margin: 31px 0;
+		}
+	}
+	.note-play{
+		margin: 6 auto;
+		font-size: 1rem;
+	}
+	.play-game{
+		margin-bottom: 20px;
+	}
 }
 
 /*Fin Games Pages*/
