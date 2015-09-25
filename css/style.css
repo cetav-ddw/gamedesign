@@ -52,11 +52,10 @@ section {
   padding: 1% 0 2% 0;
   margin-bottom: 5%;
   box-shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5);
-  background-image: url(../img/background-green.png); 
   background-image: url(../img/background-green.png);
 }
 
-/* line 51, ../sass/partials/_base.scss */
+/* line 52, ../sass/partials/_base.scss */
 footer {
   background: #353535;
   background-image: url(../img/footer-background.png);
@@ -64,7 +63,7 @@ footer {
   text-align: center;
 }
 
-/* line 58, ../sass/partials/_base.scss */
+/* line 59, ../sass/partials/_base.scss */
 .text-footer {
   font-size: 1.5rem;
   font-family: "Iceland", serif;
@@ -74,7 +73,7 @@ footer {
   margin-top: 44px;
 }
 
-/* line 67, ../sass/partials/_base.scss */
+/* line 68, ../sass/partials/_base.scss */
 .content-info-footer {
   margin-top: 60px;
 }
@@ -286,12 +285,10 @@ input[type=checkbox] {
 /* line 9, ../sass/partials/modules/_games.scss */
 .content-banners-games {
   margin: 5%;
-  text-align: center; 
   text-align: center;
-  display: inline-block;
 }
 
-/* line 15, ../sass/partials/modules/_games.scss */
+/* line 14, ../sass/partials/modules/_games.scss */
 .cont-game {
   width: 36%;
   max-width: 100%;
@@ -301,27 +298,27 @@ input[type=checkbox] {
   color: #fff;
 }
 
-/* line 24, ../sass/partials/modules/_games.scss */
+/* line 23, ../sass/partials/modules/_games.scss */
 .banner-game-one {
   background-color: #4DB558;
 }
 
-/* line 28, ../sass/partials/modules/_games.scss */
+/* line 27, ../sass/partials/modules/_games.scss */
 .banner-game-two {
   background-color: #ADDADD;
 }
 
-/* line 32, ../sass/partials/modules/_games.scss */
+/* line 31, ../sass/partials/modules/_games.scss */
 .banner-game-three {
   background-color: #F59331;
 }
 
-/* line 36, ../sass/partials/modules/_games.scss */
+/* line 35, ../sass/partials/modules/_games.scss */
 .banner-game-four {
   background-color: #d65f21;
 }
 
-/* line 40, ../sass/partials/modules/_games.scss */
+/* line 39, ../sass/partials/modules/_games.scss */
 .overlay-games {
   width: 94%;
   height: 180px;
@@ -330,27 +327,18 @@ input[type=checkbox] {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
-  margin-top: 9.5px; }
-  .overlay-games:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 94%;
-    height: 180px;
-    display: block;
-    box-shadow: none; 
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0);
-    margin-top: 9.5px;
+  margin-top: 9.5px;
 }
-/* line 49, ../sass/partials/modules/_games.scss */
+/* line 48, ../sass/partials/modules/_games.scss */
 .overlay-games:hover {
-  background-color: rgba(0, 0, 0, 0);
-  width: 380px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 94%;
   height: 180px;
   display: block;
   box-shadow: none;
 }
 
-/* line 58, ../sass/partials/modules/_games.scss */
+/* line 57, ../sass/partials/modules/_games.scss */
 .overlay-games-text {
   font-size: 2rem;
   float: left;
@@ -358,13 +346,13 @@ input[type=checkbox] {
   margin-top: 98px;
 }
 
-/* line 65, ../sass/partials/modules/_games.scss */
+/* line 64, ../sass/partials/modules/_games.scss */
 .games-link {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 70, ../sass/partials/modules/_games.scss */
+/* line 69, ../sass/partials/modules/_games.scss */
 .img-games-button {
   width: 8%;
   display: inline-block;
@@ -597,11 +585,7 @@ input[type=checkbox] {
 }
 /*Fin Menu*/
 /*Expert*/
-
-
-  /* line 88, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   /* line 88, ../sass/partials/_media-queries.scss */
   .margin-extra-experts {
     margin: 0 0 0 7%;
@@ -626,99 +610,103 @@ input[type=checkbox] {
   /* line 103, ../sass/partials/_media-queries.scss */
   .img-experts {
     margin: 0 23% 0 0;
-    margin: 0 29% 0 0;
+    margin-bottom: 40px;
   }
 
-  /* line 106, ../sass/partials/_media-queries.scss */
+  /* line 107, ../sass/partials/_media-queries.scss */
   .content-text-experts {
     margin: 0 0 0 17%;
     margin-top: 6%;
     width: 75%;
   }
 
-  /* line 111, ../sass/partials/_media-queries.scss */
+  /* line 112, ../sass/partials/_media-queries.scss */
   .name-experts {
     display: inline-block;
   }
 
-  /* line 114, ../sass/partials/_media-queries.scss */
+  /* line 115, ../sass/partials/_media-queries.scss */
   .move-left-image {
-    margin: 0 0 0 32%; }
+    margin: 0 0 0 32%;
+  }
 
+  /* line 118, ../sass/partials/_media-queries.scss */
   .info-experts {
     margin-bottom: 8%;
     overflow: hidden;
     max-width: 680px;
     text-align: center;
     width: 95%;
-    margin-bottom: 12px; }
-    .info-experts p {
-      text-align: center;
-      margin-bottom: 45px; }
+    margin-bottom: 12px;
+  }
+  /* line 126, ../sass/partials/_media-queries.scss */
+  .info-experts p {
+    text-align: center;
+    margin-bottom: 45px;
+  }
 
+  /* line 131, ../sass/partials/_media-queries.scss */
   .img-experts-right {
     float: none;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px;
+  }
+}
 /*Fin Expert*/
 /*Games*/
 @media screen and (max-width: 1365px) {
-
-  }
-}
-/*Fin Expert*/
-/*Games*/
-@media screen and (max-width: 1366px) {
-  /* line 124, ../sass/partials/_media-queries.scss */
-  .overlay-games {
-    width: 336px;
-  }
-  /* line 126, ../sass/partials/_media-queries.scss */
-  .overlay-games:hover {
-    width: 336px;
-  }
-
-  /* line 130, ../sass/partials/_media-queries.scss */
-  .cont-game {
-
-    width: 360px; } }
-@media screen and (max-width: 1023px) {
-
-  }
-}
-@media screen and (max-width: 1024px) {
-  /* line 135, ../sass/partials/_media-queries.scss */
-  .overlay-games {
-    width: 256px;
-  }
-  /* line 137, ../sass/partials/_media-queries.scss */
-  .overlay-games:hover {
-    width: 256px;
-  }
-
   /* line 141, ../sass/partials/_media-queries.scss */
+  .overlay-games {
+    width: 336px;
+  }
+  /* line 143, ../sass/partials/_media-queries.scss */
+  .overlay-games:hover {
+    width: 336px;
+  }
+
+  /* line 147, ../sass/partials/_media-queries.scss */
+  .cont-game {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* line 152, ../sass/partials/_media-queries.scss */
+  .overlay-games {
+    width: 256px;
+  }
+  /* line 154, ../sass/partials/_media-queries.scss */
+  .overlay-games:hover {
+    width: 256px;
+  }
+
+  /* line 158, ../sass/partials/_media-queries.scss */
   .cont-game {
     width: 280px;
   }
 
-  /* line 144, ../sass/partials/_media-queries.scss */
+  /* line 161, ../sass/partials/_media-queries.scss */
   .overlay-games-text {
-    font-size: 1.5rem; } }
-@media screen and (max-width: 768px) {
-  .cont-game {
-    width: 93%; }
-
-  .overlay-games {
-    width: 95%; }
-    .overlay-games:hover {
-      width: 95%; } }
-
+    font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 768px) {
+  /* line 166, ../sass/partials/_media-queries.scss */
+  .cont-game {
+    width: 93%;
+  }
 
+  /* line 169, ../sass/partials/_media-queries.scss */
+  .overlay-games {
+    width: 95%;
+  }
+  /* line 172, ../sass/partials/_media-queries.scss */
+  .overlay-games:hover {
+    width: 95%;
+  }
+}
 /*Fin Games*/
 /*Games Pages*/
 @media (min-width: 1365px) {
-  /* line 154, ../sass/partials/_media-queries.scss */
+  /* line 183, ../sass/partials/_media-queries.scss */
   .btn {
     width: 155px;
     height: 51px;
@@ -726,7 +714,7 @@ input[type=checkbox] {
     font-size: 1.6rem;
   }
 
-  /* line 161, ../sass/partials/_media-queries.scss */
+  /* line 190, ../sass/partials/_media-queries.scss */
   .controls-btn {
     width: 353px;
   }
