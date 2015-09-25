@@ -593,10 +593,6 @@ input[type=checkbox] {
 /*Fin Menu*/
 /*Expert*/
 
-@media screen and (max-width: 1023px) {
-
-
-
   /* line 88, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
 @media screen and (max-width: 1023px) {
   /* line 88, ../sass/partials/_media-queries.scss */
@@ -624,8 +620,6 @@ input[type=checkbox] {
   .img-experts {
     margin: 0 23% 0 0;
     margin-bottom: 40px; }
-
-  
   /* line 106, ../sass/partials/_media-queries.scss */
 
   /* line 107, ../sass/partials/_media-queries.scss */
@@ -662,13 +656,11 @@ input[type=checkbox] {
     margin-bottom: 40px; } }
 /*Fin Expert*/
 /*Games*/
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1024px) {
 /*Fin Expert*/
 /*Games*/
 /*Fin Expert*/
 /*Games*/
-@media screen and (max-width: 1365px) {
-  }
   /* line 126, ../sass/partials/_media-queries.scss */
   .info-experts p {
     text-align: center;
@@ -677,7 +669,6 @@ input[type=checkbox] {
 
   /* line 131, ../sass/partials/_media-queries.scss */
   .img-experts-right {
-    float: none;
     margin-bottom: 40px; } }
 
 /*Fin Expert*/
