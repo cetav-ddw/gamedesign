@@ -327,7 +327,10 @@ input[type=checkbox] {
 /*Menu*/
 @media screen and (max-width: 1365px) {
   .nav-item a, .lang-item a {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+
+  .main-nav, .lang-toggle {
+    margin-top: 2%; } }
 @media screen and (max-width: 1023px) {
   header nav, .nav-logo {
     display: none; }
