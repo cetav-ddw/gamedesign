@@ -1,16 +1,14 @@
 // Estilos del header y Sobre el Game Jam
 
 header{
-	background-color: #353535;
-	font-family: $title-text;
-	
+	background: url(../img/background-green.png);
 	overflow: hidden;
 	width: 100%;
+  margin-bottom: 5%;
 }
 
 .header-logo{
     display: block;
     height: auto;
-    margin: 20% auto;
-    width: 35%;
+    margin: 10% auto 13% auto;
 }

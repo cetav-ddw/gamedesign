@@ -2,81 +2,33 @@
 // Estilos de Expertos
 .experts {
   max-width: $max-width;
-	margin:0 auto;	
 }
+
 .info-experts {
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 100px;
+  margin-bottom: 8%;
+  overflow: hidden;
 }
-.content-text-experts {
-  width: 50%;
-  display: inline-block;
-  margin: 0 0 0 12%;
+
+.info-experts h3 {
+  margin-bottom: 2%;
 }
-.content-text-experts:nth-child(2n-1) {
-	float:right;
-  margin: 0px 49px;
-  display: inline-block;
-}
-.move-left {
-	float: left;
-}
-.move-left-image {
-  float: left;
-  max-width: 100%;
-  margin: 0 0 0 12%;
-}
+
 .name-experts {
-	font-size:2.5rem;
-	font-family:$title-text;
-	margin-top: -7px;
+  text-align: right;
 }
-.text-experts {
-	font-size:1.5rem;
-	font-family:$text;
-	display:inline-block;
+
+.name-experts + p {
+  text-align: right;
 }
+
+.img-experts-right {
+  max-width: 100%;
+  float: left;
+  margin: 0 2% 0 0;
+}
+
 .img-experts {
   max-width: 100%;
   float: right;
-  margin: 0 12% 0 0;
-}
-.move-right {
-	float: right;
-}
-.margin-extra-experts {
-  margin: 0 0 0 3%;
-}
-/////////////////////// queries ////////////////
-
-@media screen and (max-width: 1024px) {
-  .margin-extra-experts {
-    margin: 0 0 0 7%;
-  }
-  .move-left-image {
-    margin: 0 0 0 7%;
-  }
-  .img-experts {
-    margin: 0 7% 0 0;
-  }
-  .content-text-experts {
-    margin: 0 0 0 7%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .img-experts {
-    margin: 0 29% 0 0;
-  }
-  .content-text-experts {
-    margin: 0 0 0 17%;
-    margin-top: 6%;
-    width:75%;
-  }
-  .name-experts {
-    display: inline-block;
-  }
-  .move-left-image {
-    margin: 0 0 0 32%;
-}
+  margin: 0 0 0 2%;
 }

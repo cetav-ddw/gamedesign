@@ -1,0 +1,79 @@
+.content-demo{
+	padding: 100px 10%;
+}
+.info-game{ 
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	img{
+		float: right;
+    		display: inline-block;
+    		width: 100%;
+    		margin: 50px 0;
+	}
+	p, li{
+		font-family: "Muli";
+		 font-size: 1.5rem;
+		 line-height: 2.5rem;
+	} 
+	h2{
+		margin: 0 0 20px;
+		width: 100%;
+		font-family: "Iceland";
+		margin: 20px 0;
+		font-size: 4rem;
+	}
+	h3{
+		font-family: "Iceland";
+		font-size: 3rem;
+	}
+}
+
+.text-info-game{
+	float: left;
+    	display: inline-block;
+    	width: 100%;
+}
+
+.play-game{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.sub-menu-games{
+	display: none;
+}
+
+.note-play{
+	margin: 3 auto;
+    	text-align: center;
+    	font-family: "Iceland";
+    	font-size: 2.2rem;
+	span{
+		text-transform: uppercase;
+	}
+}
+
+.main{
+	background: url(../img/button.png) no-repeat;
+	background-size: contain;
+	&:active{
+    		background: url(../img/button-pressed.png) no-repeat;
+    		background-size: contain;
+    	}
+}
+.btn{
+    display: inline-block;
+    border: none;
+    width: 272px;
+    height: 90px;
+    margin: 0 18px;
+    font-family: 'Iceland', sans-serif;
+    color: #fff;
+    font-size: 2.6rem;
+}
+
+.controls-btn{
+	width: 616px;
+	margin: 0 auto;
+}

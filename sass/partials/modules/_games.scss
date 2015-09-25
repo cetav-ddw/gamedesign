@@ -1,103 +1,76 @@
 //
 // Estilos de Juegos
 //
-.games {
-	max-width:$max-width;
-	margin:0 auto;
-	width: 60%;
-}
+
 .text-games {
-	font-size:1.5rem;
-	font-family:$text;
-	display:inline-block;
+  margin-bottom: 2%;
 }
+
 .content-banners-games {
-	text-align:center;
-	display:inline-block
-}
-.cont-game {
-	margin-bottom:60px;
-	margin-top:60px;
-	width:400px;
-	max-width:100%;
-	height:200px;
-	display: inline-block;
-	margin: 2%;
+  margin: 5%;
 	text-align: center;
-	font-size: $title-text;
+	display: inline-block
+}
+
+.cont-game {
+	width: 400px;
+	max-width: 100%;
+	height: 200px;
+	display: inline-block;
+	margin: 1%;
 	color:#fff;
 }
+
 .banner-game-one {
 	background-color: #4DB558;
 }
+
 .banner-game-two {
 	background-color: #ADDADD;	
 }
+
 .banner-game-three {
 	background-color: #F59331;	
 }
+
 .banner-game-four {
 	background-color: #d65f21;	
 }
-.overlay-games {
+
+.overlay-games { 
+  width: 380px;
+  height: 180px;
+  max-width: 100%;
+  margin-left: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+  margin-top: 9.5px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
     width: 380px;
     height: 180px;
-    max-width: 100%;
-    margin-left: 10px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
-    margin-top: 9.5px;
-    &:hover {
-	    background-color: rgba(0, 0, 0, 0.4);
-	    width: 380px;
-	    height: 180px;
-	    display: block;
-	    box-shadow: none;
-    }
+    display: block;
+    box-shadow: none;
+  }
 }
+
 .overlay-games-text {
-    display: inline-block;
-    font-family: "Iceland", serif;
-    font-size: 2rem;
-    float: left;
-    width: 99%;
-    margin-top: 98px;
+  font-size: 2rem;
+  float: left;
+  width: 99%;
+  margin-top: 98px;
 }
+
 .games-link {
 	text-decoration: none;
 	color: #fff;
 }
+
 .img-games-button {
     width: 8%;
     display: inline-block;
     height: 140px;
     position: absolute;
     margin-left: -4%;
-}
-///////// Queries //////////
-@media screen and (max-width: 1366px){
-.overlay-games {
-	 width: 336px;
-	 &:hover {
-	 	width: 336px;
-	 }
-}
-.cont-game {
-	width: 360px;
-}
-}
-@media screen and (max-width: 1024px) {
-.overlay-games {
-	 width: 256px;
-	 &:hover {
-	 	width: 256px;
-	 }
-}
-.cont-game {
-	width: 280px;
-}
-.overlay-games-text {
-	font-size: 1.5rem;
-}
 }

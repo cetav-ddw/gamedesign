@@ -11,44 +11,27 @@
 <body>
   <header>
     <!-- <a href="#" class="mobile-logo"><img src="img/logo-nav.png"></a> -->
-    
-    <label for="show-menu" class="show-menu">Mostrar Menú</label>
+    <label for="show-menu" class="show-menu"></label>
     <input type="checkbox" id="show-menu" role="button">
-
     <nav>
-      <a href="index.html" class="nav-logo"><img src="../img/logo-nav.png" alt="LOGO"></a>
-
+      <a href="../index.html" class="nav-logo"><img src="../img/logo-nav.png" alt="LOGO"></a>
       <ul class="main-nav">
+        <li class="nav-item"><a href="../index.html">inicio</a></li>
+        <li class="nav-item"><a href="galeria.html">galería</a></li>
         <li class="nav-item">
-          <a href="../index.html">inicio</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="galeria.html">galería</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#games">juegos</a>
-
+          <a id="games-item">juegos</a>
           <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="sorry-you-got-humans.html">sorry you got humans</a>
-            </li>
-
+            <li class="sub-nav-item"><a href="sorry-you-got-humans.html">sorry you got humans</a></li>
             <li class="sub-nav-item"><a href="the-last-activist.html">the last activist</a></li>
-
             <li class="sub-nav-item"><a href="trash-flood.html">trash flood</a></li>
-
             <li class="sub-nav-item"><a href="owak-and-the-wooden-tower.html">owak and the wooden tower</a></li>
           </ul>
         </li>
       </ul>
-
       <ul class="lang-toggle">
         <li class="lang-item">
           <a href="#">es</a>
         </li>
-
         <li class="lang-item">
           <a href="#">en</a>
         </li>
@@ -61,7 +44,43 @@
     </div>
     <!-- End video -->
   </header>
-
+  <section class="content-demo">
+    <div class="info-game">
+      
+      <div class="text-info-game">
+        <h2>Prototipo hecho con Unity</h2>
+        <h2>Genero: Plataforma/Lógica.</h2>
+        <p>Debido a que el nivel del mar aumenta por el cambio climático, Owak debe subir a lo más alto de un árbol para sobrevivir, valiéndose de cajas viejas y baterías usadas para escalar.
+        <p>Sin embargo algunas cajas son muy grandes para él, así que deberá comer un gusano para tener energía extra, ¡pero solo por un tiempo límite!</p>
+        <h3>Integrantes</h3>
+        <ul>
+          <li>Rosaura Láscarez</li>
+          <li>Jorge Devandas</li>
+          <li>Masziel Méndez</li>
+          <li>André Sánchez</li>
+          <li>Tatiana Bonilla</li>
+          <li>Mariana Carro</li>
+          <li>Virgilio Solis</li>
+          <li>Elder Olaso</li>
+        </ul>
+      </div>
+      <img src="../img/game_team/OWT_Team.JPG" alt="Owak_and_the_wooden_tower_Team">
+    </div>
+    <div class="play-game">
+      <div class="controls-btn">
+        <button class="main btn">Jugar</button><button class="main btn">Otros juegos</button>
+      </div>
+      
+        <ul class="sub-menu-games">
+          <li><a href="#">Sorry you got humans</a></li>
+          <li><a href="#">The last activist</a></li>
+          <li><a href="#">Trash flood</a></li>
+          <li><a href="#">Owak and the wooden tower</a></li>
+        </ul>
+      </div>
+      <p class="note-play"><span>Nota:</span> Para jugar este juego se necesita descargar Unity Web Player.</p>
+    </div>
+  </section>
   <footer class='footer-main'>
   		<div class="content-info-footer">
   			 <p class="text-footer">Game Jam CETAV 2015, fue un proyecto hecho con muchas ganas en Costa Rica.

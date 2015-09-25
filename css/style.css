@@ -1,24 +1,70 @@
-@import url(https://fonts.googleapis.com/css?family=Iceland|Coda);
+@import url(https://fonts.googleapis.com/css?family=Iceland|Muli);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+a {
+  font-family: "Iceland", serif; }
+
 li {
   list-style: none; }
 
-.title-main {
-  font-size: 5rem;
-  text-align: center;
+ul {
+  margin: 0;
+  padding: 0; }
+
+p {
+  font-family: "Muli", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-size: 2.5rem;
   font-family: "Iceland", serif; }
 
-header {
-  background-color: #353535;
+section {
+  width: 80%;
+  margin: 0 auto; }
+
+.title-main {
+  color: #359e97;
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: -3px 2px 0px #e8ebed;
   font-family: "Iceland", serif;
+  padding: 1% 0 2% 0;
+  margin-bottom: 5%;
+  background-image: url(../img/background-green.png); }
+
+footer {
+  background: #353535;
+  background-image: url(../img/footer-background.png);
+  height: 140px;
+  text-align: center; }
+
+.text-footer {
+  font-size: 1.5rem;
+  font-family: "Iceland", serif;
+  display: inline-block;
+  width: 60%;
+  color: #E8EBED;
+  margin-top: 44px; }
+
+.content-info-footer {
+  margin-top: 60px; }
+
+header {
+  background: url(../img/background-green.png);
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 5%; }
 
 .header-logo {
   display: block;
   height: auto;
-  margin: 20% auto;
-  width: 35%; }
+  margin: 10% auto 13% auto; }
 
 header nav {
   box-sizing: border-box;
@@ -104,7 +150,194 @@ header nav {
 input[type=checkbox] {
   display: none; }
 
+/*Show menu when invisible checkbox is checked*/
+/*Partners*/
+.partners {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin: 30px 0; }
+
+.partner-item {
+  float: left;
+  text-align: center;
+  width: 15%; }
+  .partner-item img {
+    height: auto;
+    max-width: 100%; }
+
+.experts {
+  max-width: 1280px; }
+
+.info-experts {
+  margin-bottom: 8%;
+  overflow: hidden; }
+
+.info-experts h3 {
+  margin-bottom: 2%; }
+
+.name-experts {
+  text-align: right; }
+
+.name-experts + p {
+  text-align: right; }
+
+.img-experts-right {
+  max-width: 100%;
+  float: left;
+  margin: 0 2% 0 0; }
+
+.img-experts {
+  max-width: 100%;
+  float: right;
+  margin: 0 0 0 2%; }
+
+.grid {
+  margin: 0 auto;
+  width: 90%; }
+
+.text-games {
+  margin-bottom: 2%; }
+
+.content-banners-games {
+  margin: 5%;
+  text-align: center;
+  display: inline-block; }
+
+.cont-game {
+  width: 400px;
+  max-width: 100%;
+  height: 200px;
+  display: inline-block;
+  margin: 1%;
+  color: #fff; }
+
+.banner-game-one {
+  background-color: #4DB558; }
+
+.banner-game-two {
+  background-color: #ADDADD; }
+
+.banner-game-three {
+  background-color: #F59331; }
+
+.banner-game-four {
+  background-color: #d65f21; }
+
+.overlay-games {
+  width: 380px;
+  height: 180px;
+  max-width: 100%;
+  margin-left: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+  margin-top: 9.5px; }
+  .overlay-games:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 380px;
+    height: 180px;
+    display: block;
+    box-shadow: none; }
+
+.overlay-games-text {
+  font-size: 2rem;
+  float: left;
+  width: 99%;
+  margin-top: 98px; }
+
+.games-link {
+  text-decoration: none;
+  color: #fff; }
+
+.img-games-button {
+  width: 8%;
+  display: inline-block;
+  height: 140px;
+  position: absolute;
+  margin-left: -4%; }
+
+.content-demo {
+  padding: 100px 10%; }
+
+.info-game {
+  overflow: hidden;
+  margin: 0;
+  width: 100%; }
+  .info-game img {
+    float: right;
+    display: inline-block;
+    width: 100%;
+    margin: 50px 0; }
+  .info-game p, .info-game li {
+    font-family: "Muli";
+    font-size: 1.5rem;
+    line-height: 2.5rem; }
+  .info-game h2 {
+    margin: 0 0 20px;
+    width: 100%;
+    font-family: "Iceland";
+    margin: 20px 0;
+    font-size: 4rem; }
+  .info-game h3 {
+    font-family: "Iceland";
+    font-size: 3rem; }
+
+.text-info-game {
+  float: left;
+  display: inline-block;
+  width: 100%; }
+
+.play-game {
+  width: 100%;
+  margin: 0 auto; }
+
+.sub-menu-games {
+  display: none; }
+
+.note-play {
+  margin: 3 auto;
+  text-align: center;
+  font-family: "Iceland";
+  font-size: 2.2rem; }
+  .note-play span {
+    text-transform: uppercase; }
+
+.main {
+  background: url(../img/button.png) no-repeat;
+  background-size: contain; }
+  .main:active {
+    background: url(../img/button-pressed.png) no-repeat;
+    background-size: contain; }
+
+.btn {
+  display: inline-block;
+  border: none;
+  width: 272px;
+  height: 90px;
+  margin: 0 18px;
+  font-family: 'Iceland', sans-serif;
+  color: #fff;
+  font-size: 2.6rem; }
+
+.controls-btn {
+  width: 616px;
+  margin: 0 auto; }
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; }
+
+.video iframe {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 /*Responsive Styles*/
+/*Menu*/
 @media screen and (max-width: 1365px) {
   .nav-item a, .lang-item a {
     font-size: 1.5rem; } }
@@ -161,82 +394,8 @@ input[type=checkbox] {
 
   input[type=checkbox]:checked ~ nav {
     display: block; } }
-/*Show menu when invisible checkbox is checked*/
-/*About Section*/
-.about {
-  font-family: "Muli", sans-serif;
-  margin: 0 auto;
-  padding: 60px 2%;
-  width: 80%; }
-
-.about-brief {
-  font-size: 1.5rem;
-  margin: 60px auto;
-  width: 100%; }
-
-/*Partners*/
-.partners {
-  align-items: center;
-  display: flex;
-  width: 100%;
-  margin: 30px 0; }
-
-.partner-item {
-  float: left;
-  text-align: center;
-  width: 15%; }
-  .partner-item img {
-    height: auto;
-    max-width: 100%; }
-
-.experts {
-  max-width: 1280px;
-  margin: 0 auto; }
-
-.info-experts {
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 100px; }
-
-.content-text-experts {
-  width: 50%;
-  display: inline-block;
-  margin: 0 0 0 12%; }
-
-.content-text-experts:nth-child(2n-1) {
-  float: right;
-  margin: 0px 49px;
-  display: inline-block; }
-
-.move-left {
-  float: left; }
-
-.move-left-image {
-  float: left;
-  max-width: 100%;
-  margin: 0 0 0 12%; }
-
-.name-experts {
-  font-size: 2.5rem;
-  font-family: "Iceland", serif;
-  margin-top: -7px; }
-
-.text-experts {
-  font-size: 1.5rem;
-  font-family: "Muli", sans-serif;
-  display: inline-block; }
-
-.img-experts {
-  max-width: 100%;
-  float: right;
-  margin: 0 12% 0 0; }
-
-.move-right {
-  float: right; }
-
-.margin-extra-experts {
-  margin: 0 0 0 3%; }
-
+/*Fin Menu*/
+/*Expert*/
 @media screen and (max-width: 1024px) {
   .margin-extra-experts {
     margin: 0 0 0 7%; }
@@ -263,84 +422,8 @@ input[type=checkbox] {
 
   .move-left-image {
     margin: 0 0 0 32%; } }
-.grid {
-  margin: 0 auto;
-  width: 90%; }
-
-.games {
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 60%; }
-
-.text-games {
-  font-size: 1.5rem;
-  font-family: "Muli", sans-serif;
-  display: inline-block; }
-
-.content-banners-games {
-  text-align: center;
-  display: inline-block; }
-
-.cont-game {
-  margin-bottom: 60px;
-  margin-top: 60px;
-  width: 400px;
-  max-width: 100%;
-  height: 200px;
-  display: inline-block;
-  margin: 2%;
-  text-align: center;
-  font-size: "Iceland", serif;
-  color: #fff; }
-
-.banner-game-one {
-  background-color: #4DB558; }
-
-.banner-game-two {
-  background-color: #ADDADD; }
-
-.banner-game-three {
-  background-color: #F59331; }
-
-.banner-game-four {
-  background-color: #d65f21; }
-
-.overlay-games {
-  width: 380px;
-  height: 180px;
-  max-width: 100%;
-  margin-left: 10px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
-  margin-top: 9.5px; }
-  .overlay-games:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 380px;
-    height: 180px;
-    display: block;
-    box-shadow: none; }
-
-.overlay-games-text {
-  display: inline-block;
-  font-family: "Iceland", serif;
-  font-size: 2rem;
-  float: left;
-  width: 99%;
-  margin-top: 98px; }
-
-.games-link {
-  text-decoration: none;
-  color: #fff; }
-
-.img-games-button {
-  width: 8%;
-  display: inline-block;
-  height: 140px;
-  position: absolute;
-  margin-left: -4%; }
-
-
+/*Fin Expert*/
+/*Games*/
 @media screen and (max-width: 1366px) {
   .overlay-games {
     width: 336px; }
@@ -360,34 +443,17 @@ input[type=checkbox] {
 
   .overlay-games-text {
     font-size: 1.5rem; } }
+/*Fin Games*/
+/*Games Pages*/
+@media (min-width: 1365px) {
+  .btn {
+    width: 155px;
+    height: 51px;
+    margin: 0 10px;
+    font-size: 1.6rem; }
 
-.video {
-  position: relative;
-  padding-bottom: 56.25%; }
-
-.video iframe {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-.footer-main {
-  background: #353535;
-  background-image: url(../img/footer-background.png);
-  height: 140px;
-  text-align: center; }
-
-.text-footer {
-  font-size: 1.5rem;
-  font-family: "Iceland", serif;
-  display: inline-block;
-  width: 60%;
-  color: #E8EBED;
-  margin-top: 44px; }
-
-.content-info-footer {
-  margin-top: 60px; }
+  .controls-btn {
+    width: 353px; } }
+/*Fin Games Pages*/
 
 /*# sourceMappingURL=style.css.map */
