@@ -1,22 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Iceland|Muli);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
-/* line 5, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 5, ../sass/partials/_base.scss */
 a {
   font-family: "Iceland", serif;
 }
 
-/* line 9, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 9, ../sass/partials/_base.scss */
 li {
   list-style: none;
 }
 
-/* line 13, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 13, ../sass/partials/_base.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 18, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 18, ../sass/partials/_base.scss */
 p {
   font-family: "Muli", sans-serif;
   font-size: 1.2rem;
@@ -24,25 +24,25 @@ p {
   padding: 0;
 }
 
-/* line 25, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 25, ../sass/partials/_base.scss */
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
 }
 
-/* line 30, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 30, ../sass/partials/_base.scss */
 h2, h3 {
   font-size: 2.5rem;
   font-family: "Iceland", serif;
 }
 
-/* line 35, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 35, ../sass/partials/_base.scss */
 section {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 40, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 40, ../sass/partials/_base.scss */
 .title-main {
   color: #359e97;
   font-size: 5rem;
@@ -56,7 +56,7 @@ section {
   background-image: url(../img/background-green.png);
 }
 
-/* line 51, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 51, ../sass/partials/_base.scss */
 footer {
   background: #353535;
   background-image: url(../img/footer-background.png);
@@ -64,7 +64,7 @@ footer {
   text-align: center;
 }
 
-/* line 58, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 58, ../sass/partials/_base.scss */
 .text-footer {
   font-size: 1.5rem;
   font-family: "Iceland", serif;
@@ -74,12 +74,12 @@ footer {
   margin-top: 44px;
 }
 
-/* line 67, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_base.scss */
+/* line 67, ../sass/partials/_base.scss */
 .content-info-footer {
   margin-top: 60px;
 }
 
-/* line 3, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_header.scss */
+/* line 3, ../sass/partials/modules/_header.scss */
 header {
   background: url(../img/background-green.png);
   overflow: hidden;
@@ -87,14 +87,14 @@ header {
   margin-bottom: 5%;
 }
 
-/* line 10, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_header.scss */
+/* line 10, ../sass/partials/modules/_header.scss */
 .header-logo {
   display: block;
   height: auto;
   margin: 10% auto 13% auto;
 }
 
-/* line 1, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 1, ../sass/partials/modules/_navigation.scss */
 header nav {
   box-sizing: border-box;
   display: block;
@@ -105,7 +105,7 @@ header nav {
 }
 
 /*Navbar Styles*/
-/* line 12, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 12, ../sass/partials/modules/_navigation.scss */
 .nav-logo {
   float: left;
   height: auto;
@@ -113,32 +113,32 @@ header nav {
   max-width: 10%;
 }
 
-/* line 19, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 19, ../sass/partials/modules/_navigation.scss */
 .main-nav {
   float: left;
   overflow: hidden;
   width: 65%;
 }
 
-/* line 25, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 25, ../sass/partials/modules/_navigation.scss */
 .sub-nav {
   display: none;
   width: 100%;
   padding: 10px 0 0;
 }
 
-/* line 31, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 31, ../sass/partials/modules/_navigation.scss */
 .nav-item {
   display: inline-block;
   float: left;
   margin: 5px 2%;
 }
-/* line 37, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 37, ../sass/partials/modules/_navigation.scss */
 .nav-item:hover .sub-nav {
   display: inline-block;
 }
 
-/* line 43, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 43, ../sass/partials/modules/_navigation.scss */
 .nav-item a {
   color: white;
   font-size: 2rem;
@@ -146,19 +146,19 @@ header nav {
   text-decoration: none;
   text-transform: capitalize;
 }
-/* line 50, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 50, ../sass/partials/modules/_navigation.scss */
 .nav-item a:hover {
   border-bottom: 2px solid #f2f2f2;
 }
 
-/* line 55, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 55, ../sass/partials/modules/_navigation.scss */
 .sub-nav-item {
   margin: 2% 0;
   width: 100%;
 }
 
 /*Language Toggle*/
-/* line 62, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 62, ../sass/partials/modules/_navigation.scss */
 .lang-toggle {
   float: right;
   overflow: hidden;
@@ -166,13 +166,13 @@ header nav {
   width: 10%;
 }
 
-/* line 69, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 69, ../sass/partials/modules/_navigation.scss */
 .lang-item {
   float: left;
   margin-right: 10%;
 }
 
-/* line 74, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 74, ../sass/partials/modules/_navigation.scss */
 .lang-item a {
   color: white;
   font-size: 2rem;
@@ -180,12 +180,12 @@ header nav {
   text-decoration: none;
   text-transform: capitalize;
 }
-/* line 81, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 81, ../sass/partials/modules/_navigation.scss */
 .lang-item a:hover {
   border-bottom: 2px solid #f2f2f2;
 }
 
-/* line 86, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 86, ../sass/partials/modules/_navigation.scss */
 .mobile-logo {
   display: none;
   margin: 20px auto;
@@ -194,7 +194,7 @@ header nav {
 }
 
 /*Navigation Menu Button*/
-/* line 94, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 94, ../sass/partials/modules/_navigation.scss */
 .show-menu {
   background-color: #353535;
   color: #fff;
@@ -205,14 +205,14 @@ header nav {
 }
 
 /*Hide checkbox*/
-/* line 104, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_navigation.scss */
+/* line 104, ../sass/partials/modules/_navigation.scss */
 input[type=checkbox] {
   display: none;
 }
 
 /*Show menu when invisible checkbox is checked*/
 /*Partners*/
-/* line 4, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_about.scss */
+/* line 4, ../sass/partials/modules/_about.scss */
 .partners {
   align-items: center;
   display: flex;
@@ -220,70 +220,70 @@ input[type=checkbox] {
   margin: 30px 0;
 }
 
-/* line 11, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_about.scss */
+/* line 11, ../sass/partials/modules/_about.scss */
 .partner-item {
   float: left;
   text-align: center;
   width: 15%;
 }
-/* line 15, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_about.scss */
+/* line 15, ../sass/partials/modules/_about.scss */
 .partner-item img {
   height: auto;
   max-width: 100%;
 }
 
-/* line 3, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_expert.scss */
+/* line 3, ../sass/partials/modules/_expert.scss */
 .experts {
   max-width: 1280px;
 }
 
-/* line 7, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_expert.scss */
+/* line 7, ../sass/partials/modules/_expert.scss */
 .info-experts {
   margin-bottom: 8%;
   overflow: hidden;
 }
 
-/* line 12, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_expert.scss */
+/* line 12, ../sass/partials/modules/_expert.scss */
 .info-experts h3 {
   margin-bottom: 2%;
 }
 
-/* line 16, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_expert.scss */
+/* line 16, ../sass/partials/modules/_expert.scss */
 .name-experts {
   text-align: right;
 }
 
-/* line 20, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_expert.scss */
+/* line 20, ../sass/partials/modules/_expert.scss */
 .name-experts + p {
   text-align: right;
 }
 
-/* line 24, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_expert.scss */
+/* line 24, ../sass/partials/modules/_expert.scss */
 .img-experts-right {
   max-width: 100%;
   float: left;
   margin: 0 2% 0 0;
 }
 
-/* line 30, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_expert.scss */
+/* line 30, ../sass/partials/modules/_expert.scss */
 .img-experts {
   max-width: 100%;
   float: right;
   margin: 0 0 5% 2%;
 }
 
-/* line 5, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_gallery.scss */
+/* line 5, ../sass/partials/modules/_gallery.scss */
 .grid {
   margin: 0 auto;
   width: 90%;
 }
 
-/* line 5, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 5, ../sass/partials/modules/_games.scss */
 .text-games {
   margin-bottom: 2%;
 }
 
-/* line 9, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 9, ../sass/partials/modules/_games.scss */
 .content-banners-games {
   margin: 5%;
   text-align: center; 
@@ -291,7 +291,7 @@ input[type=checkbox] {
   display: inline-block;
 }
 
-/* line 15, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 15, ../sass/partials/modules/_games.scss */
 .cont-game {
   width: 36%;
   max-width: 100%;
@@ -301,27 +301,27 @@ input[type=checkbox] {
   color: #fff;
 }
 
-/* line 24, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 24, ../sass/partials/modules/_games.scss */
 .banner-game-one {
   background-color: #4DB558;
 }
 
-/* line 28, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 28, ../sass/partials/modules/_games.scss */
 .banner-game-two {
   background-color: #ADDADD;
 }
 
-/* line 32, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 32, ../sass/partials/modules/_games.scss */
 .banner-game-three {
   background-color: #F59331;
 }
 
-/* line 36, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 36, ../sass/partials/modules/_games.scss */
 .banner-game-four {
   background-color: #d65f21;
 }
 
-/* line 40, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 40, ../sass/partials/modules/_games.scss */
 .overlay-games {
   width: 94%;
   height: 180px;
@@ -341,7 +341,7 @@ input[type=checkbox] {
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0);
     margin-top: 9.5px;
 }
-/* line 49, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 49, ../sass/partials/modules/_games.scss */
 .overlay-games:hover {
   background-color: rgba(0, 0, 0, 0);
   width: 380px;
@@ -350,7 +350,7 @@ input[type=checkbox] {
   box-shadow: none;
 }
 
-/* line 58, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 58, ../sass/partials/modules/_games.scss */
 .overlay-games-text {
   font-size: 2rem;
   float: left;
@@ -358,13 +358,13 @@ input[type=checkbox] {
   margin-top: 98px;
 }
 
-/* line 65, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 65, ../sass/partials/modules/_games.scss */
 .games-link {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 70, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games.scss */
+/* line 70, ../sass/partials/modules/_games.scss */
 .img-games-button {
   width: 8%;
   display: inline-block;
@@ -373,69 +373,69 @@ input[type=checkbox] {
   margin-left: -4%;
 }
 
-/* line 5, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 5, ../sass/partials/modules/_games-pages.scss */
 .info-game {
   overflow: hidden;
   margin: 0;
 }
-/* line 8, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 8, ../sass/partials/modules/_games-pages.scss */
 .info-game img {
   float: right;
   display: inline-block;
   width: 100%;
   margin: 50px 0;
 }
-/* line 14, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 14, ../sass/partials/modules/_games-pages.scss */
 .info-game li {
   font-family: "Muli";
   font-size: 1.2rem;
   line-height: 2.5rem;
 }
-/* line 19, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 19, ../sass/partials/modules/_games-pages.scss */
 .info-game h2 {
   margin: 20px 0;
 }
 
-/* line 24, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 24, ../sass/partials/modules/_games-pages.scss */
 .text-info-game {
   float: left;
   display: inline-block;
 }
 
-/* line 29, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 29, ../sass/partials/modules/_games-pages.scss */
 .play-game {
   margin: 0 auto;
 }
 
-/* line 33, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 33, ../sass/partials/modules/_games-pages.scss */
 .sub-menu-games {
   display: none;
 }
 
-/* line 37, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 37, ../sass/partials/modules/_games-pages.scss */
 .note-play {
   margin: 3 auto;
   text-align: center;
   font-family: "Iceland";
   font-size: 2.2rem;
 }
-/* line 42, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 42, ../sass/partials/modules/_games-pages.scss */
 .note-play span {
   text-transform: uppercase;
 }
 
-/* line 47, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 47, ../sass/partials/modules/_games-pages.scss */
 .main {
   background: url(../img/button.png) no-repeat;
   background-size: contain;
 }
-/* line 50, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 50, ../sass/partials/modules/_games-pages.scss */
 .main:active {
   background: url(../img/button-pressed.png) no-repeat;
   background-size: contain;
 }
 
-/* line 55, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 55, ../sass/partials/modules/_games-pages.scss */
 .btn {
   display: inline-block;
   border: none;
@@ -447,13 +447,13 @@ input[type=checkbox] {
   font-size: 2.6rem;
 }
 
-/* line 66, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_games-pages.scss */
+/* line 66, ../sass/partials/modules/_games-pages.scss */
 .controls-btn {
   width: 616px;
   margin: 0 auto;
 }
 
-/* line 5, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_videos.scss */
+/* line 5, ../sass/partials/modules/_videos.scss */
 .video {
   position: relative;
   padding-bottom: 56.25%;
@@ -461,7 +461,7 @@ input[type=checkbox] {
   z-index: 1;
 }
 
-/* line 13, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_videos.scss */
+/* line 13, ../sass/partials/modules/_videos.scss */
 .video iframe {
   display: inline-block;
   height: 90%;
@@ -470,7 +470,7 @@ input[type=checkbox] {
   width: 100%;
 }
 
-/* line 21, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_videos.scss */
+/* line 21, ../sass/partials/modules/_videos.scss */
 .video-cover {
   position: absolute;
   height: 100%;
@@ -478,49 +478,50 @@ input[type=checkbox] {
   z-index: 2;
 }
 
-/* line 29, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_videos.scss */
+/* line 29, ../sass/partials/modules/_videos.scss */
 #play-btn {
   border: none;
   display: block;
   height: auto;
-  margin: 20% 45%;
+  margin: 20% 46%;
   position: absolute;
-  width: 10%;
+  width: 8%;
   z-index: 3;
 }
 
-/* line 39, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/modules/_videos.scss */
+/* line 39, ../sass/partials/modules/_videos.scss */
 #play-btn-label {
   color: orange;
   display: block;
   font-family: "Iceland", serif;
   font-size: 2em;
-  margin: 30% 45% 0 45%;
+  margin: 30% auto 0 auto;
   position: absolute;
   text-align: center;
+  width: 100%;
   z-index: 3;
 }
 
 /*Responsive Styles*/
 /*Menu*/
 @media screen and (max-width: 1365px) {
-  /* line 5, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 5, ../sass/partials/_media-queries.scss */
   .nav-item a, .lang-item a {
     font-size: 1.25rem;
   }
 
-  /* line 9, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 9, ../sass/partials/_media-queries.scss */
   .main-nav, .lang-toggle {
     margin-top: 2%;
   }
 }
 @media screen and (max-width: 1023px) {
-  /* line 15, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 15, ../sass/partials/_media-queries.scss */
   header nav, .nav-logo {
     display: none;
   }
 
-  /* line 19, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 19, ../sass/partials/_media-queries.scss */
   header nav, .main-nav, .nav-item {
     float: none;
     margin: 0;
@@ -529,24 +530,24 @@ input[type=checkbox] {
     width: 100%;
   }
 
-  /* line 27, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 27, ../sass/partials/_media-queries.scss */
   header nav {
     background-color: #353535;
     height: auto;
   }
 
-  /* line 32, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 32, ../sass/partials/_media-queries.scss */
   .nav-item {
     border-bottom: 1px solid #f2f2f2;
     padding: 20px 0;
   }
 
-  /* line 37, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 37, ../sass/partials/_media-queries.scss */
   .nav-item a {
     font-size: 2rem;
   }
 
-  /* line 41, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 41, ../sass/partials/_media-queries.scss */
   .lang-toggle {
     float: none;
     margin: 0;
@@ -554,7 +555,7 @@ input[type=checkbox] {
     width: 100%;
   }
 
-  /* line 48, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 48, ../sass/partials/_media-queries.scss */
   .lang-item {
     border-bottom: 1px solid #f2f2f2;
     box-sizing: border-box;
@@ -564,22 +565,22 @@ input[type=checkbox] {
     width: 50%;
   }
 
-  /* line 57, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 57, ../sass/partials/_media-queries.scss */
   .lang-item a {
     font-size: 2rem;
   }
 
-  /* line 61, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 61, ../sass/partials/_media-queries.scss */
   .lang-item:first-child {
     border-right: 1px solid #f2f2f2;
   }
 
-  /* line 65, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 65, ../sass/partials/_media-queries.scss */
   .mobile-logo {
     display: block;
   }
 
-  /* line 69, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 69, ../sass/partials/_media-queries.scss */
   .show-menu {
     background: url(../img/menu-icon.svg) no-repeat center center;
     background-color: #353535;
@@ -589,54 +590,58 @@ input[type=checkbox] {
     margin: 0 auto;
   }
 
-  /* line 78, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 78, ../sass/partials/_media-queries.scss */
   input[type=checkbox]:checked ~ nav {
     display: block;
   }
 }
 /*Fin Menu*/
 /*Expert*/
-@media screen and (max-width: 1023px) {
+
+
   /* line 88, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+
+@media screen and (max-width: 1024px) {
+  /* line 88, ../sass/partials/_media-queries.scss */
   .margin-extra-experts {
     margin: 0 0 0 7%;
   }
 
-  /* line 91, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 91, ../sass/partials/_media-queries.scss */
   .move-left-image {
     margin: 0 0 0 7%;
   }
 
-  /* line 94, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 94, ../sass/partials/_media-queries.scss */
   .img-experts {
     margin: 0 7% 0 0;
   }
 
-  /* line 97, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 97, ../sass/partials/_media-queries.scss */
   .content-text-experts {
     margin: 0 0 0 7%;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 103, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 103, ../sass/partials/_media-queries.scss */
   .img-experts {
     margin: 0 23% 0 0;
     margin: 0 29% 0 0;
   }
 
-  /* line 106, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 106, ../sass/partials/_media-queries.scss */
   .content-text-experts {
     margin: 0 0 0 17%;
     margin-top: 6%;
     width: 75%;
   }
 
-  /* line 111, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 111, ../sass/partials/_media-queries.scss */
   .name-experts {
     display: inline-block;
   }
 
-  /* line 114, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 114, ../sass/partials/_media-queries.scss */
   .move-left-image {
     margin: 0 0 0 32%; }
 
@@ -663,16 +668,16 @@ input[type=checkbox] {
 /*Fin Expert*/
 /*Games*/
 @media screen and (max-width: 1366px) {
-  /* line 124, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 124, ../sass/partials/_media-queries.scss */
   .overlay-games {
     width: 336px;
   }
-  /* line 126, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 126, ../sass/partials/_media-queries.scss */
   .overlay-games:hover {
     width: 336px;
   }
 
-  /* line 130, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 130, ../sass/partials/_media-queries.scss */
   .cont-game {
 
     width: 360px; } }
@@ -681,21 +686,21 @@ input[type=checkbox] {
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 135, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 135, ../sass/partials/_media-queries.scss */
   .overlay-games {
     width: 256px;
   }
-  /* line 137, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 137, ../sass/partials/_media-queries.scss */
   .overlay-games:hover {
     width: 256px;
   }
 
-  /* line 141, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 141, ../sass/partials/_media-queries.scss */
   .cont-game {
     width: 280px;
   }
 
-  /* line 144, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 144, ../sass/partials/_media-queries.scss */
   .overlay-games-text {
     font-size: 1.5rem; } }
 @media screen and (max-width: 768px) {
@@ -713,7 +718,7 @@ input[type=checkbox] {
 /*Fin Games*/
 /*Games Pages*/
 @media (min-width: 1365px) {
-  /* line 154, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 154, ../sass/partials/_media-queries.scss */
   .btn {
     width: 155px;
     height: 51px;
@@ -721,7 +726,7 @@ input[type=checkbox] {
     font-size: 1.6rem;
   }
 
-  /* line 161, C:/Users/holtlanf999/Documents/GitHub/cetavgamejam.github.io/sass/partials/_media-queries.scss */
+  /* line 161, ../sass/partials/_media-queries.scss */
   .controls-btn {
     width: 353px;
   }
