@@ -78,7 +78,7 @@
 
 /*Expert*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .margin-extra-experts {
     margin: 0 0 0 7%;
   }
@@ -95,7 +95,8 @@
 
 @media screen and (max-width: 768px) {
   .img-experts {
-    margin: 0 29% 0 0;
+    margin: 0 23% 0 0;
+    margin-bottom: 40px;
   }
   .content-text-experts {
     margin: 0 0 0 17%;
@@ -107,14 +108,30 @@
   }
   .move-left-image {
     margin: 0 0 0 32%;
-}
-}
+  }
+  .info-experts {
+	margin-bottom: 8%;
+	overflow: hidden;
+	max-width: 680px;
+	text-align: center;
+	width: 95%;
+	margin-bottom:12px;
 
+	  p {
+	  	text-align: center;
+	    margin-bottom: 45px;
+	  }
+	}
+   .img-experts-right {
+   	float: none;
+   	margin-bottom: 40px;
+   }
+}
 /*Fin Expert*/
 
 /*Games*/
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1365px){
 .overlay-games {
 	 width: 336px;
 	 &:hover {
@@ -125,7 +142,7 @@
 	width: 360px;
 }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 .overlay-games {
 	 width: 256px;
 	 &:hover {
@@ -138,6 +155,18 @@
 .overlay-games-text {
 	font-size: 1.5rem;
 }
+}
+@media screen and (max-width:768px){
+ 	.cont-game {
+ 		width: 93%;
+ 	}
+ 	.overlay-games {
+ 		width: 95%;
+
+ 		&:hover {
+ 		  width: 95%;
+ 		}
+ 	}
 }
 
 /*Fin Games*/
