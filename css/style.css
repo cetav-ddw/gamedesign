@@ -36,6 +36,7 @@ section {
   font-family: "Iceland", serif;
   padding: 1% 0 2% 0;
   margin-bottom: 5%;
+  box-shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5);
   background-image: url(../img/background-green.png); }
 
 footer {
@@ -201,11 +202,10 @@ input[type=checkbox] {
 
 .content-banners-games {
   margin: 5%;
-  text-align: center;
-  display: inline-block; }
+  text-align: center; }
 
 .cont-game {
-  width: 400px;
+  width: 36%;
   max-width: 100%;
   height: 200px;
   display: inline-block;
@@ -225,7 +225,7 @@ input[type=checkbox] {
   background-color: #d65f21; }
 
 .overlay-games {
-  width: 380px;
+  width: 94%;
   height: 180px;
   max-width: 100%;
   margin-left: 10px;
@@ -235,7 +235,7 @@ input[type=checkbox] {
   margin-top: 9.5px; }
   .overlay-games:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    width: 380px;
+    width: 94%;
     height: 180px;
     display: block;
     box-shadow: none; }
@@ -383,7 +383,7 @@ input[type=checkbox] {
     display: block; } }
 /*Fin Menu*/
 /*Expert*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .margin-extra-experts {
     margin: 0 0 0 7%; }
 
@@ -397,7 +397,8 @@ input[type=checkbox] {
     margin: 0 0 0 7%; } }
 @media screen and (max-width: 768px) {
   .img-experts {
-    margin: 0 29% 0 0; }
+    margin: 0 23% 0 0;
+    margin-bottom: 40px; }
 
   .content-text-experts {
     margin: 0 0 0 17%;
@@ -408,10 +409,25 @@ input[type=checkbox] {
     display: inline-block; }
 
   .move-left-image {
-    margin: 0 0 0 32%; } }
+    margin: 0 0 0 32%; }
+
+  .info-experts {
+    margin-bottom: 8%;
+    overflow: hidden;
+    max-width: 680px;
+    text-align: center;
+    width: 95%;
+    margin-bottom: 12px; }
+    .info-experts p {
+      text-align: center;
+      margin-bottom: 45px; }
+
+  .img-experts-right {
+    float: none;
+    margin-bottom: 40px; } }
 /*Fin Expert*/
 /*Games*/
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1365px) {
   .overlay-games {
     width: 336px; }
     .overlay-games:hover {
@@ -419,7 +435,7 @@ input[type=checkbox] {
 
   .cont-game {
     width: 360px; } }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .overlay-games {
     width: 256px; }
     .overlay-games:hover {
@@ -430,6 +446,14 @@ input[type=checkbox] {
 
   .overlay-games-text {
     font-size: 1.5rem; } }
+@media screen and (max-width: 768px) {
+  .cont-game {
+    width: 93%; }
+
+  .overlay-games {
+    width: 95%; }
+    .overlay-games:hover {
+      width: 95%; } }
 /*Fin Games*/
 /*Games Pages*/
 @media (min-width: 1365px) {
