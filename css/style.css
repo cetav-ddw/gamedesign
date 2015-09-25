@@ -269,7 +269,8 @@ input[type=checkbox] {
 
 .text-info-game {
   float: left;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
   .text-info-game h3 {
     margin: 31px 0; }
 
@@ -490,7 +491,7 @@ input[type=checkbox] {
       width: 95%; } }
 /*Fin Games*/
 /*Games Pages*/
-@media (min-width: 1365px) {
+@media (min-width: 768px) {
   .btn {
     width: 155px;
     height: 51px;
@@ -498,7 +499,35 @@ input[type=checkbox] {
     font-size: 1.6rem; }
 
   .controls-btn {
-    width: 353px; } }
+    width: 353px; }
+
+  .info-game {
+    margin: 100px 0; }
+    .info-game img {
+      float: left;
+      display: inline-block;
+      margin: 0 10% 0 0;
+      width: 40%; }
+    .info-game li {
+      font-family: "Muli";
+      font-size: 1.2rem;
+      line-height: 2.5rem; }
+    .info-game h2 {
+      margin-bottom: 20px; }
+
+  .text-info-game {
+    float: right;
+    display: inline-block;
+    width: 50%; }
+    .text-info-game h3 {
+      margin: 31px 0; }
+
+  .note-play {
+    margin: 6 auto;
+    font-size: 1rem; }
+
+  .play-game {
+    margin-bottom: 20px; } }
 /*Fin Games Pages*/
 
 /*# sourceMappingURL=style.css.map */
