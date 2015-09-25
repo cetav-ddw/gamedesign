@@ -3,7 +3,11 @@
 /*Menu*/
 @media screen and (max-width: 1365px){
 	.nav-item a, .lang-item a{
-		font-size: 1.5rem;
+		font-size: 1.25rem;
+	}
+
+	.main-nav, .lang-toggle{
+		margin-top: 2%;
 	}
 }
 
@@ -64,8 +68,10 @@
 
 	.show-menu {
 		background: url(../img/menu-icon.svg) no-repeat center center;
+		background-color: #353535;
 		display: block;
 		font-size: 2rem;
+		height: 50px;
 		margin: 0 auto;
 	}
 
