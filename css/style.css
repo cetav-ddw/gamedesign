@@ -375,8 +375,10 @@ input[type=checkbox] {
 
   .show-menu {
     background: url(../img/menu-icon.svg) no-repeat center center;
+    background-color: #353535;
     display: block;
     font-size: 2rem;
+    height: 50px;
     margin: 0 auto; }
 
   input[type=checkbox]:checked ~ nav {
