@@ -684,17 +684,17 @@ input[type=checkbox] {
 @media screen and (max-width: 1365px) {
   /* line 141, ../sass/partials/_media-queries.scss */
   .overlay-games {
-    width: 336px;
+    width: 94%;
   }
   /* line 143, ../sass/partials/_media-queries.scss */
   .overlay-games:hover {
-    width: 336px;
+    width: 94%;
   }
 
   /* line 147, ../sass/partials/_media-queries.scss */
   .cont-game {
 
-    width: 360px; } }
+    width: 47%; } }
 @media screen and (max-width: 1023px) {
 
 
