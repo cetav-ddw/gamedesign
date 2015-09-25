@@ -1,42 +1,32 @@
-.content-demo{
-	padding: 100px 10%;
-}
+// 
+// Games Pages
+//
+
 .info-game{ 
 	overflow: hidden;
 	margin: 0;
-	width: 100%;
 	img{
 		float: right;
     		display: inline-block;
     		width: 100%;
     		margin: 50px 0;
 	}
-	p, li{
+	li{
 		font-family: "Muli";
-		 font-size: 1.5rem;
+		 font-size: 1.2rem;
 		 line-height: 2.5rem;
 	} 
 	h2{
-		margin: 0 0 20px;
-		width: 100%;
-		font-family: "Iceland";
 		margin: 20px 0;
-		font-size: 4rem;
-	}
-	h3{
-		font-family: "Iceland";
-		font-size: 3rem;
 	}
 }
 
 .text-info-game{
 	float: left;
-    	display: inline-block;
-    	width: 100%;
+  display: inline-block;
 }
 
 .play-game{
-	width: 100%;
 	margin: 0 auto;
 }
 

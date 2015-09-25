@@ -12,7 +12,7 @@ ul {
 
 p {
   font-family: "Muli", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: 0; }
 
@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
   margin: 0;
   padding: 0; }
 
-h3 {
+h2, h3 {
   font-size: 2.5rem;
   font-family: "Iceland", serif; }
 
@@ -190,7 +190,7 @@ input[type=checkbox] {
 .img-experts {
   max-width: 100%;
   float: right;
-  margin: 0 0 0 2%; }
+  margin: 0 0 5% 2%; }
 
 .grid {
   margin: 0 auto;
@@ -257,39 +257,26 @@ input[type=checkbox] {
   position: absolute;
   margin-left: -4%; }
 
-.content-demo {
-  padding: 100px 10%; }
-
 .info-game {
   overflow: hidden;
-  margin: 0;
-  width: 100%; }
+  margin: 0; }
   .info-game img {
     float: right;
     display: inline-block;
     width: 100%;
     margin: 50px 0; }
-  .info-game p, .info-game li {
+  .info-game li {
     font-family: "Muli";
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.5rem; }
   .info-game h2 {
-    margin: 0 0 20px;
-    width: 100%;
-    font-family: "Iceland";
-    margin: 20px 0;
-    font-size: 4rem; }
-  .info-game h3 {
-    font-family: "Iceland";
-    font-size: 3rem; }
+    margin: 20px 0; }
 
 .text-info-game {
   float: left;
-  display: inline-block;
-  width: 100%; }
+  display: inline-block; }
 
 .play-game {
-  width: 100%;
   margin: 0 auto; }
 
 .sub-menu-games {
