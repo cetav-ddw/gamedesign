@@ -37,6 +37,10 @@ section {
   margin: 0 auto;
 }
 
+button:focus, button:active {
+  outline: 0;
+}
+
 .title-main {
   color: $title-color;
 	font-size:5rem;

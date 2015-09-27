@@ -1,48 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Iceland|Muli);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
-/* line 5, ../sass/partials/_base.scss */
 a {
-  font-family: "Iceland", serif;
-}
+  font-family: "Iceland", serif; }
 
-/* line 9, ../sass/partials/_base.scss */
 li {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 13, ../sass/partials/_base.scss */
 ul {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 18, ../sass/partials/_base.scss */
 p {
   font-family: "Muli", sans-serif;
   font-size: 1.2rem;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 25, ../sass/partials/_base.scss */
 h1, h2, h3, h4 {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 30, ../sass/partials/_base.scss */
 h2, h3 {
   font-size: 2.5rem;
-  font-family: "Iceland", serif;
-}
+  font-family: "Iceland", serif; }
 
-/* line 35, ../sass/partials/_base.scss */
 section {
   width: 80%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
-/* line 40, ../sass/partials/_base.scss */
+button:focus, button:active {
+  outline: 0; }
+
 .title-main {
   color: #359e97;
   font-size: 5rem;
@@ -51,439 +39,300 @@ section {
   font-family: "Iceland", serif;
   padding: 1% 0 2% 0;
   margin-bottom: 5%;
-  box-shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0);
-  background-image: url(../img/background-general.gif);
-}
+  box-shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5);
+  background-image: url(../img/background-general.gif); }
 
-/* line 52, ../sass/partials/_base.scss */
 footer {
   background: #353535;
   background-image: url(../img/background-general.gif);
   height: 140px;
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 59, ../sass/partials/_base.scss */
 .text-footer {
   font-size: 1.5rem;
   font-family: "Iceland", serif;
   display: inline-block;
   width: 60%;
   color: #E8EBED;
-  margin-top: 44px;
-}
+  margin-top: 44px; }
 
-/* line 68, ../sass/partials/_base.scss */
 .content-info-footer {
-  margin-top: 60px;
-}
+  margin-top: 60px; }
 
-/* line 3, ../sass/partials/modules/_header.scss */
 header {
   background: url(../img/background-general.gif);
   overflow: hidden;
   width: 100%;
-  margin-bottom: 5%;
-}
+  margin-bottom: 5%; }
 
-/* line 10, ../sass/partials/modules/_header.scss */
 .header-logo {
   display: block;
   height: auto;
-  margin: 10% auto 13% auto;
-}
+  margin: 10% auto 13% auto; }
 
-/* line 1, ../sass/partials/modules/_navigation.scss */
 header nav {
   box-sizing: border-box;
   display: block;
   height: 90px;
   margin: 0 auto;
   padding: 10px 2%;
-  width: 85%;
-}
+  width: 85%; }
 
 /*Navbar Styles*/
-/* line 12, ../sass/partials/modules/_navigation.scss */
 .nav-logo {
   float: left;
   height: auto;
   margin-right: 2%;
-  max-width: 10%;
-}
+  max-width: 10%; }
 
-/* line 19, ../sass/partials/modules/_navigation.scss */
 .main-nav {
   float: left;
   overflow: hidden;
-  width: 65%;
-}
+  width: 65%; }
 
-/* line 25, ../sass/partials/modules/_navigation.scss */
 .sub-nav {
   display: none;
   width: 100%;
-  padding: 10px 0 0;
-}
+  padding: 10px 0 0; }
 
-/* line 31, ../sass/partials/modules/_navigation.scss */
 .nav-item {
   display: inline-block;
   float: left;
-  margin: 5px 2%;
-}
-/* line 37, ../sass/partials/modules/_navigation.scss */
-.nav-item:hover .sub-nav {
-  display: inline-block;
-}
+  margin: 5px 2%; }
+  .nav-item:hover .sub-nav {
+    display: inline-block; }
 
-/* line 43, ../sass/partials/modules/_navigation.scss */
 .nav-item a {
-  color: white;
+  color: #fff;
   font-size: 2rem;
   padding: 2px;
   text-decoration: none;
-  text-transform: capitalize;
-}
-/* line 50, ../sass/partials/modules/_navigation.scss */
-.nav-item a:hover {
-  border-bottom: 2px solid #f2f2f2;
-}
+  text-transform: capitalize; }
+  .nav-item a:hover {
+    border-bottom: 2px solid #f2f2f2; }
 
-/* line 55, ../sass/partials/modules/_navigation.scss */
 .sub-nav-item {
   margin: 2% 0;
-  width: 100%;
-}
+  width: 100%; }
 
 /*Language Toggle*/
-/* line 62, ../sass/partials/modules/_navigation.scss */
 .lang-toggle {
   float: right;
   overflow: hidden;
   padding: 10px;
-  width: 10%;
-}
+  width: 10%; }
 
-/* line 69, ../sass/partials/modules/_navigation.scss */
 .lang-item {
   float: left;
-  margin-right: 10%;
-}
+  margin-right: 10%; }
 
-/* line 74, ../sass/partials/modules/_navigation.scss */
 .lang-item a {
-  color: white;
+  color: #fff;
   font-size: 2rem;
   padding: 2px;
   text-decoration: none;
-  text-transform: capitalize;
-}
-/* line 81, ../sass/partials/modules/_navigation.scss */
-.lang-item a:hover {
-  border-bottom: 2px solid #f2f2f2;
-}
+  text-transform: capitalize; }
+  .lang-item a:hover {
+    border-bottom: 2px solid #f2f2f2; }
 
-/* line 86, ../sass/partials/modules/_navigation.scss */
 .mobile-logo {
   display: none;
   margin: 20px auto;
   text-align: center;
-  width: 100%;
-}
+  width: 100%; }
 
 /*Navigation Menu Button*/
-/* line 94, ../sass/partials/modules/_navigation.scss */
 .show-menu {
-  display: none;
-}
+  display: none; }
 
 /*Hide checkbox*/
-/* line 99, ../sass/partials/modules/_navigation.scss */
 input[type=checkbox] {
-  display: none;
-}
+  display: none; }
 
 /*Show menu when invisible checkbox is checked*/
 /*Partners*/
-/* line 4, ../sass/partials/modules/_about.scss */
 .partners {
   align-items: center;
   display: flex;
   width: 85%;
-  margin: 30px auto;
-}
+  margin: 30px auto; }
 
-/* line 11, ../sass/partials/modules/_about.scss */
 .partner-item {
   float: left;
   text-align: center;
-  width: 20%;
-}
-/* line 15, ../sass/partials/modules/_about.scss */
-.partner-item img {
-  height: auto;
-  max-width: 100%;
-}
+  width: 20%; }
+  .partner-item img {
+    height: auto;
+    max-width: 100%; }
 
-/* line 3, ../sass/partials/modules/_expert.scss */
 .experts {
-  max-width: 1280px;
-}
+  width: 900px;
+  margin: 0 auto; }
 
-/* line 7, ../sass/partials/modules/_expert.scss */
+.experts li {
+  display: inline-block; }
+
 .info-experts {
-  margin-bottom: 8%;
-  overflow: hidden;
-}
+  margin-bottom: 10%; }
 
-/* line 12, ../sass/partials/modules/_expert.scss */
-.info-experts h3 {
-  margin-bottom: 2%;
-}
-
-/* line 16, ../sass/partials/modules/_expert.scss */
-.name-experts {
-  text-align: right;
-}
-
-/* line 20, ../sass/partials/modules/_expert.scss */
-.name-experts + p {
-  text-align: right;
-}
-
-/* line 24, ../sass/partials/modules/_expert.scss */
 .img-experts-right {
-  max-width: 100%;
-  float: left;
-  margin: 0 2% 0 0;
-}
-
-/* line 30, ../sass/partials/modules/_expert.scss */
-.img-experts {
-  max-width: 100%;
   float: right;
-  margin: 0 0 5% 2%;
-}
+  margin: 30px 0; }
 
-/* line 5, ../sass/partials/modules/_gallery.scss */
+.img-experts-left {
+  float: left; }
+
 .grid {
   margin: 0 auto;
-  width: 90%;
-}
+  width: 90%; }
 
-/* line 5, ../sass/partials/modules/_games.scss */
 .text-games {
-  margin-bottom: 2%;
-}
+  margin-bottom: 2%; }
 
-/* line 9, ../sass/partials/modules/_games.scss */
 .content-banners-games {
   margin: 5%;
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 14, ../sass/partials/modules/_games.scss */
 .cont-game {
   width: 36%;
   max-width: 100%;
   height: 200px;
   display: inline-block;
   margin: 1%;
-  color: #fff;
-}
+  color: #fff; }
 
-/* line 23, ../sass/partials/modules/_games.scss */
 .banner-game-one {
-  background-color: #4DB558;
-}
+  background-color: #4DB558; }
 
-/* line 27, ../sass/partials/modules/_games.scss */
 .banner-game-two {
-  background-color: #ADDADD;
-}
+  background-color: #ADDADD; }
 
-/* line 31, ../sass/partials/modules/_games.scss */
 .banner-game-three {
-  background-color: #F59331;
-}
+  background-color: #F59331; }
 
-/* line 35, ../sass/partials/modules/_games.scss */
 .banner-game-four {
-  background-color: #d65f21;
-}
+  background-color: #d65f21; }
 
-/* line 39, ../sass/partials/modules/_games.scss */
 .overlay-games {
   width: 94%;
   height: 180px;
   max-width: 100%;
   margin-left: 10px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0);
-  margin-top: 9.5px;
-}
-/* line 48, ../sass/partials/modules/_games.scss */
-.overlay-games:hover {
-  background-color: rgba(0, 0, 0, 0);
-  width: 94%;
-  height: 180px;
-  display: block;
-  box-shadow: none;
-}
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+  margin-top: 9.5px; }
+  .overlay-games:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 94%;
+    height: 180px;
+    display: block;
+    box-shadow: none; }
 
-/* line 57, ../sass/partials/modules/_games.scss */
 .overlay-games-text {
   font-size: 2rem;
   float: left;
   width: 99%;
-  margin-top: 98px;
-}
+  margin-top: 98px; }
 
-/* line 64, ../sass/partials/modules/_games.scss */
 .games-link {
   text-decoration: none;
-  color: #fff;
-}
+  color: #fff; }
 
-/* line 69, ../sass/partials/modules/_games.scss */
 .img-games-button {
   width: 8%;
   display: inline-block;
   height: 140px;
   position: absolute;
-  margin-left: -4%;
-}
+  margin-left: -4%; }
 
-/* line 5, ../sass/partials/modules/_games-pages.scss */
 .info-game {
-  margin: 0;
   overflow: hidden;
-}
-/* line 9, ../sass/partials/modules/_games-pages.scss */
-.info-game img {
+  margin: 100px 0; }
+  .info-game img {
+    float: left;
+    display: inline-block;
+    margin: 0 10% 0 0;
+    width: 40%; }
+  .info-game li {
+    font-family: "Muli";
+    font-size: 1.2rem;
+    line-height: 2.5rem; }
+  .info-game h2 {
+    margin-bottom: 20px; }
+
+.sub-menu-games {
+  display: none; }
+
+.text-info-game {
   float: right;
   display: inline-block;
-  margin: 50px 0;
-  width: 100%;
-}
-/* line 16, ../sass/partials/modules/_games-pages.scss */
-.info-game li {
-  font-family: "Muli";
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-}
-/* line 21, ../sass/partials/modules/_games-pages.scss */
-.info-game h2 {
-  margin: 20px 0;
-}
+  width: 50%; }
+  .text-info-game h3 {
+    margin: 31px 0; }
 
-/* line 26, ../sass/partials/modules/_games-pages.scss */
-.text-info-game {
-  float: left;
-  display: inline-block;
-  width: 100%;
-}
-/* line 31, ../sass/partials/modules/_games-pages.scss */
-.text-info-game h3 {
-  margin: 31px 0;
-}
-
-/* line 36, ../sass/partials/modules/_games-pages.scss */
 .play-game {
-  margin: 0 auto;
-}
+  margin-bottom: 20px; }
 
-/* line 40, ../sass/partials/modules/_games-pages.scss */
 .sub-menu-games {
-  display: none;
-}
+  display: none; }
 
-/* line 44, ../sass/partials/modules/_games-pages.scss */
 .note-play {
-  margin: 3 auto;
+  font-size: 1rem;
   text-align: center;
-  font-family: "Iceland";
-  font-size: 2.2rem;
-}
-/* line 49, ../sass/partials/modules/_games-pages.scss */
-.note-play span {
-  text-transform: uppercase;
-}
+  font-family: "Iceland"; }
+  .note-play span {
+    text-transform: uppercase; }
 
 /*Estilos de los Botones*/
-/* line 56, ../sass/partials/modules/_games-pages.scss */
 .main {
   background: url(../img/button.png) no-repeat;
-  background-size: contain;
-}
-/* line 59, ../sass/partials/modules/_games-pages.scss */
-.main:active {
-  background: url(../img/button-pressed.png) no-repeat;
-  background-size: contain;
-}
-/* line 63, ../sass/partials/modules/_games-pages.scss */
-.main:hover {
-  background: url(../img/button-pressed.png) no-repeat;
-  background-size: contain;
-}
+  background-size: contain; }
+  .main:active {
+    background: url(../img/button-pressed.png) no-repeat;
+    background-size: contain; }
 
-/* line 68, ../sass/partials/modules/_games-pages.scss */
 .btn {
+  width: 155px;
+  height: 51px;
+  margin: 0 10px;
+  font-size: 1.6rem;
   display: inline-block;
   border: none;
-  width: 272px;
-  height: 90px;
-  margin: 0 18px;
   font-family: 'Iceland', sans-serif;
-  color: #fff;
-  font-size: 2.6rem;
-}
+  color: #fff; }
 
-/* line 79, ../sass/partials/modules/_games-pages.scss */
 .controls-btn {
-  width: 616px;
   margin: 0 auto;
-}
+  width: 353px; }
 
-/* line 5, ../sass/partials/modules/_videos.scss */
 .video {
   position: relative;
   padding-bottom: 56.25%;
   margin: -5% auto 0 auto;
-  z-index: 1;
-}
+  z-index: 1; }
 
-/* line 13, ../sass/partials/modules/_videos.scss */
 .video iframe {
   display: inline-block;
   height: 90%;
   margin: 0 auto;
   position: absolute;
-  width: 100%;
-}
+  width: 100%; }
 
-/* line 21, ../sass/partials/modules/_videos.scss */
 .video-cover {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 2;
-}
+  z-index: 2; }
 
-/* line 29, ../sass/partials/modules/_videos.scss */
 #play-btn {
   border: none;
   display: block;
   height: auto;
-  margin: 20% 47%;
+  margin: 24% 47%;
   position: absolute;
-  width: 6%;
-  z-index: 3;
-}
+  z-index: 3; }
 
-/* line 39, ../sass/partials/modules/_videos.scss */
 #play-btn-label {
   color: orange;
   display: block;
@@ -493,281 +342,169 @@ input[type=checkbox] {
   position: absolute;
   text-align: center;
   width: 100%;
-  z-index: 3;
-}
+  z-index: 3; }
 
 /*Responsive Styles*/
 /*Menu*/
 @media screen and (max-width: 1365px) {
-  /* line 5, ../sass/partials/_media-queries.scss */
   .nav-item a, .lang-item a {
-    font-size: 1.25rem;
-  }
+    font-size: 1.25rem; }
 
-  /* line 9, ../sass/partials/_media-queries.scss */
   .main-nav, .lang-toggle {
-    margin-top: 2%;
-  }
-}
+    margin-top: 2%; } }
 @media screen and (max-width: 1023px) {
-  /* line 15, ../sass/partials/_media-queries.scss */
   header nav, .nav-logo {
-    display: none;
-  }
+    display: none; }
 
-  /* line 19, ../sass/partials/_media-queries.scss */
   header nav, .main-nav, .nav-item {
     float: none;
     margin: 0;
     padding: 0;
     text-align: center;
-    width: 100%;
-  }
+    width: 100%; }
 
-  /* line 27, ../sass/partials/_media-queries.scss */
   header nav {
-    background-color: rgba(0, 0, 0, 0);
-    height: auto;
-  }
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto; }
 
-  /* line 32, ../sass/partials/_media-queries.scss */
   .nav-item {
     border-bottom: 1px solid #f2f2f2;
-    padding: 20px 0;
-  }
+    padding: 20px 0; }
 
-  /* line 37, ../sass/partials/_media-queries.scss */
   .nav-item a {
-    font-size: 2rem;
-  }
+    font-size: 2rem; }
 
-  /* line 41, ../sass/partials/_media-queries.scss */
   .lang-toggle {
     float: none;
     margin: 0;
     padding: 0;
-    width: 100%;
-  }
+    width: 100%; }
 
-  /* line 48, ../sass/partials/_media-queries.scss */
   .lang-item {
     border-bottom: 1px solid #f2f2f2;
     box-sizing: border-box;
     margin: 0;
     padding: 20px 0;
     text-align: center;
-    width: 50%;
-  }
+    width: 50%; }
 
-  /* line 57, ../sass/partials/_media-queries.scss */
   .lang-item a {
-    font-size: 2rem;
-  }
+    font-size: 2rem; }
 
-  /* line 61, ../sass/partials/_media-queries.scss */
   .lang-item:first-child {
-    border-right: 1px solid #f2f2f2;
-  }
+    border-right: 1px solid #f2f2f2; }
 
-  /* line 65, ../sass/partials/_media-queries.scss */
   .mobile-logo {
-    display: block;
-  }
+    display: block; }
 
-  /* line 69, ../sass/partials/_media-queries.scss */
   .show-menu {
     color: #f2f2f2;
     display: block;
     float: left;
-    height: 40px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 40px;
+    height: 43px;
+    margin: 20px;
     overflow: hidden;
-  }
+    background: url(../img/menu-icon.png);
+    background-position: 0 43px; }
 
-  /* line 79, ../sass/partials/_media-queries.scss */
+  input[type="checkbox"]:checked + label {
+    -webkit-animation: MOVE-BG 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards; }
+
+  @-webkit-keyframes MOVE-BG {
+    0% {
+      background-position: 0 43px; }
+    100% {
+      background-position: 0 83px; } }
   input[type=checkbox]:checked ~ nav {
-    display: block;
-  }
-}
+    display: block; } }
 /*Fin Menu*/
 /*Expert*/
-@media screen and (max-width: 1023px) {
-  /* line 89, ../sass/partials/_media-queries.scss */
-  .margin-extra-experts {
-    margin: 0 0 0 7%;
-  }
+@media screen and (max-width: 920px) {
+  .experts {
+    width: inherit;
+    margin: 0 5%; }
 
-  /* line 92, ../sass/partials/_media-queries.scss */
-  .move-left-image {
-    margin: 0 0 0 7%;
-  }
-
-  /* line 95, ../sass/partials/_media-queries.scss */
-  .img-experts {
-    margin: 0 7% 0 0;
-  }
-
-  /* line 98, ../sass/partials/_media-queries.scss */
-  .content-text-experts {
-    margin: 0 0 0 7%;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* line 104, ../sass/partials/_media-queries.scss */
-  .img-experts {
-    margin: 0 23% 0 0;
-    margin-bottom: 40px;
-  }
-
-  /* line 108, ../sass/partials/_media-queries.scss */
-  .content-text-experts {
-    margin: 0 0 0 17%;
-    margin-top: 6%;
-    width: 75%;
-  }
-
-  /* line 113, ../sass/partials/_media-queries.scss */
-  .name-experts {
-    display: inline-block;
-  }
-
-  /* line 116, ../sass/partials/_media-queries.scss */
-  .move-left-image {
-    margin: 0 0 0 32%;
-  }
-
-  /* line 119, ../sass/partials/_media-queries.scss */
   .info-experts {
-    margin-bottom: 8%;
-    overflow: hidden;
-    max-width: 680px;
-    text-align: center;
-    width: 95%;
-    margin-bottom: 12px;
-  }
-  /* line 127, ../sass/partials/_media-queries.scss */
-  .info-experts p {
-    text-align: center;
-    margin-bottom: 45px;
-  }
+    width: 100%;
+    margin-bottom: 2%; }
 
-  /* line 132, ../sass/partials/_media-queries.scss */
-  .img-experts-right {
-    float: none;
-    margin-bottom: 40px;
-  }
-}
+  .img-experts-right, .img-experts-left {
+    float: inherit;
+    margin: inherit;
+    display: block;
+    margin: 0 auto; } }
+@media only screen and (max-device-width: 384px) {
+  .experts {
+    width: inherit;
+    margin: 0 5%; }
+
+  .info-experts {
+    width: 100%;
+    margin-bottom: 2%; }
+
+  .img-experts-right, .img-experts-left {
+    float: inherit;
+    margin: inherit;
+    display: block;
+    margin: 0 auto; } }
 /*Fin Expert*/
 /*Games*/
 @media screen and (max-width: 1365px) {
-  /* line 142, ../sass/partials/_media-queries.scss */
   .overlay-games {
-    width: 336px;
-  }
-  /* line 144, ../sass/partials/_media-queries.scss */
-  .overlay-games:hover {
-    width: 336px;
-  }
+    width: 336px; }
+    .overlay-games:hover {
+      width: 336px; }
 
-  /* line 148, ../sass/partials/_media-queries.scss */
   .cont-game {
-    width: 360px;
-  }
-}
+    width: 360px; } }
 @media screen and (max-width: 1023px) {
-  /* line 153, ../sass/partials/_media-queries.scss */
   .overlay-games {
-    width: 256px;
-  }
-  /* line 155, ../sass/partials/_media-queries.scss */
-  .overlay-games:hover {
-    width: 256px;
-  }
+    width: 256px; }
+    .overlay-games:hover {
+      width: 256px; }
 
-  /* line 159, ../sass/partials/_media-queries.scss */
   .cont-game {
-    width: 280px;
-  }
+    width: 280px; }
 
-  /* line 162, ../sass/partials/_media-queries.scss */
   .overlay-games-text {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* line 167, ../sass/partials/_media-queries.scss */
+    font-size: 1.5rem; } }
+@media only screen and (max-device-width: 768px) {
   .cont-game {
-    width: 93%;
-  }
+    width: 93%; }
 
-  /* line 170, ../sass/partials/_media-queries.scss */
   .overlay-games {
-    width: 95%;
-  }
-  /* line 173, ../sass/partials/_media-queries.scss */
-  .overlay-games:hover {
-    width: 95%;
-  }
-}
+    width: 96%; }
+    .overlay-games:hover {
+      width: 96%; } }
 /*Fin Games*/
 /*Games Pages*/
-@media (min-width: 768px) {
-  /* line 188, ../sass/partials/_media-queries.scss */
-  .btn {
-    width: 155px;
-    height: 51px;
-    margin: 0 10px;
-    font-size: 1.6rem;
-  }
+@media only screen and (max-device-width: 768px) {
+  .play-game, .note-play {
+    display: none; }
 
-  /* line 195, ../sass/partials/_media-queries.scss */
-  .controls-btn {
-    width: 353px;
-  }
-
-  /* line 198, ../sass/partials/_media-queries.scss */
   .info-game {
-    margin: 100px 0;
-  }
-  /* line 200, ../sass/partials/_media-queries.scss */
-  .info-game img {
+    margin: 0;
+    overflow: hidden; }
+    .info-game img {
+      display: inline-block;
+      margin-top: 5%;
+      width: 100%; }
+    .info-game li {
+      font-family: "Muli";
+      font-size: 1.2rem;
+      line-height: 2.5rem; }
+    .info-game h2 {
+      margin: 20px 0; }
+
+  .text-info-game {
     float: left;
     display: inline-block;
-    margin: 0 10% 0 0;
-    width: 40%;
-  }
-  /* line 207, ../sass/partials/_media-queries.scss */
-  .info-game li {
-    font-family: "Muli";
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-  }
-  /* line 213, ../sass/partials/_media-queries.scss */
-  .info-game h2 {
-    margin-bottom: 20px;
-  }
-
-  /* line 218, ../sass/partials/_media-queries.scss */
-  .text-info-game {
-    float: right;
-    display: inline-block;
-    width: 50%;
-  }
-  /* line 223, ../sass/partials/_media-queries.scss */
-  .text-info-game h3 {
-    margin: 31px 0;
-  }
-
-  /* line 227, ../sass/partials/_media-queries.scss */
-  .note-play {
-    margin: 6 auto;
-    font-size: 1rem;
-  }
-
-  /* line 231, ../sass/partials/_media-queries.scss */
-  .play-game {
-    margin-bottom: 20px;
-  }
-}
+    width: 100%; }
+    .text-info-game h3 {
+      margin: 31px 0; } }
 /*Fin Games Pages*/
+
+/*# sourceMappingURL=style.css.map */

@@ -2,81 +2,79 @@
 // Games Pages
 //
 
-.info-game{ 
-	margin: 0;
-	overflow: hidden;
-	
-	img{
-		float: right;
-    		display: inline-block;
-    		margin: 50px 0;
-    		width: 100%;
-    		
-	}
-	li{
-		font-family: "Muli";
-		 font-size: 1.2rem;
-		 line-height: 2.5rem;
-	} 
-	h2 {
-		margin: 20px 0;
-	}
-}
+  .info-game{ 
+    overflow: hidden;
+    margin: 100px 0;
+    img{
+      float: left;
+          display: inline-block;
+          margin: 0 10% 0 0;
+          width: 40%;
+        
+    }
+    li{
+      font-family: "Muli";
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+    } 
 
-.text-info-game{
-	float: left;
-  	display: inline-block;
-  	width: 100%;
-  	
-  	h3{
-  		margin: 31px 0;
-	}
-}
+    h2{
+      margin-bottom: 20px;
+    }
+  }
+  .sub-menu-games{
+    display: none;
+  }
+  .text-info-game{
+    float: right;
+      display: inline-block;
+      width: 50%;
+    
+      h3{
+        margin: 31px 0;
+    }
+  }
+  .play-game{
+    margin-bottom: 20px;
+  }
 
-.play-game{
-	margin: 0 auto;
-}
+  .sub-menu-games{
+    display: none;
+  }
 
-.sub-menu-games{
-	display: none;
-}
+  .note-play{
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Iceland";
+    span{
+      text-transform: uppercase;
+    }
+  }
 
-.note-play{
-	margin: 3 auto;
-    	text-align: center;
-    	font-family: "Iceland";
-    	font-size: 2.2rem;
-	span{
-		text-transform: uppercase;
-	}
-}
 
 /*Estilos de los Botones*/
 
 .main{
-	background: url(../img/button.png) no-repeat;
-	background-size: contain;
-	&:active{
-    		background: url(../img/button-pressed.png) no-repeat;
-    		background-size: contain;
-    	}
-    	&:hover{
-    		background: url(../img/button-pressed.png) no-repeat;
-    		background-size: contain;
-    	}
-}
-.btn{
-    display: inline-block;
-    border: none;
-    width: 272px;
-    height: 90px;
-    margin: 0 18px;
-    font-family: 'Iceland', sans-serif;
-    color: #fff;
-    font-size: 2.6rem;
+  background: url(../img/button.png) no-repeat;
+  background-size: contain;
+  &:active{
+        background: url(../img/button-pressed.png) no-repeat;
+        background-size: contain;
+      }
 }
 
-.controls-btn{
-	width: 616px;
-	margin: 0 auto;
+.btn {
+    width: 155px;
+    height: 51px;
+    margin: 0 10px;
+    font-size: 1.6rem;
+    display: inline-block;
+    border: none;
+    font-family: 'Iceland', sans-serif;
+    color: #fff;
+}
+
+.controls-btn {
+      margin: 0 auto;
+  width: 353px;
 }

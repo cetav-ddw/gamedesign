@@ -67,73 +67,77 @@
 	}
 
 	.show-menu {
-		color: #f2f2f2;
-		display: block;
-		float: left;
-		height: 40px;
-		margin: 0 auto;
-		padding: 20px;
-		overflow: hidden;
-	}
+    color: #f2f2f2;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 43px;
+    margin: 20px;
+    overflow: hidden;
+    background: url(../img/menu-icon.png);
+    background-position: 0 43px; 
+  }
 
-	input[type=checkbox]:checked ~ nav{
-		display: block;
-	}
+  input[type="checkbox"]:checked + label {
+    -webkit-animation: MOVE-BG 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes MOVE-BG {
+    0% { background-position: 0 43px;  }
+    100% { background-position: 0 83px;  }
+  }
+
+  input[type=checkbox]:checked ~ nav{
+      display: block;
+  }
+
 }
-
 /*Fin Menu*/
 
 /*Expert*/
 
-@media screen and (max-width: 1023px) {
-  .margin-extra-experts {
-    margin: 0 0 0 7%;
-  }
-  .move-left-image {
-    margin: 0 0 0 7%;
-  }
-  .img-experts {
-    margin: 0 7% 0 0;
-  }
-  .content-text-experts {
-    margin: 0 0 0 7%;
-  }
-}
+@media screen and (max-width: 920px)  {
 
-@media screen and (max-width: 768px) {
-  .img-experts {
-    margin: 0 23% 0 0;
-    margin-bottom: 40px;
+  .experts {
+    width: inherit;
+    margin: 0 5%;
   }
-  .content-text-experts {
-    margin: 0 0 0 17%;
-    margin-top: 6%;
-    width:75%;
-  }
-  .name-experts {
-    display: inline-block;
-  }
-  .move-left-image {
-    margin: 0 0 0 32%;
-  }
+
   .info-experts {
-	margin-bottom: 8%;
-	overflow: hidden;
-	max-width: 680px;
-	text-align: center;
-	width: 95%;
-	margin-bottom:12px;
+    width: 100%;
+    margin-bottom: 2%;
+  }
 
-	  p {
-	  	text-align: center;
-	    margin-bottom: 45px;
-	  }
-	}
-   .img-experts-right {
-   	float: none;
-   	margin-bottom: 40px;
-   }
+  .img-experts-right, .img-experts-left{
+    float: inherit;
+    margin: inherit;
+    display: block;
+    margin: 0 auto;
+  }
 }
+
+@media only screen and (max-device-width: 384px) {
+
+  .experts {
+    width: inherit;
+    margin: 0 5%;
+  }
+
+  .info-experts {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+
+  .img-experts-right, .img-experts-left{
+    float: inherit;
+    margin: inherit;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 /*Fin Expert*/
 
 /*Games*/
@@ -163,15 +167,16 @@
 	font-size: 1.5rem;
 }
 }
-@media screen and (max-width:768px){
+
+@media only screen and (max-device-width: 768px){
  	.cont-game {
  		width: 93%;
  	}
  	.overlay-games {
- 		width: 95%;
+ 		width: 96%;
 
  		&:hover {
- 		  width: 95%;
+ 		  width: 96%;
  		}
  	}
 }
@@ -180,57 +185,45 @@
 
 /*Games Pages*/
 
-@media (min-width: 1365px){
+@media (min-width: 768px){
 
 }
 
-@media (min-width: 768px){
-	.btn{
-    		width: 155px;
-    		height: 51px;
-    		margin: 0 10px;
-    		font-size: 1.6rem;
-	}
+@media only screen and (max-device-width: 768px){
+  .play-game, .note-play {
+    display: none;
+  }
 
-	.controls-btn{
-		width: 353px;
-	}
-	.info-game{ 
-		margin: 100px 0;
-		img{
-			float: left;
-    			display: inline-block;
-    			margin: 0 10% 0 0;
-    			width: 40%;
-    		
-		}
-		li{
-			font-family: "Muli";
-		 	font-size: 1.2rem;
-			line-height: 2.5rem;
-		} 
+    .info-game{ 
+    margin: 0;
+    overflow: hidden;
+    
+    img{
+      display: inline-block;
+      margin-top: 5%;
+      width: 100%;
+    }
+    li{
+      font-family: "Muli";
+       font-size: 1.2rem;
+       line-height: 2.5rem;
+    } 
+    h2 {
+      margin: 20px 0;
+    }
+  }
 
-		h2{
-			margin-bottom: 20px;
-		}
-	}
+  .text-info-game{
+    float: left;
+      display: inline-block;
+      width: 100%;
+      
+      h3{
+        margin: 31px 0;
+    }
+  }
 
-	.text-info-game{
-		float: right;
-  		display: inline-block;
-  		width: 50%;
-  	
-  		h3{
-  			margin: 31px 0;
-		}
-	}
-	.note-play{
-		margin: 6 auto;
-		font-size: 1rem;
-	}
-	.play-game{
-		margin-bottom: 20px;
-	}
+
 }
 
 /*Fin Games Pages*/

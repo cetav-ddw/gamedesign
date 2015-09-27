@@ -1,34 +1,23 @@
 //
 // Estilos de Expertos
 .experts {
-  max-width: $max-width;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.experts li{
+  display: inline-block;
 }
 
 .info-experts {
-  margin-bottom: 8%;
-  overflow: hidden;
-}
-
-.info-experts h3 {
-  margin-bottom: 2%;
-}
-
-.name-experts {
-  text-align: right;
-}
-
-.name-experts + p {
-  text-align: right;
+  margin-bottom: 10%;
 }
 
 .img-experts-right {
-  max-width: 100%;
-  float: left;
-  margin: 0 2% 0 0;
+  float: right;
+  margin: 30px 0;
 }
 
-.img-experts {
-  max-width: 100%;
-  float: right;
-  margin: 0 0 5% 2%;
+.img-experts-left {
+  float: left;
 }
