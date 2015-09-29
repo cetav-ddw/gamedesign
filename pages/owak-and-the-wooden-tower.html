@@ -38,14 +38,14 @@
       </ul>
     </nav>
   </header>
-  <!-- video -->
+    <!-- video -->
     <div class="video">
-      <iframe width="320" height="568" frameborder="0" src="https://player.vimeo.com/video/130215531?color=ffffff&title=0&byline=0&portrait=0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe id="player" src="https://player.vimeo.com/video/130215531?api=1&player_id=player1?color=ffffff&title=0&byline=0&portrait=0" width="320" height="568" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <img class="video-cover" src="../img/demo-covers/owak-cover.jpg" alt="video cover"/>
-      <img src="../img/play.png" id="play-btn"/>
-      <label for="play-btn" id="play-btn-label">Descubre como se hizo</label>
+      <button id="play-btn" class="btn">play</button>
+      <label for="play-btn" id="play-btn-label">Mira como se juega</label>
     </div>
-  <!-- End video -->
+    <!-- End video -->
   <section>
     <div class="info-game">
       
@@ -89,7 +89,7 @@
       </div>
   </footer>
   <!-- Script -->
-  <script type="text/javascript" src="../js/main.js" ></script>
-  <script type="text/javascript" src="../js/gridify.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/video-control.js"></script>
 </body>
 </html>

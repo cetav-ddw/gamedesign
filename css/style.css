@@ -465,17 +465,10 @@ input[type=checkbox] {
 
 /* line 29, ../sass/partials/modules/_videos.scss */
 #play-btn {
-  background-color: transparent;
-  border: none;
-  display: block;
-  height: auto;
-  margin: 24% 45%;
-  position: absolute;
-  width: 10%;
   z-index: 3;
 }
 
-/* line 40, ../sass/partials/modules/_videos.scss */
+/* line 33, ../sass/partials/modules/_videos.scss */
 #play-btn-label {
   color: orange;
   display: block;
