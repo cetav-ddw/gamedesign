@@ -457,20 +457,21 @@ input[type=checkbox] {
 
 /* line 21, ../sass/partials/modules/_videos.scss */
 .video-cover {
+  background-color: #000;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 2;
 }
 
-/* line 28, ../sass/partials/modules/_videos.scss */
+/* line 29, ../sass/partials/modules/_videos.scss */
 #play-btn {
   position: absolute;
   margin: 26% 45%;
   z-index: 3;
 }
 
-/* line 34, ../sass/partials/modules/_videos.scss */
+/* line 35, ../sass/partials/modules/_videos.scss */
 #play-btn-label {
   color: orange;
   display: block;
