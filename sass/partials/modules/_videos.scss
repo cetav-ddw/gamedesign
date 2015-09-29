@@ -20,13 +20,14 @@
 
 .video-cover{
 	position: absolute;
-	// overflow: hidden;
 	height: 100%;
 	width: 100%;
 	z-index: 2;
 }
 
 #play-btn{
+	position: absolute;
+	margin: 26% 45%;
 	z-index: 3;
 }
 
@@ -35,7 +36,7 @@
 	display: block;
 	font-family: $title-text;
 	font-size: 2em;
-	margin: 30% 10%;
+	margin: 28% 10%;
 	padding: 1.5em 0 0 0;
 	position: absolute;
 	text-align: center;

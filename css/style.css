@@ -463,18 +463,20 @@ input[type=checkbox] {
   z-index: 2;
 }
 
-/* line 29, ../sass/partials/modules/_videos.scss */
+/* line 28, ../sass/partials/modules/_videos.scss */
 #play-btn {
+  position: absolute;
+  margin: 26% 45%;
   z-index: 3;
 }
 
-/* line 33, ../sass/partials/modules/_videos.scss */
+/* line 34, ../sass/partials/modules/_videos.scss */
 #play-btn-label {
   color: orange;
   display: block;
   font-family: "Iceland", serif;
   font-size: 2em;
-  margin: 30% 10%;
+  margin: 28% 10%;
   padding: 1.5em 0 0 0;
   position: absolute;
   text-align: center;
