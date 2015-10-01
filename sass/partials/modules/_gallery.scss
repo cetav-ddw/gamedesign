@@ -1,8 +1,12 @@
 // 
 // Making of Game Jam Galeria
 //
+.gallery {
+  width: inherit;
+  width: 80%;
+}
 
-.gallery{
-	margin: 0 auto;
-	width: 90%;
+.grid {
+  width: 1210px;
+  margin: 0 auto;
 }

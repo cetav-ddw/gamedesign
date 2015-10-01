@@ -24,12 +24,12 @@ h2, h3 {
   font-size: 2.5rem;
   font-family: "Iceland", serif; }
 
-section {
-  width: 80%;
-  margin: 0 auto; }
-
 button:focus, button:active {
   outline: 0; }
+
+.content {
+  width: 50%;
+  margin: 0 auto; }
 
 .title-main {
   color: #359e97;
@@ -46,7 +46,8 @@ footer {
   background: #353535;
   background-image: url(../img/background-general.gif);
   height: 140px;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .text-footer {
   font-size: 1.5rem;
@@ -172,6 +173,9 @@ input[type=checkbox] {
 .experts li {
   display: inline-block; }
 
+.experts h3 {
+  margin-bottom: 3%; }
+
 .info-experts {
   margin-bottom: 10%; }
 
@@ -183,14 +187,19 @@ input[type=checkbox] {
   float: left; }
 
 .gallery {
-  margin: 0 auto;
-  width: 90%; }
+  width: inherit;
+  width: 80%; }
+
+.grid {
+  width: 1210px;
+  margin: 0 auto; }
 
 .text-games {
   margin-bottom: 2%; }
 
 .content-banners-games {
-  margin: 5%;
+  width: 70%;
+  margin: 4% auto;
   text-align: center; }
 
 .cont-game {
@@ -214,14 +223,13 @@ input[type=checkbox] {
   background-color: #d65f21; }
 
 .overlay-games {
-  width: 94%;
-  height: 180px;
+  width: 93%;
+  height: 88%;
   max-width: 100%;
-  margin-left: 10px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
-  margin-top: 9.5px; }
+  margin: 2.4% auto; }
   .overlay-games:hover {
     background-color: rgba(0, 0, 0, 0.4);
     width: 94%;
@@ -344,14 +352,32 @@ input[type=checkbox] {
   z-index: 3; }
 
 /*Responsive Styles*/
-/*Menu*/
+/* Breakpoints max-width: 1365px / 1250px / 1023px / 920px / 768px / 384px*/
 @media screen and (max-width: 1365px) {
+  .content {
+    width: 80%; }
+
+  /*Menu*/
   .nav-item a, .lang-item a {
     font-size: 1.25rem; }
 
   .main-nav, .lang-toggle {
-    margin-top: 2%; } }
+    margin-top: 2%; }
+
+  /*Games*/
+  .overlay-games {
+    width: 336px; }
+    .overlay-games:hover {
+      width: 336px; }
+
+  .cont-game {
+    width: 360px; } }
+@media screen and (max-width: 1250px) {
+  /*Gallery*/
+  .grid {
+    width: 72%; } }
 @media screen and (max-width: 1023px) {
+  /*Menu*/
   header nav, .nav-logo {
     display: none; }
 
@@ -368,7 +394,7 @@ input[type=checkbox] {
 
   .header-logo {
     width: 80%;
-    margin: 30% auto 13% auto; }
+    margin: 20% auto 13% auto; }
 
   .nav-item {
     border-bottom: 1px solid #f2f2f2;
@@ -404,67 +430,27 @@ input[type=checkbox] {
     color: #f2f2f2;
     display: block;
     float: left;
-    width: 40px;
-    height: 43px;
+    width: 20px;
+    height: 22px;
     margin: 20px;
     overflow: hidden;
     background: url(../img/menu-icon.png);
-    background-position: 0 43px; }
+    background-position: 0 22px; }
 
   input[type="checkbox"]:checked + label {
-    -webkit-animation: MOVE-BG 0.5s;
+    -webkit-animation: MOVE-BG 0.2s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards; }
 
   @-webkit-keyframes MOVE-BG {
     0% {
-      background-position: 0 43px; }
+      background-position: 0 22px; }
     100% {
-      background-position: 0 83px; } }
+      background-position: 0 42.1px; } }
   input[type=checkbox]:checked ~ nav {
-    display: block; } }
-/*Fin Menu*/
-/*Expert*/
-@media screen and (max-width: 920px) {
-  .experts {
-    width: inherit;
-    margin: 0 5%; }
+    display: block; }
 
-  .info-experts {
-    width: 100%;
-    margin-bottom: 2%; }
-
-  .img-experts-right, .img-experts-left {
-    float: inherit;
-    margin: inherit;
-    display: block;
-    margin: 0 auto; } }
-@media only screen and (max-width: 384px) {
-  .experts {
-    width: inherit;
-    margin: 0 5%; }
-
-  .info-experts {
-    width: 100%;
-    margin-bottom: 2%; }
-
-  .img-experts-right, .img-experts-left {
-    float: inherit;
-    margin: inherit;
-    display: block;
-    margin: 0 auto;
-    width: 350px; } }
-/*Fin Expert*/
-/*Games*/
-@media screen and (max-width: 1365px) {
-  .overlay-games {
-    width: 336px; }
-    .overlay-games:hover {
-      width: 336px; }
-
-  .cont-game {
-    width: 360px; } }
-@media screen and (max-width: 1023px) {
+  /*Games*/
   .overlay-games {
     width: 256px; }
     .overlay-games:hover {
@@ -474,23 +460,35 @@ input[type=checkbox] {
     width: 280px; }
 
   .overlay-games-text {
-    font-size: 1.5rem; } }
-@media only screen and (max-width: 768px) {
-  .cont-game {
-    width: 93%; }
+    font-size: 1.5rem; }
 
-  .overlay-games {
-    width: 96%; }
-    .overlay-games:hover {
-      width: 96%; } }
-/*Fin Games*/
-/*Gallery Pages*/
-@media (min-width: 768px) {
-  .gallery img {
+  /*Gallery*/
+  .grid {
+    width: 80%; } }
+@media screen and (max-width: 920px) {
+  .title-main {
+    margin: 8% auto; }
+
+  /*Expert*/
+  .experts {
+    width: inherit;
+    margin: 0 5%; }
+
+  .info-experts {
+    width: 100%;
+    margin-bottom: 2%; }
+
+  .img-experts-right, .img-experts-left {
+    float: inherit;
+    margin: inherit;
+    display: block;
+    margin: 0 auto; }
+
+  /*Gallery*/
+  .grid img {
     width: 49%; } }
-/*Fin Gallery Pages*/
-/*Games Pages*/
 @media only screen and (max-width: 768px) {
+  /*Games Pages*/
   .play-game, .note-play {
     display: none; }
 
@@ -513,7 +511,33 @@ input[type=checkbox] {
     display: inline-block;
     width: 100%; }
     .text-info-game h3 {
-      margin: 31px 0; } }
-/*Fin Games Pages*/
+      margin: 31px 0; }
+
+  /*Games*/
+  .cont-game {
+    width: 93%; }
+
+  .overlay-games {
+    width: 96%; }
+    .overlay-games:hover {
+      width: 96%; } }
+@media only screen and (max-width: 384px) {
+  /*Expert*/
+  .experts {
+    width: inherit;
+    margin: 0 5%; }
+
+  .experts h3 {
+    margin: 3%; }
+
+  .info-experts {
+    width: 100%;
+    margin-bottom: 10%; }
+
+  .img-experts-right, .img-experts-left {
+    float: inherit;
+    margin: inherit;
+    display: block;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */

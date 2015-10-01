@@ -1,7 +1,15 @@
 /*Responsive Styles*/
+/* Breakpoints max-width: 1365px / 1250px / 1023px / 920px / 768px / 384px*/
 
-/*Menu*/
+
 @media screen and (max-width: 1365px){
+
+  .content {
+    width: 80%;
+  }
+
+  /*Menu*/
+
 	.nav-item a, .lang-item a{
 		font-size: 1.25rem;
 	}
@@ -9,9 +17,34 @@
 	.main-nav, .lang-toggle{
 		margin-top: 2%;
 	}
+
+  /*Games*/
+
+  .overlay-games {
+    width: 336px;
+    &:hover {
+      width: 336px;
+    }
+  }
+  .cont-game {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 1250px){
+
+  /*Gallery*/
+
+  .grid {
+    width: 72%;
+  }
+
 }
 
 @media screen and (max-width: 1023px){
+    
+  /*Menu*/
+
 	header nav, .nav-logo{
 		display: none;
 	}
@@ -31,7 +64,7 @@
 
   .header-logo {
     width: 80%;
-    margin: 30% auto 13% auto;
+    margin: 20% auto 13% auto;
   }
 
 	.nav-item{
@@ -75,36 +108,61 @@
     color: #f2f2f2;
     display: block;
     float: left;
-    width: 40px;
-    height: 43px;
+    width: 20px;
+    height: 22px;
     margin: 20px;
     overflow: hidden;
     background: url(../img/menu-icon.png);
-    background-position: 0 43px; 
+    background-position: 0 22px; 
   }
 
   input[type="checkbox"]:checked + label {
-    -webkit-animation: MOVE-BG 0.5s;
+    -webkit-animation: MOVE-BG 0.2s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
   }
 
   @-webkit-keyframes MOVE-BG {
-    0% { background-position: 0 43px;  }
-    100% { background-position: 0 83px;  }
+    0% { background-position: 0 22px;  }
+    100% { background-position: 0 42.1px;  }
   }
 
   input[type=checkbox]:checked ~ nav{
       display: block;
   }
 
-}
-/*Fin Menu*/
+  /*Games*/
 
-/*Expert*/
+  .overlay-games {
+    width: 256px;
+    &:hover {
+      width: 256px;
+    }
+  }
+  .cont-game {
+    width: 280px;
+  }
+  .overlay-games-text {
+    font-size: 1.5rem;
+  }
+
+  /*Gallery*/
+
+  .grid {
+    width: 80%;
+  }
+}
+
+
 
 @media screen and (max-width: 920px)  {
 
+  .title-main {
+    margin: 8% auto;
+  }
+  
+  /*Expert*/
+
   .experts {
     width: inherit;
     margin: 0 5%;
@@ -121,91 +179,24 @@
     display: block;
     margin: 0 auto;
   }
-}
 
-@media only screen and (max-width: 384px) {
+    /*Gallery*/
 
-  .experts {
-    width: inherit;
-    margin: 0 5%;
-  }
-
-  .info-experts {
-    width: 100%;
-    margin-bottom: 2%;
-  }
-
-  .img-experts-right, .img-experts-left{
-    float: inherit;
-    margin: inherit;
-    display: block;
-    margin: 0 auto;
-    width: 350px;
-  }
-}
-
-/*Fin Expert*/
-
-/*Games*/
-
-@media screen and (max-width: 1365px){
-.overlay-games {
-	 width: 336px;
-	 &:hover {
-	 	width: 336px;
-	 }
-}
-.cont-game {
-	width: 360px;
-}
-}
-@media screen and (max-width: 1023px) {
-.overlay-games {
-	 width: 256px;
-	 &:hover {
-	 	width: 256px;
-	 }
-}
-.cont-game {
-	width: 280px;
-}
-.overlay-games-text {
-	font-size: 1.5rem;
-}
-}
-
-@media only screen and (max-width: 768px){
- 	.cont-game {
- 		width: 93%;
- 	}
- 	.overlay-games {
- 		width: 96%;
-
- 		&:hover {
- 		  width: 96%;
- 		}
- 	}
-}
-
-/*Fin Games*/
-
-/*Gallery Pages*/
-
-@media (min-width: 768px){
-  .gallery img {
+   .grid img {
     width: 49%;
   }
 }
 
-/*Fin Gallery Pages*/
 
-/*Games Pages*/
 @media only screen and (max-width: 768px){
+
+  /*Games Pages*/
+
   .play-game, .note-play {
     display: none;
   }
 
-    .info-game{ 
+  .info-game{ 
     margin: 0;
     overflow: hidden;
     
@@ -234,7 +225,46 @@
     }
   }
 
+  /*Games*/
+
+  .cont-game {
+    width: 93%;
+  }
+
+  .overlay-games {
+    width: 96%;
+
+    &:hover {
+      width: 96%;
+    }
+  }
+
+
 
 }
 
-/*Fin Games Pages*/
+@media only screen and (max-width: 384px) {
+
+  /*Expert*/
+
+  .experts {
+    width: inherit;
+    margin: 0 5%;
+  }
+
+  .experts h3{
+    margin: 3%;
+  }
+
+  .info-experts {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .img-experts-right, .img-experts-left{
+    float: inherit;
+    margin: inherit;
+    display: block;
+    margin: 0 auto;
+  }
+}
