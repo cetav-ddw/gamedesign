@@ -495,6 +495,9 @@ input[type=checkbox] {
     width: 49%; } }
 @media only screen and (max-width: 768px) {
   /*Games Pages*/
+  .overlay-games-text {
+  font-size: 3rem;}
+
   .play-game, .note-play {
     display: none; }
 
@@ -520,6 +523,13 @@ input[type=checkbox] {
     margin-bottom: 30px; }
     .text-info-game h3 {
       margin: 31px 0; }
+
+  .img-games-button {
+    display: none;}
+  .overlay-games-text {
+    float: left;
+    width: 99%;
+    margin-top: 67px;}
 
   /*Games*/
   .cont-game {
