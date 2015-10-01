@@ -45,7 +45,6 @@ button:focus, button:active {
 footer {
   background: #353535;
   background-image: url(../img/background-general.gif);
-  height: 140px;
   text-align: center;
   overflow: hidden; }
 
@@ -54,11 +53,10 @@ footer {
   font-family: "Iceland", serif;
   display: inline-block;
   width: 60%;
-  color: #E8EBED;
-  margin-top: 44px; }
+  color: #E8EBED; }
 
 .content-info-footer {
-  margin-top: 60px; }
+  margin: 60px 0; }
 
 header {
   background: url(../img/background-general.gif);
@@ -493,12 +491,13 @@ input[type=checkbox] {
     display: none; }
 
   .info-game {
-    margin: 0;
-    overflow: hidden; }
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%; }
     .info-game img {
       display: inline-block;
-      margin-top: 5%;
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 50px; }
     .info-game li {
       font-family: "Muli";
       font-size: 1.2rem;
@@ -509,7 +508,8 @@ input[type=checkbox] {
   .text-info-game {
     float: left;
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 30px; }
     .text-info-game h3 {
       margin: 31px 0; }
 
@@ -539,5 +539,12 @@ input[type=checkbox] {
     margin: inherit;
     display: block;
     margin: 0 auto; } }
+@media only screen and (max-width: 768px) {
+  .text-footer {
+    font-size: 1.4rem;
+    width: 80%; }
+
+  .content-info-footer {
+    margin: 60px 0; } }
 
 /*# sourceMappingURL=style.css.map */

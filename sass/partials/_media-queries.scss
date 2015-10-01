@@ -197,13 +197,14 @@
   }
 
   .info-game{ 
-    margin: 0;
+    margin: 0 auto;
     overflow: hidden;
+    width: 80%;
     
     img{
       display: inline-block;
-      margin-top: 5%;
       width: 100%;
+      margin-bottom: 50px;
     }
     li{
       font-family: "Muli";
@@ -219,6 +220,7 @@
     float: left;
       display: inline-block;
       width: 100%;
+      margin-bottom: 30px;
       
       h3{
         margin: 31px 0;
@@ -266,5 +268,17 @@
     margin: inherit;
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px){
+
+  .text-footer {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .content-info-footer {
+    margin: 60px 0;
   }
 }

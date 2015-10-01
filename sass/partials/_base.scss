@@ -56,7 +56,6 @@ button:focus, button:active {
 footer {
   background:#353535;
   background-image: url(../img/background-general.gif);
-  height: 140px;
   text-align:center;
   overflow: hidden;
 }
@@ -67,9 +66,8 @@ footer {
   display: inline-block;
   width: 60%;
   color: #E8EBED;
-  margin-top: 44px;
 }
 
 .content-info-footer {
-  margin-top: 60px;
+  margin: 60px 0;
 }
