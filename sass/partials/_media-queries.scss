@@ -29,6 +29,11 @@
 		height: auto;
 	}
 
+  .header-logo {
+    width: 80%;
+    margin: 30% auto 13% auto;
+  }
+
 	.nav-item{
 		border-bottom: 1px solid #f2f2f2;
 		padding: 20px 0;
@@ -79,7 +84,7 @@
   }
 
   input[type="checkbox"]:checked + label {
-    -webkit-animation: MOVE-BG 0.1s;
+    -webkit-animation: MOVE-BG 0.5s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
   }
@@ -118,7 +123,7 @@
   }
 }
 
-@media only screen and (max-device-width: 384px) {
+@media only screen and (max-width: 384px) {
 
   .experts {
     width: inherit;
@@ -169,7 +174,7 @@
 }
 }
 
-@media only screen and (max-device-width: 768px){
+@media only screen and (max-width: 768px){
  	.cont-game {
  		width: 93%;
  	}
@@ -184,13 +189,18 @@
 
 /*Fin Games*/
 
-/*Games Pages*/
+/*Gallery Pages*/
 
 @media (min-width: 768px){
-
+  .gallery img {
+    width: 49%;
+  }
 }
 
-@media only screen and (max-device-width: 768px){
+/*Fin Gallery Pages*/
+
+/*Games Pages*/
+@media only screen and (max-width: 768px){
   .play-game, .note-play {
     display: none;
   }
