@@ -252,14 +252,13 @@ input[type=checkbox] {
   position: absolute;
   margin-left: -4%; }
 
+.content-demo-info {
+  margin: 100px 0; }
+
 .info-game {
   overflow: hidden;
-  margin: 100px 0; }
-  .info-game img {
-    float: left;
-    display: inline-block;
-    margin: 0 10% 0 0;
-    width: 40%; }
+  width: 80%;
+  margin: 0 auto; }
   .info-game li {
     font-family: "Muli";
     font-size: 1.2rem;
@@ -270,12 +269,21 @@ input[type=checkbox] {
 .sub-menu-games {
   display: none; }
 
+.img-game {
+  float: left;
+  display: inline-block;
+  margin: 0 10% 0 0;
+  width: 40%; }
+  .img-game img {
+    display: inline-block;
+    width: 100%; }
+  .img-game h3 {
+    margin: 31px 0; }
+
 .text-info-game {
   float: right;
   display: inline-block;
   width: 50%; }
-  .text-info-game h3 {
-    margin: 31px 0; }
 
 .play-game {
   margin-bottom: 20px; }
@@ -539,6 +547,7 @@ input[type=checkbox] {
     margin: inherit;
     display: block;
     margin: 0 auto; } }
+/*Footer*/
 @media only screen and (max-width: 768px) {
   .text-footer {
     font-size: 1.4rem;

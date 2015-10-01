@@ -2,16 +2,14 @@
 // Games Pages
 //
 
+  .content-demo-info{
+    margin: 100px 0;
+  }
+
   .info-game{ 
     overflow: hidden;
-    margin: 100px 0;
-    img{
-      float: left;
-          display: inline-block;
-          margin: 0 10% 0 0;
-          width: 40%;
-        
-    }
+    width: 80%;
+    margin: 0 auto;
     li{
       font-family: "Muli";
       font-size: 1.2rem;
@@ -25,14 +23,24 @@
   .sub-menu-games{
     display: none;
   }
+  .img-game{
+    float: left;
+    display: inline-block;
+    margin: 0 10% 0 0;
+    width: 40%;
+    img{
+            display: inline-block;
+            width: 100%;
+    }
+    h3{
+      margin: 31px 0;
+    } 
+  }
+
   .text-info-game{
     float: right;
       display: inline-block;
       width: 50%;
-    
-      h3{
-        margin: 31px 0;
-    }
   }
   .play-game{
     margin-bottom: 20px;
