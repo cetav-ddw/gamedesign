@@ -91,6 +91,7 @@ header nav {
 
 .main-nav {
   float: left;
+  margin-top: 1%;
   overflow: hidden;
   width: 65%; }
 
