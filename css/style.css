@@ -305,7 +305,10 @@ input[type=checkbox] {
   width: 155px;
   height: 51px;
   font-family: 'Iceland', sans-serif;
-  color: #fff; }
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 11px; }
   .main:active {
     background: url(../img/button-pressed.png) no-repeat;
     background-size: contain; }
@@ -522,13 +525,13 @@ input[type=checkbox] {
   .img-game {
     width: 100%; }
     .img-game img {
-      margen-bottom: 30px; }
+      margin-bottom: 30px; }
 
   .text-info-game {
     float: right;
     display: inline-block;
     width: 100%;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
     .text-info-game h3 {
       margin: 31px 0; } }
 @media screen and (max-width: 920px) {
