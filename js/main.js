@@ -1,4 +1,6 @@
 window.onload = function(){
+
+    // Controles Galeria
     var options =
     {
         srcNode: 'img',             // grid items (class, node)
@@ -9,9 +11,6 @@ window.onload = function(){
         transition: 'all 0.5s ease' // support transition for CSS3, default: all 0.5s ease
     }
     document.querySelector( '.grid' ).gridify( options );
-
-
-//////////////////////////////////// Video Controls //////////////////////////////////// 
 
     $(function() {
         var player = $('iframe');
