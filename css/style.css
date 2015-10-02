@@ -141,10 +141,7 @@ header nav {
     border-bottom: 2px solid #f2f2f2; }
 
 .mobile-logo {
-  display: none;
-  margin: 20px auto;
-  text-align: center;
-  width: 100%; }
+  display: none; }
 
 /*Navigation Menu Button*/
 .show-menu {
@@ -306,8 +303,8 @@ input[type=checkbox] {
   height: 51px;
   font-family: 'Iceland', sans-serif;
   color: #fff;
-  text-align: center;
   text-decoration: none;
+  text-aling: center;
   padding-top: 11px; }
   .main:active {
     background: url(../img/button-pressed.png) no-repeat;
@@ -462,12 +459,19 @@ input[type=checkbox] {
     border-right: 1px solid #f2f2f2; }
 
   .mobile-logo {
-    display: block; }
+    display: block;
+    margin: 20px;
+    text-align: center;
+    width: 45px;
+    float: left; }
+    .mobile-logo img {
+      height: 100%;
+      width: 100%; }
 
   .show-menu {
     color: #f2f2f2;
     display: block;
-    float: left;
+    float: right;
     width: 20px;
     height: 22px;
     margin: 20px;
