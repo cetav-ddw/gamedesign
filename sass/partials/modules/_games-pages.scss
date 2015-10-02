@@ -3,12 +3,12 @@
 //
 
   .content-demo-info{
-    margin: 100px 0;
+    margin: 5% 0;
   }
 
   .info-game{ 
     overflow: hidden;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     li{
       font-family: "Muli";
@@ -20,39 +20,31 @@
       margin-bottom: 20px;
     }
   }
-  .sub-menu-games{
-    display: none;
-  }
+
   .img-game{
     float: left;
-    display: inline-block;
-    margin: 0 10% 0 0;
-    width: 40%;
-    img{
-            display: inline-block;
-            width: 100%;
-    }
     h3{
-      margin: 31px 0;
-    } 
+      margin: 3% 0;
+    }
+    ul {
+      float: left;
+      margin-right: 20%;
+    }
   }
 
   .text-info-game{
     float: right;
-      display: inline-block;
-      width: 50%;
-  }
-  .play-game{
-    margin-bottom: 20px;
+    display: inline-block;
+    width: 45%;
   }
 
-  .sub-menu-games{
-    display: none;
+  .play-game{
+    margin-top: 8%;
   }
 
   .note-play{
     font-size: 1rem;
-    text-align: center;
+    margin-top: 1.2%;
     font-family: "Iceland";
     span{
       text-transform: uppercase;
@@ -65,24 +57,13 @@
 .main{
   background: url(../img/button.png) no-repeat;
   background-size: contain;
+  width: 155px;
+  height: 51px;
+  font-family: 'Iceland', sans-serif;
+  color: #fff;
   &:active{
     background: url(../img/button-pressed.png) no-repeat;
     background-size: contain;
   }
 }
 
-.btn {
-    width: 155px;
-    height: 51px;
-    margin: 0 10px;
-    font-size: 1.6rem;
-    display: inline-block;
-    border: none;
-    font-family: 'Iceland', sans-serif;
-    color: #fff;
-}
-
-.controls-btn {
-      margin: 0 auto;
-  width: 353px;
-}

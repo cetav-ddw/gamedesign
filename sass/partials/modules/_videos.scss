@@ -2,10 +2,17 @@
 // Estilo de todos los videos
 //
 
+.play{
+  background: url(../img/play.png) no-repeat;
+  background-size: contain;
+  width: 77px;
+  height: 77px;
+  color: transparent;
+}
+
 .video{
 	position: relative;
 	padding-bottom: 56.25%;
-	// overflow: hidden;
 	margin: -5% auto 0 auto;
 	z-index: 1;
 }
@@ -13,9 +20,9 @@
 .video iframe{
 	display: inline-block;
 	height: 90%;
-    margin: 0 auto;
+   margin: 0 auto;
 	position: absolute;
-    width: 100%;
+  width: 100%;
 }
 
 .video-cover{
@@ -37,7 +44,7 @@
 	display: block;
 	font-family: $title-text;
 	font-size: 2em;
-	margin: 28% 10%;
+	margin: 28% 8%;
 	padding: 1.5em 0 0 0;
 	position: absolute;
 	text-align: center;

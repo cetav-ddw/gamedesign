@@ -36,6 +36,12 @@ button:focus, button:active {
   outline: 0;
 }
 
+.btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  border: none;
+}
+
 .content {
   width: 50%;
   margin: 0 auto;

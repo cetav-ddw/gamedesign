@@ -29,6 +29,12 @@
   .cont-game {
     width: 360px;
   }
+
+  /*Games Pages*/
+  
+  .text-info-game {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 1250px){
@@ -37,6 +43,46 @@
 
   .grid {
     width: 72%;
+  }
+
+  /*Games Pages*/
+
+  .info-game h2 {
+    font-size: 2rem;
+  }
+
+  .play-game, .note-play {
+    display: none;
+  }
+
+  .info-game{ 
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+    
+    img{
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    li{
+      font-family: "Muli";
+       font-size: 1.2rem;
+       line-height: 2.5rem;
+    } 
+    h2 {
+      margin: 20px 0;
+    }
+  }
+
+  .text-info-game{
+    float: left;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    h3{
+      margin: 31px 0;
+    }
   }
 
 }
@@ -151,54 +197,12 @@
   .grid {
     width: 90%;
   }
-}
-
-
-
-@media screen and (max-width: 920px)  {
-  /*Expert*/
-
-  .experts {
-    width: inherit;
-    margin: 0 5%;
-  }
-
-  .info-experts {
-    width: 100%;
-  }
-
-  .img-experts-right, .img-experts-left{
-    float: inherit;
-    margin: inherit;
-    display: block;
-    margin: 0 auto;
-  }
-
-    /*Gallery*/
-
-   .grid img {
-    width: 49%;
-  }
-}
-
-
-@media only screen and (max-width: 768px){
-
-  .img-games-button {
-    display: none;
-  }
-
-  .overlay-games-text {
-    float: left;
-    width: 99%;
-    margin-top: 67px;
-  }
-
-  .overlay-games-text {
-    font-size: 2.4rem;
-  }
 
   /*Games Pages*/
+
+  .info-game h2 {
+    font-size: 2rem;
+  }
 
   .play-game, .note-play {
     display: none;
@@ -232,6 +236,61 @@
     h3{
       margin: 31px 0;
     }
+  }
+}
+
+
+
+@media screen and (max-width: 920px)  {
+  /*Expert*/
+
+  .experts {
+    width: inherit;
+    margin: 0 5%;
+  }
+
+  .info-experts {
+    width: 100%;
+  }
+
+  .img-experts-right, .img-experts-left{
+    float: inherit;
+    margin: inherit;
+    display: block;
+    margin: 0 auto;
+  }
+
+    /*Gallery*/
+
+   .grid img {
+    width: 49%;
+  }
+
+  #play-btn-label {
+    visibility: hidden;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  
+  .play {
+    width: 37px;
+    height: 37px;
+  }
+
+  .img-games-button {
+    display: none;
+  }
+
+  .overlay-games-text {
+    float: left;
+    width: 99%;
+    margin-top: 67px;
+  }
+
+  .overlay-games-text {
+    font-size: 2.4rem;
   }
 
   /*Games*/

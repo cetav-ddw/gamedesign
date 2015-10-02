@@ -27,6 +27,11 @@ h2, h3 {
 button:focus, button:active {
   outline: 0; }
 
+.btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  border: none; }
+
 .content {
   width: 50%;
   margin: 0 auto; }
@@ -252,11 +257,11 @@ input[type=checkbox] {
   margin-left: -4%; }
 
 .content-demo-info {
-  margin: 100px 0; }
+  margin: 5% 0; }
 
 .info-game {
   overflow: hidden;
-  width: 80%;
+  width: 90%;
   margin: 0 auto; }
   .info-game li {
     font-family: "Muli";
@@ -265,34 +270,25 @@ input[type=checkbox] {
   .info-game h2 {
     margin-bottom: 20px; }
 
-.sub-menu-games {
-  display: none; }
-
 .img-game {
-  float: left;
-  display: inline-block;
-  margin: 0 10% 0 0;
-  width: 40%; }
-  .img-game img {
-    display: inline-block;
-    width: 100%; }
+  float: left; }
   .img-game h3 {
-    margin: 31px 0; }
+    margin: 3% 0; }
+  .img-game ul {
+    float: left;
+    margin-right: 20%; }
 
 .text-info-game {
   float: right;
   display: inline-block;
-  width: 50%; }
+  width: 45%; }
 
 .play-game {
-  margin-bottom: 20px; }
-
-.sub-menu-games {
-  display: none; }
+  margin-top: 8%; }
 
 .note-play {
   font-size: 1rem;
-  text-align: center;
+  margin-top: 1.2%;
   font-family: "Iceland"; }
   .note-play span {
     text-transform: uppercase; }
@@ -300,24 +296,21 @@ input[type=checkbox] {
 /*Estilos de los Botones*/
 .main {
   background: url(../img/button.png) no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  width: 155px;
+  height: 51px;
+  font-family: 'Iceland', sans-serif;
+  color: #fff; }
   .main:active {
     background: url(../img/button-pressed.png) no-repeat;
     background-size: contain; }
 
-.btn {
-  width: 155px;
-  height: 51px;
-  margin: 0 10px;
-  font-size: 1.6rem;
-  display: inline-block;
-  border: none;
-  font-family: 'Iceland', sans-serif;
-  color: #fff; }
-
-.controls-btn {
-  margin: 0 auto;
-  width: 353px; }
+.play {
+  background: url(../img/play.png) no-repeat;
+  background-size: contain;
+  width: 77px;
+  height: 77px;
+  color: transparent; }
 
 .video {
   position: relative;
@@ -349,7 +342,7 @@ input[type=checkbox] {
   display: block;
   font-family: "Iceland", serif;
   font-size: 2em;
-  margin: 28% 10%;
+  margin: 28% 8%;
   padding: 1.5em 0 0 0;
   position: absolute;
   text-align: center;
@@ -376,11 +369,45 @@ input[type=checkbox] {
       width: 336px; }
 
   .cont-game {
-    width: 360px; } }
+    width: 360px; }
+
+  /*Games Pages*/
+  .text-info-game {
+    width: 40%; } }
 @media screen and (max-width: 1250px) {
   /*Gallery*/
   .grid {
-    width: 72%; } }
+    width: 72%; }
+
+  /*Games Pages*/
+  .info-game h2 {
+    font-size: 2rem; }
+
+  .play-game, .note-play {
+    display: none; }
+
+  .info-game {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%; }
+    .info-game img {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 50px; }
+    .info-game li {
+      font-family: "Muli";
+      font-size: 1.2rem;
+      line-height: 2.5rem; }
+    .info-game h2 {
+      margin: 20px 0; }
+
+  .text-info-game {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px; }
+    .text-info-game h3 {
+      margin: 31px 0; } }
 @media screen and (max-width: 1023px) {
   /*Menu*/
   header nav, .nav-logo {
@@ -469,38 +496,12 @@ input[type=checkbox] {
 
   /*Gallery*/
   .grid {
-    width: 90%; } }
-@media screen and (max-width: 920px) {
-  /*Expert*/
-  .experts {
-    width: inherit;
-    margin: 0 5%; }
-
-  .info-experts {
-    width: 100%; }
-
-  .img-experts-right, .img-experts-left {
-    float: inherit;
-    margin: inherit;
-    display: block;
-    margin: 0 auto; }
-
-  /*Gallery*/
-  .grid img {
-    width: 49%; } }
-@media only screen and (max-width: 768px) {
-  .img-games-button {
-    display: none; }
-
-  .overlay-games-text {
-    float: left;
-    width: 99%;
-    margin-top: 67px; }
-
-  .overlay-games-text {
-    font-size: 2.4rem; }
+    width: 90%; }
 
   /*Games Pages*/
+  .info-game h2 {
+    font-size: 2rem; }
+
   .play-game, .note-play {
     display: none; }
 
@@ -525,7 +526,43 @@ input[type=checkbox] {
     width: 100%;
     margin-bottom: 30px; }
     .text-info-game h3 {
-      margin: 31px 0; }
+      margin: 31px 0; } }
+@media screen and (max-width: 920px) {
+  /*Expert*/
+  .experts {
+    width: inherit;
+    margin: 0 5%; }
+
+  .info-experts {
+    width: 100%; }
+
+  .img-experts-right, .img-experts-left {
+    float: inherit;
+    margin: inherit;
+    display: block;
+    margin: 0 auto; }
+
+  /*Gallery*/
+  .grid img {
+    width: 49%; }
+
+  #play-btn-label {
+    visibility: hidden; } }
+@media only screen and (max-width: 768px) {
+  .play {
+    width: 37px;
+    height: 37px; }
+
+  .img-games-button {
+    display: none; }
+
+  .overlay-games-text {
+    float: left;
+    width: 99%;
+    margin-top: 67px; }
+
+  .overlay-games-text {
+    font-size: 2.4rem; }
 
   /*Games*/
   .cont-game {
