@@ -461,8 +461,11 @@ input[type=checkbox] {
     display: block;
     margin: 20px;
     text-align: center;
-    width: 85px;
+    width: 45px;
     float: left; }
+    .mobile-logo img {
+      height: 100%;
+      width: 100%; }
 
   .show-menu {
     color: #f2f2f2;
