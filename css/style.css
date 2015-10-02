@@ -563,6 +563,23 @@ input[type=checkbox] {
     float: inherit;
     margin: inherit;
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  /*Games*/
+  .overlay-games {
+    background: none;
+    box-shadow: none; }
+
+  .banner-game-one {
+    background-color: #2E6D35; }
+
+  .banner-game-two {
+    background-color: #576E6F; }
+
+  .banner-game-three {
+    background-color: #7B4A19; }
+
+  .banner-game-four {
+    background-color: #6C3011; } }
 
 /*# sourceMappingURL=style.css.map */
