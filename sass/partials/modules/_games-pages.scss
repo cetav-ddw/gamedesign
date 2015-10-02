@@ -23,6 +23,7 @@
 
   .img-game{
     float: left;
+    width: 50%;
     h3{
       margin: 3% 0;
     }
@@ -30,13 +31,18 @@
       float: left;
       margin-right: 20%;
     }
+    img{
+      width: 100%;
+    }
   }
 
   .text-info-game{
     float: right;
     display: inline-block;
     width: 45%;
+    margin-left: 5%;
   }
+
 
   .play-game{
     margin-top: 8%;

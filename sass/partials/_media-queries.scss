@@ -31,9 +31,8 @@
   }
 
   /*Games Pages*/
-  
-  .text-info-game {
-    width: 40%;
+  .img-game{
+    float: left;
   }
 }
 
@@ -59,12 +58,6 @@
     margin: 0 auto;
     overflow: hidden;
     width: 80%;
-    
-    img{
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 50px;
-    }
     li{
       font-family: "Muli";
        font-size: 1.2rem;
@@ -75,8 +68,11 @@
     }
   }
 
+  .img-game{
+    width:100%;
+  }
+
   .text-info-game{
-    float: left;
     display: inline-block;
     width: 100%;
     margin-bottom: 30px;
@@ -212,12 +208,6 @@
     margin: 0 auto;
     overflow: hidden;
     width: 80%;
-    
-    img{
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 50px;
-    }
     li{
       font-family: "Muli";
        font-size: 1.2rem;
@@ -228,8 +218,15 @@
     }
   }
 
+  .img-game{
+    width: 100%;
+    img{
+      margen-bottom: 30px;
+    }
+  }
+
   .text-info-game{
-    float: left;
+    float: right;
     display: inline-block;
     width: 100%;
     margin-bottom: 30px;

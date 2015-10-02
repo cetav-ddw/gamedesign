@@ -271,17 +271,21 @@ input[type=checkbox] {
     margin-bottom: 20px; }
 
 .img-game {
-  float: left; }
+  float: left;
+  width: 50%; }
   .img-game h3 {
     margin: 3% 0; }
   .img-game ul {
     float: left;
     margin-right: 20%; }
+  .img-game img {
+    width: 100%; }
 
 .text-info-game {
   float: right;
   display: inline-block;
-  width: 45%; }
+  width: 45%;
+  margin-left: 5%; }
 
 .play-game {
   margin-top: 8%; }
@@ -372,8 +376,8 @@ input[type=checkbox] {
     width: 360px; }
 
   /*Games Pages*/
-  .text-info-game {
-    width: 40%; } }
+  .img-game {
+    float: left; } }
 @media screen and (max-width: 1250px) {
   /*Gallery*/
   .grid {
@@ -390,10 +394,6 @@ input[type=checkbox] {
     margin: 0 auto;
     overflow: hidden;
     width: 80%; }
-    .info-game img {
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 50px; }
     .info-game li {
       font-family: "Muli";
       font-size: 1.2rem;
@@ -401,8 +401,10 @@ input[type=checkbox] {
     .info-game h2 {
       margin: 20px 0; }
 
+  .img-game {
+    width: 100%; }
+
   .text-info-game {
-    float: left;
     display: inline-block;
     width: 100%;
     margin-bottom: 30px; }
@@ -509,10 +511,6 @@ input[type=checkbox] {
     margin: 0 auto;
     overflow: hidden;
     width: 80%; }
-    .info-game img {
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 50px; }
     .info-game li {
       font-family: "Muli";
       font-size: 1.2rem;
@@ -520,8 +518,13 @@ input[type=checkbox] {
     .info-game h2 {
       margin: 20px 0; }
 
+  .img-game {
+    width: 100%; }
+    .img-game img {
+      margen-bottom: 30px; }
+
   .text-info-game {
-    float: left;
+    float: right;
     display: inline-block;
     width: 100%;
     margin-bottom: 30px; }
