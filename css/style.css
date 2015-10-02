@@ -303,8 +303,8 @@ input[type=checkbox] {
   height: 51px;
   font-family: 'Iceland', sans-serif;
   color: #fff;
+  text-align: center;
   text-decoration: none;
-  text-aling: center;
   padding-top: 11px; }
   .main:active {
     background: url(../img/button-pressed.png) no-repeat;
