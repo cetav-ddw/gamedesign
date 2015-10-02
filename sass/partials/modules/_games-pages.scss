@@ -66,9 +66,9 @@
   background: url(../img/button.png) no-repeat;
   background-size: contain;
   &:active{
-        background: url(../img/button-pressed.png) no-repeat;
-        background-size: contain;
-      }
+    background: url(../img/button-pressed.png) no-repeat;
+    background-size: contain;
+  }
 }
 
 .btn {

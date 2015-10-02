@@ -185,15 +185,14 @@ input[type=checkbox] {
   float: left; }
 
 .gallery {
-  width: inherit;
-  width: 80%; }
+  margin: 0 auto; }
 
 .grid {
   width: 1210px;
   margin: 0 auto; }
 
 .text-games {
-  margin-bottom: 2%; }
+  margin: 2% auto; }
 
 .content-banners-games {
   width: 70%;
@@ -470,19 +469,15 @@ input[type=checkbox] {
 
   /*Gallery*/
   .grid {
-    width: 80%; } }
+    width: 90%; } }
 @media screen and (max-width: 920px) {
-  .title-main {
-    margin: 8% auto; }
-
   /*Expert*/
   .experts {
     width: inherit;
     margin: 0 5%; }
 
   .info-experts {
-    width: 100%;
-    margin-bottom: 2%; }
+    width: 100%; }
 
   .img-experts-right, .img-experts-left {
     float: inherit;
@@ -494,10 +489,18 @@ input[type=checkbox] {
   .grid img {
     width: 49%; } }
 @media only screen and (max-width: 768px) {
-  /*Games Pages*/
-  .overlay-games-text {
-  font-size: 3rem;}
+  .img-games-button {
+    display: none; }
 
+  .overlay-games-text {
+    float: left;
+    width: 99%;
+    margin-top: 67px; }
+
+  .overlay-games-text {
+    font-size: 2.4rem; }
+
+  /*Games Pages*/
   .play-game, .note-play {
     display: none; }
 
@@ -524,13 +527,6 @@ input[type=checkbox] {
     .text-info-game h3 {
       margin: 31px 0; }
 
-  .img-games-button {
-    display: none;}
-  .overlay-games-text {
-    float: left;
-    width: 99%;
-    margin-top: 67px;}
-
   /*Games*/
   .cont-game {
     width: 93%; }
@@ -538,7 +534,18 @@ input[type=checkbox] {
   .overlay-games {
     width: 96%; }
     .overlay-games:hover {
-      width: 96%; } }
+      width: 96%; }
+
+  .text-games {
+    margin: 10% auto; }
+
+  /*Footer*/
+  .text-footer {
+    font-size: 1.4rem;
+    width: 80%; }
+
+  .content-info-footer {
+    margin: 60px 0; } }
 @media only screen and (max-width: 384px) {
   /*Expert*/
   .experts {
@@ -557,13 +564,5 @@ input[type=checkbox] {
     margin: inherit;
     display: block;
     margin: 0 auto; } }
-/*Footer*/
-@media only screen and (max-width: 768px) {
-  .text-footer {
-    font-size: 1.4rem;
-    width: 80%; }
-
-  .content-info-footer {
-    margin: 60px 0; } }
 
 /*# sourceMappingURL=style.css.map */

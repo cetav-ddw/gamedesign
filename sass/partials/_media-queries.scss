@@ -149,18 +149,13 @@
   /*Gallery*/
 
   .grid {
-    width: 80%;
+    width: 90%;
   }
 }
 
 
 
 @media screen and (max-width: 920px)  {
-
-  .title-main {
-    margin: 8% auto;
-  }
-  
   /*Expert*/
 
   .experts {
@@ -170,7 +165,6 @@
 
   .info-experts {
     width: 100%;
-    margin-bottom: 2%;
   }
 
   .img-experts-right, .img-experts-left{
@@ -189,6 +183,20 @@
 
 
 @media only screen and (max-width: 768px){
+
+  .img-games-button {
+    display: none;
+  }
+
+  .overlay-games-text {
+    float: left;
+    width: 99%;
+    margin-top: 67px;
+  }
+
+  .overlay-games-text {
+    font-size: 2.4rem;
+  }
 
   /*Games Pages*/
 
@@ -218,12 +226,11 @@
 
   .text-info-game{
     float: left;
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 30px;
-      
-      h3{
-        margin: 31px 0;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    h3{
+      margin: 31px 0;
     }
   }
 
@@ -241,7 +248,20 @@
     }
   }
 
+  .text-games {
+    margin: 10% auto;
+  }
 
+  /*Footer*/
+
+  .text-footer {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .content-info-footer {
+    margin: 60px 0;
+  }
 
 }
 
@@ -268,19 +288,5 @@
     margin: inherit;
     display: block;
     margin: 0 auto;
-  }
-}
-
-/*Footer*/
-
-@media only screen and (max-width: 768px){
-
-  .text-footer {
-    font-size: 1.4rem;
-    width: 80%;
-  }
-
-  .content-info-footer {
-    margin: 60px 0;
   }
 }
