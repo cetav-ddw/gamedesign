@@ -65,6 +65,8 @@ footer {
 
 header {
   background: url(../img/background-general.gif);
+  border-bottom: 5px solid #359E97;
+  box-shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   width: 100%;
   margin-bottom: 5%; }
