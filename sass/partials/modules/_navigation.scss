@@ -1,3 +1,14 @@
+/* Chrome, Safari, Opera */
+@-webkit-keyframes dropDown {
+    0% {height: 0px;}
+    100% {height: 180px;}
+}
+
+@-webkit-keyframes dropUp {
+    0% {height: 180px;}
+    100% {height: 0px;}
+}
+
 header nav{
 	box-sizing: border-box;
 	display: block;
@@ -24,9 +35,13 @@ header nav{
 }
 
 .sub-nav{
-	display: none;
-	width: 100%;
+	-webkit-animation: dropUp 0.5s;
+	-webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+	height: 0px;
+	overflow: hidden;
 	padding: 10px 0 0;
+	width: 100%;
 }
 
 .nav-item{
@@ -36,7 +51,11 @@ header nav{
 
 	&:hover{
 		& .sub-nav{
+			-webkit-animation: dropDown 0.5s;
+    		-webkit-animation-iteration-count: 1;
+    		-webkit-animation-timing-function: linear;
 			display: inline-block;
+			height: 180px;
 		}
 	}
 }
