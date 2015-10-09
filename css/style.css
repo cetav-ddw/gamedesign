@@ -314,6 +314,14 @@ input[type=checkbox] {
       .info-game h2 {
         font-size: 2rem; } }
 
+.img-game img {
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .img-game img {
+      border: 5px solid #359e97;
+      box-shadow: 10px 10px 0px 0px #359e97;
+      margin-bottom: 20px; } }
+
 .img-game {
   width: 100%; }
   @media (min-width: 1024px) {
@@ -324,9 +332,10 @@ input[type=checkbox] {
         margin: 3% 0; }
       .img-game ul {
         float: left;
-        margin-right: 20%; }
-      .img-game img {
-        width: 100%; } }
+        margin-right: 20%; } }
+  .img-game h3 {
+    color: #359e97;
+    font-size: 30px; }
 
 .text-info-game {
   display: inline-block;
@@ -338,7 +347,11 @@ input[type=checkbox] {
       width: 45%;
       margin-left: 5%; } }
   .text-info-game h3 {
-    margin: 31px 0; }
+    margin: 31px 0;
+    color: #359e97;
+    font-size: 30px; }
+  .text-info-game h2 {
+    color: #D2643B; }
 
 @media (min-width: 1024px) {
   .content-demo-info {
