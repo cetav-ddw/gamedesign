@@ -3,11 +3,16 @@
 //
 
 .play{
-  background: url(../img/play.png) no-repeat;
-  background-size: contain;
-  width: 77px;
-  height: 77px;
-  color: transparent;
+	background: url(../img/play.png) no-repeat;
+	background-size: contain;
+	border: none;
+	color: transparent;
+	height: 77px;
+	width: 77px;
+	margin: 25% 47% 0 47%;
+	overflow: hidden; 
+	position: absolute;
+	z-index: 3;
 }
 
 .video{
@@ -33,22 +38,16 @@
 	z-index: 2;
 }
 
-#play-btn{
-	position: absolute;
-	margin: 26% 45%;
-	z-index: 3;
-}
-
 #play-btn-label{
 	color: orange;
 	display: block;
 	font-family: $title-text;
-	font-size: 2em;
-	margin: 28% 8%;
+	font-size: 3em;
+	margin: 30% auto 0 auto;
 	padding: 1.5em 0 0 0;
 	position: absolute;
 	text-align: center;
-	width: 80%;
+	width: 100%;
 	z-index: 3;
 }
 
