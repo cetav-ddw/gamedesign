@@ -532,7 +532,7 @@ input[type=checkbox] {
 /* line 25, ../sass/partials/modules/_videos.scss */
 .video iframe {
   display: inline-block;
-  height: 90%;
+  height: 100%;
   margin: 0 auto;
   position: absolute;
   width: 100%;
