@@ -5,7 +5,7 @@
   align-items: center;
   display: flex;
   width: 85%;
-  margin: 30px auto;
+  margin: 15px auto;
 }
 
 .partner-item{
@@ -15,5 +15,16 @@
   img{
     height: auto;
     max-width: 100%;
+    width: 81%;
+    margin-top: 8px;
   }
+}
+.firts-text {
+  font-size: 1.5rem;
+  margin-top: 4%;
+}
+.overlay-about {
+  background: #f4f4f4;
+  display: inline-block;
+  height: 297px;
 }

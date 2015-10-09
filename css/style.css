@@ -34,7 +34,8 @@ button:focus, button:active {
 
 .content {
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 30px; }
 
 .title-main {
   color: #359e97;
@@ -44,7 +45,7 @@ button:focus, button:active {
   font-family: "Iceland", serif;
   padding: 1% 0 2% 0;
   margin-bottom: 5%;
-  box-shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 4px 8px 3px #359e97;
   background-image: url(../img/background-general.gif); }
 
 footer {
@@ -65,16 +66,15 @@ footer {
 
 header {
   background: url(../img/background-general.gif);
-  border-bottom: 5px solid #359E97;
+  border-bottom: 5px solid #ff6e3a;
   box-shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  width: 100%;
-  margin-bottom: 5%; }
+  width: 100%; }
 
 .header-logo {
   display: block;
   height: auto;
-  margin: 10% auto 13% auto; }
+  margin: 12% auto 8% auto; }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes dropDown {
@@ -178,7 +178,7 @@ input[type=checkbox] {
   align-items: center;
   display: flex;
   width: 85%;
-  margin: 30px auto; }
+  margin: 15px auto; }
 
 .partner-item {
   float: left;
@@ -186,7 +186,18 @@ input[type=checkbox] {
   width: 20%; }
   .partner-item img {
     height: auto;
-    max-width: 100%; }
+    max-width: 100%;
+    width: 81%;
+    margin-top: 8px; }
+
+.firts-text {
+  font-size: 1.5rem;
+  margin-top: 4%; }
+
+.overlay-about {
+  background: #f4f4f4;
+  display: inline-block;
+  height: 297px; }
 
 .experts {
   width: 900px;
@@ -232,16 +243,16 @@ input[type=checkbox] {
   color: #fff; }
 
 .banner-game-one {
-  background-color: #4DB558; }
+  background: url(../img/last.png); }
 
 .banner-game-two {
-  background-color: #ADDADD; }
+  background: url(../img/owak.png); }
 
 .banner-game-three {
-  background-color: #F59331; }
+  background: url(../img/trash.png); }
 
 .banner-game-four {
-  background-color: #d65f21; }
+  background: url(../img/sorry.png); }
 
 .overlay-games {
   width: 93%;
