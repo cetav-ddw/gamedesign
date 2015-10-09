@@ -2,47 +2,67 @@
 // Games Pages
 //
 
-  .content-demo-info{
-    margin: 5% 0;
+  .play-game, .note-play {
+    display: none;
+    @media (min-width: 1024px){
+      display: block;
+    }
   }
 
   .info-game{ 
-    overflow: hidden;
-    width: 90%;
     margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
     li{
       font-family: "Muli";
-      font-size: 1.2rem;
-      line-height: 2.5rem;
+       font-size: 1.2rem;
+       line-height: 2.5rem;
     } 
-
-    h2{
-      margin-bottom: 20px;
+    h2 {
+      margin: 20px 0;
+      @media (min-width: 1024px){
+        font-size: 2rem;
+      }
     }
   }
 
   .img-game{
-    float: left;
-    width: 50%;
-    h3{
-      margin: 3% 0;
-    }
-    ul {
+    width:100%;
+    @media (min-width: 1024px){
       float: left;
-      margin-right: 20%;
-    }
-    img{
-      width: 100%;
+      width: 50%;
+      h3{
+        margin: 3% 0;
+      }
+      ul {
+        float: left;
+        margin-right: 20%;
+      }
+      img{
+        width: 100%;
+      }
     }
   }
 
   .text-info-game{
-    float: right;
     display: inline-block;
-    width: 45%;
-    margin-left: 5%;
+    width: 100%;
+    margin-bottom: 30px;
+    @media (min-width: 1024px){
+      float: right;
+      width: 45%;
+      margin-left: 5%;
+    }
+    h3{
+      margin: 31px 0;
+    }
   }
 
+@media (min-width: 1024px){
+
+  .content-demo-info{
+    margin: 5% 0;
+  }
 
   .play-game{
     margin-top: 8%;
@@ -53,10 +73,10 @@
     margin-top: 1.2%;
     font-family: "Iceland";
     span{
-      text-transform: uppercase;
+    text-transform: uppercase;
     }
   }
-
+}
 
 /*Estilos de los Botones*/
 

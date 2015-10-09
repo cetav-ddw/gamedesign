@@ -59,7 +59,7 @@ button:focus, button:active {
 	font-family:$title-text;
   padding: 1% 0 2% 0;
   margin-bottom: 5%;
-  box-shadow:1px 4px 8px 3px #359e97;
+  border-bottom: 6px solid #359e97;
   background-image: url(../img/background-general.gif);
 }
 
