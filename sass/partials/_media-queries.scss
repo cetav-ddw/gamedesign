@@ -227,6 +227,38 @@
 
 }
 
+@media only screen and (max-width:768px) {
+  .img-experts-right {
+    margin-bottom: 42px;
+  }
+  .img-experts-left {
+    margin-bottom: 42px;
+  }
+  .experts-right-h3 {
+    width: 100%;
+    float: right;
+    text-align: center;
+  }
+  .experts-right-p {
+    width: 100%;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+  .experts-left-h3 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-left: 0;
+  }
+  .experts-left-p {
+    width: 100%;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+}
+
 @media only screen and (max-width: 384px) {
 
   /*Expert*/

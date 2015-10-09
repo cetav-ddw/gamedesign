@@ -9,10 +9,17 @@
   display: inline-block;
 }
 
-.experts h3{
+.experts-right-h3{
   margin-bottom: 3%;
+  width: 70%;
+  margin-right: 4px;
+  float: right;
 }
-
+.experts-right-p {
+	width:70%;
+	float: right;
+	margin-left:20px;
+}
 .info-experts {
   margin-bottom: 10%;
 }
@@ -20,8 +27,23 @@
 .img-experts-right {
   float: right;
   margin: 30px 0;
+  border: 5px solid #359e97;
+  box-shadow: 10px 10px 0px 0px #359e97;
 }
 
 .img-experts-left {
   float: left;
+  border: 5px solid #359e97;
+  box-shadow:10px 10px 0px 0px #359e97;
+}
+.experts-left-h3 {
+  width: 70%;
+  margin-bottom: 3%;
+  margin-left: 30px;
+  float: left;
+}
+.experts-left-p {
+  width:70%;
+  float: left;
+  margin-left:30px;
 }
