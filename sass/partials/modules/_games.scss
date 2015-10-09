@@ -22,19 +22,19 @@
 }
 
 .banner-game-one {
-	background: url(../img/last.png);
+	background-color: #4DB558;
 }
 
 .banner-game-two {
-	background:url(../img/owak.png);	
+	background-color:#4E9093;	
 }
 
 .banner-game-three {
-	background: url(../img/trash.png);	
+	background-color:#F59331 ;	
 }
 
 .banner-game-four {
-	background: url(../img/sorry.png);	
+	background-color:#d65f21;	
 }
 
 .overlay-games { 
@@ -42,7 +42,7 @@
   height: 88%;
   max-width: 100%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background:url(../img/last.png);
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
   margin: 2.4% auto;
   &:hover {
@@ -52,6 +52,16 @@
     display: block;
     box-shadow: none;
   }
+}
+
+.overlay-games-two {
+  background:url(../img/owak.png);
+}
+.overlay-games-three {
+  background:url(../img/trash.png);
+}
+.overlay-games-four {
+  background: url(../img/sorry.png);
 }
 
 .overlay-games-text {
