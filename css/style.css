@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Iceland|Muli);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+body {
+  background-color: #f4f4f4; }
+
 a {
   font-family: "Iceland", serif; }
 
@@ -66,8 +69,8 @@ footer {
 
 header {
   background: url(../img/background-general.gif);
-  border-bottom: 5px solid #ff6e3a;
-  box-shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 4px 8px 3px #ff6e3a;
+  margin-bottom: 1%;
   overflow: hidden;
   width: 100%; }
 
@@ -99,7 +102,7 @@ header nav {
 .nav-logo {
   float: left;
   height: auto;
-  margin-right: 2%;
+  margin-top: 10px;
   max-width: 10%; }
 
 .main-nav {
@@ -173,11 +176,15 @@ input[type=checkbox] {
   display: none; }
 
 /*Show menu when invisible checkbox is checked*/
+.about {
+  background-color: #fff;
+  overflow: hidden; }
+
 /*Partners*/
 .partners {
   align-items: center;
   display: flex;
-  width: 85%;
+  width: 55%;
   margin: 15px auto; }
 
 .partner-item {
@@ -197,7 +204,7 @@ input[type=checkbox] {
 .overlay-about {
   background: #f4f4f4;
   display: inline-block;
-  height: 297px; }
+  height: 327px; }
 
 .experts {
   width: 900px;
@@ -352,7 +359,7 @@ input[type=checkbox] {
 .video {
   position: relative;
   padding-bottom: 56.25%;
-  margin: -5% auto 0 auto;
+  margin: -1% auto 0 auto;
   z-index: 1; }
 
 .video iframe {

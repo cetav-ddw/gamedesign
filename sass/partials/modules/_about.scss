@@ -1,10 +1,15 @@
 
+.about {
+  background-color: #fff;
+  overflow: hidden;
+}
+
 /*Partners*/
 
 .partners{
   align-items: center;
   display: flex;
-  width: 85%;
+  width: 55%;
   margin: 15px auto;
 }
 
@@ -26,5 +31,5 @@
 .overlay-about {
   background: #f4f4f4;
   display: inline-block;
-  height: 297px;
+  height: 327px;
 }
