@@ -39,16 +39,14 @@
       </ul>
     </nav>
   </header>
-
-  <!-- video -->
-  <div class="video">
-    <iframe id="player1" src="https://player.vimeo.com/video/141470921?api=1&player_id=player1?color=ffffff&title=0&byline=0&portrait=0" width="320" height="568" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <img class="video-cover" src="../img/demo-covers/owak-cover.jpg" alt="video cover"/>
-    <button id="play-btn" class="btn play">play</button>
-    <label for="play-btn" id="play-btn-label">Descubre como se hizo</label>
-  </div>
-  <!-- End video -->
-
+    <!-- video -->
+    <div class="video">
+      <iframe src="https://player.vimeo.com/video/141470921?api=1&player_id=player1?color=ffffff&title=0&byline=0&portrait=0" width="320" height="568" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="video"></iframe>
+      <img class="video-cover" id="video-cover" src="../img/demo-covers/owak-cover.jpg" alt="video cover"/>
+      <button id="play-btn" class="btn play">play</button>
+      <label for="play-btn" id="play-btn-label">Descubre como se hizo</label>
+    </div>
+    <!-- End video -->
   <section class="content-demo-info">
     <div class="info-game">
       
@@ -89,7 +87,7 @@
       </div>
   </footer>
   <!-- Script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/froogaloop.min.js"></script>
   <script type="text/javascript" src="../js/videocover.js"></script>
   <!-- /Script -->
 </body>
