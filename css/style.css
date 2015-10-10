@@ -347,7 +347,7 @@ input[type=checkbox] {
   width: 100%; }
   .img-game h3 {
     color: #359e97;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 15px; }
   .img-game li {
     font-size: 1rem;
@@ -362,7 +362,7 @@ input[type=checkbox] {
         float: left;
         margin-right: 20%; }
       .img-game li {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 2.4rem; } }
 
 .text-info-game {
@@ -378,7 +378,7 @@ input[type=checkbox] {
   .text-info-game h3 {
     margin: 31px 0;
     color: #359e97;
-    font-size: 1.8rem; }
+    font-size: 2rem; }
   .text-info-game h2 {
     color: #D2643B; }
 
