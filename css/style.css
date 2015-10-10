@@ -345,6 +345,13 @@ input[type=checkbox] {
 .img-game {
   margin-bottom: 50px;
   width: 100%; }
+  .img-game h3 {
+    color: #359e97;
+    font-size: 1.8rem;
+    margin-bottom: 15px; }
+  .img-game li {
+    font-size: 1rem;
+    line-height: 1.5rem; }
   @media (min-width: 1024px) {
     .img-game {
       float: left;
@@ -353,14 +360,9 @@ input[type=checkbox] {
         margin: 3% 0; }
       .img-game ul {
         float: left;
-        margin-right: 20%; } }
-  .img-game h3 {
-    color: #359e97;
-    font-size: 1.8rem;
-    margin-bottom: 15px; }
-  .img-game li {
-    font-size: 1rem;
-    line-height: 1.5rem; }
+        margin-right: 20%; }
+      .img-game li {
+        font-size: 1.2rem; } }
 
 .text-info-game {
   display: inline-block;
@@ -370,7 +372,8 @@ input[type=checkbox] {
     .text-info-game {
       float: right;
       width: 45%;
-      margin-left: 5%; } }
+      margin-left: 5%;
+      font-size: 1.8rem; } }
   .text-info-game h3 {
     margin: 31px 0;
     color: #359e97;
