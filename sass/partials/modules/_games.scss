@@ -2,49 +2,67 @@
 // Estilos de Juegos
 //
 
-.text-games {
-  margin: 2% auto;
-}
-
-.content-banners-games {
-  width: 70%;
-  margin: 4% auto;
-  text-align: center;
+.banners-games {
+  max-width: 415px;
+  margin: 0 auto;
+  @media (min-width: 1024px)  {
+    max-width: 875px;
+  }
 }
 
 .cont-game {
-  width: 36%;
-  max-width: 100%;
-  height: 200px;
+  width: 100%;
+  max-width: 415px;
+  height: 250px;
   display: inline-block;
-  margin: 1%;
-  color:#fff;
+  margin: 0 0 10px 0;
+  color: #fff;
+  overflow: hidden;
+  @media (min-width: 1024px)  {
+    margin: 10px;
+  }
+}
+.game-name {
+  margin: 0 auto;
+  max-width: 300px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  @media (min-width: 1024px)  {
+    &:before{
+      content: url(../img/control.png);
+      display: block;
+    }
+  }
 }
 
-.banner-game-one {
+
+
+
+.game-color-one {
   background-color: #4DB558;
 }
 
-.banner-game-two {
+.game-color-two {
 	background-color:#4E9093;	
 }
 
-.banner-game-three {
+.game-color-three {
 	background-color:#F59331 ;	
 }
 
-.banner-game-four {
+.game-color-four {
 	background-color:#d65f21;
 }
 
 .overlay-games { 
-  width: 93%;
-  height: 88%;
+  width: 96%;
+  height: 92%;
   max-width: 100%;
   text-align: center;
-  background:url(../img/last.png);
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
   margin: 2.4% auto;
+  display: block;
   &:hover {
     background-color: rgba(0, 0, 0, 0.4);
     width: 94%;
@@ -54,32 +72,18 @@
   }
 }
 
-.overlay-games-two {
+.game-one {
+  background:url(../img/last.png);
+}
+
+.game-two {
   background:url(../img/owak.png);
 }
-.overlay-games-three {
+
+.game-three {
   background:url(../img/trash.png);
 }
-.overlay-games-four {
+
+.game-four {
   background: url(../img/sorry.png);
-}
-
-.overlay-games-text {
-  font-size: 2rem;
-  float: left;
-  width: 99%;
-  margin-top: 98px;
-}
-
-.games-link {
-  text-decoration: none;
-  color: #fff;
-}
-
-.img-games-button {
-    width: 8%;
-    display: inline-block;
-    height: 140px;
-    position: absolute;
-    margin-left: -4%;
 }

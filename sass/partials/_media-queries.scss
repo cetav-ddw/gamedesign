@@ -4,10 +4,6 @@
 
 @media screen and (max-width: 1365px){
 
-  .content {
-    width: 80%;
-  }
-
   /*Menu*/
 
 	.nav-item a, .lang-item a{
@@ -18,17 +14,7 @@
 		margin-top: 2%;
 	}
 
-  /*Games*/
 
-  .overlay-games {
-    width: 336px;
-    &:hover {
-      width: 336px;
-    }
-  }
-  .cont-game {
-    width: 360px;
-  }
 
 }
 
@@ -132,26 +118,11 @@
       display: block;
   }
 
-  /*Games*/
-
-  .overlay-games {
-    width: 256px;
-    &:hover {
-      width: 256px;
-    }
-  }
-  .cont-game {
-    width: 280px;
-  }
-  .overlay-games-text {
-    font-size: 1.5rem;
-  }
 }
 
 
-
+/*
 @media screen and (max-width: 920px)  {
-  /*Expert*/
 
   .experts {
     width: inherit;
@@ -173,45 +144,13 @@
     visibility: hidden;
   }
 }
-
+*/
 
 @media only screen and (max-width: 768px){
   
   .play {
     width: 37px;
     height: 37px;
-  }
-
-  .img-games-button {
-    display: none;
-  }
-
-  .overlay-games-text {
-    float: left;
-    width: 99%;
-    margin-top: 67px;
-  }
-
-  .overlay-games-text {
-    font-size: 2.4rem;
-  }
-
-  /*Games*/
-
-  .cont-game {
-    width: 93%;
-  }
-
-  .overlay-games {
-    width: 96%;
-
-    &:hover {
-      width: 96%;
-    }
-  }
-
-  .text-games {
-    margin: 10% auto;
   }
 
   /*Footer*/
@@ -226,7 +165,7 @@
   }
 
 }
-
+/*
 @media only screen and (max-width:768px) {
   .img-experts-right {
     margin-bottom: 42px;
@@ -258,49 +197,4 @@
     margin-bottom: 30px;
   }
 }
-
-@media only screen and (max-width: 384px) {
-
-  /*Expert*/
-
-  .experts {
-    width: inherit;
-    margin: 0 5%;
-  }
-
-  .experts h3{
-    margin: 3%;
-  }
-
-  .info-experts {
-    width: 100%;
-    margin-bottom: 10%;
-  }
-
-  .img-experts-right, .img-experts-left{
-    float: inherit;
-    margin: inherit;
-    display: block;
-    margin: 0 auto;
-  }
-
-  /*Games*/
-
-  .overlay-games {
-    background: none;
-    box-shadow: none;
-  }
-
-  .banner-game-one {
-    background-color: #2E6D35;
-  }
-  .banner-game-two {
-    background-color: #576E6F;
-  }
-  .banner-game-three {
-    background-color: #7B4A19;
-  }
-  .banner-game-four {
-    background-color: #6C3011;
-  }
-}
+*/

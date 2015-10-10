@@ -1,29 +1,40 @@
 
 .about {
-  background-color: #fff;
-  overflow: hidden;
+  padding: 2% 0;
+}
+
+.about span{
+  color: #ff6e3a;
+}
+
+@media (min-width: 1024px)  {
+  .about p:first-child{
+    font-size: 1.5rem;
+  }
 }
 
 /*Partners*/
 
 .partners{
-  align-items: center;
-  display: flex;
-  width: 55%;
-  margin: 15px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 20px 15px 20px;
 }
 
 .partner-item{
-  float: left;
-  text-align: center;
-  width: 20%;
+  display: inline-block;
+  width: 49%;
+  @media (min-width: 1024px)  {
+    width: inherit;
+  }
   img{
-    height: auto;
-    max-width: 100%;
-    width: 81%;
-    margin-top: 8px;
+    width: 100%;
+    @media (min-width: 1024px)  {
+      width: 60%;
+    }
   }
 }
+
 .firts-text {
   font-size: 1.5rem;
   margin-top: 4%;
