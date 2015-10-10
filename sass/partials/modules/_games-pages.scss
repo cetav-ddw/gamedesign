@@ -20,22 +20,20 @@
     } 
     h2 {
       margin: 20px 0;
-      @media (min-width: 1024px){
-        font-size: 2rem;
-      }
     }
   }
 
   .img-game img{
+        margin-bottom: 20px;
         width: 100%;
         @media (min-width: 1024px){
           border: 5px solid #359e97;
           box-shadow: 10px 10px 0px 0px #359e97;
-          margin-bottom: 20px;
       }
   }
 
   .img-game{
+    margin-bottom: 50px;
     width:100%;
     @media (min-width: 1024px){
       float: left;
@@ -50,7 +48,12 @@
     } 
     h3{
       color: #359e97;
-      font-size: 30px;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+    li{
+      font-size: 1rem;
+      line-height: 1.5rem;
     }
   }
 
@@ -66,7 +69,7 @@
     h3{
       margin: 31px 0;
       color: #359e97;
-      font-size: 30px;
+      font-size: 1.8rem;
     }
     h2{
       color: #D2643B;

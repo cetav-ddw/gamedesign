@@ -333,19 +333,17 @@ input[type=checkbox] {
     line-height: 2.5rem; }
   .info-game h2 {
     margin: 20px 0; }
-    @media (min-width: 1024px) {
-      .info-game h2 {
-        font-size: 2rem; } }
 
 .img-game img {
+  margin-bottom: 20px;
   width: 100%; }
   @media (min-width: 1024px) {
     .img-game img {
       border: 5px solid #359e97;
-      box-shadow: 10px 10px 0px 0px #359e97;
-      margin-bottom: 20px; } }
+      box-shadow: 10px 10px 0px 0px #359e97; } }
 
 .img-game {
+  margin-bottom: 50px;
   width: 100%; }
   @media (min-width: 1024px) {
     .img-game {
@@ -358,7 +356,11 @@ input[type=checkbox] {
         margin-right: 20%; } }
   .img-game h3 {
     color: #359e97;
-    font-size: 30px; }
+    font-size: 1.8rem;
+    margin-bottom: 15px; }
+  .img-game li {
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
 .text-info-game {
   display: inline-block;
@@ -372,7 +374,7 @@ input[type=checkbox] {
   .text-info-game h3 {
     margin: 31px 0;
     color: #359e97;
-    font-size: 30px; }
+    font-size: 1.8rem; }
   .text-info-game h2 {
     color: #D2643B; }
 
