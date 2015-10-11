@@ -6,6 +6,7 @@
   margin: 0 auto;
   @media (min-width: 1024px)  {
     width: 900px;
+    margin: 110px auto;
     &:before{
       content: url(../img/ship.png);
       margin-top: -52px;

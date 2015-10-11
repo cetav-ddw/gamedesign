@@ -64,7 +64,7 @@ button:focus, button:active {
   text-shadow: -3px 2px 0px #e8ebed;
 	font-family:$title-text;
   padding: 1% 0 2% 0;
-  margin: 4% 0;
+  margin-bottom: 1.5%;
   border-bottom: 6px solid #359e97;
   background-image: url(../img/background-general.gif);
 }
@@ -91,4 +91,9 @@ footer {
 
 .content-info-footer {
   margin: 60px 0;
+}
+
+.gallery {
+  width: 85%;
+  margin: 4% auto;
 }

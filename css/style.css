@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Iceland|Muli);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 body {
   background-color: #f4f4f4; }
 
@@ -52,7 +53,7 @@ button:focus, button:active {
   text-shadow: -3px 2px 0px #e8ebed;
   font-family: "Iceland", serif;
   padding: 1% 0 2% 0;
-  margin: 4% 0;
+  margin-bottom: 1.5%;
   border-bottom: 6px solid #359e97;
   background-image: url(../img/background-general.gif); }
 
@@ -76,6 +77,10 @@ footer {
 .content-info-footer {
   margin: 60px 0; }
 
+.gallery {
+  width: 85%;
+  margin: 4% auto; }
+
 header {
   background: url(../img/background-general.gif);
   border-bottom: 6px solid #ff6e3a;
@@ -85,7 +90,7 @@ header {
 .header-logo {
   display: block;
   width: 80%;
-  margin: 13% auto 15% auto; }
+  margin: 18% auto 15% 9%; }
   @media (min-width: 1024px) {
     .header-logo {
       width: 600px;
@@ -107,16 +112,12 @@ header {
   padding: 20px 20px 15px 20px; }
 
 .partner-item {
-  display: inline-block;
-  width: 49%; }
+  display: inline-block; }
   @media (min-width: 1024px) {
     .partner-item {
       width: inherit; } }
   .partner-item img {
-    width: 100%; }
-    @media (min-width: 1024px) {
-      .partner-item img {
-        width: 60%; } }
+    width: 60%; }
 
 .firts-text {
   font-size: 1.5rem;
@@ -267,7 +268,8 @@ input[type=checkbox]:checked ~ nav {
   margin: 0 auto; }
   @media (min-width: 1024px) {
     .experts {
-      width: 900px; }
+      width: 900px;
+      margin: 110px auto; }
       .experts:before {
         content: url(../img/ship.png);
         margin-top: -52px;
@@ -500,13 +502,19 @@ input[type=checkbox]:checked ~ nav {
   @media (min-width: 1024px) {
     .play {
       height: 77px;
-      width: 77px; } }
+      width: 77px;
+      left: 0; } }
 
 .video {
   position: relative;
   padding-bottom: 56.25%;
   margin: -1% auto 0 auto;
   z-index: 1; }
+  @media (min-width: 1024px) {
+    .video {
+      padding-bottom: 0%;
+      text-align: center;
+      background-color: #000; } }
 
 .video iframe {
   display: inline-block;
@@ -514,6 +522,12 @@ input[type=checkbox]:checked ~ nav {
   margin: 0 auto;
   position: absolute;
   width: 100%; }
+  @media (min-width: 1024px) {
+    .video iframe {
+      margin: 0 auto;
+      position: inherit;
+      height: 516px;
+      width: 900px; } }
 
 .video-cover {
   background-color: #000;
@@ -521,6 +535,9 @@ input[type=checkbox]:checked ~ nav {
   height: 100%;
   width: 100%;
   z-index: 2; }
+  @media (min-width: 1024px) {
+    .video-cover {
+      left: 0; } }
 
 #play-btn-label {
   display: none; }
@@ -528,13 +545,11 @@ input[type=checkbox]:checked ~ nav {
     #play-btn-label {
       color: orange;
       display: block;
-      font-family: "Iceland", serif;
+      font-family: "Press Start 2P", "Iceland";
       font-size: 3em;
-      margin: 30% auto 0 auto;
-      padding: 1.5em 0 0 0;
+      margin: 7%;
       position: absolute;
-      text-align: center;
-      width: 100%;
-      z-index: 3; } }
+      z-index: 3;
+      top: 0; } }
 
 /*# sourceMappingURL=style.css.map */

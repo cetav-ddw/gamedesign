@@ -10,7 +10,7 @@ header{
 .header-logo {
   display: block;
   width: 80%;
-  margin: 13% auto 15% auto;
+  margin: 18% auto 15% 9%;
   @media (min-width: 1024px)  {
     width: 600px;
     margin: 8% auto 11% auto;
@@ -45,15 +45,11 @@ header{
 
 .partner-item{
   display: inline-block;
-  width: 49%;
   @media (min-width: 1024px)  {
     width: inherit;
   }
   img{
-    width: 100%;
-    @media (min-width: 1024px)  {
-      width: 60%;
-    }
+    width: 60%;
   }
 }
 

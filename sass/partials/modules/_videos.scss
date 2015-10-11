@@ -16,6 +16,7 @@
   @media (min-width: 1024px){
     height: 77px;
     width: 77px;
+    left: 0;
   }
 }
 
@@ -24,14 +25,27 @@
 	padding-bottom: 56.25%;
 	margin: -1% auto 0 auto;
 	z-index: 1;
+  @media (min-width: 1024px){
+    padding-bottom: 0%;
+    text-align: center;
+    background-color: #000;
+  }
 }
+    
+    
 
 .video iframe{
 	display: inline-block;
 	height: 100%;
-   	margin: 0 auto;
+  margin: 0 auto;
 	position: absolute;
-  	width: 100%;
+  width: 100%;
+  @media (min-width: 1024px){
+    margin: 0 auto;
+    position: inherit;
+    height: 516px;
+    width: 900px;
+  }
 }
 
 .video-cover{
@@ -40,21 +54,22 @@
 	height: 100%;
 	width: 100%;
 	z-index: 2;
+  @media (min-width: 1024px){
+    left: 0;
+  }
 }
 
 #play-btn-label{
   display: none;
   @media (min-width: 1024px)  {
-  	color: orange;
-  	display: block;
-  	font-family: $title-text;
-  	font-size: 3em;
-  	margin: 30% auto 0 auto;
-  	padding: 1.5em 0 0 0;
-  	position: absolute;
-  	text-align: center;
-  	width: 100%;
-  	z-index: 3;
+    color: orange;
+    display: block;
+    font-family: $title-videos;
+    font-size: 3em;
+    margin: 7%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
   }
 }
 
