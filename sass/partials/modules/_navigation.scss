@@ -10,34 +10,56 @@
 }
 
 header nav{
-	box-sizing: border-box;
-	display: block;
-	height: 90px;
-	margin: 0 auto;
-	padding: 10px 2%;
-	width: 85%;
+  display: none;
+}
+
+header nav, .main-nav, .nav-item{
+  float: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+@media (min-width: 1024px){
+  header nav{
+    background-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    display: block;
+    height: 95px;
+    margin: 0 auto;
+    padding: 10px 2%;
+    width: 85%;
+  }
 }
 
 /*Navbar Styles*/
 
 .nav-logo{
-	float: left;
-	height: auto;
-	margin-top: 10px;
-	max-width: 10%;
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+  	float: left;
+  	height: auto;
+  	margin-top: 10px;
+  	max-width: 10%;
+  }
 }
 
 .main-nav{
 	float: left;
 	margin-top: 1%;
 	overflow: hidden;
-	width: 65%;
+  @media (min-width: 1024px){
+	 width: 90%;
+  }
 }
 
 .sub-nav{
 	-webkit-animation: dropUp 0.5s;
 	-webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
 	height: 0px;
 	overflow: hidden;
 	padding: 10px 0 0;
@@ -45,15 +67,22 @@ header nav{
 }
 
 .nav-item{
-	display: inline-block;
-	float: left;
-	margin: 5px 2%;
-
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20px 0;
+  @media (min-width: 1024px){
+  	display: inline-block;
+  	float: left;
+  	margin: 5px 2%;
+    text-align: initial;
+    width: initial;
+    border: none;
+    padding: initial;
+  }
 	&:hover{
 		& .sub-nav{
 			-webkit-animation: dropDown 0.5s;
-    		-webkit-animation-iteration-count: 1;
-    		-webkit-animation-timing-function: linear;
+    	-webkit-animation-iteration-count: 1;
+    	-webkit-animation-timing-function: linear;
 			display: inline-block;
 			height: 180px;
 		}
@@ -77,44 +106,54 @@ header nav{
 	width: 100%;
 }
 
-/*Language Toggle*/
-
-.lang-toggle{
-	float: right;
-	overflow: hidden;
-	padding: 10px;
-	width: 10%;
-}
-
-.lang-item{
-	float: left;
-	margin-right: 10%; 
-}
-
-.lang-item a{
-	color: $link-colors;
-	font-size: 2rem;
-	padding: 2px;
-	text-decoration: none;
-	text-transform: capitalize;
-
-	&:hover{
-		border-bottom: 2px solid #f2f2f2;
-	}
-}
-
 .mobile-logo{
-	display: none;
-}
-
-/*Navigation Menu Button*/
-.show-menu {
-	display: none;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  width: 45px;
+  float: left;
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  @media (min-width: 1024px){
+    display: none;
+  }
 }
 
 /*Hide checkbox*/
 input[type=checkbox]{
+  display: none;
+}
+
+.show-menu {
+  color: #f2f2f2;
+  display: block;
+  float: right;
+  width: 20px;
+  height: 22px;
+  margin: 20px;
+  overflow: hidden;
+  background: url(../img/menu-icon.png);
+  background-position: 0 22px;
+  @media (min-width: 1024px){
     display: none;
+  }
+}
+
+input[type="checkbox"]:checked + label {
+  -webkit-animation: MOVE-BG 0.2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes MOVE-BG {
+  0% { background-position: 0 22px;  }
+  100% { background-position: 0 42.1px;  }
+}
+
+input[type=checkbox]:checked ~ nav{
+  display: block;
 }
 
 /*Show menu when invisible checkbox is checked*/

@@ -51,6 +51,16 @@
   }
 }
 
+.middle img{
+  display: block;
+  margin: 0 auto;
+  @media (min-width: 1024px)  {
+    float: left;
+    display: inherit;
+    margin: 10px;
+  }
+}
+
 @media (min-width: 1024px)  {
 
   .middle {
@@ -65,12 +75,7 @@
   .middle p, .middle h3  {
     margin-left: 31%;
   }
-
-  .middle img {
-    float: left;
-    margin: 10px;
-  }
-
+  
   .info-experts p {
     width: 70%;
   }

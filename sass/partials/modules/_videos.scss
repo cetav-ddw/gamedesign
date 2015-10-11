@@ -3,16 +3,20 @@
 //
 
 .play{
+  width: 37px;
+  height: 37px;
 	background: url(../img/play.png) no-repeat;
 	background-size: contain;
 	border: none;
 	color: transparent;
-	height: 77px;
-	width: 77px;
 	margin: 25% 47% 0 47%;
 	overflow: hidden; 
 	position: absolute;
 	z-index: 3;
+  @media (min-width: 1024px){
+    height: 77px;
+    width: 77px;
+  }
 }
 
 .video{
@@ -39,16 +43,19 @@
 }
 
 #play-btn-label{
-	color: orange;
-	display: block;
-	font-family: $title-text;
-	font-size: 3em;
-	margin: 30% auto 0 auto;
-	padding: 1.5em 0 0 0;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	z-index: 3;
+  display: none;
+  @media (min-width: 1024px)  {
+  	color: orange;
+  	display: block;
+  	font-family: $title-text;
+  	font-size: 3em;
+  	margin: 30% auto 0 auto;
+  	padding: 1.5em 0 0 0;
+  	position: absolute;
+  	text-align: center;
+  	width: 100%;
+  	z-index: 3;
+  }
 }
 
 
