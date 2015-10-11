@@ -531,17 +531,23 @@ header nav {
   margin-right: 10px; }
 
 .play {
-  width: 238px;
+  width: 57px;
   height: 55px;
-  background: url(../img/play.png) no-repeat;
+  background: url(../img/play-mobile.png) no-repeat;
   background-size: contain;
   border: none;
   color: transparent;
-  margin: 16% 5%;
+  margin: 26% 46%;
   overflow: hidden;
   position: absolute;
-  z-index: 3;
-  left: 0; }
+  z-index: 3; }
+  @media (min-width: 1024px) {
+    .play {
+      left: 0;
+      width: 238px;
+      height: 55px;
+      background: url(../img/play.png) no-repeat;
+      margin: 16% 5%; } }
 
 .video {
   position: relative;
@@ -583,7 +589,7 @@ header nav {
   color: #0C0A0F;
   display: block;
   font-family: "Press Start 2P", "Iceland";
-  width: 43%;
+  width: 40%;
   text-shadow: -4px 4px 0 #369E97;
   position: absolute;
   z-index: 3;
