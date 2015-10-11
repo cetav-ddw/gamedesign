@@ -52,7 +52,7 @@ button:focus, button:active {
   margin: 0 auto;
   width: 80%;
   overflow: hidden;
-  @media (min-width: 1334px)  {
+  @media (min-width: 1334px){
     width: 50%;
   }
 }
@@ -96,4 +96,7 @@ footer {
 .gallery {
   width: 85%;
   margin: 4% auto;
+  @media (min-width: 1334px){
+    width: 75%;
+  }
 }

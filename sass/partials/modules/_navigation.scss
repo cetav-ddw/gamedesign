@@ -1,109 +1,95 @@
 /* Chrome, Safari, Opera */
 @-webkit-keyframes dropDown {
     0% {height: 0px;}
-    100% {height: 180px;}
+    100% {height: 230px;}
 }
 
 @-webkit-keyframes dropUp {
-    0% {height: 180px;}
+    0% {height: 230px;}
     100% {height: 0px;}
 }
 
-header nav{
+header{
+  overflow: hidden;
+}
+
+.sub-nav{
+  -webkit-animation: dropUp 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  box-sizing: border-box;
+  height: 0px;
+  overflow: hidden;
+}
+
+.nav-item{
+  border-bottom: 1px solid #f2f2f2;
+  display: inline-block;
+  padding: 20px 0;
+  position: relative;
+  &:hover .sub-nav{
+    -webkit-animation: dropDown 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    display: inline-block;
+    height: 230px;
+  }
+}
+
+.nav-item a{
+  color: $link-colors;
+  font-size: 2rem;
+  padding: 2px;
+  text-decoration: none;
+  text-transform: capitalize;
+  &:hover{
+    border-bottom: 2px solid #f2f2f2;
+  }
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ nav{
+  display: block;
+}
+
+header nav {
   display: none;
 }
 
 header nav, .main-nav, .nav-item{
   float: none;
   margin: 0;
-  padding: 0;
   text-align: center;
   width: 100%;
 }
 
-
-@media (min-width: 1024px){
-  header nav{
-    background-color: rgba(0,0,0,0);
-    box-sizing: border-box;
-    display: block;
-    height: 95px;
-    margin: 0 auto;
-    padding: 10px 2%;
-    width: 85%;
-  }
-}
-
-/*Navbar Styles*/
-
-.nav-logo{
-  display: none;
-  @media (min-width: 1024px) {
-    display: block;
-  	float: left;
-  	height: auto;
-  	margin-top: 10px;
-  	max-width: 10%;
-  }
-}
-
-.main-nav{
-	float: left;
-	margin-top: 1%;
-	overflow: hidden;
-  @media (min-width: 1024px){
-	 width: 90%;
-  }
-}
-
-.sub-nav{
-	-webkit-animation: dropUp 0.5s;
-	-webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
-	height: 0px;
-	overflow: hidden;
-	padding: 10px 0 0;
-	width: 100%;
-}
-
-.nav-item{
-  border-bottom: 1px solid #f2f2f2;
-  padding: 20px 0;
-  @media (min-width: 1024px){
-  	display: inline-block;
-  	float: left;
-  	margin: 5px 2%;
-    text-align: initial;
-    width: initial;
-    border: none;
-    padding: initial;
-  }
-	&:hover{
-		& .sub-nav{
-			-webkit-animation: dropDown 0.5s;
-    	-webkit-animation-iteration-count: 1;
-    	-webkit-animation-timing-function: linear;
-			display: inline-block;
-			height: 180px;
-		}
-	}
+header nav{
+  padding: 0;
 }
 
 .nav-item a{
-	color: $link-colors;
-	font-size: 2rem;
-	padding: 2px;
-	text-decoration: none;
-	text-transform: capitalize;
+  font-size: 2rem;
+}
 
-	&:hover{
-		border-bottom: 2px solid #f2f2f2;
-	}
+.nav-item:hover .subnav{
+  position: inherit;
+  width: 100%;
+}
+
+.nav-logo {
+  display: none;
+}
+
+.sub-nav{
+  width: 100%;
 }
 
 .sub-nav-item{
-	margin: 2% 0;
-	width: 100%;
+  margin: 20px 0;
+  width: 100%;
 }
 
 .mobile-logo{
@@ -116,14 +102,6 @@ header nav, .main-nav, .nav-item{
     height: 100%;
     width: 100%;
   }
-  @media (min-width: 1024px){
-    display: none;
-  }
-}
-
-/*Hide checkbox*/
-input[type=checkbox]{
-  display: none;
 }
 
 .show-menu {
@@ -135,25 +113,90 @@ input[type=checkbox]{
   margin: 20px;
   overflow: hidden;
   background: url(../img/menu-icon.png);
-  background-position: 0 22px;
-  @media (min-width: 1024px){
+  background-position: 0 22px; 
+}
+
+@media screen and (min-width: 1024px){
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes Down {
+      0% {height: 0px;}
+      100% {height: 180px;}
+  }
+
+  @-webkit-keyframes Up {
+      0% {height: 180px;}
+      100% {height: 0px;}
+  }
+  
+  .header-games{
+    height: 95px;
+  }
+  
+  header nav{
+    margin: 10px 130px;
+    width: 85%;
+    display: block;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .nav-logo {
+    display: block;
+  }
+
+  .nav-item{
+    border: none; 
+  }
+
+  .main-nav{
+    float: left;
+    margin: 0 2%;
+    width: 65%;
+  }
+
+  .sub-nav{
+    -webkit-animation: Up 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    left: 0px;
+    position: absolute;
+    text-align: left;
+    top: 56px;
+    width: 400px;
+    z-index: 3;
+    background-color: #000;
+    padding-left: 12px;
+  }
+
+  .nav-item{
+    box-sizing: border-box;
+    float: left;
+    margin: 0 25px;
+    width: 11%;
+  }
+
+  .nav-item:hover {
+    .subnav{
+      -webkit-animation: Down 0.5s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: linear;
+        height: 180px;
+      position: absolute;
+    }
+  }
+
+  .mobile-logo{
+    display: none;
+  }
+
+  .nav-logo{
+    float: left;
+    height: auto;
+    margin-top: 10px;
+    max-width: 10%;
+  }
+  /*Navigation Menu Button*/
+  .show-menu {
     display: none;
   }
 }
-
-input[type="checkbox"]:checked + label {
-  -webkit-animation: MOVE-BG 0.2s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes MOVE-BG {
-  0% { background-position: 0 22px;  }
-  100% { background-position: 0 42.1px;  }
-}
-
-input[type=checkbox]:checked ~ nav{
-  display: block;
-}
-
-/*Show menu when invisible checkbox is checked*/

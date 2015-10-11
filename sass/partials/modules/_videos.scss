@@ -3,21 +3,17 @@
 //
 
 .play{
-  width: 37px;
-  height: 37px;
-	background: url(../img/play.png) no-repeat;
-	background-size: contain;
-	border: none;
-	color: transparent;
-	margin: 25% 47% 0 47%;
+  width: 238px;
+  height: 55px;
+  background: url(../img/play.png) no-repeat;
+  background-size: contain;
+  border: none;
+  color: transparent;
+  margin: 16% 5%;
 	overflow: hidden; 
 	position: absolute;
 	z-index: 3;
-  @media (min-width: 1024px){
-    height: 77px;
-    width: 77px;
-    left: 0;
-  }
+  left: 0;
 }
 
 .video{
@@ -60,16 +56,19 @@
 }
 
 #play-btn-label{
-  display: none;
+  font-size: 2em;
+  margin: 7% 2%;
+  color: #0C0A0F;
+  display: block;
+  font-family: $title-videos;
+  width: 43%;
+  text-shadow: -4px 4px 0 #369E97;
+  position: absolute;
+  z-index: 3;
+  top: 0;
   @media (min-width: 1024px)  {
-    color: orange;
-    display: block;
-    font-family: $title-videos;
     font-size: 3em;
-    margin: 7%;
-    position: absolute;
-    z-index: 3;
-    top: 0;
+    margin: 7% 0;
   }
 }
 

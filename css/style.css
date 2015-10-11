@@ -80,6 +80,9 @@ footer {
 .gallery {
   width: 85%;
   margin: 4% auto; }
+  @media (min-width: 1334px) {
+    .gallery {
+      width: 75%; } }
 
 header {
   background: url(../img/background-general.gif);
@@ -90,11 +93,11 @@ header {
 .header-logo {
   display: block;
   width: 80%;
-  margin: 18% auto 15% 9%; }
+  margin: 15% auto 15% 9%; }
   @media (min-width: 1024px) {
     .header-logo {
       width: 600px;
-      margin: 8% auto 11% auto; } }
+      margin: 12% auto 11% auto; } }
 
 .about {
   padding: 2% 0; }
@@ -133,77 +136,34 @@ header {
   0% {
     height: 0px; }
   100% {
-    height: 180px; } }
+    height: 230px; } }
 @-webkit-keyframes dropUp {
   0% {
-    height: 180px; }
+    height: 230px; }
   100% {
     height: 0px; } }
-header nav {
-  display: none; }
-
-header nav, .main-nav, .nav-item {
-  float: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  width: 100%; }
-
-@media (min-width: 1024px) {
-  header nav {
-    background-color: transparent;
-    box-sizing: border-box;
-    display: block;
-    height: 95px;
-    margin: 0 auto;
-    padding: 10px 2%;
-    width: 85%; } }
-/*Navbar Styles*/
-.nav-logo {
-  display: none; }
-  @media (min-width: 1024px) {
-    .nav-logo {
-      display: block;
-      float: left;
-      height: auto;
-      margin-top: 10px;
-      max-width: 10%; } }
-
-.main-nav {
-  float: left;
-  margin-top: 1%;
+header {
   overflow: hidden; }
-  @media (min-width: 1024px) {
-    .main-nav {
-      width: 90%; } }
 
 .sub-nav {
   -webkit-animation: dropUp 0.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
+  box-sizing: border-box;
   height: 0px;
-  overflow: hidden;
-  padding: 10px 0 0;
-  width: 100%; }
+  overflow: hidden; }
 
 .nav-item {
   border-bottom: 1px solid #f2f2f2;
-  padding: 20px 0; }
-  @media (min-width: 1024px) {
-    .nav-item {
-      display: inline-block;
-      float: left;
-      margin: 5px 2%;
-      text-align: initial;
-      width: initial;
-      border: none;
-      padding: initial; } }
+  display: inline-block;
+  padding: 20px 0;
+  position: relative; }
   .nav-item:hover .sub-nav {
     -webkit-animation: dropDown 0.5s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: linear;
     display: inline-block;
-    height: 180px; }
+    height: 230px; }
 
 .nav-item a {
   color: #fff;
@@ -214,8 +174,39 @@ header nav, .main-nav, .nav-item {
   .nav-item a:hover {
     border-bottom: 2px solid #f2f2f2; }
 
+input[type=checkbox] {
+  display: none; }
+
+input[type=checkbox]:checked ~ nav {
+  display: block; }
+
+header nav {
+  display: none; }
+
+header nav, .main-nav, .nav-item {
+  float: none;
+  margin: 0;
+  text-align: center;
+  width: 100%; }
+
+header nav {
+  padding: 0; }
+
+.nav-item a {
+  font-size: 2rem; }
+
+.nav-item:hover .subnav {
+  position: inherit;
+  width: 100%; }
+
+.nav-logo {
+  display: none; }
+
+.sub-nav {
+  width: 100%; }
+
 .sub-nav-item {
-  margin: 2% 0;
+  margin: 20px 0;
   width: 100%; }
 
 .mobile-logo {
@@ -227,13 +218,6 @@ header nav, .main-nav, .nav-item {
   .mobile-logo img {
     height: 100%;
     width: 100%; }
-  @media (min-width: 1024px) {
-    .mobile-logo {
-      display: none; } }
-
-/*Hide checkbox*/
-input[type=checkbox] {
-  display: none; }
 
 .show-menu {
   color: #f2f2f2;
@@ -245,24 +229,78 @@ input[type=checkbox] {
   overflow: hidden;
   background: url(../img/menu-icon.png);
   background-position: 0 22px; }
-  @media (min-width: 1024px) {
-    .show-menu {
-      display: none; } }
 
-input[type="checkbox"]:checked + label {
-  -webkit-animation: MOVE-BG 0.2s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards; }
+@media screen and (min-width: 1024px) {
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes Down {
+    0% {
+      height: 0px; }
+    100% {
+      height: 180px; } }
+  @-webkit-keyframes Up {
+    0% {
+      height: 180px; }
+    100% {
+      height: 0px; } }
+  .header-games {
+    height: 95px; }
 
-@-webkit-keyframes MOVE-BG {
-  0% {
-    background-position: 0 22px; }
-  100% {
-    background-position: 0 42.1px; } }
-input[type=checkbox]:checked ~ nav {
-  display: block; }
+  header nav {
+    margin: 10px 130px;
+    width: 85%;
+    display: block;
+    position: absolute;
+    z-index: 3; }
 
-/*Show menu when invisible checkbox is checked*/
+  .nav-logo {
+    display: block; }
+
+  .nav-item {
+    border: none; }
+
+  .main-nav {
+    float: left;
+    margin: 0 2%;
+    width: 65%; }
+
+  .sub-nav {
+    -webkit-animation: Up 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    left: 0px;
+    position: absolute;
+    text-align: left;
+    top: 56px;
+    width: 400px;
+    z-index: 3;
+    background-color: #000;
+    padding-left: 12px; }
+
+  .nav-item {
+    box-sizing: border-box;
+    float: left;
+    margin: 0 25px;
+    width: 11%; }
+
+  .nav-item:hover .subnav {
+    -webkit-animation: Down 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    height: 180px;
+    position: absolute; }
+
+  .mobile-logo {
+    display: none; }
+
+  .nav-logo {
+    float: left;
+    height: auto;
+    margin-top: 10px;
+    max-width: 10%; }
+
+  /*Navigation Menu Button*/
+  .show-menu {
+    display: none; } }
 .experts {
   width: 80%;
   margin: 0 auto; }
@@ -409,8 +447,6 @@ input[type=checkbox]:checked ~ nav {
     font-family: "Muli";
     font-size: 1.2rem;
     line-height: 2.5rem; }
-  .info-game h2 {
-    margin: 20px 0; }
 
 .img-game img {
   margin-bottom: 20px;
@@ -458,11 +494,13 @@ input[type=checkbox]:checked ~ nav {
     color: #359e97;
     font-size: 2rem; }
   .text-info-game h2 {
-    color: #D2643B; }
+    color: #D2643B;
+    margin: 20px 0;
+    font-size: 2.8rem; }
 
 @media (min-width: 1024px) {
   .content-demo-info {
-    margin: 5% 0; }
+    margin: 2% 0; }
 
   .play-game {
     margin-top: 8%; }
@@ -488,22 +526,22 @@ input[type=checkbox]:checked ~ nav {
     background: url(../img/button-pressed.png) no-repeat;
     background-size: contain; }
 
+.img-game li:before {
+  content: url(../img/space-invader-game.png);
+  margin-right: 10px; }
+
 .play {
-  width: 37px;
-  height: 37px;
+  width: 238px;
+  height: 55px;
   background: url(../img/play.png) no-repeat;
   background-size: contain;
   border: none;
   color: transparent;
-  margin: 25% 47% 0 47%;
+  margin: 16% 5%;
   overflow: hidden;
   position: absolute;
-  z-index: 3; }
-  @media (min-width: 1024px) {
-    .play {
-      height: 77px;
-      width: 77px;
-      left: 0; } }
+  z-index: 3;
+  left: 0; }
 
 .video {
   position: relative;
@@ -540,16 +578,19 @@ input[type=checkbox]:checked ~ nav {
       left: 0; } }
 
 #play-btn-label {
-  display: none; }
+  font-size: 2em;
+  margin: 7% 2%;
+  color: #0C0A0F;
+  display: block;
+  font-family: "Press Start 2P", "Iceland";
+  width: 43%;
+  text-shadow: -4px 4px 0 #369E97;
+  position: absolute;
+  z-index: 3;
+  top: 0; }
   @media (min-width: 1024px) {
     #play-btn-label {
-      color: orange;
-      display: block;
-      font-family: "Press Start 2P", "Iceland";
       font-size: 3em;
-      margin: 7%;
-      position: absolute;
-      z-index: 3;
-      top: 0; } }
+      margin: 7% 0; } }
 
 /*# sourceMappingURL=style.css.map */
