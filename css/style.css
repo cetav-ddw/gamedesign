@@ -47,13 +47,17 @@ button:focus, button:active {
       width: 50%; } }
 
 .title-main {
-  color: #359e97;
+  color: #f4f4f4;
   font-size: 5rem;
   text-align: center;
   text-shadow: -4px 4px 0px #000;
   font-family: "Iceland", serif;
   padding: 1% 0 2% 0;
-  margin-bottom: 1.5%; }
+  margin: 8%;
+  background: url(../img/background-title.png) no-repeat center; }
+  @media (min-width: 1334px) {
+    .title-main {
+      margin: 0; } }
 
 .style-img {
   border: 5px solid #359e97;
@@ -63,14 +67,31 @@ footer {
   background: #353535;
   background-image: url(../img/background-general.gif);
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 5%;
+  padding: 4% 0; }
 
 .text-footer {
-  font-size: 1.5rem;
-  font-family: "Iceland", serif;
   display: inline-block;
-  width: 80%;
+  width: 60%;
   color: #E8EBED; }
+  .text-footer p {
+    font-family: "Iceland", serif;
+    font-size: 1.8rem;
+    width: 64%;
+    margin: 0 auto; }
+  .text-footer .strong {
+    font-size: 2rem;
+    color: #FD7949; }
+  @media (min-width: 1334px) {
+    .text-footer:after {
+      content: url(../img/astronaut.png);
+      margin-top: -100px;
+      float: right; }
+    .text-footer:before {
+      content: url(../img/planet.png);
+      float: left;
+      margin-top: -87px; } }
 
 .content-info-footer {
   margin: 60px 0; }
@@ -83,7 +104,7 @@ footer {
       width: 75%; } }
 
 .page-bullet:before {
-  content: url(../img/arraw.png);
+  content: url(../img/arrow.png);
   margin-right: 8px; }
 
 header {
@@ -174,7 +195,7 @@ header {
   text-decoration: none;
   text-transform: capitalize; }
   .nav-item a:hover:before {
-    content: url(../img/arraw.png);
+    content: url(../img/arrow.png);
     margin-right: 8px; }
 
 input[type=checkbox] {
