@@ -531,23 +531,26 @@ header nav {
   margin-right: 10px; }
 
 .play {
-  width: 57px;
-  height: 55px;
-  background: url(../img/play-mobile.png) no-repeat;
-  background-size: contain;
   border: none;
+  background: none;
   color: transparent;
   margin: 26% 46%;
   overflow: hidden;
   position: absolute;
-  z-index: 3; }
+  z-index: 3;
+  font-family: "Press Start 2P", "Iceland";
+  font-size: 1.2rem; }
+  .play:before {
+    content: ">Mira como se juega";
+    color: #000; }
   @media (min-width: 1024px) {
     .play {
       left: 0;
-      width: 238px;
-      height: 55px;
-      background: url(../img/play.png) no-repeat;
       margin: 16% 5%; } }
+
+.making-of:before {
+  content: ">Play";
+  color: #000; }
 
 .video {
   position: relative;
@@ -556,6 +559,7 @@ header nav {
   z-index: 1; }
   @media (min-width: 1024px) {
     .video {
+      padding-left: 1%;
       padding-bottom: 0%;
       text-align: center;
       background-color: #000; } }
@@ -593,10 +597,12 @@ header nav {
   text-shadow: -4px 4px 0 #369E97;
   position: absolute;
   z-index: 3;
-  top: 0; }
+  top: 0;
+  line-height: 3rem; }
   @media (min-width: 1024px) {
     #play-btn-label {
       font-size: 3em;
-      margin: 7% 0; } }
+      margin: 7% 0;
+      line-height: 4rem; } }
 
 /*# sourceMappingURL=style.css.map */
