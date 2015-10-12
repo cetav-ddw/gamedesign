@@ -1,11 +1,11 @@
 /* Chrome, Safari, Opera */
 @-webkit-keyframes dropDown {
     0% {height: 0px;}
-    100% {height: 230px;}
+    100% {height: 236px;}
 }
 
 @-webkit-keyframes dropUp {
-    0% {height: 230px;}
+    0% {height: 236px;}
     100% {height: 0px;}
 }
 
@@ -32,7 +32,7 @@ header{
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: linear;
     display: inline-block;
-    height: 230px;
+    height: 236px;
   }
 }
 
@@ -43,7 +43,10 @@ header{
   text-decoration: none;
   text-transform: capitalize;
   &:hover{
-    border-bottom: 2px solid #f2f2f2;
+    &:before{
+      content: url(../img/arraw.png);
+      margin-right: 8px;
+    }
   }
 }
 
@@ -134,7 +137,7 @@ header nav{
   
   header nav{
     margin: 10px 130px;
-    width: 85%;
+    width: 790px;
     display: block;
     position: absolute;
     z-index: 3;
@@ -152,6 +155,7 @@ header nav{
     float: left;
     margin: 0 2%;
     width: 65%;
+    background: url(../img/background-nav.png) no-repeat left;
   }
 
   .sub-nav{
@@ -164,15 +168,17 @@ header nav{
     top: 56px;
     width: 400px;
     z-index: 3;
-    background-color: #000;
-    padding-left: 12px;
+    background: url(../img/background-subnav.png) no-repeat;
+    background-size: contain;
+    padding-left: 24px;
   }
 
   .nav-item{
     box-sizing: border-box;
     float: left;
-    margin: 0 25px;
-    width: 11%;
+    margin: 0 23px;
+    padding-bottom: 29px;
+    width: 120px;
   }
 
   .nav-item:hover {
