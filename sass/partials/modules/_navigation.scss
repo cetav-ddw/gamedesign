@@ -1,22 +1,11 @@
 /* Chrome, Safari, Opera */
-@-webkit-keyframes dropDown {
-    0% {height: 0px;}
-    100% {height: 236px;}
-}
-
-@-webkit-keyframes dropUp {
-    0% {height: 236px;}
-    100% {height: 0px;}
-}
 
 header{
   overflow: hidden;
 }
 
 .sub-nav{
-  -webkit-animation: dropUp 0.5s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
+  -webkit-transition: height .25s linear;
   box-sizing: border-box;
   height: 0px;
   overflow: hidden;
@@ -28,15 +17,12 @@ header{
   padding: 20px 0;
   position: relative;
   &:hover .sub-nav{
-    -webkit-animation: dropDown 0.5s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
     display: inline-block;
     height: 236px;
   }
 }
 
-.nav-item a{
+.nav-item > a{
   color: $link-colors;
   font-size: 2rem;
   padding: 2px;
@@ -91,8 +77,17 @@ header nav{
 }
 
 .sub-nav-item{
-  margin: 20px 0;
+  margin: 20px -6px;
   width: 100%;
+
+  a{
+    text-transform: capitalize;
+  }
+
+  &:hover a{
+    color: #359e97;
+    text-decoration: underline;
+  }
 }
 
 .mobile-logo{
@@ -120,16 +115,6 @@ header nav{
 }
 
 @media screen and (min-width: 1024px){
-  /* Chrome, Safari, Opera */
-  @-webkit-keyframes Down {
-      0% {height: 0px;}
-      100% {height: 180px;}
-  }
-
-  @-webkit-keyframes Up {
-      0% {height: 180px;}
-      100% {height: 0px;}
-  }
   
   .header-games{
     height: 95px;
@@ -159,9 +144,6 @@ header nav{
   }
 
   .sub-nav{
-    -webkit-animation: Up 0.5s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
     left: 0px;
     position: absolute;
     text-align: left;
@@ -183,10 +165,7 @@ header nav{
 
   .nav-item:hover {
     .subnav{
-      -webkit-animation: Down 0.5s;
-        -webkit-animation-iteration-count: 1;
-        -webkit-animation-timing-function: linear;
-        height: 180px;
+      height: 180px;
       position: absolute;
     }
   }
