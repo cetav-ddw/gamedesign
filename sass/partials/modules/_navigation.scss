@@ -29,11 +29,18 @@ header{
   text-decoration: none;
   text-transform: capitalize;
   &:hover{
-    &:before{
-      content: url(../img/arrow.png);
-      margin-right: 8px;
-    }
+    color: #359e97;
   }
+}
+
+.games-item:after{
+  content: url(../img/arrow.png);
+  display: inline-block;
+  margin-left: 10px;
+
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
 }
 
 input[type=checkbox]{
@@ -132,10 +139,6 @@ header nav{
     display: block;
   }
 
-  .nav-item{
-    border: none; 
-  }
-
   .main-nav{
     float: left;
     margin: 0 2%;
@@ -156,11 +159,12 @@ header nav{
   }
 
   .nav-item{
+    border: none;
     box-sizing: border-box;
     float: left;
     margin: 0 23px;
     padding-bottom: 29px;
-    width: 120px;
+    width: 123px;
   }
 
   .nav-item:hover {
