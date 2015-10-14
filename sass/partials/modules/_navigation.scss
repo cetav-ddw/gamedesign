@@ -16,7 +16,7 @@ header{
   display: inline-block;
   padding: 20px 0;
   position: relative;
-  &:hover .sub-nav{
+  &:active .sub-nav{
     display: inline-block;
     height: 236px;
   }
@@ -28,7 +28,7 @@ header{
   padding: 2px;
   text-decoration: none;
   text-transform: capitalize;
-  &:active{
+  &:hover{
     color: #359e97;
   }
 }
