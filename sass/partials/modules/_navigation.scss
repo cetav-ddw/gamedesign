@@ -13,7 +13,7 @@ header{
 .nav-item{
   border-bottom: 1px solid #f2f2f2;
   display: inline-block;
-  padding: 20px 0;
+  padding: 8px 0 12px 0;
   position: relative;
 }
 
@@ -35,7 +35,9 @@ header{
 }
 
 .games-item:after{
-  content: url(../img/arrow.png);
+  content: "";
+  @include sprite;
+  @extend %sprite-arrow;
   display: inline-block;
   margin-left: 12px;
 
@@ -136,22 +138,23 @@ header nav{
     display: block;
   }
 
+  .main-nav, .sub-nav{
+    @include sprite;
+  }
+
   .main-nav{
     float: left;
-    margin: 0 2%;
+    margin: 1% 2%;
     width: 65%;
-    background: url(../img/background-nav.png) no-repeat left;
   }
 
   .sub-nav{
     left: 0px;
     position: absolute;
     text-align: left;
-    top: 56px;
-    width: 400px;
+    top: 44px;
+    width: 402px;
     z-index: 3;
-    background: url(../img/background-subnav.png) no-repeat;
-    background-size: contain;
     padding-left: 24px;
   }
 
@@ -160,12 +163,11 @@ header nav{
     box-sizing: border-box;
     float: left;
     margin: 0 20px;
-    padding-bottom: 29px;
     width: 123px;
 
     &:hover .sub-nav{
       display: inline-block;
-      height: 236px;
+      height: 238px;
     }
   }
 

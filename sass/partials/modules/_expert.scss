@@ -8,13 +8,17 @@
     width: 900px;
     margin: 90px auto;
     &:before{
-      content: url(../img/ship.png);
+      content: "";
+      @include sprite;
+      @extend %sprite-ship;
       margin-top: -52px;
       margin-left: -22px;
       position: absolute;
     }
     &:after{
-      content: url(../img/space-invader.png);
+      content: "";
+      @include sprite;
+      @extend %sprite-invader;
       margin-top: 11px;
       margin-left: -22px;
       position: absolute;
@@ -35,7 +39,10 @@
   margin: 20px 0;
   @media (min-width: 1024px)  {
     &:before{
-      content: url(../img/trophy.png);
+      content: "";
+      @include sprite;
+      @extend %sprite-trophy;
+      display: inline-block;
       vertical-align: middle;
       margin-right: 10px;
     }

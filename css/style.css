@@ -359,6 +359,74 @@ td,
 th {
   padding: 0; }
 
+.page-arrow:before, .games-item:after {
+  background-position: 0 -102px;
+  height: 17px;
+  width: 15px; }
+
+.img-game li:before {
+  background-position: -15px -102px;
+  width: 22px;
+  height: 22px; }
+
+@media (min-width: 1024px) {
+  .sprite-button:hover {
+    background-position: -219px -102px;
+    width: 155px;
+    height: 40px; } }
+@media (min-width: 1334px) {
+  .text-footer:after {
+    background-position: -93px 0;
+    width: 80px;
+    height: 102px; }
+
+  .text-footer:before {
+    background-position: 0 0;
+    width: 93px;
+    height: 94px; } }
+@media (min-width: 1024px) {
+  .game-name:before {
+    background-position: -125px -102px;
+    width: 50px;
+    height: 39px; }
+
+  .experts:before {
+    background-position: -77px -102px;
+    width: 48px;
+    height: 35px; }
+
+  .info-experts h3:before {
+    background-position: -37px -102px;
+    width: 40px;
+    height: 29px; }
+
+  .experts:after {
+    background-position: -175px -102px;
+    width: 44px;
+    height: 44px; } }
+.sprite-sorry {
+  background-position: 0 -627px; }
+
+.sprite-trash {
+  background-position: 0 -418px; }
+
+.sprite-bg-nav {
+  background-position: 0 -153px; }
+
+.sprite-bg-subnav {
+  background-position: 0 -1045px; }
+
+.sprite-last {
+  background-position: 0 -836px; }
+
+.sprite-owak {
+  background-position: 0 -209px; }
+
+.sprite-button {
+  background-position: -173px 0;
+  width: 155px;
+  height: 40px; }
+
 body {
   background-color: #f4f4f4; }
 
@@ -450,11 +518,15 @@ footer {
     color: #FD7949; }
   @media (min-width: 1334px) {
     .text-footer:after {
-      content: url(../img/astronaut.png);
+      content: "";
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
       margin-top: -100px;
       float: right; }
     .text-footer:before {
-      content: url(../img/planet.png);
+      content: "";
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
       float: left;
       margin-top: -87px; } }
 
@@ -468,9 +540,12 @@ footer {
     .gallery {
       width: 75%; } }
 
-.page-bullet:before {
-  content: url(../img/arrow.png);
-  margin-right: 8px; }
+.page-arrow:before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat; }
 
 header {
   background: url(../img/background-general.gif);
@@ -533,7 +608,7 @@ header {
 .nav-item {
   border-bottom: 1px solid #f2f2f2;
   display: inline-block;
-  padding: 20px 0;
+  padding: 8px 0 12px 0;
   position: relative; }
 
 .expanded .sub-nav {
@@ -551,7 +626,9 @@ header {
     color: #359e97; }
 
 .games-item:after {
-  content: url(../img/arrow.png);
+  content: "";
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   display: inline-block;
   margin-left: 12px;
   -ms-transform: rotate(90deg);
@@ -632,21 +709,22 @@ header nav {
   .nav-logo {
     display: block; }
 
+  .main-nav, .sub-nav {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat; }
+
   .main-nav {
     float: left;
-    margin: 0 2%;
-    width: 65%;
-    background: url(../img/background-nav.png) no-repeat left; }
+    margin: 1% 2%;
+    width: 65%; }
 
   .sub-nav {
     left: 0px;
     position: absolute;
     text-align: left;
-    top: 56px;
-    width: 400px;
+    top: 44px;
+    width: 402px;
     z-index: 3;
-    background: url(../img/background-subnav.png) no-repeat;
-    background-size: contain;
     padding-left: 24px; }
 
   .nav-item {
@@ -654,11 +732,10 @@ header nav {
     box-sizing: border-box;
     float: left;
     margin: 0 20px;
-    padding-bottom: 29px;
     width: 123px; }
     .nav-item:hover .sub-nav {
       display: inline-block;
-      height: 236px; }
+      height: 238px; }
 
   .mobile-logo {
     display: none; }
@@ -680,12 +757,16 @@ header nav {
       width: 900px;
       margin: 90px auto; }
       .experts:before {
-        content: url(../img/ship.png);
+        content: "";
+        background-image: url("../img/sprite.png");
+        background-repeat: no-repeat;
         margin-top: -52px;
         margin-left: -22px;
         position: absolute; }
       .experts:after {
-        content: url(../img/space-invader.png);
+        content: "";
+        background-image: url("../img/sprite.png");
+        background-repeat: no-repeat;
         margin-top: 11px;
         margin-left: -22px;
         position: absolute; } }
@@ -702,7 +783,10 @@ header nav {
   margin: 20px 0; }
   @media (min-width: 1024px) {
     .info-experts h3:before {
-      content: url(../img/trophy.png);
+      content: "";
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      display: inline-block;
       vertical-align: middle;
       margin-right: 10px; } }
 
@@ -747,8 +831,8 @@ header nav {
 
 .cont-game {
   width: 100%;
-  max-width: 415px;
-  height: 250px;
+  max-width: 410px;
+  height: 222px;
   display: inline-block;
   margin: 0 0 10px 0;
   color: #fff;
@@ -765,8 +849,11 @@ header nav {
   transform: translateY(-50%); }
   @media (min-width: 1024px) {
     .game-name:before {
-      content: url(../img/control.png);
-      display: block; } }
+      content: "";
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      display: block;
+      margin: 0 auto; } }
 
 .game-color-one {
   background-color: #4DB558; }
@@ -781,34 +868,31 @@ header nav {
   background-color: #d65f21; }
 
 .overlay-games {
-  width: 96%;
-  height: 92%;
+  width: 94%;
+  height: 91%;
   max-width: 100%;
   text-align: center;
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
   margin: 2.4% auto;
-  display: block; }
+  display: block;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat; }
   .overlay-games:hover {
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: none; }
-
-.game-one {
-  background: url(../img/last.png); }
-
-.game-two {
-  background: url(../img/owak.png); }
-
-.game-three {
-  background: url(../img/trash.png); }
-
-.game-four {
-  background: url(../img/sorry.png); }
 
 .play-game, .note-play {
   display: none; }
   @media (min-width: 1024px) {
     .play-game, .note-play {
       display: block; } }
+
+.img-game li:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat; }
 
 .info-game {
   margin: 0 auto;
@@ -881,26 +965,18 @@ header nav {
     margin-top: 1.2%;
     font-family: "Iceland"; }
     .note-play span {
-      text-transform: uppercase; } }
-/*Estilos de los Botones*/
-.main {
-  background: url(../img/button.png) no-repeat;
-  background-size: contain;
-  width: 155px;
-  height: 51px;
-  font-family: 'Iceland', sans-serif;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 11px; }
-  .main:hover {
-    background: url(../img/button-pressed.png) no-repeat;
-    background-size: contain; }
+      text-transform: uppercase; }
 
-.img-game li:before {
-  content: url(../img/space-invader-game.png);
-  margin-right: 10px; }
-
+  /*Estilos de los Botones*/
+  .main {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-family: 'Iceland', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 11px; } }
 .play {
   border: none;
   background: none;

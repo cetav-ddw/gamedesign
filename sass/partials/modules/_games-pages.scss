@@ -10,6 +10,14 @@
   }
 }
 
+.img-game li:before{
+  content:"";
+  margin-right: 10px;
+  display: inline-block;
+  @include sprite;
+  @extend %sprite-invader-small;
+}
+
 .info-game{ 
   margin: 0 auto;
   overflow: hidden;
@@ -88,44 +96,36 @@
 }
 
 @media (min-width: 1024px) {
-.content-demo-info{
-  margin: 2% 0;
-}
 
-.play-game{
-  margin-top: 8%;
-}
+  .content-demo-info{
+    margin: 2% 0;
+  }
 
-.note-play{
-  font-size: 1rem;
-  margin-top: 1.2%;
-  font-family: "Iceland";
-  
+  .play-game{
+    margin-top: 8%;
+  }
+
+  .note-play{
+    font-size: 1rem;
+    margin-top: 1.2%;
+    font-family: "Iceland";
     span{
       text-transform: uppercase;
     }
   }
-}
 
-/*Estilos de los Botones*/
-.main{
-background: url(../img/button.png) no-repeat;
-background-size: contain;
-width: 155px;
-height: 51px;
-font-family: 'Iceland', sans-serif;
-color: #fff;
-text-align: center;
-text-decoration: none;
-padding-top: 11px;
+  /*Estilos de los Botones*/
+  .main{
+    @include sprite;
+    display: inline-block;
+    font-family: 'Iceland', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 11px;
+  }
 
-&:hover{
-  background: url(../img/button-pressed.png) no-repeat;
-  background-size: contain;
-}
-}
-
-.img-game li:before{
-content: url(../img/space-invader-game.png);
-margin-right: 10px;
+  .sprite-button:hover{
+    @extend %sprite-button-pressed;
+  }
 }

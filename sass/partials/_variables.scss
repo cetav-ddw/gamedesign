@@ -20,3 +20,11 @@ $title-color: #359e97;
 //width
 $max-width: 1280px;
 $link-colors: #fff;
+
+//Mixin Sprite Background Position
+
+@mixin sprite-bg($position, $width, $height) {
+  background-position: $position;
+  width: $width;
+  height: $height;
+}

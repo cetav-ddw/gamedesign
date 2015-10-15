@@ -108,12 +108,16 @@ footer {
   }
   @media (min-width: 1334px){
     &:after {
-      content: url(../img/astronaut.png);
+      content: "";
+      @include sprite;
+      @extend %sprite-astronaut;
       margin-top: -100px;
       float: right;
     }
     &:before {
-      content: url(../img/planet.png);
+      content: "";
+      @include sprite;
+      @extend %sprite-planet;
       float: left;
       margin-top: -87px;
     }
@@ -132,7 +136,10 @@ footer {
   }
 }
 
-.page-bullet:before{
-  content: url(../img/arrow.png);
+.page-arrow:before{
+  content: "";
+  display: inline-block;
   margin-right: 8px;
+  @include sprite;
+  @extend %sprite-arrow;
 }
