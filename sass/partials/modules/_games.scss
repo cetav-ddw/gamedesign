@@ -2,45 +2,49 @@
 // Estilos de Juegos
 //
 
-.banners-games {
-  max-width: 415px;
-  margin: 0 auto;
-  @media (min-width: 1024px)  {
-    max-width: 875px;
-  }
+.games-banners {
+    max-width: 415px;
+    margin: 0 auto;
+
+    @media (min-width: 1024px) {
+        max-width: 875px;
+    }
 }
 
-.cont-game {
-  width: 100%;
-  max-width: 410px;
-  height: 222px;
-  display: inline-block;
-  margin: 0 0 10px 0;
-  color: #fff;
-  overflow: hidden;
-  @media (min-width: 1024px)  {
-    margin: 10px;
-  }
-}
-.game-name {
-  margin: 0 auto;
-  max-width: 300px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  @media (min-width: 1024px)  {
-    &:before{
-      content: "";
-        @include sprite;
-        @extend %sprite-control;
-      display: block;
-      margin: 0 auto;
+.games-banners-content {
+    color: #fff;
+    display: inline-block;
+    height: 222px;
+    max-width: 410px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        margin: 10px;
     }
-  }
+}
+
+.games-banners-name {
+    margin: 0 auto;
+    max-width: 300px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (min-width: 1024px) {
+        &:before{
+            content: "";
+            @include sprite;
+            @extend %sprite-control;
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
 
 .game-color-one {
-  background-color: #4DB558;
+    background-color: #4DB558;
 }
 
 .game-color-two {
@@ -55,18 +59,19 @@
 	background-color:#d65f21;
 }
 
-.overlay-games { 
-  width: 94%;
-  height: 91%;
-  max-width: 100%;
-  text-align: center;
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
-  margin: 2.4% auto;
-  display: block;
-  @include sprite;
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: none;
-  }
+.games-banners-overlay { 
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6); 
+    display: block;
+    height: 91%;
+    max-width: 100%;
+    margin: 2.4% auto;
+    text-align: center;
+    width: 94%;
+    @include sprite;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: none;
+    }
 }
 

@@ -1,90 +1,98 @@
 //
 // Estilos de Expertos
+.experts-list {
+    margin: 0 auto;
+    width: 80%;
 
-.experts {
-  width: 80%;
-  margin: 0 auto;
-  @media (min-width: 1024px)  {
-    width: 900px;
-    margin: 90px auto;
-    &:before{
-      content: "";
-      @include sprite;
-      @extend %sprite-ship;
-      margin-top: -52px;
-      margin-left: -22px;
-      position: absolute;
+    @media (min-width: 1024px) {
+        margin: 90px auto;
+        width: 900px;
+        &:before {
+            content: "";
+            @include sprite;
+            @extend %sprite-ship;
+            margin-top: -52px;
+            margin-left: -22px;
+            position: absolute;
+        }
+        &:after {
+            content: "";
+            @include sprite;
+            @extend %sprite-invader;
+            margin-top: 11px;
+             margin-left: -22px;
+            position: absolute;
+        }
     }
-    &:after{
-      content: "";
-      @include sprite;
-      @extend %sprite-invader;
-      margin-top: 11px;
-      margin-left: -22px;
-      position: absolute;
-    }
-  }
 }
 
-.info-experts {
-  padding: 0 0 10% 0;
-  overflow: hidden;
-  @media (min-width: 1024px)  {
-    padding: 0 0 0 45px;
-    border-left: 3px dashed #359E97;
-  }
+.experts-list-item {
+    overflow: hidden;
+    padding: 0 0 10% 0;
+
+    @media (min-width: 1024px) {
+        border-left: 3px dashed #359E97;
+        padding: 0 0 0 45px;
+    }
 }
 
-.info-experts h3{
-  margin: 20px 0;
-  @media (min-width: 1024px)  {
-    &:before{
-      content: "";
-      @include sprite;
-      @extend %sprite-trophy;
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
+.experts-list-item h3 {
+    margin: 20px 0;
+    @media (min-width: 1024px) {
+        &:before{
+            content: "";
+            @include sprite;
+            @extend %sprite-trophy;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
     }
-  }
 }
 
 .expert-img {
-  display: block;
-  margin: 0 auto;
-  @media (min-width: 1024px)  {
-    float: right;
-    margin: 10px;
-    display: inherit;
-  }
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: 1024px) {
+        display: inherit;
+        float: right;
+        margin: 10px;
+    }
 }
 
-.middle img{
-  display: block;
-  margin: 0 auto;
-  @media (min-width: 1024px)  {
-    float: left;
-    display: inherit;
-    margin: 10px;
-  }
+.middle img {
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: 1024px)  {
+        display: inherit;
+        float: left;
+        margin: 10px;
+    }
 }
 
-@media (min-width: 1024px)  {
+@media (min-width: 1024px) {
 
-  .middle {
-    padding: 45px 0 45px 0;
-    margin: 18px 0;
-    border-left: none;
-    border-bottom: 3px dashed #359E97;
-    border-top: 3px dashed #359E97;
-    border-right: 3px dashed #359E97;
-  }
+    .middle {
+        border-left: none;
+        border-bottom: 3px dashed #359E97;
+        border-top: 3px dashed #359E97;
+        border-right: 3px dashed #359E97;
+        margin: 18px 0;
+        padding: 45px 0 45px 0;
+    }
 
-  .middle p, .middle h3  {
-    margin-left: 31%;
-  }
+    .middle p, .middle h3 {
+        margin-left: 31%;
+    }
   
-  .info-experts p {
-    width: 70%;
-  }
+    .experts-list-item p {
+        width: 70%;
+    }
+}
+
+.experts-item-img {
+  border: 5px solid #359e97;
+  box-shadow: 10px 10px 0 0 #359e97;
 }

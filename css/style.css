@@ -385,22 +385,22 @@ th {
     width: 93px;
     height: 94px; } }
 @media (min-width: 1024px) {
-  .game-name:before {
+  .games-banners-name:before {
     background-position: -125px -102px;
     width: 50px;
     height: 39px; }
 
-  .experts:before {
+  .experts-list:before {
     background-position: -77px -102px;
     width: 48px;
     height: 35px; }
 
-  .info-experts h3:before {
+  .experts-list-item h3:before {
     background-position: -37px -102px;
     width: 40px;
     height: 29px; }
 
-  .experts:after {
+  .experts-list:after {
     background-position: -175px -102px;
     width: 44px;
     height: 44px; } }
@@ -487,7 +487,7 @@ button:focus, button:active {
       font-size: 5rem;
       width: 70%; } }
 
-.style-img {
+.experts-item-img {
   border: 5px solid #359e97;
   box-shadow: 10px 10px 0 0 #359e97; }
 
@@ -749,21 +749,21 @@ header nav {
   /*Navigation Menu Button*/
   .show-menu {
     display: none; } }
-.experts {
-  width: 80%;
-  margin: 0 auto; }
+.experts-list {
+  margin: 0 auto;
+  width: 80%; }
   @media (min-width: 1024px) {
-    .experts {
-      width: 900px;
-      margin: 90px auto; }
-      .experts:before {
+    .experts-list {
+      margin: 90px auto;
+      width: 900px; }
+      .experts-list:before {
         content: "";
         background-image: url("../img/sprite.png");
         background-repeat: no-repeat;
         margin-top: -52px;
         margin-left: -22px;
         position: absolute; }
-      .experts:after {
+      .experts-list:after {
         content: "";
         background-image: url("../img/sprite.png");
         background-repeat: no-repeat;
@@ -771,84 +771,88 @@ header nav {
         margin-left: -22px;
         position: absolute; } }
 
-.info-experts {
-  padding: 0 0 10% 0;
-  overflow: hidden; }
+.experts-list-item {
+  overflow: hidden;
+  padding: 0 0 10% 0; }
   @media (min-width: 1024px) {
-    .info-experts {
-      padding: 0 0 0 45px;
-      border-left: 3px dashed #359E97; } }
+    .experts-list-item {
+      border-left: 3px dashed #359E97;
+      padding: 0 0 0 45px; } }
 
-.info-experts h3 {
+.experts-list-item h3 {
   margin: 20px 0; }
   @media (min-width: 1024px) {
-    .info-experts h3:before {
+    .experts-list-item h3:before {
       content: "";
       background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
       display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px; } }
+      margin-right: 10px;
+      vertical-align: middle; } }
 
 .expert-img {
   display: block;
   margin: 0 auto; }
   @media (min-width: 1024px) {
     .expert-img {
+      display: inherit;
       float: right;
-      margin: 10px;
-      display: inherit; } }
+      margin: 10px; } }
 
 .middle img {
   display: block;
   margin: 0 auto; }
   @media (min-width: 1024px) {
     .middle img {
-      float: left;
       display: inherit;
+      float: left;
       margin: 10px; } }
 
 @media (min-width: 1024px) {
   .middle {
-    padding: 45px 0 45px 0;
-    margin: 18px 0;
     border-left: none;
     border-bottom: 3px dashed #359E97;
     border-top: 3px dashed #359E97;
-    border-right: 3px dashed #359E97; }
+    border-right: 3px dashed #359E97;
+    margin: 18px 0;
+    padding: 45px 0 45px 0; }
 
   .middle p, .middle h3 {
     margin-left: 31%; }
 
-  .info-experts p {
+  .experts-list-item p {
     width: 70%; } }
-.banners-games {
+.experts-item-img {
+  border: 5px solid #359e97;
+  box-shadow: 10px 10px 0 0 #359e97; }
+
+.games-banners {
   max-width: 415px;
   margin: 0 auto; }
   @media (min-width: 1024px) {
-    .banners-games {
+    .games-banners {
       max-width: 875px; } }
 
-.cont-game {
-  width: 100%;
-  max-width: 410px;
-  height: 222px;
-  display: inline-block;
-  margin: 0 0 10px 0;
+.games-banners-content {
   color: #fff;
-  overflow: hidden; }
+  display: inline-block;
+  height: 222px;
+  max-width: 410px;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  width: 100%; }
   @media (min-width: 1024px) {
-    .cont-game {
+    .games-banners-content {
       margin: 10px; } }
 
-.game-name {
+.games-banners-name {
   margin: 0 auto;
   max-width: 300px;
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
   @media (min-width: 1024px) {
-    .game-name:before {
+    .games-banners-name:before {
       content: "";
       background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
@@ -867,17 +871,17 @@ header nav {
 .game-color-four {
   background-color: #d65f21; }
 
-.overlay-games {
-  width: 94%;
+.games-banners-overlay {
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+  display: block;
   height: 91%;
   max-width: 100%;
-  text-align: center;
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
   margin: 2.4% auto;
-  display: block;
+  text-align: center;
+  width: 94%;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat; }
-  .overlay-games:hover {
+  .games-banners-overlay:hover {
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: none; }
 
