@@ -508,7 +508,8 @@ header {
     .partner-item {
       width: inherit; } }
   .partner-item img {
-    width: 60%; }
+    width: 60%;
+    vertical-align: middle; }
 
 .firts-text {
   font-size: 1.5rem;
