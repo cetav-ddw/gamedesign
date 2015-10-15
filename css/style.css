@@ -739,47 +739,10 @@ footer {
     background-repeat: no-repeat;
     float: left;
     margin: 1% 2%;
-<<<<<<< HEAD
-    width: 65%; }
-
-  .sub-nav {
-    left: 0px;
-    position: absolute;
-    text-align: left;
-    top: 44px;
-    width: 402px;
-    z-index: 3;
-    padding-left: 24px; }
-
-  .nav-item {
-    border: none;
-    box-sizing: border-box;
-    float: left;
-    margin: 0 20px;
-    width: 123px; }
-    .nav-item:hover .sub-nav {
-      display: inline-block;
-      height: 238px; }
-
-  .mobile-logo {
-    display: none; }
-
-  .nav-logo {
-    float: left;
-    height: auto;
-    margin-top: 10px;
-    max-width: 10%; }
-
-  /*Navigation Menu Button*/
-  .show-menu {
-    display: none; } }
+    width: 65%; } }
 .experts-list {
   margin: 0 auto;
   width: 80%; }
-  
-.experts {
-  width: 80%;
-  margin: 0 auto; }
   @media (min-width: 1024px) {
     .experts-list {
       margin: 90px auto;
