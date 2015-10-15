@@ -1,8 +1,7 @@
 window.onload = function(){
 
     // Controles Galeria
-    var options =
-    {
+    var options = {
         srcNode: 'img',             // grid items (class, node)
         margin: '5px',             // margin in pixel, default: 0px
         width: '100px',             // grid item width in pixel, default: 220px

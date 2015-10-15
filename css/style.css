@@ -50,9 +50,9 @@ button:focus, button:active {
   color: #f4f4f4;
   font-size: 4rem;
   text-align: center;
-  text-shadow: -4px 4px 0px #000;
+  text-shadow: -4px 4px 0 #000;
   font-family: "Iceland", serif;
-  padding: 1% 0 2% 0;
+  padding: 1% 0 2%;
   margin: 8%;
   background: url(../img/background-title.png) no-repeat center;
   background-size: contain; }
@@ -64,7 +64,7 @@ button:focus, button:active {
 
 .style-img {
   border: 5px solid #359e97;
-  box-shadow: 10px 10px 0px 0px #359e97; }
+  box-shadow: 10px 10px 0 0 #359e97; }
 
 footer {
   background: #353535;
@@ -124,7 +124,7 @@ header {
 .header-logo {
   display: block;
   width: 80%;
-  margin: 15% auto 15% 9%; }
+  margin: 15% auto; }
   @media (min-width: 1024px) {
     .header-logo {
       width: 600px;
@@ -162,7 +162,6 @@ header {
   display: inline-block;
   height: 327px; }
 
-/* Chrome, Safari, Opera */
 header {
   overflow: hidden; }
 
@@ -170,16 +169,19 @@ header {
   -webkit-transition: height .25s linear;
   box-sizing: border-box;
   height: 0px;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
 
 .nav-item {
   border-bottom: 1px solid #f2f2f2;
   display: inline-block;
   padding: 20px 0;
   position: relative; }
-  .nav-item:active .sub-nav {
-    display: inline-block;
-    height: 236px; }
+
+.expanded .sub-nav {
+  display: inline-block;
+  height: 236px;
+  z-index: 2; }
 
 .nav-item > a {
   color: #fff;
@@ -200,10 +202,10 @@ header {
   /* Chrome, Safari, Opera */
   transform: rotate(90deg); }
 
-input[type=checkbox] {
+.menu-toggle[type=checkbox] {
   display: none; }
 
-input[type=checkbox]:checked ~ nav {
+.menu-toggle[type=checkbox]:checked ~ nav {
   display: block; }
 
 header nav {
@@ -228,9 +230,6 @@ header nav {
 .nav-logo {
   display: none; }
 
-.sub-nav {
-  width: 100%; }
-
 .sub-nav-item {
   margin: 20px -6px;
   width: 100%; }
@@ -252,14 +251,14 @@ header nav {
 
 .show-menu {
   color: #f2f2f2;
-  display: block;
+  display: inline-block;
   float: right;
-  width: 20px;
-  height: 22px;
-  margin: 20px;
+  font-family: "Iceland", serif;
+  font-size: 24px;
+  width: 60px;
+  margin: 30px 20px 0;
   overflow: hidden;
-  background: url(../img/menu-icon.png);
-  background-position: 0 22px; }
+  text-align: center; }
 
 @media screen and (min-width: 1024px) {
   .header-games {
@@ -299,10 +298,9 @@ header nav {
     margin: 0 20px;
     padding-bottom: 29px;
     width: 123px; }
-
-  .nav-item:hover .subnav {
-    height: 180px;
-    position: absolute; }
+    .nav-item:hover .sub-nav {
+      display: inline-block;
+      height: 236px; }
 
   .mobile-logo {
     display: none; }
@@ -469,7 +467,7 @@ header nav {
   @media (min-width: 1024px) {
     .img-game img {
       border: 5px solid #359e97;
-      box-shadow: 10px 10px 0px 0px #359e97; } }
+      box-shadow: 10px 10px 0 0 #359e97; } }
 
 .img-game {
   margin-bottom: 50px;

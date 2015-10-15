@@ -52,6 +52,7 @@ button:focus, button:active {
   margin: 0 auto;
   width: 80%;
   overflow: hidden;
+  
   @media (min-width: 1334px){
     width: 50%;
   }
@@ -61,12 +62,13 @@ button:focus, button:active {
   color: #f4f4f4;
 	font-size: 4rem;
 	text-align:center;
-  text-shadow: -4px 4px 0px #000;
+  text-shadow: -4px 4px 0 #000;
 	font-family:$title-text;
-  padding: 1% 0 2% 0;
+  padding: 1% 0 2%;
   margin: 8%;
   background: url(../img/background-title.png) no-repeat center;
   background-size: contain;
+  
   @media (min-width: 1334px){
     background-size: inherit;
     margin: 0;
@@ -76,7 +78,7 @@ button:focus, button:active {
 
 .style-img {
   border: 5px solid #359e97;
-  box-shadow: 10px 10px 0px 0px #359e97;
+  box-shadow: 10px 10px 0 0 #359e97;
 }
 
 footer {

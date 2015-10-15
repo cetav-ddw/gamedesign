@@ -2,125 +2,130 @@
 // Games Pages
 //
 
-  .play-game, .note-play {
-    display: none;
-    @media (min-width: 1024px){
-      display: block;
-    }
+.play-game, .note-play {
+  display: none;
+  
+  @media (min-width: 1024px){
+    display: block;
   }
+}
 
-  .info-game{ 
-    margin: 0 auto;
-    overflow: hidden;
-    width: 80%;
-    li{
-      font-family: "Muli";
-      font-size: 1.2rem;
-      line-height: 2.5rem;
-    }
+.info-game{ 
+  margin: 0 auto;
+  overflow: hidden;
+  width: 80%;
+  
+  li{
+    font-family: "Muli";
+    font-size: 1.2rem;
+    line-height: 2.5rem;
   }
+}
 
-  .img-game img{
-        margin-bottom: 20px;
-        width: 100%;
-        @media (min-width: 1024px){
-          border: 5px solid #359e97;
-          box-shadow: 10px 10px 0px 0px #359e97;
-        }
-
-  }
-
-  .img-game{
-    margin-bottom: 50px;
-    width:100%;
-    h3{
-      color: #359e97;
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-    li{
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
-    @media (min-width: 1024px){
-      float: left;
-      width: 50%;
-      h3{
-        margin: 3% 0;
-      }
-      ul {
-        float: left;
-        margin-right: 10%;
-      }
-      li{
-        font-size: 1.1rem;
-        line-height: 2.4rem;
-      }
-    } 
-  }
-
-  .text-info-game{
-    display: inline-block;
+.img-game img{
+    margin-bottom: 20px;
     width: 100%;
-    margin-bottom: 30px;
+
     @media (min-width: 1024px){
-      float: right;
-      width: 45%;
-      margin-left: 5%;
-      font-size: 1.8rem;
+      border: 5px solid #359e97;
+      box-shadow: 10px 10px 0 0 #359e97;
     }
-    h3{
-      margin: 31px 0;
-      color: #359e97;
-      font-size: 2rem;
-    }
-    h2{
-      color: #D2643B;
-      margin: 20px 0;
-      font-size: 2.8rem;
-    }
+}
+
+.img-game{
+  margin-bottom: 50px;
+  width:100%;
+
+  h3{
+    color: #359e97;
+    font-size: 2rem;
+    margin-bottom: 15px;
   }
-
-@media (min-width: 1024px){
-
-  .content-demo-info{
-    margin: 2% 0;
-  }
-
-  .play-game{
-    margin-top: 8%;
-  }
-
-  .note-play{
+  li{
     font-size: 1rem;
-    margin-top: 1.2%;
-    font-family: "Iceland";
+    line-height: 1.5rem;
+  }
+
+  @media (min-width: 1024px){
+    float: left;
+    width: 50%;
+
+    h3{
+      margin: 3% 0;
+    }
+    ul {
+      float: left;
+      margin-right: 10%;
+    }
+    li{
+      font-size: 1.1rem;
+      line-height: 2.4rem;
+    }
+  } 
+}
+
+.text-info-game{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media (min-width: 1024px){
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+    font-size: 1.8rem;
+  }
+  h3{
+    margin: 31px 0;
+    color: #359e97;
+    font-size: 2rem;
+  }
+  h2{
+    color: #D2643B;
+    margin: 20px 0;
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+.content-demo-info{
+  margin: 2% 0;
+}
+
+.play-game{
+  margin-top: 8%;
+}
+
+.note-play{
+  font-size: 1rem;
+  margin-top: 1.2%;
+  font-family: "Iceland";
+  
     span{
-    text-transform: uppercase;
+      text-transform: uppercase;
     }
   }
 }
 
 /*Estilos de los Botones*/
-
 .main{
-  background: url(../img/button.png) no-repeat;
-  background-size: contain;
-  width: 155px;
-  height: 51px;
-  font-family: 'Iceland', sans-serif;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 11px;
+background: url(../img/button.png) no-repeat;
+background-size: contain;
+width: 155px;
+height: 51px;
+font-family: 'Iceland', sans-serif;
+color: #fff;
+text-align: center;
+text-decoration: none;
+padding-top: 11px;
 
-  &:hover{
-    background: url(../img/button-pressed.png) no-repeat;
-    background-size: contain;
-  }
+&:hover{
+  background: url(../img/button-pressed.png) no-repeat;
+  background-size: contain;
+}
 }
 
 .img-game li:before{
-  content: url(../img/space-invader-game.png);
-  margin-right: 10px;
+content: url(../img/space-invader-game.png);
+margin-right: 10px;
 }
