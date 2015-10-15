@@ -52,27 +52,24 @@ button:focus, button:active {
   margin: 0 auto;
   width: 80%;
   overflow: hidden;
-  
   @media (min-width: 1334px){
     width: 50%;
   }
 }
 
 .title-main {
-  color: #f4f4f4;
+  color: #359E97;
 	font-size: 4rem;
 	text-align:center;
   text-shadow: -4px 4px 0 #000;
 	font-family:$title-text;
-  padding: 1% 0 2%;
+  border-bottom: 3px solid #359E97;
   margin: 8%;
-  background: url(../img/background-title.png) no-repeat center;
-  background-size: contain;
-  
+  padding-bottom: 10px;
   @media (min-width: 1334px){
-    background-size: inherit;
-    margin: 0;
+    margin: 2% auto;
     font-size: 5rem;
+    width: 70%;
   }
 }
 
@@ -82,7 +79,7 @@ button:focus, button:active {
 }
 
 footer {
-  background:#353535;
+  background: #353535;
   background-image: url(../img/background-general.gif);
   text-align: center;
   overflow: hidden;

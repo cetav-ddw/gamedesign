@@ -405,20 +405,19 @@ button:focus, button:active {
       width: 50%; } }
 
 .title-main {
-  color: #f4f4f4;
+  color: #359E97;
   font-size: 4rem;
   text-align: center;
   text-shadow: -4px 4px 0 #000;
   font-family: "Iceland", serif;
-  padding: 1% 0 2%;
+  border-bottom: 3px solid #359E97;
   margin: 8%;
-  background: url(../img/background-title.png) no-repeat center;
-  background-size: contain; }
+  padding-bottom: 10px; }
   @media (min-width: 1334px) {
     .title-main {
-      background-size: inherit;
-      margin: 0;
-      font-size: 5rem; } }
+      margin: 2% auto;
+      font-size: 5rem;
+      width: 70%; } }
 
 .style-img {
   border: 5px solid #359e97;
@@ -678,7 +677,7 @@ header nav {
   @media (min-width: 1024px) {
     .experts {
       width: 900px;
-      margin: 110px auto; }
+      margin: 90px auto; }
       .experts:before {
         content: url(../img/ship.png);
         margin-top: -52px;
