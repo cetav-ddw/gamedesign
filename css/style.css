@@ -547,7 +547,7 @@ footer {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat; }
 
-header {
+.header {
   background: url(../img/background-general.gif);
   border-bottom: 6px solid #ff6e3a;
   overflow: hidden;
@@ -556,11 +556,11 @@ header {
 .header-logo {
   display: block;
   width: 80%;
-  margin: 15% auto; }
+  margin: 180px auto 130px; }
   @media (min-width: 1024px) {
     .header-logo {
-      width: 600px;
-      margin: 12% auto 11% auto; } }
+      width: 60%;
+      margin: 12% auto; } }
 
 .about {
   padding: 2% 0; }
