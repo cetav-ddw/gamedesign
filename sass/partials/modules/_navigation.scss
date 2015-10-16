@@ -135,6 +135,7 @@
 
 .mobile-logo{
     display: block;
+    height: 40px;
     margin: 20px;
     text-align: center;
     width: 45px;
@@ -147,7 +148,6 @@
     @media screen and (min-width: 1024px){
         display: none;
     }
-
 }
 
 //Navigation menu button//
