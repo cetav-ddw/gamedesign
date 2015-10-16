@@ -4,6 +4,7 @@ window.onload = function(){
     if(!document.querySelector( '.grid' )){
         return false;
     }else{
+
         var options = {
             srcNode: 'img',             // grid items (class, node)
             margin: '5px',             // margin in pixel, default: 0px
