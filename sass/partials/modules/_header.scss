@@ -9,11 +9,12 @@
 
 .header-logo {
     display: block;
-    width: 80%;
     margin: 180px auto 130px;
+    width: 80%;
+    
     @media (min-width: 1024px)  {
-        width: 40%;
         margin: 10% auto;
+        width: 40%;
     }
 }
 
@@ -35,8 +36,8 @@
 /*Partners*/
 
 .partners{
-    text-align: center;
     background-color: #fff;
+    text-align: center;
     padding: 20px 20px 15px 20px;
 }
 
@@ -47,8 +48,8 @@
     }
 
     img{
-        width: 60%;
         vertical-align: middle;
+        width: 60%;
     }
 }
 
