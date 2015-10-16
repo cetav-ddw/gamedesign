@@ -932,7 +932,8 @@ footer {
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
-  margin-right: 25px; }
+  margin-right: 17px;
+  vertical-align: sub; }
 
 .demo-content-team img {
   margin-bottom: 20px;
@@ -951,7 +952,8 @@ footer {
     margin-bottom: 15px; }
   .demo-content-team li {
     font-size: 1rem;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    margin-bottom: 10px; }
   @media (min-width: 1024px) {
     .demo-content-team {
       float: left;
@@ -963,7 +965,8 @@ footer {
         margin-right: 10%; }
       .demo-content-team li {
         font-size: 1.1rem;
-        line-height: 2.4rem; } }
+        line-height: 2.4rem;
+        margin-bottom: 5px; } }
 
 /*Estilos de los Botones*/
 @media (min-width: 1024px) {
