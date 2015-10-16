@@ -2,130 +2,132 @@
 // Games Pages
 //
 
-.play-game, .note-play {
-  display: none;
-  
-  @media (min-width: 1024px){
-    display: block;
-  }
+.demo {
+    @media (min-width: 1024px) {
+        margin: 2% 0;
+    }
 }
 
-.img-game li:before{
-  content:"";
-  margin-right: 10px;
-  display: inline-block;
-  @include sprite;
-  @extend %sprite-invader-small;
+.demo-content-text {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+    @media (min-width: 1024px) {
+        float: right;
+        font-size: 1.8rem;
+        margin-left: 5%;
+        width: 45%;
+    }
+    h3 {
+        color: $title-color;
+        font-size: 2rem;
+        margin: 31px 0;
+    }
+    h2 {
+        color: $title-demos;
+        font-size: 2.8rem;
+        margin: 10px 0;
+    }
 }
 
-.info-game{ 
-  margin: 0 auto;
-  overflow: hidden;
-  width: 80%;
-  
-  li{
-    font-family: "Muli";
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-  }
+.demo-content-play {
+    @media (min-width: 1024px) {
+        margin-top: 80px;
+    }
 }
 
-.img-game img{
+.demo-content-play, .demo-play-note {
+    display: none;
+    @media (min-width: 1024px) {
+        display: block;
+    }
+}
+
+.demo-play-note {
+    @media (min-width: 1024px) {
+        font-family: $title-text;
+        font-size: 1rem;
+        margin-top: 15px;
+        span{
+            text-transform: uppercase;
+        }
+    }
+}
+
+.demo-content { 
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+    li {
+        font-family: $text;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+}
+
+.demo-content-team li:before {
+    @extend %sprite-invader-small;
+    @include sprite;
+    content: "";
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.demo-content-team img {
     margin-bottom: 20px;
     width: 100%;
 
-    @media (min-width: 1024px){
-      border: 5px solid #359e97;
-      box-shadow: 10px 10px 0 0 #359e97;
+    @media (min-width: 1024px) {
+          border: 5px solid $title-color;
+          box-shadow: 10px 10px 0 0 $title-color;
     }
 }
 
-.img-game{
-  margin-bottom: 50px;
-  width:100%;
-
-  h3{
-    color: #359e97;
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  li{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  @media (min-width: 1024px){
-    float: left;
-    width: 50%;
-
-    h3{
-      margin: 3% 0;
+.demo-content-team {
+    margin-bottom: 50px;
+    width:100%;
+    h3 {
+        color: $title-color;
+        font-size: 2rem;
+        margin-bottom: 15px;
     }
-    ul {
-      float: left;
-      margin-right: 10%;
+    li {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
-    li{
-      font-size: 1.1rem;
-      line-height: 2.4rem;
+    @media (min-width: 1024px) {
+        float: left;
+        width: 50%;
+        h3 {
+            margin: 3% 0;
+        }
+        ul {
+            float: left;
+            margin-right: 10%;
+        }
+        li{
+            font-size: 1.1rem;
+            line-height: 2.4rem;
+        }
     }
-  } 
 }
 
-.text-info-game{
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 30px;
+/*Estilos de los Botones*/
 
-  @media (min-width: 1024px){
-    float: right;
-    width: 45%;
-    margin-left: 5%;
-    font-size: 1.8rem;
-  }
-  h3{
-    margin: 31px 0;
-    color: #359e97;
-    font-size: 2rem;
-  }
-  h2{
-    color: #D2643B;
-    margin: 20px 0;
-    font-size: 2.8rem;
-  }
+.main {
+    @media (min-width: 1024px) {
+        @include sprite;
+        color: #fff;
+        display: inline-block;
+        font-family: $title-text;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 11px;
+    }
 }
 
-@media (min-width: 1024px) {
-
-  .content-demo-info{
-    margin: 2% 0;
-  }
-
-  .play-game{
-    margin-top: 8%;
-  }
-
-  .note-play{
-    font-size: 1rem;
-    margin-top: 1.2%;
-    font-family: "Iceland";
-    span{
-      text-transform: uppercase;
+.sprite-button:hover{
+    @media (min-width: 1024px) {
+        @extend %sprite-button-pressed;
     }
-  }
-
-  /*Estilos de los Botones*/
-  .main{
-    @include sprite;
-    display: inline-block;
-    font-family: 'Iceland', sans-serif;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 11px;
-  }
-
-  .sprite-button:hover{
-    @extend %sprite-button-pressed;
-  }
 }

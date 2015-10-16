@@ -364,7 +364,7 @@ th {
   height: 17px;
   width: 15px; }
 
-.img-game li:before {
+.demo-content-team li:before {
   background-position: -15px -102px;
   width: 22px;
   height: 22px; }
@@ -876,102 +876,106 @@ footer {
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: none; }
 
-.play-game, .note-play {
+@media (min-width: 1024px) {
+  .demo {
+    margin: 2% 0; } }
+
+.demo-content-text {
+  display: inline-block;
+  margin-bottom: 30px;
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .demo-content-text {
+      float: right;
+      font-size: 1.8rem;
+      margin-left: 5%;
+      width: 45%; } }
+  .demo-content-text h3 {
+    color: #359e97;
+    font-size: 2rem;
+    margin: 31px 0; }
+  .demo-content-text h2 {
+    color: #d2643b;
+    font-size: 2.8rem;
+    margin: 10px 0; }
+
+@media (min-width: 1024px) {
+  .demo-content-play {
+    margin-top: 80px; } }
+
+.demo-content-play, .demo-play-note {
   display: none; }
   @media (min-width: 1024px) {
-    .play-game, .note-play {
+    .demo-content-play, .demo-play-note {
       display: block; } }
 
-.img-game li:before {
-  content: "";
-  margin-right: 10px;
-  display: inline-block;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat; }
+@media (min-width: 1024px) {
+  .demo-play-note {
+    font-family: "Iceland", serif;
+    font-size: 1rem;
+    margin-top: 15px; }
+    .demo-play-note span {
+      text-transform: uppercase; } }
 
-.info-game {
+.demo-content {
   margin: 0 auto;
   overflow: hidden;
   width: 80%; }
-  .info-game li {
-    font-family: "Muli";
+  .demo-content li {
+    font-family: "Muli", sans-serif;
     font-size: 1.2rem;
     line-height: 2.5rem; }
 
-.img-game img {
+.demo-content-team li:before {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  margin-right: 50px; }
+
+.demo-content-team img {
   margin-bottom: 20px;
   width: 100%; }
   @media (min-width: 1024px) {
-    .img-game img {
+    .demo-content-team img {
       border: 5px solid #359e97;
       box-shadow: 10px 10px 0 0 #359e97; } }
 
-.img-game {
+.demo-content-team {
   margin-bottom: 50px;
   width: 100%; }
-  .img-game h3 {
+  .demo-content-team h3 {
     color: #359e97;
     font-size: 2rem;
     margin-bottom: 15px; }
-  .img-game li {
+  .demo-content-team li {
     font-size: 1rem;
     line-height: 1.5rem; }
   @media (min-width: 1024px) {
-    .img-game {
+    .demo-content-team {
       float: left;
       width: 50%; }
-      .img-game h3 {
+      .demo-content-team h3 {
         margin: 3% 0; }
-      .img-game ul {
+      .demo-content-team ul {
         float: left;
         margin-right: 10%; }
-      .img-game li {
+      .demo-content-team li {
         font-size: 1.1rem;
         line-height: 2.4rem; } }
 
-.text-info-game {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 30px; }
-  @media (min-width: 1024px) {
-    .text-info-game {
-      float: right;
-      width: 45%;
-      margin-left: 5%;
-      font-size: 1.8rem; } }
-  .text-info-game h3 {
-    margin: 31px 0;
-    color: #359e97;
-    font-size: 2rem; }
-  .text-info-game h2 {
-    color: #D2643B;
-    margin: 20px 0;
-    font-size: 2.8rem; }
-
+/*Estilos de los Botones*/
 @media (min-width: 1024px) {
-  .content-demo-info {
-    margin: 2% 0; }
-
-  .play-game {
-    margin-top: 8%; }
-
-  .note-play {
-    font-size: 1rem;
-    margin-top: 1.2%;
-    font-family: "Iceland"; }
-    .note-play span {
-      text-transform: uppercase; }
-
-  /*Estilos de los Botones*/
   .main {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
-    display: inline-block;
-    font-family: 'Iceland', sans-serif;
     color: #fff;
+    display: inline-block;
+    font-family: "Iceland", serif;
     text-align: center;
     text-decoration: none;
     padding-top: 11px; } }
+
 .play {
   border: none;
   background: none;
