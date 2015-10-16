@@ -555,11 +555,11 @@ footer {
   margin: 180px auto 130px; }
   @media (min-width: 1024px) {
     .header-logo {
-      width: 60%;
-      margin: 12% auto; } }
+      width: 40%;
+      margin: 10% auto; } }
 
 .about {
-  padding: 2% 0; }
+  padding: 4% 0 2%; }
 
 .about span {
   color: #ff6e3a; }
