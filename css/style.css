@@ -657,7 +657,7 @@ footer {
 .expanded .sub-nav {
   display: inline-block;
   height: 236px;
-  z-index: 2; }
+  z-index: 4; }
 
 .games-item:after {
   content: "";
