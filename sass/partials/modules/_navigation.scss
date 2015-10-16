@@ -87,6 +87,7 @@
 
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
@@ -135,6 +136,7 @@
 
 .mobile-logo{
     display: block;
+    height: 40px;
     margin: 20px;
     text-align: center;
     width: 45px;
@@ -147,7 +149,6 @@
     @media screen and (min-width: 1024px){
         display: none;
     }
-
 }
 
 //Navigation menu button//
