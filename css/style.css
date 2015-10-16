@@ -551,12 +551,12 @@ footer {
 
 .header-logo {
   display: block;
-  width: 80%;
-  margin: 180px auto 130px; }
+  margin: 180px auto 130px;
+  width: 80%; }
   @media (min-width: 1024px) {
     .header-logo {
-      width: 40%;
-      margin: 10% auto; } }
+      margin: 10% auto;
+      width: 40%; } }
 
 .about {
   padding: 4% 0 2%; }
@@ -569,8 +569,8 @@ footer {
     font-size: 1.5rem; } }
 /*Partners*/
 .partners {
-  text-align: center;
   background-color: #fff;
+  text-align: center;
   padding: 20px 20px 15px 20px; }
 
 .partner-item {
@@ -579,8 +579,8 @@ footer {
     .partner-item {
       width: inherit; } }
   .partner-item img {
-    width: 60%;
-    vertical-align: middle; }
+    vertical-align: middle;
+    width: 60%; }
 
 .firts-text {
   font-size: 1.5rem;
@@ -931,7 +931,7 @@ footer {
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
-  margin-right: 50px; }
+  margin-right: 25px; }
 
 .demo-content-team img {
   margin-bottom: 20px;
