@@ -705,6 +705,7 @@ footer {
 
 .mobile-logo {
   display: block;
+  height: 40px;
   margin: 20px;
   text-align: center;
   width: 45px;
