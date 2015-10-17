@@ -45,7 +45,6 @@ function videoCover() {
         playBtn.addEventListener( 'click', function(){
             player.api( 'play' );
             coverImg.style.display = 'none';
-            videoLabel.style.display = 'none';
             playBtn.style.display = 'none';
         } );
     }
