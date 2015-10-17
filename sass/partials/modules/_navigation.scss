@@ -81,7 +81,7 @@
 .games-item:after{
     content: "";
     @include sprite;
-    @extend %sprite-arrow;
+    @include sprite-arrow;
     display: inline-block;
     margin-left: 12px;
 

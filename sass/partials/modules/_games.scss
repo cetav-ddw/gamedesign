@@ -36,7 +36,7 @@
         &:before{
             content: "";
             @include sprite;
-            @extend %sprite-control;
+            @include sprite-control;
             display: block;
             margin: 0 auto;
         }

@@ -10,7 +10,7 @@
         &:before {
             content: "";
             @include sprite;
-            @extend %sprite-ship;
+            @include sprite-ship;
             margin-top: -52px;
             margin-left: -22px;
             position: absolute;
@@ -18,7 +18,7 @@
         &:after {
             content: "";
             @include sprite;
-            @extend %sprite-invader;
+            @include sprite-invader;
             margin-top: 11px;
              margin-left: -22px;
             position: absolute;
@@ -42,7 +42,7 @@
         &:before{
             content: "";
             @include sprite;
-            @extend %sprite-trophy;
+            @include sprite-trophy;
             display: inline-block;
             margin-right: 10px;
             vertical-align: middle;

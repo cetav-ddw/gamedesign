@@ -105,14 +105,14 @@ footer {
     &:after {
       content: "";
       @include sprite;
-      @extend %sprite-astronaut;
+      @include sprite-astronaut;
       margin-top: -100px;
       float: right;
     }
     &:before {
       content: "";
       @include sprite;
-      @extend %sprite-planet;
+      @include sprite-planet;
       float: left;
       margin-top: -87px;
     }
@@ -136,5 +136,5 @@ footer {
   display: inline-block;
   margin-right: 8px;
   @include sprite;
-  @extend %sprite-arrow;
+  @include sprite-arrow;
 }

@@ -66,7 +66,7 @@
 }
 
 .demo-content-team li:before {
-    @extend %sprite-invader-small;
+    @include sprite-invader-small;
     @include sprite;
     content: "";
     display: inline-block;
@@ -129,9 +129,3 @@
         padding-top: 11px;
     }
 }
-
-// .sprite-button:hover{
-//     @media (min-width: 1024px) {
-//         @extend %sprite-button-pressed;
-//     }
-// }

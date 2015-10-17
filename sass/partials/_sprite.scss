@@ -3,66 +3,59 @@
   background-repeat: no-repeat;
 }
 
-%sprite-arrow {
+@mixin sprite-arrow {
   background-position: 0 -102px;
   height: 17px;
   width: 15px;
 }
 
-%sprite-invader-small {
+@mixin sprite-invader-small {
   background-position: -15px -102px;
   width: 22px;
   height: 22px;
 }
 
-@media (min-width: 1024px) {
-  %sprite-button-pressed {
-    background-position: -219px -102px;
-    width: 155px;
-    height: 40px;
-  }
+@mixin sprite-button-pressed {
+  background-position: -219px -102px;
+  width: 155px;
+  height: 40px;
 }
 
-@media (min-width: 1334px){
 
-  %sprite-astronaut {
-    background-position: -93px 0;
-    width: 80px;
-    height: 102px;
-  }
-
-  %sprite-planet {
-    background-position: 0 0;
-    width: 93px;
-    height: 94px;
-  }
+@mixin sprite-astronaut {
+  background-position: -93px 0;
+  width: 80px;
+  height: 102px;
 }
 
-@media (min-width: 1024px)  {
+@mixin sprite-planet {
+  background-position: 0 0;
+  width: 93px;
+  height: 94px;
+}
 
-  %sprite-control {
-    background-position: -125px -102px;
-    width: 50px;
-    height: 39px;
-  }
+@mixin sprite-control {
+  background-position: -125px -102px;
+  width: 50px;
+  height: 39px;
+}
 
-  %sprite-ship {
-    background-position: -77px -102px;
-    width: 48px;
-    height: 35px;
-  }
+@mixin sprite-ship {
+  background-position: -77px -102px;
+  width: 48px;
+  height: 35px;
+}
 
-  %sprite-trophy {
-    background-position: -37px -102px;
-    width: 40px;
-    height: 29px;
-  }
+@mixin sprite-trophy {
+  background-position: -37px -102px;
+  width: 40px;
+  height: 29px;
+}
 
-  %sprite-invader {
-    background-position: -175px -102px;
-    width: 44px;
-    height: 44px;
-  }
+@mixin sprite-invader {
+  background-position: -175px -102px;
+  width: 44px;
+  height: 44px;
 }
 
 .sprite-sorry {
@@ -93,4 +86,10 @@
   background-position: -173px 0;
   width: 155px;
   height: 40px;
+}
+
+@mixin sprite-button-play {
+  background-position: -328px 0;
+  height: 75px;
+  width: 178px;
 }
