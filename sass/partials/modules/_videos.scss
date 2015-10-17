@@ -3,18 +3,27 @@
 //
 
 .play{
-    border: none;
     background: url(../img/play.png);
+    background-size: cover;
+    border: none;
     color: transparent;
-    height: 20%;
-    overflow: hidden; 
+    display: run-in;
+    height: 18%;
+    margin: 0 45%;
     position: absolute;
-    width: 6%;
+    background-repeat: no-repeat;
+    top: 40%;
+    width: 10%;
     z-index: 3;
 
     @media (min-width: 1024px){
-        left: 0;
-        margin: 16% 5%;
+        background: url(../img/play.png);
+        background-size: cover;
+        height: 6em;
+        left: 22%;
+        margin: 0 20%;
+        overflow: hidden;
+        width: 6em;
     }
 }
 
@@ -28,7 +37,7 @@
         background-color: #000;
         padding-bottom: 0%;
         padding-left: 1%;
-        text-align: center;  
+        text-align: center;
     }
 }
     
