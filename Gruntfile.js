@@ -13,7 +13,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: ['js/**/*.js'],
-                tasks: []
+                tasks: ['uglify:dev']
             }
         },
 
@@ -39,17 +39,31 @@ module.exports = function (grunt) {
         },
 
         uglify: {
-            all: {
-                options: {
-                    sourceMap: true
-                },
-                files: {
-                    'js/main.min.js': ['js/main.js']
-                }
+          dev: {
+            options: {
+              mangle: false,
+              compress: false,
+              preserveComments: 'all',
+              beautify: true
+            },
+            files: {
+              'js/main.min.js': ['js/main.js']
+              // Output: input
             }
+          },
+          prod: {
+            options: {
+              mangle: true,
+              sourceMap: true,
+              compress: true
+            },
+            files: {
+              'js/main.min.js': ['js/main.js']
+            }
+          }
         }
     });
 
-    grunt.registerTask('default', ['sass:dist', 'watch']);
-    grunt.registerTask('prod', ['sass:prod', 'uglify']);
+    grunt.registerTask('default', ['sass:dist', 'watch', 'uglify:dev']);
+    grunt.registerTask('prod', ['sass:prod', 'uglify:prod']);
 };
