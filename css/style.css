@@ -380,7 +380,15 @@ th {
 .sprite-button {
   background-position: -173px 0;
   width: 155px;
-  height: 40px; }
+  height: 60px; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial,Verdana,sans-serif; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 body {
   background-color: #f4f4f4; }
@@ -399,7 +407,7 @@ ul {
 
 p {
   font-family: "Muli", sans-serif;
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin: 20px 0;
   padding: 0; }
 
@@ -408,7 +416,7 @@ h1, h2, h3, h4 {
   padding: 0; }
 
 h2, h3 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-family: "Iceland", serif; }
 
 button:focus, button:active {
@@ -429,7 +437,7 @@ button:focus, button:active {
 
 .title-main {
   color: #359E97;
-  font-size: 4rem;
+  font-size: 9rem;
   text-align: center;
   text-shadow: -4px 4px 0 #000;
   font-family: "Iceland", serif;
@@ -459,13 +467,13 @@ footer {
       width: 60%; } }
   .text-footer p {
     font-family: "Iceland", serif;
-    font-size: 1.8rem; }
+    font-size: 2.3rem; }
     @media (min-width: 1334px) {
       .text-footer p {
         width: 64%;
         margin: 0 auto; } }
   .text-footer .strong {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #FD7949; }
   @media (min-width: 1334px) {
     .text-footer:after {
@@ -523,14 +531,14 @@ footer {
       width: initial; } }
 
 .about {
-  padding: 4% 0 2%; }
+  padding: 4% 0 4.5%; }
 
 .about span {
   color: #ff6e3a; }
 
 @media (min-width: 1024px) {
   .about p:first-child {
-    font-size: 1.5rem; } }
+    font-size: 2.3rem; } }
 /*Partners*/
 .partners {
   background-color: #fff;
@@ -593,7 +601,7 @@ footer {
 
 .nav-item > a {
   color: #fff;
-  font-size: 2rem;
+  font-size: 3.2rem;
   padding: 2px;
   text-decoration: none;
   text-transform: capitalize; }
@@ -640,7 +648,7 @@ footer {
   transform: rotate(90deg); }
 
 .nav-item a {
-  font-size: 2rem; }
+  font-size: 3.2rem; }
 
 .nav-item:hover .subnav {
   position: inherit;
@@ -893,7 +901,7 @@ footer {
 @media (min-width: 1024px) {
   .demo-play-note {
     font-family: "Iceland", serif;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 15px; }
     .demo-play-note span {
       text-transform: uppercase; } }
@@ -931,10 +939,10 @@ footer {
   width: 100%; }
   .demo-content-team h3 {
     color: #359e97;
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 15px; }
   .demo-content-team li {
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.5rem;
     margin-bottom: 10px; }
   @media (min-width: 1024px) {
@@ -947,7 +955,7 @@ footer {
         float: left;
         margin-right: 10%; }
       .demo-content-team li {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         line-height: 2.4rem;
         margin-bottom: 5px; } }
 
@@ -961,7 +969,8 @@ footer {
     font-family: "Iceland", serif;
     text-align: center;
     text-decoration: none;
-    padding-top: 11px; } }
+    padding-top: 8px;
+    font-size: 3rem; } }
 
 .play {
   background-image: url("../img/sprite.png");

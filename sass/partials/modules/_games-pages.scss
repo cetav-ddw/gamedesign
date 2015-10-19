@@ -46,7 +46,7 @@
 .demo-play-note {
     @media (min-width: 1024px) {
         font-family: $title-text;
-        font-size: 1rem;
+        font-size: 2rem;
         margin-top: 15px;
         span{
             text-transform: uppercase;
@@ -90,11 +90,11 @@
     width:100%;
     h3 {
         color: $title-color;
-        font-size: 2rem;
+        font-size: 4rem;
         margin-bottom: 15px;
     }
     li {
-        font-size: 1rem;
+        font-size: 1.6rem;
         line-height: 1.5rem;
         margin-bottom: 10px;
     }
@@ -109,7 +109,7 @@
             margin-right: 10%;
         }
         li{
-            font-size: 1.1rem;
+            font-size: 1.6rem;
             line-height: 2.4rem;
             margin-bottom: 5px;
         }
@@ -126,6 +126,7 @@
         font-family: $title-text;
         text-align: center;
         text-decoration: none;
-        padding-top: 11px;
+        padding-top: 8px;
+        font-size: 3rem;
     }
 }

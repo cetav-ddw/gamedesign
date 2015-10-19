@@ -1,6 +1,15 @@
 // 
 // Estilos para los elementos base y footer
 //
+html {
+  box-sizing:border-box;
+  font-size:62.5%;
+  font-family: Arial,Verdana,sans-serif;
+}
+  *, *:before, *:after{
+  box-sizing:inherit;
+  
+}
 
 body {
   background-color: #f4f4f4;
@@ -23,7 +32,7 @@ ul {
 
 p {
   font-family: $text;
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin: 20px 0; 
   padding: 0;
 }
@@ -34,7 +43,7 @@ h1, h2, h3, h4{
 }
 
 h2, h3{
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-family:$title-text;
 }
 
@@ -59,7 +68,7 @@ button:focus, button:active {
 
 .title-main {
   color: #359E97;
-	font-size: 4rem;
+	font-size: 9rem;
 	text-align:center;
   text-shadow: -4px 4px 0 #000;
 	font-family:$title-text;
@@ -91,14 +100,14 @@ footer {
   color: #E8EBED;
   p {
     font-family: $title-text;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     @media (min-width: 1334px){
       width: 64%;
       margin: 0 auto;
     }
   }
   .strong {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #FD7949;
   }
   @media (min-width: 1334px){
