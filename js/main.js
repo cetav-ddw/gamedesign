@@ -39,11 +39,12 @@ function domReady() {
 
         // content to hide on click
         var coverImg = document.getElementById('video-cover');
-        var videoLabel = document.getElementById('play-btn-label'); // Que hacen con esto?
+        var videoLabel = document.getElementById('play-btn-label');
 
         player.api('play');
         coverImg.style.display = 'none';
         playBtn.style.display = 'none';
+        videoLabel.style.display = 'none';
     };
 
     if(playBtn) {
