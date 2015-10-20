@@ -94,37 +94,43 @@ footer {
 .text-footer {
   display: inline-block;
   width: 90%;
-  @media (min-width: 1334px){
-    width: 60%;
-  }
   color: #E8EBED;
   p {
     font-family: $title-text;
     font-size: 2.3rem;
+    padding-top: 20px;
     @media (min-width: 1334px){
+      padding-top: 0;
       width: 64%;
       margin: 0 auto;
     }
+  }
+  &:after {
+    content: "";
+    @include sprite;
+    @include sprite-astronaut;
+    margin-right: -10px;
+    margin-top: -45px;
+    float: right;
+    @media (min-width: 1334px){
+      margin-top: -100px;
+      margin-right: initial;
+    }
+  }
+  &:before {
+    content: "";
+    @include sprite;
+    @include sprite-planet;
+    float: left;
+    margin-top: -62px;
   }
   .strong {
     font-size: 3rem;
     color: #FD7949;
   }
   @media (min-width: 1334px){
-    &:after {
-      content: "";
-      @include sprite;
-      @include sprite-astronaut;
-      margin-top: -100px;
-      float: right;
-    }
-    &:before {
-      content: "";
-      @include sprite;
-      @include sprite-planet;
-      float: left;
-      margin-top: -87px;
-    }
+    padding-top: 20px;
+    width: 60%;
   }
 }
 

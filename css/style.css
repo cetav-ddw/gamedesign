@@ -240,7 +240,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -469,38 +470,45 @@ footer {
   display: inline-block;
   width: 90%;
   color: #E8EBED; }
-  @media (min-width: 1334px) {
-    .text-footer {
-      width: 60%; } }
   .text-footer p {
     font-family: "Iceland", serif;
-    font-size: 2.3rem; }
+    font-size: 2.3rem;
+    padding-top: 20px; }
     @media (min-width: 1334px) {
       .text-footer p {
+        padding-top: 0;
         width: 64%;
         margin: 0 auto; } }
+  .text-footer:after {
+    content: "";
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -93px 0;
+    width: 80px;
+    height: 102px;
+    margin-right: -10px;
+    margin-top: -45px;
+    float: right; }
+    @media (min-width: 1334px) {
+      .text-footer:after {
+        margin-top: -100px;
+        margin-right: initial; } }
+  .text-footer:before {
+    content: "";
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 93px;
+    height: 94px;
+    float: left;
+    margin-top: -62px; }
   .text-footer .strong {
     font-size: 3rem;
     color: #FD7949; }
   @media (min-width: 1334px) {
-    .text-footer:after {
-      content: "";
-      background-image: url("../img/sprite.png");
-      background-repeat: no-repeat;
-      background-position: -93px 0;
-      width: 80px;
-      height: 102px;
-      margin-top: -100px;
-      float: right; }
-    .text-footer:before {
-      content: "";
-      background-image: url("../img/sprite.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      width: 93px;
-      height: 94px;
-      float: left;
-      margin-top: -87px; } }
+    .text-footer {
+      padding-top: 20px;
+      width: 60%; } }
 
 .content-info-footer {
   margin: 60px 0; }
@@ -536,7 +544,6 @@ footer {
 @media (min-width: 1024px) {
   .about p:first-child {
     font-size: 2.3rem; } }
-
 /*Partners*/
 .partners {
   background-color: #fff;
@@ -622,7 +629,7 @@ footer {
     color: #359e97; }
 
 .sub-nav {
-  -webkit-transition: height 0.25s linear;
+  -webkit-transition: height .25s linear;
   box-sizing: border-box;
   height: 0px;
   overflow: hidden;
@@ -725,13 +732,13 @@ footer {
 @media screen and (min-width: 1024px) {
   .header-games {
     height: 95px; }
+
   .main-nav {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     float: left;
     margin: 1% 2%;
     width: 65%; } }
-
 .experts-list {
   margin: 0 auto;
   width: 80%; }
@@ -808,11 +815,12 @@ footer {
     border-right: 3px dashed #359E97;
     margin: 18px 0;
     padding: 45px 0 45px 0; }
+
   .middle p, .middle h3 {
     margin-left: 31%; }
+
   .experts-list-item p {
     width: 70%; } }
-
 .experts-item-img {
   border: 5px solid #359e97;
   box-shadow: 10px 10px 0 0 #359e97; }
@@ -1058,7 +1066,8 @@ footer {
   @media (min-width: 1024px) {
     .video-label-gallery {
       margin: 4% auto 4% auto;
-      font-size: 8em; } }
+      font-size: 8em;
+      width: 70%; } }
 
 .video-label-demo {
   color: #359E97;
@@ -1093,9 +1102,9 @@ footer {
 .play-demo {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -402px -60px;
-  width: 103px;
-  height: 90px;
+  background-position: -385px 0px;
+  width: 59px;
+  height: 56px;
   background-color: transparent;
   border: none;
   color: transparent;
@@ -1110,7 +1119,10 @@ footer {
       bottom: 0%;
       right: 50%;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto;
+      background-position: -402px -60px;
+      width: 103px;
+      height: 90px; } }
   @media (min-width: 1024px) {
     .play-demo {
       top: 65%;
@@ -1123,9 +1135,9 @@ footer {
 .play-gallery {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -402px -60px;
-  width: 103px;
-  height: 90px;
+  background-position: -385px 0px;
+  width: 59px;
+  height: 56px;
   background-color: transparent;
   border: none;
   color: transparent;
@@ -1133,6 +1145,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
   z-index: 3; }
+  @media (min-width: 768px) {
+    .play-gallery {
+      background-position: -402px -60px;
+      width: 103px;
+      height: 90px; } }
 
 .video-button {
   width: 100%;
