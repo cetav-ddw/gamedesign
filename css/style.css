@@ -1066,21 +1066,19 @@ footer {
   font-family: "Press Start 2P", "Iceland";
   font-size: 2em;
   line-height: 1.2em;
-  margin: 1em;
+  margin: 0.5em;
   position: absolute;
-  text-shadow: 3px 3px 0 #000;
+  text-shadow: 5px 5px 0 #000;
   text-align: left;
-  width: 70%;
+  width: 65%;
   z-index: 3; }
   @media (min-width: 640px) {
     .video-label-demo {
-      font-size: 3em;
-      margin: 1em;
-      width: 70%; } }
+      font-size: 3.5em;
+      width: 65%; } }
   @media (min-width: 768px) {
     .video-label-demo {
       font-size: 4em;
-      margin: 1em;
       width: 70%; } }
   @media (min-width: 1024px) {
     .video-label-demo {
@@ -1088,10 +1086,9 @@ footer {
       font-size: 6em;
       left: 0%;
       right: 0%;
-      margin: 1em;
       position: absolute;
       top: 0%;
-      width: 70%; } }
+      width: 50%; } }
 
 .play-demo {
   background-image: url("../img/sprite.png");
@@ -1102,16 +1099,24 @@ footer {
   background-color: transparent;
   border: none;
   color: transparent;
-  top: 48%;
-  right: 60%;
+  top: 50%;
+  right: 62%;
   position: absolute;
   z-index: 3; }
   @media (min-width: 640px) {
     .play-demo {
-      top: 45%;
+      top: 50%;
       left: 0%;
       bottom: 0%;
-      right: 0%;
+      right: 50%;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (min-width: 1024px) {
+    .play-demo {
+      top: 65%;
+      left: 0%;
+      bottom: 0%;
+      right: 65%;
       margin-left: auto;
       margin-right: auto; } }
 
