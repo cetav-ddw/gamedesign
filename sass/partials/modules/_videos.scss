@@ -3,10 +3,10 @@
 //
 
 .video{
-  margin: -1% auto 0 auto;
-  position: relative;
-  padding-bottom: 56.25%;
-  z-index: 1;
+    margin: -1% auto 0 auto;
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 1;
     overflow: hidden;
     @media (min-width: 1024px){
         background-color: #000;
@@ -18,7 +18,7 @@
 
 .video iframe{
   display: inline-block;
-  height: 100%;
+  height: auto;
     margin: 0 auto;
   position: absolute;
     width: 100%;
@@ -30,15 +30,15 @@
     }
 }
 
-.video-cover{
-  background-color: #000;
+.video-cover-demo{
+    background-color: #000;
     height: 100%;
-  position: absolute;
-  z-index: 2;
+    position: absolute;
+    z-index: 2;
     @media (min-width: 1024px){
-          top: 0;
-      left: 0;
-      width: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -57,7 +57,7 @@
     }
 }
 
-.video-label{
+.video-label-gallery{
     color: #359E97;
     display: block;
     font-family: $title-videos;
@@ -88,7 +88,64 @@
     }
 }
 
-.play{
+.video-label-demo{
+    color: #359E97;
+    display: block;
+    font-family: $title-videos;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 1em;
+    position: absolute;
+    text-shadow: 3px 3px 0 #000;
+    text-align: left;
+    width: 70%;
+    z-index: 3;
+
+    @media(min-width: 640px){
+        font-size: 3em;
+        margin: 1em;
+        width: 70%;
+    }
+
+    @media(min-width: 768px){
+        font-size: 4em;
+        margin: 1em;
+        width: 70%;
+    }
+
+    @media(min-width: 1024px){
+        bottom: 0%;
+        font-size: 6em;
+        left: 0%;
+        right: 0%;
+        margin: 1em;
+        position: absolute;
+        top: 0%;
+        width: 70%;
+    }
+}
+
+.play-demo{
+    @include sprite;
+    @include sprite-button-play;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    top: 48%;
+    right: 60%;
+    position: absolute;
+    z-index: 3;
+    @media(min-width: 640px){
+        top: 45%;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}
+
+.play-gallery{
     @include sprite;
     @include sprite-button-play;
     background-color: transparent;

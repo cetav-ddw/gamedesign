@@ -1001,7 +1001,7 @@ footer {
 
 .video iframe {
   display: inline-block;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   position: absolute;
   width: 100%; }
@@ -1012,13 +1012,13 @@ footer {
       position: inherit;
       width: 900px; } }
 
-.video-cover {
+.video-cover-demo {
   background-color: #000;
   height: 100%;
   position: absolute;
   z-index: 2; }
   @media (min-width: 1024px) {
-    .video-cover {
+    .video-cover-demo {
       top: 0;
       left: 0;
       width: 100%; } }
@@ -1034,7 +1034,7 @@ footer {
   width: 100%;
   z-index: 3; }
 
-.video-label {
+.video-label-gallery {
   color: #359E97;
   display: block;
   font-family: "Press Start 2P", "Iceland";
@@ -1043,24 +1043,79 @@ footer {
   width: 100%;
   z-index: 3; }
   @media (min-width: 320px) {
-    .video-label {
+    .video-label-gallery {
       font-size: 2.5em;
       margin: 6% auto 4% auto; } }
   @media (min-width: 640px) {
-    .video-label {
+    .video-label-gallery {
       font-size: 4em;
       margin: 10% auto 6% auto; } }
   @media (min-width: 768px) {
-    .video-label {
+    .video-label-gallery {
       margin: 12% auto 6% auto;
       font-size: 6em;
       line-height: 1.2em; } }
   @media (min-width: 1024px) {
-    .video-label {
+    .video-label-gallery {
       margin: 4% auto 4% auto;
       font-size: 8em; } }
 
-.play {
+.video-label-demo {
+  color: #359E97;
+  display: block;
+  font-family: "Press Start 2P", "Iceland";
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 1em;
+  position: absolute;
+  text-shadow: 3px 3px 0 #000;
+  text-align: left;
+  width: 70%;
+  z-index: 3; }
+  @media (min-width: 640px) {
+    .video-label-demo {
+      font-size: 3em;
+      margin: 1em;
+      width: 70%; } }
+  @media (min-width: 768px) {
+    .video-label-demo {
+      font-size: 4em;
+      margin: 1em;
+      width: 70%; } }
+  @media (min-width: 1024px) {
+    .video-label-demo {
+      bottom: 0%;
+      font-size: 6em;
+      left: 0%;
+      right: 0%;
+      margin: 1em;
+      position: absolute;
+      top: 0%;
+      width: 70%; } }
+
+.play-demo {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -402px -60px;
+  width: 103px;
+  height: 90px;
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  top: 48%;
+  right: 60%;
+  position: absolute;
+  z-index: 3; }
+  @media (min-width: 640px) {
+    .play-demo {
+      top: 45%;
+      left: 0%;
+      bottom: 0%;
+      right: 0%;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.play-gallery {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -402px -60px;
