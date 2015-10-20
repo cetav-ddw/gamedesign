@@ -25,6 +25,10 @@
   @include sprite-arrow;
 }
 
+.page-arrow:hover:before{
+    @include sprite-arrow-hover;
+}
+
 .nav {
     display: none;
     padding: 0;

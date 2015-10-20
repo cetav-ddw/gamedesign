@@ -586,6 +586,11 @@ footer {
   height: 17px;
   width: 15px; }
 
+.page-arrow:hover:before {
+  background-position: 0 -121px;
+  height: 17px;
+  width: 15px; }
+
 .nav {
   display: none;
   padding: 0; }
