@@ -240,8 +240,7 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -537,6 +536,7 @@ footer {
 @media (min-width: 1024px) {
   .about p:first-child {
     font-size: 2.3rem; } }
+
 /*Partners*/
 .partners {
   background-color: #fff;
@@ -622,7 +622,7 @@ footer {
     color: #359e97; }
 
 .sub-nav {
-  -webkit-transition: height .25s linear;
+  -webkit-transition: height 0.25s linear;
   box-sizing: border-box;
   height: 0px;
   overflow: hidden;
@@ -725,13 +725,13 @@ footer {
 @media screen and (min-width: 1024px) {
   .header-games {
     height: 95px; }
-
   .main-nav {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     float: left;
     margin: 1% 2%;
     width: 65%; } }
+
 .experts-list {
   margin: 0 auto;
   width: 80%; }
@@ -808,12 +808,11 @@ footer {
     border-right: 3px dashed #359E97;
     margin: 18px 0;
     padding: 45px 0 45px 0; }
-
   .middle p, .middle h3 {
     margin-left: 31%; }
-
   .experts-list-item p {
     width: 70%; } }
+
 .experts-item-img {
   border: 5px solid #359e97;
   box-shadow: 10px 10px 0 0 #359e97; }
@@ -987,32 +986,6 @@ footer {
     padding-top: 8px;
     font-size: 3rem; } }
 
-.play {
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: none;
-  color: transparent;
-  margin: 0 15%;
-  position: absolute;
-  top: 53%;
-  z-index: 3;
-  background-position: -385px 0px;
-  width: 59px;
-  height: 56px; }
-  @media (min-width: 1024px) {
-    .play {
-      background-position: -402px -60px;
-      width: 103px;
-      height: 90px;
-      right: 60%;
-      margin: 0 20%;
-      overflow: hidden; } }
-
-.video-button {
-  width: 100%;
-  height: 100%; }
-
 .video {
   margin: -1% auto 0 auto;
   position: relative;
@@ -1049,5 +1022,60 @@ footer {
       top: 0;
       left: 0;
       width: 100%; } }
+
+.gallery-cover-background {
+  background-image: url(../img/background-general.gif);
+  background-repeat: repeat;
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 3; }
+
+.video-label {
+  color: #359E97;
+  display: block;
+  font-family: "Press Start 2P", "Iceland";
+  text-shadow: 2px 2px 0 #FD7948;
+  text-align: center;
+  width: 100%;
+  z-index: 3; }
+  @media (min-width: 320px) {
+    .video-label {
+      font-size: 2.5em;
+      margin: 6% auto 4% auto; } }
+  @media (min-width: 640px) {
+    .video-label {
+      font-size: 4em;
+      margin: 10% auto 6% auto; } }
+  @media (min-width: 768px) {
+    .video-label {
+      margin: 12% auto 6% auto;
+      font-size: 6em;
+      line-height: 1.2em; } }
+  @media (min-width: 1024px) {
+    .video-label {
+      margin: 4% auto 4% auto;
+      font-size: 8em; } }
+
+.play {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -402px -60px;
+  width: 103px;
+  height: 90px;
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3; }
+
+.video-button {
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
