@@ -1,25 +1,22 @@
-// 
+//
 // Estilo de todos los videos
 //
 
 .play{
     @include sprite;
-    @include sprite-button-play;
     background-color: transparent;
-    height: 58px;
-    width: 178px;
     border: none;
     color: transparent;
-    margin: 0 5%;
+    margin: 0 15%;
     position: absolute;
     top: 53%;
     z-index: 3;
+    @include sprite-button-play-mobile;
     @media (min-width: 1024px){
-      height: 75px;
-      right: 57%;
+      @include sprite-button-play;
+      right: 60%;
       margin: 0 20%;
       overflow: hidden;
-
     }
 }
 
@@ -41,7 +38,7 @@
         text-align: center;
     }
 }
-    
+
 .video iframe{
 	display: inline-block;
 	height: 100%;

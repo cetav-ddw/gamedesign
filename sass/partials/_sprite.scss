@@ -9,18 +9,17 @@
   width: 15px;
 }
 
-@mixin sprite-invader-small {
+@mixin sprite-arrow-hover {
+  background-position: 0 -120px;
+  height: 17px;
+  width: 15px;
+}
+
+@mixin sprite-gem {
   background-position: -15px -102px;
-  width: 22px;
-  height: 22px;
+  width: 17px;
+  height: 25px;
 }
-
-@mixin sprite-button-pressed {
-  background-position: -219px -102px;
-  width: 155px;
-  height: 40px;
-}
-
 
 @mixin sprite-astronaut {
   background-position: -93px 0;
@@ -58,6 +57,12 @@
   height: 44px;
 }
 
+.sprite-bg-menu {
+  background-position: -390px -208px;
+  width: 95px;
+  height: 54px;
+}
+
 .sprite-sorry {
   background-position: 0 -627px;
 }
@@ -86,8 +91,20 @@
   background-position: -173px 0;
   width: 155px;
   height: 60px;
+  &:hover {
+      background-position: -219px -102px;
+      height: 51px;
+  }
 }
 
 @mixin sprite-button-play {
-  background-position: -328px 0;
+  background-position: -402px -60px;
+  width: 103px;
+  height: 90px;
+}
+
+@mixin sprite-button-play-mobile {
+  background-position: -385px 0px;
+  width: 59px;
+  height: 56px;
 }

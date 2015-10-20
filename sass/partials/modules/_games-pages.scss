@@ -1,4 +1,4 @@
-// 
+//
 // Games Pages
 //
 
@@ -54,7 +54,7 @@
     }
 }
 
-.demo-content { 
+.demo-content {
     margin: 0 auto;
     overflow: hidden;
     width: 80%;
@@ -66,13 +66,12 @@
 }
 
 .demo-content-team li:before {
-    @include sprite-invader-small;
+    @include sprite-gem;
     @include sprite;
     content: "";
     display: inline-block;
     margin-right: 17px;
-    vertical-align: sub;
-
+    vertical-align: middle;
 }
 
 .demo-content-team img {

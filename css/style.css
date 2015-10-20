@@ -359,6 +359,11 @@ td,
 th {
   padding: 0; }
 
+.sprite-bg-menu {
+  background-position: -390px -208px;
+  width: 95px;
+  height: 54px; }
+
 .sprite-sorry {
   background-position: 0 -627px; }
 
@@ -381,6 +386,9 @@ th {
   background-position: -173px 0;
   width: 155px;
   height: 60px; }
+  .sprite-button:hover {
+    background-position: -219px -102px;
+    height: 51px; }
 
 html {
   box-sizing: border-box;
@@ -447,7 +455,7 @@ button:focus, button:active {
   @media (min-width: 1334px) {
     .title-main {
       margin: 2% auto;
-      font-size: 5rem;
+      font-size: 10rem;
       width: 70%; } }
 
 footer {
@@ -504,16 +512,6 @@ footer {
   @media (min-width: 1334px) {
     .gallery {
       width: 75%; } }
-
-.page-arrow:before {
-  content: "";
-  display: inline-block;
-  margin-right: 8px;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: 0 -102px;
-  height: 17px;
-  width: 15px; }
 
 .header {
   background: url(../img/background-general.gif);
@@ -577,6 +575,16 @@ footer {
   margin: 0;
   text-align: center;
   width: 100%; }
+
+.page-arrow:before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -102px;
+  height: 17px;
+  width: 15px; }
 
 .nav {
   display: none;
@@ -699,10 +707,12 @@ footer {
   float: right;
   font-family: "Iceland", serif;
   font-size: 24px;
-  margin: 30px 20px 0;
+  margin: 20px;
   overflow: hidden;
   text-align: center;
-  width: 60px; }
+  padding-top: 13px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat; }
   @media screen and (min-width: 1024px) {
     .show-menu {
       display: none; } }
@@ -917,14 +927,14 @@ footer {
 
 .demo-content-team li:before {
   background-position: -15px -102px;
-  width: 22px;
-  height: 22px;
+  width: 17px;
+  height: 25px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
   margin-right: 17px;
-  vertical-align: sub; }
+  vertical-align: middle; }
 
 .demo-content-team img {
   margin-bottom: 20px;
@@ -975,20 +985,22 @@ footer {
 .play {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -328px 0;
   background-color: transparent;
-  height: 58px;
-  width: 178px;
   border: none;
   color: transparent;
-  margin: 0 5%;
+  margin: 0 15%;
   position: absolute;
   top: 53%;
-  z-index: 3; }
+  z-index: 3;
+  background-position: -385px 0px;
+  width: 59px;
+  height: 56px; }
   @media (min-width: 1024px) {
     .play {
-      height: 75px;
-      right: 57%;
+      background-position: -402px -60px;
+      width: 103px;
+      height: 90px;
+      right: 60%;
       margin: 0 20%;
       overflow: hidden; } }
 

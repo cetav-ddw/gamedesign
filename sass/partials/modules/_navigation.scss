@@ -17,6 +17,14 @@
     width: 100%;
 }
 
+.page-arrow:before{
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  @include sprite;
+  @include sprite-arrow;
+}
+
 .nav {
     display: none;
     padding: 0;
@@ -158,11 +166,11 @@
     float: right;
     font-family: "Iceland", serif;
     font-size: 24px;
-    margin: 30px 20px 0;
+    margin: 20px;
     overflow: hidden;
     text-align: center;
-    width: 60px;
-
+    padding-top: 13px;
+    @include sprite;
     @media screen and (min-width: 1024px) {
         display: none;
     }
