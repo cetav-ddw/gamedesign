@@ -1085,7 +1085,7 @@ footer {
   line-height: 1.2em;
   margin: 0.5em;
   position: absolute;
-  text-shadow: 5px 5px 0 #000;
+  text-shadow: 3px 3px 0 #000;
   text-align: left;
   width: 65%;
   z-index: 3; }
@@ -1095,6 +1095,7 @@ footer {
       width: 65%; } }
   @media (min-width: 768px) {
     .video-label-demo {
+      text-shadow: 5px 5px 0 #000;
       font-size: 4em;
       width: 70%; } }
   @media (min-width: 1024px) {
