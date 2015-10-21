@@ -68,17 +68,18 @@ button:focus, button:active {
 
 .title-main {
   color: #359E97;
-	font-size: 9rem;
+	font-size: 7rem;
 	text-align:center;
   text-shadow: -4px 4px 0 #000;
 	font-family:$title-text;
   border-bottom: 3px solid #359E97;
   margin: 8%;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   @media (min-width: 1334px){
     margin: 2% auto;
     font-size: 10rem;
-    width: 70%;
+    width: 66%;
+    padding-bottom: 35px;
   }
 }
 
