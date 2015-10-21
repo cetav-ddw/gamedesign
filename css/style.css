@@ -1018,6 +1018,7 @@ footer {
 .video iframe {
   display: inline-block;
   margin: 0 auto;
+  height: 100%;
   position: absolute;
   width: 100%; }
   @media (min-width: 1024px) {
