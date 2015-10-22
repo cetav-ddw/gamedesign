@@ -132,7 +132,11 @@
     transform: rotate(90deg);
 }
 
-.sub-nav-item {
+.games-item:hover:after{
+    @include sprite-arrow-hover;
+}
+
+.sub-nav-item{
     margin: 20px -6px;
     width: 100%;
 
@@ -181,12 +185,14 @@
     }
 }
 
-@media screen and (min-width: 1024px){
-    .header-games{
+.header-games{
+    @media screen and (min-width: 1024px){
         height: 95px;
     }
+}
 
-    .main-nav{
+.main-nav{
+    @media screen and (min-width: 1024px){
         @include sprite;
         float: left;
         margin: 1% 2%;

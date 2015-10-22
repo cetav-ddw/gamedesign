@@ -445,18 +445,19 @@ button:focus, button:active {
 
 .title-main {
   color: #359E97;
-  font-size: 9rem;
+  font-size: 7rem;
   text-align: center;
   text-shadow: -4px 4px 0 #000;
   font-family: "Iceland", serif;
   border-bottom: 3px solid #359E97;
   margin: 8%;
-  padding-bottom: 10px; }
+  padding-bottom: 15px; }
   @media (min-width: 1334px) {
     .title-main {
       margin: 2% auto;
       font-size: 10rem;
-      width: 70%; } }
+      width: 66%;
+      padding-bottom: 35px; } }
 
 footer {
   background: #353535;
@@ -667,6 +668,11 @@ footer {
   -moz-transform: rotate(90deg);
   transform: rotate(90deg); }
 
+.games-item:hover:after {
+  background-position: 0 -121px;
+  height: 17px;
+  width: 15px; }
+
 .nav-item a {
   font-size: 3.2rem; }
 
@@ -731,14 +737,16 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .header-games {
-    height: 95px; }
+    height: 95px; } }
 
+@media screen and (min-width: 1024px) {
   .main-nav {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     float: left;
     margin: 1% 2%;
     width: 65%; } }
+
 .experts-list {
   margin: 0 auto;
   width: 80%; }
@@ -1009,8 +1017,8 @@ footer {
 
 .video iframe {
   display: inline-block;
-  height: auto;
   margin: 0 auto;
+  height: 100%;
   position: absolute;
   width: 100%; }
   @media (min-width: 1024px) {
@@ -1077,7 +1085,7 @@ footer {
   line-height: 1.2em;
   margin: 0.5em;
   position: absolute;
-  text-shadow: 5px 5px 0 #000;
+  text-shadow: 3px 3px 0 #000;
   text-align: left;
   width: 65%;
   z-index: 3; }
@@ -1087,6 +1095,7 @@ footer {
       width: 65%; } }
   @media (min-width: 768px) {
     .video-label-demo {
+      text-shadow: 5px 5px 0 #000;
       font-size: 4em;
       width: 70%; } }
   @media (min-width: 1024px) {

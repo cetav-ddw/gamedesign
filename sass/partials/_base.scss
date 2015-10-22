@@ -47,15 +47,16 @@ button:active {
     border-bottom: 3px solid #359E97;
     color: #359E97;
     font-family: $title-text;
-    font-size: 9rem;
+    font-size: 7rem;
     margin: 8%;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     text-align: center;
     text-shadow: -4px 4px 0 #000;
 
     @media (min-width: 1334px) {
         font-size: 10rem;
         margin: 2% auto;
+        padding-bottom: 35px;
         width: 70%;
     }
 }
