@@ -1,18 +1,12 @@
-//
-// Estilos para Cetav Game Jam 2015.
-//
-
-//
-// Parciales
-
-// Normalize 
+// Reset
 @import "partials/normalize";
 
-@import "partials/sprite.scss";
 // Parciales base
+@import "partials/sprite.scss";
 @import "partials/variables";
 @import "partials/base";
-
+@import "partials/patterns/typo";
+@import "partials/layout/layout";
 
 // Módulos
 @import "partials/modules/header";

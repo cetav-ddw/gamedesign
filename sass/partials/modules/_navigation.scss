@@ -1,32 +1,18 @@
-.menu-toggle[type=checkbox]{
+.menu-toggle[type=checkbox] {
     display: none;
 }
 
-.menu-toggle[type=checkbox]:checked ~ nav{
+.menu-toggle[type=checkbox]:checked ~ nav {
     display: block;
 }
 
-.header{
-    overflow: hidden;
-}
-
-.nav, .main-nav, .nav-item{
+.nav,
+.main-nav,
+.nav-item {
     float: none;
     margin: 0;
     text-align: center;
     width: 100%;
-}
-
-.page-arrow:before{
-  content: "";
-  display: inline-block;
-  margin-right: 8px;
-  @include sprite;
-  @include sprite-arrow;
-}
-
-.page-arrow:hover:before{
-    @include sprite-arrow-hover;
 }
 
 .nav {
@@ -42,10 +28,51 @@
     }
 }
 
+.nav-item {
+    border-bottom: 1px solid #f2f2f2;
+    display: inline-block;
+    padding: 8px 0 12px 0;
+    position: relative;
+
+    @media screen and (min-width: 1024px) {
+        border: none;
+        box-sizing: border-box;
+        float: left;
+        margin: 0 20px;
+        width: 123px;
+
+        &:hover .sub-nav {
+            display: inline-block;
+            height: 238px;
+        }
+    }
+}
+
+.nav-item > a {
+    color: $link-colors;
+    font-size: 3.2rem;
+    padding: 2px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &:hover{
+        color: #359e97;
+    }
+}
+
+.nav-item a {
+    font-size: 3.2rem;
+}
+
+.nav-item:hover .subnav {
+    position: inherit;
+    width: 100%;
+}
+
 .nav-logo {
     display: none;
 
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1024px) {
         display: block;
         float: left;
         height: auto;
@@ -54,27 +81,29 @@
     }
 }
 
-.nav-item > a{
-    color: $link-colors;
-    font-size: 3.2rem;
-    padding: 2px;
-    text-decoration: none;
-    text-transform: capitalize;
-    &:hover{
-        color: #359e97;
-    }
+.page-arrow:before {
+    @include sprite;
+    @include sprite-arrow;
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
 }
 
-.sub-nav{
+.page-arrow:hover:before {
+    @include sprite-arrow-hover;
+}
+
+.sub-nav { // Mala practica solo usar un prefix y no incluir la propiedad
     -webkit-transition: height .25s linear;
+    transition: height .25s linear;
     box-sizing: border-box;
-    height: 0px;
+    height: 0;
     overflow: hidden;
     width: 100%;
 
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1024px) {
         @include sprite;
-        left: 0px;
+        left: 0;
         position: absolute;
         text-align: left;
         top: 44px;
@@ -84,13 +113,13 @@
     }
 }
 
-.expanded .sub-nav{
+.expanded .sub-nav {
     display: inline-block;
     height: 236px;
     z-index: 4;
 }
 
-.games-item:after{
+.games-item:after {
     content: "";
     @include sprite;
     @include sprite-arrow;
@@ -103,57 +132,28 @@
     transform: rotate(90deg);
 }
 
-.nav-item a{
-    font-size: 3.2rem;
-}
-
-.nav-item:hover .subnav{
-    position: inherit;
-    width: 100%;
-}
-
-.sub-nav-item{
+.sub-nav-item {
     margin: 20px -6px;
     width: 100%;
 
-    a{
-        text-transform: capitalize;
-    }
-
-    &:hover a{
+    &:hover a {
         color: #359e97;
         text-decoration: underline;
     }
+    a {
+        text-transform: capitalize;
+    }
 }
 
-.nav-item{
-    border-bottom: 1px solid #f2f2f2;
-    display: inline-block;
-    padding: 8px 0 12px 0;
-    position: relative;
-
-        @media screen and (min-width: 1024px){
-            border: none;
-            box-sizing: border-box;
-            float: left;
-            margin: 0 20px;
-            width: 123px;
-
-            &:hover .sub-nav{
-                display: inline-block;
-                height: 238px;
-            }
-        }
-}
-
-.mobile-logo{
+.mobile-logo {
     display: block;
     height: 40px;
     margin: 20px;
     text-align: center;
     width: 45px;
     float: left;
-    img{
+
+    img {
         height: 100%;
         width: 100%;
     }
@@ -163,8 +163,9 @@
     }
 }
 
-//Navigation menu button//
+//Navigation menu button
 .show-menu {
+    @include sprite;
     color: #f2f2f2;
     display: inline-block;
     float: right;
@@ -174,7 +175,7 @@
     overflow: hidden;
     text-align: center;
     padding-top: 13px;
-    @include sprite;
+
     @media screen and (min-width: 1024px) {
         display: none;
     }

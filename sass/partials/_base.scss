@@ -1,126 +1,98 @@
-//
 // Estilos para los elementos base y footer
-//
+// Read: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 html {
-  box-sizing:border-box;
-  font-size:62.5%;
-  font-family: Arial,Verdana,sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Arial,Verdana,sans-serif;
 }
-  *, *:before, *:after{
-  box-sizing:inherit;
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-  background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 a {
-  font-family: $title-text;
-  text-decoration: none;
-  color: #fff;
+    font-family: $title-text;
+    text-decoration: none;
+    color: #fff;
 }
 
-li{
-	list-style: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  font-family: $text;
-  font-size: 2rem;
-  margin: 20px 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4{
-  margin: 0;
-  padding: 0;
-}
-
-h2, h3{
-  font-size: 4rem;
-  font-family:$title-text;
-}
-
-button:focus, button:active {
-  outline: 0;
+button:focus,
+button:active {
+    outline: 0;
 }
 
 .btn {
-  font-size: 1.6rem;
-  display: inline-block;
-  border: none;
+    border: none;
+    display: inline-block;
+    font-size: 1.6rem;
 }
 
 .content {
-  margin: 0 auto;
-  width: 80%;
-  overflow: hidden;
-  @media (min-width: 1334px){
-    width: 50%;
-  }
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+
+    @media (min-width: 1334px) {
+        width: 50%;
+    }
 }
 
 .title-main {
-  color: #359E97;
-	font-size: 9rem;
-	text-align:center;
-  text-shadow: -4px 4px 0 #000;
-	font-family:$title-text;
-  border-bottom: 3px solid #359E97;
-  margin: 8%;
-  padding-bottom: 10px;
-  @media (min-width: 1334px){
-    margin: 2% auto;
-    font-size: 10rem;
-    width: 70%;
-  }
-}
+    border-bottom: 3px solid #359E97;
+    color: #359E97;
+    font-family: $title-text;
+    font-size: 9rem;
+    margin: 8%;
+    padding-bottom: 10px;
+    text-align: center;
+    text-shadow: -4px 4px 0 #000;
 
-footer {
-  background: #353535;
-  background-image: url(../img/background-general.gif);
-  text-align: center;
-  overflow: hidden;
-  margin-top: 5%;
-  padding: 4% 0;
+    @media (min-width: 1334px) {
+        font-size: 10rem;
+        margin: 2% auto;
+        width: 70%;
+    }
 }
 
 .text-footer {
-  display: inline-block;
-  width: 90%;
-  color: #E8EBED;
+    color: #E8EBED;
+    display: inline-block;
+    width: 90%;
+
   p {
     font-family: $title-text;
     font-size: 2.3rem;
     padding-top: 20px;
-    @media (min-width: 1334px){
-      padding-top: 0;
-      width: 64%;
-      margin: 0 auto;
+
+    @media (min-width: 1334px) {
+        padding-top: 0;
+        margin: 0 auto;
+        width: 64%;
     }
   }
   &:after {
-    content: "";
     @include sprite;
     @include sprite-astronaut;
+    content: "";
+    float: right;
     margin-right: -10px;
     margin-top: -45px;
-    float: right;
-    @media (min-width: 1334px){
-      margin-top: -100px;
-      margin-right: initial;
+
+    @media (min-width: 1334px) {
+        margin-top: -100px;
+        margin-right: initial;
     }
   }
   &:before {
-    content: "";
     @include sprite;
     @include sprite-planet;
+    content: "";
     float: left;
     margin-top: -62px;
   }
@@ -128,20 +100,22 @@ footer {
     font-size: 3rem;
     color: #FD7949;
   }
-  @media (min-width: 1334px){
+
+  @media (min-width: 1334px) {
     padding-top: 20px;
     width: 60%;
   }
 }
 
 .content-info-footer {
-  margin: 60px 0;
+    margin: 60px 0;
 }
 
 .gallery {
-  width: 85%;
-  margin: 4% auto;
-  @media (min-width: 1334px){
-    width: 75%;
-  }
+    margin: 4% auto;
+    width: 85%;
+
+    @media (min-width: 1334px){
+        width: 75%;
+    }
 }
