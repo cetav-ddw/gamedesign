@@ -38,7 +38,7 @@ button:active {
     overflow: hidden;
     width: 80%;
 
-    @media (min-width: 1334px) {
+    @media ( min-width: 1334px ) {
         width: 50%;
     }
 }
@@ -53,7 +53,7 @@ button:active {
     text-align: center;
     text-shadow: -4px 4px 0 #000;
 
-    @media (min-width: 1334px) {
+    @media ( min-width: 1334px ) {
         font-size: 10rem;
         margin: 2% auto;
         padding-bottom: 35px;
@@ -66,46 +66,49 @@ button:active {
     display: inline-block;
     width: 90%;
 
-  p {
-    font-family: $title-text;
-    font-size: 2.3rem;
-    padding-top: 20px;
+    p {
+        font-family: $title-text;
+        font-size: 2.3rem;
+        padding-top: 20px;
 
-    @media (min-width: 1334px) {
-        padding-top: 0;
-        margin: 0 auto;
-        width: 64%;
+        @media ( min-width: 1334px ) {
+            padding-top: 0;
+            margin: 0 auto;
+            width: 64%;
+        }
     }
-  }
-  &:after {
-    @include sprite;
-    @include sprite-astronaut;
-    content: "";
-    float: right;
-    margin-right: -10px;
-    margin-top: -45px;
 
-    @media (min-width: 1334px) {
-        margin-top: -100px;
-        margin-right: initial;
+    &:after {
+        content: "";
+        float: right;
+        margin-right: -10px;
+        margin-top: -45px;
+        @include sprite;
+        @include sprite-astronaut;
+
+        @media ( min-width: 1334px ) {
+            margin-top: -100px;
+            margin-right: initial;
+        }
     }
-  }
-  &:before {
-    @include sprite;
-    @include sprite-planet;
-    content: "";
-    float: left;
-    margin-top: -62px;
-  }
-  .strong {
-    font-size: 3rem;
-    color: #FD7949;
-  }
 
-  @media (min-width: 1334px) {
-    padding-top: 20px;
-    width: 60%;
-  }
+    &:before {
+        content: "";
+        float: left;
+        margin-top: -62px;
+        @include sprite;
+        @include sprite-planet;
+    }
+
+    .strong {
+        font-size: 3rem;
+        color: #FD7949;
+    }
+
+    @media ( min-width: 1334px ) {
+        padding-top: 20px;
+        width: 60%;
+    }
 }
 
 .content-info-footer {
@@ -116,7 +119,7 @@ button:active {
     margin: 4% auto;
     width: 85%;
 
-    @media (min-width: 1334px){
+    @media ( min-width: 1334px ){
         width: 75%;
     }
 }

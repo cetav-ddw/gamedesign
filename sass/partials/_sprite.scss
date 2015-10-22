@@ -1,110 +1,111 @@
 @mixin sprite {
-  background-image: url('../img/sprite.png');
-  background-repeat: no-repeat;
+    background-image: url( "../img/sprite.png" );
+    background-repeat: no-repeat;
 }
 
 @mixin sprite-arrow {
-  background-position: 0 -102px;
-  height: 17px;
-  width: 15px;
+    background-position: 0 -102px;
+    height: 17px;
+    width: 15px;
 }
 
 @mixin sprite-arrow-hover {
-  background-position: 0 -121px;
-  height: 17px;
-  width: 15px;
+    background-position: 0 -121px;
+    height: 17px;
+    width: 15px;
 }
 
 @mixin sprite-gem {
-  background-position: -15px -102px;
-  width: 17px;
-  height: 25px;
+    background-position: -15px -102px;
+    width: 17px;
+    height: 25px;
 }
 
 @mixin sprite-astronaut {
-  background-position: -93px 0;
-  width: 80px;
-  height: 102px;
+    background-position: -93px 0;
+    width: 80px;
+    height: 102px;
 }
 
 @mixin sprite-planet {
-  background-position: 0 0;
-  width: 93px;
-  height: 94px;
+    background-position: 0 0;
+    height: 94px;
+    width: 93px;
 }
 
 @mixin sprite-control {
-  background-position: -125px -102px;
-  width: 50px;
-  height: 39px;
+    background-position: -125px -102px;
+    height: 39px;
+    width: 50px;
 }
 
 @mixin sprite-ship {
-  background-position: -77px -102px;
-  width: 48px;
-  height: 35px;
+    background-position: -77px -102px;
+    height: 35px;
+    width: 48px;
 }
 
 @mixin sprite-trophy {
-  background-position: -37px -102px;
-  width: 40px;
-  height: 29px;
+    background-position: -37px -102px;
+    height: 29px;
+    width: 40px;
 }
 
 @mixin sprite-invader {
-  background-position: -175px -102px;
-  width: 44px;
-  height: 44px;
+    background-position: -175px -102px;
+    height: 44px;
+    width: 44px;
 }
 
 .sprite-bg-menu {
-  background-position: -390px -208px;
-  width: 95px;
-  height: 54px;
+    background-position: -390px -208px;
+    height: 54px;
+    width: 95px;
 }
 
 .sprite-sorry {
-  background-position: 0 -627px;
+    background-position: 0 -627px;
 }
 
 .sprite-trash {
-  background-position: 0 -418px;
+    background-position: 0 -418px;
 }
 
 .sprite-bg-nav {
-  background-position: 0 -153px;
+    background-position: 0 -153px;
 }
 
 .sprite-bg-subnav {
-  background-position: 0 -1045px;
+    background-position: 0 -1045px;
 }
 
 .sprite-last {
-  background-position: 0 -836px;
+    background-position: 0 -836px;
 }
 
 .sprite-owak {
-  background-position: 0 -209px;
+    background-position: 0 -209px;
 }
 
 .sprite-button {
-  background-position: -173px 0;
-  width: 155px;
-  height: 60px;
-  &:hover {
-      background-position: -219px -102px;
-      height: 51px;
-  }
+    background-position: -173px 0;
+    height: 60px;
+    width: 155px;
+
+    &:hover {
+        background-position: -219px -102px;
+        height: 51px;
+    }
 }
 
 @mixin sprite-button-play {
-  background-position: -402px -60px;
-  width: 103px;
-  height: 90px;
+    background-position: -402px -60px;
+    height: 90px;
+    width: 103px;
 }
 
 @mixin sprite-button-play-mobile {
-  background-position: -385px 0px;
-  width: 59px;
-  height: 56px;
+    background-position: -385px 0px;
+    height: 56px;
+    width: 59px;
 }

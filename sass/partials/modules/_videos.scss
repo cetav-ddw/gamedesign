@@ -2,13 +2,14 @@
 // Estilo de todos los videos
 //
 
-.video{
+.video {
     margin: -1% auto 0 auto;
-    position: relative;
-    padding-bottom: 56.25%;
-    z-index: 1;
     overflow: hidden;
-    @media (min-width: 1024px){
+    padding-bottom: 56.25%;
+    position: relative;
+    z-index: 1;
+
+    @media ( min-width: 1024px ) {
         background-color: #000;
         padding-bottom: 0%;
         padding-left: 1%;
@@ -16,13 +17,15 @@
     }
 }
 
-.video iframe{
-  display: inline-block;
+.video 
+iframe {
+    display: inline-block;
+    height : 100%;
     margin: 0 auto;
-height : 100%;
-  position: absolute;
+    position: absolute;
     width: 100%;
-    @media (min-width: 1024px){
+
+    @media ( min-width: 1024px ) {
         height: 516px;
         margin: 0 auto;
         position: inherit;
@@ -30,20 +33,21 @@ height : 100%;
     }
 }
 
-.video-cover-demo{
+.video-cover-demo {
     background-color: #000;
     height: 100%;
     position: absolute;
     z-index: 2;
-    @media (min-width: 1024px){
-        top: 0;
+
+    @media ( min-width: 1024px ) {
         left: 0;
+        top: 0;
         width: 100%;
     }
 }
 
-.gallery-cover-background{
-    background-image: url(../img/background-general.gif);
+.gallery-cover-background {
+    background-image: url( "../img/background-general.gif" );
     background-repeat: repeat;
     display: block;
     height: 100%;
@@ -52,44 +56,45 @@ height : 100%;
     position: absolute;
     width: 100%;
     z-index: 3;
-    @media(min-width: 1024px){
+
+    @media( min-width: 1024px ) {
 
     }
 }
 
-.video-label-gallery{
+.video-label-gallery {
     color: #359E97;
     display: block;
     font-family: $title-videos;
-    text-shadow: 2px 2px 0 #FD7948;
     text-align: center;
+    text-shadow: 2px 2px 0 #FD7948;
     width: 100%;
     z-index: 3;
 
-	@media(min-width: 320px){
+	@media( min-width: 320px ) {
 		font-size: 2.5em;
     	margin: 6% auto 4% auto;
 	}
 
-	@media(min-width: 640px){
+	@media( min-width: 640px ) {
 		font-size: 4em;
     	margin: 10% auto 6% auto;
 	}
 
-    @media(min-width: 768px){
-    	margin: 12% auto 6% auto;
+    @media( min-width: 768px ) {
         font-size: 6em;
         line-height: 1.2em;
+        margin: 12% auto 6% auto;
     }
 
-    @media(min-width: 1024px){
-    	margin: 4% auto 4% auto;
+    @media( min-width: 1024px ) {
         font-size: 8em;
+        margin: 4% auto 4% auto;
         width: 70%;
     }
 }
 
-.video-label-demo{
+.video-label-demo {
     color: #359E97;
     display: block;
     font-family: $title-videos;
@@ -97,36 +102,34 @@ height : 100%;
     line-height: 1.2em;
     margin: 0.5em;
     position: absolute;
-    text-shadow: 3px 3px 0 #000;
     text-align: left;
+    text-shadow: 3px 3px 0 #000;
     width: 65%;
     z-index: 3;
 
-    @media(min-width: 640px){
+    @media( min-width: 640px ) {
         font-size: 3.5em;
         width: 65%;
     }
 
-    @media(min-width: 768px){
-        text-shadow: 5px 5px 0 #000;
+    @media( min-width: 768px ) {
         font-size: 4em;
+        text-shadow: 5px 5px 0 #000;
         width: 70%;
     }
 
-    @media(min-width: 1024px){
+    @media( min-width: 1024px ) {
         bottom: 0%;
         font-size: 6em;
         left: 0%;
-        right: 0%;
         position: absolute;
+        right: 0%;
         top: 0%;
         width: 50%;
     }
 }
 
-.play-demo{
-    @include sprite;
-    @include sprite-button-play-mobile;
+.play-demo {
     background-color: transparent;
     border: none;
     color: transparent;
@@ -134,8 +137,10 @@ height : 100%;
     right: 62%;
     position: absolute;
     z-index: 3;
+    @include sprite;
+    @include sprite-button-play-mobile;
 
-    @media(min-width: 640px){
+    @media( min-width: 640px ) {
         top: 50%;
         left: 0%;
         bottom: 0%;
@@ -145,7 +150,7 @@ height : 100%;
         @include sprite-button-play;
     }
 
-    @media(min-width: 1024px){
+    @media( min-width: 1024px ) {
         top: 65%;
         left: 0%;
         bottom: 0%;
@@ -153,12 +158,9 @@ height : 100%;
         margin-left: auto;
         margin-right: auto;
     }
-
 }
 
-.play-gallery{
-    @include sprite;
-    @include sprite-button-play-mobile;
+.play-gallery {
     background-color: transparent;
     border: none;
     color: transparent;
@@ -166,7 +168,10 @@ height : 100%;
     margin-left: auto;
     margin-right: auto;
     z-index: 3;
-    @media(min-width: 768px){
+    @include sprite;
+    @include sprite-button-play-mobile;
+
+    @media( min-width: 768px ) {
         @include sprite-button-play;
     }
 }

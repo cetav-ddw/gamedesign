@@ -3,10 +3,10 @@
 //
 
 .games-banners {
-    max-width: 415px;
     margin: 0 auto;
+    max-width: 415px;
 
-    @media (min-width: 1024px) {
+    @media ( min-width: 1024px ) {
         max-width: 875px;
     }
 }
@@ -15,30 +15,30 @@
     color: #fff;
     display: inline-block;
     height: 222px;
-    max-width: 410px;
     margin: 0 0 10px 0;
+    max-width: 410px;
     overflow: hidden;
     width: 100%;
 
-    @media (min-width: 1024px) {
+    @media ( min-width: 1024px ) {
         margin: 10px;
     }
 }
 
 .games-banners-name {
-    margin: 0 auto;
     max-width: 300px;
+    margin: 0 auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 
-    @media (min-width: 1024px) {
+    @media  ( min-width: 1024px ) {
         &:before{
             content: "";
-            @include sprite;
-            @include sprite-control;
             display: block;
             margin: 0 auto;
+            @include sprite;
+            @include sprite-control;
         }
     }
 }
