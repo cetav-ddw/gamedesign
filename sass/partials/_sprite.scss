@@ -1,3 +1,9 @@
+%sprite,
+.sprite {
+    background-image: url( "../img/sprite.png" );
+    background-repeat: no-repeat;
+}
+
 @mixin sprite {
     background-image: url( "../img/sprite.png" );
     background-repeat: no-repeat;
@@ -85,17 +91,6 @@
 
 .sprite-owak {
     background-position: 0 -209px;
-}
-
-.sprite-button {
-    background-position: -173px 0;
-    height: 60px;
-    width: 155px;
-
-    &:hover {
-        background-position: -219px -102px;
-        height: 51px;
-    }
 }
 
 @mixin sprite-button-play {

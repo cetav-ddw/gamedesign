@@ -1,0 +1,18 @@
+@media (min-width: 1024px) {
+    .btn-play-game {
+        background-position: -173px 0;
+        color: #fff;
+        display: inline-block;
+        font-family: $title-text;
+        font-size: 3rem;
+        height: 51px;
+        padding-top: 8px;
+        text-align: center;
+        text-decoration: none;
+        width: 155px;
+
+        &:hover {
+            background-position: -219px -102px;
+        }
+    }
+}

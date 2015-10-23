@@ -5,6 +5,7 @@
 @import "partials/sprite.scss";
 @import "partials/variables";
 @import "partials/base";
+@import "partials/patterns/buttons";
 @import "partials/patterns/typo";
 @import "partials/layout/layout";
 
@@ -14,4 +15,5 @@
 @import "partials/modules/expert";
 @import "partials/modules/games";
 @import "partials/modules/games-pages";
+@import "partials/modules/gallery";
 @import "partials/modules/videos";

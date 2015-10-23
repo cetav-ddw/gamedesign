@@ -1,33 +1,84 @@
-//
-// Estilo de todos los videos
-//
+.gallery-cover-background {
+    background-image: url("../img/background-general.gif");
+    background-repeat: repeat;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.play-demo {
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    top: 50%;
+    right: 62%;
+    position: absolute;
+    z-index: 3;
+    @include sprite;
+    @include sprite-button-play-mobile;
+
+    @media(min-width: 640px) {
+        top: 50%;
+        left: 0;
+        bottom: 0;
+        right: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        @include sprite-button-play;
+    }
+
+    @media(min-width: 1024px) {
+        top: 65%;
+        left: 0;
+        bottom: 0;
+        right: 65%;
+    }
+}
+
+.play-gallery {
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+    @include sprite;
+    @include sprite-button-play-mobile;
+
+    @media(min-width: 768px) {
+        @include sprite-button-play;
+    }
+}
 
 .video {
-    margin: -1% auto 0 auto;
+    margin: 0 auto;
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
     z-index: 1;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         background-color: #000;
-        padding-bottom: 0%;
-        padding-left: 1%;
+        padding: 0;
         text-align: center;
     }
 }
 
-.video 
-iframe {
+.video iframe {
     display: inline-block;
     height : 100%;
-    margin: 0 auto;
+    margin: 0;
     position: absolute;
     width: 100%;
 
     @media ( min-width: 1024px ) {
         height: 516px;
-        margin: 0 auto;
+        margin: 2% auto;
         position: inherit;
         width: 900px;
     }
@@ -39,26 +90,10 @@ iframe {
     position: absolute;
     z-index: 2;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         left: 0;
         top: 0;
         width: 100%;
-    }
-}
-
-.gallery-cover-background {
-    background-image: url( "../img/background-general.gif" );
-    background-repeat: repeat;
-    display: block;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-
-    @media( min-width: 1024px ) {
-
     }
 }
 
@@ -71,25 +106,25 @@ iframe {
     width: 100%;
     z-index: 3;
 
-	@media( min-width: 320px ) {
+	@media(min-width: 320px) {
 		font-size: 2.5em;
-    	margin: 6% auto 4% auto;
+    	margin: 6% auto 4%;
 	}
 
-	@media( min-width: 640px ) {
+	@media(min-width: 640px) {
 		font-size: 4em;
-    	margin: 10% auto 6% auto;
+    	margin: 10% auto 6%;
 	}
 
-    @media( min-width: 768px ) {
+    @media(min-width: 768px) {
         font-size: 6em;
         line-height: 1.2em;
-        margin: 12% auto 6% auto;
+        margin: 12% auto 6%;
     }
 
-    @media( min-width: 1024px ) {
+    @media(min-width: 1024px) {
         font-size: 8em;
-        margin: 4% auto 4% auto;
+        margin: 4% auto;
         width: 70%;
     }
 }
@@ -107,72 +142,25 @@ iframe {
     width: 65%;
     z-index: 3;
 
-    @media( min-width: 640px ) {
+    @media(min-width: 640px) {
         font-size: 3.5em;
         width: 65%;
     }
 
-    @media( min-width: 768px ) {
+    @media(min-width: 768px) {
         font-size: 4em;
         text-shadow: 5px 5px 0 #000;
         width: 70%;
     }
 
-    @media( min-width: 1024px ) {
-        bottom: 0%;
+    @media(min-width: 1024px) {
+        bottom: 0;
         font-size: 6em;
-        left: 0%;
+        left: 0;
         position: absolute;
-        right: 0%;
-        top: 0%;
+        right: 0;
+        top: 0;
         width: 50%;
-    }
-}
-
-.play-demo {
-    background-color: transparent;
-    border: none;
-    color: transparent;
-    top: 50%;
-    right: 62%;
-    position: absolute;
-    z-index: 3;
-    @include sprite;
-    @include sprite-button-play-mobile;
-
-    @media( min-width: 640px ) {
-        top: 50%;
-        left: 0%;
-        bottom: 0%;
-        right: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        @include sprite-button-play;
-    }
-
-    @media( min-width: 1024px ) {
-        top: 65%;
-        left: 0%;
-        bottom: 0%;
-        right: 65%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.play-gallery {
-    background-color: transparent;
-    border: none;
-    color: transparent;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 3;
-    @include sprite;
-    @include sprite-button-play-mobile;
-
-    @media( min-width: 768px ) {
-        @include sprite-button-play;
     }
 }
 
@@ -180,7 +168,3 @@ iframe {
     width: 100%;
     height: 100%;
 }
-
-
-
-

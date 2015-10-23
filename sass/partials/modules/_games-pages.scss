@@ -1,9 +1,14 @@
-//
 // Games Pages
-//
+.header-games{
+    border: 0;
+
+    @media screen and (min-width: 1024px) {
+        height: 95px;
+    }
+}
 
 .demo {
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         margin: 2% 0;
     }
 }
@@ -13,17 +18,11 @@
     margin-bottom: 30px;
     width: 100%;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         float: right;
         font-size: 1.8rem;
         margin-left: 5%;
         width: 45%;
-    }
-
-    h3 {
-        color: $title-color;
-        font-size: 3rem;
-        margin: 31px 0;
     }
 
     h2 {
@@ -31,25 +30,30 @@
         font-size: 3.8rem;
         margin: 10px 0;
     }
+    h3 {
+        color: $title-color;
+        font-size: 3rem;
+        margin: 31px 0;
+    }
 }
 
 .demo-content-play {
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         margin-top: 80px;
     }
 }
 
-.demo-content-play, 
+.demo-content-play,
 .demo-play-note {
     display: none;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         display: block;
     }
 }
 
 .demo-play-note {
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         font-family: $title-text;
         font-size: 2rem;
         margin-top: 15px;
@@ -72,8 +76,7 @@
     }
 }
 
-.demo-content-team 
-li:before {
+.demo-content-team li:before {
     content: "";
     display: inline-block;
     margin-right: 17px;
@@ -82,14 +85,13 @@ li:before {
     @include sprite;
 }
 
-.demo-content-team 
-img {
+.demo-content-team img {
     margin-bottom: 20px;
     width: 100%;
 
     @media ( min-width: 1024px ) {
-          border: 5px solid $title-color;
-          box-shadow: 10px 10px 0 0 $title-color;
+        border: 5px solid $title-color;
+        box-shadow: 10px 10px 0 0 $title-color;
     }
 }
 
@@ -102,46 +104,27 @@ img {
         font-size: 4rem;
         margin-bottom: 15px;
     }
-
     li {
         font-size: 1.6rem;
         line-height: 1.5rem;
         margin-bottom: 10px;
     }
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         float: left;
         width: 50%;
 
         h3 {
             margin: 3% 0;
         }
-
-        ul {
-            float: left;
-            margin-right: 10%;
-        }
-
         li{
             font-size: 1.6rem;
             line-height: 2.4rem;
             margin-bottom: 5px;
         }
-    }
-}
-
-/*Estilos de los Botones*/
-
-.main {
-
-    @media ( min-width: 1024px ) {
-        color: #fff;
-        display: inline-block;
-        font-family: $title-text;
-        font-size: 3rem;
-        padding-top: 8px;
-        text-align: center;
-        text-decoration: none;
-        @include sprite;
+        ul {
+            float: left;
+            margin-right: 10%;
+        }
     }
 }

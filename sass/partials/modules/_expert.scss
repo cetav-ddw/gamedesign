@@ -1,10 +1,9 @@
-//
 // Estilos de Expertos
 .experts-list {
     margin: 0 auto;
     width: 80%;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         margin: 90px auto;
         width: 900px;
 
@@ -30,20 +29,18 @@
 
 .experts-list-item {
     overflow: hidden;
-    padding: 0 0 10% 0;
+    padding: 0 0 10%;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         border-left: 3px dashed #359E97;
         padding: 0 0 0 45px;
     }
 }
 
-.experts-list-item 
-h3 {
+.experts-list-item h3 {
     margin: 20px 0;
 
-    @media ( min-width: 1024px ) {
-
+    @media (min-width: 1024px) {
         &:before{
             content: "";
             display: inline-block;
@@ -59,45 +56,36 @@ h3 {
     display: block;
     margin: 0 auto;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         display: inherit;
         float: right;
         margin: 10px;
     }
 }
 
-.middle 
-img {
+.middle img {
     display: block;
     margin: 0 auto;
 
-    @media ( min-width: 1024px )  {
+    @media (min-width: 1024px)  {
         display: inherit;
         float: left;
         margin: 10px;
     }
 }
 
-@media ( min-width: 1024px ) {
-
+@media (min-width: 1024px) {
     .middle {
-        border-bottom: 3px dashed #359E97;
+        border: 3px dashed #359E97;
         border-left: none;
-        border-right: 3px dashed #359E97;
-        border-top: 3px dashed #359E97;
         margin: 18px 0;
-        padding: 45px 0 45px 0;
+        padding: 45px 0;
     }
-
-    .middle 
-    p,
-    .middle 
-    h3 {
+    .middle p,
+    .middle h3 {
         margin-left: 31%;
     }
-  
-    .experts-list-item 
-    p {
+    .experts-list-item p {
         width: 70%;
     }
 }

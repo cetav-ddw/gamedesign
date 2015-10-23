@@ -1,0 +1,8 @@
+.gallery {
+    margin: 4% auto;
+    width: 85%;
+
+    @media (min-width: 1334px) {
+        width: 75%;
+    }
+}
