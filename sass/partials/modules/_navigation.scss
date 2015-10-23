@@ -2,8 +2,7 @@
     display: none;
 }
 
-.menu-toggle[ type=checkbox ]:checked ~ 
-nav {
+.menu-toggle[ type=checkbox ]:checked ~ nav {
     display: block;
 }
 
@@ -20,7 +19,7 @@ nav {
     display: none;
     padding: 0;
 
-    @media screen and ( min-width: 1024px ) {
+    @media screen and (min-width: 1024px) {
         display: block;
         margin: 10px 130px;
         position: absolute;
@@ -35,14 +34,14 @@ nav {
     padding: 8px 0 12px 0;
     position: relative;
 
-    @media screen and ( min-width: 1024px ) {
-        border: none;
+    @media screen and (min-width: 1024px) {
+        border: 0;
         box-sizing: border-box;
         float: left;
         margin: 0 20px;
         width: 123px;
 
-        &:hover 
+        &:hover
         .sub-nav {
             display: inline-block;
             height: 238px;
@@ -50,8 +49,7 @@ nav {
     }
 }
 
-.nav-item > 
-a {
+.nav-item > a {
     color: $link-colors;
     font-size: 3.2rem;
     padding: 2px;
@@ -63,13 +61,11 @@ a {
     }
 }
 
-.nav-item 
-a {
+.nav-item a {
     font-size: 3.2rem;
 }
 
-.nav-item:hover 
-.subnav {
+.nav-item:hover .subnav {
     position: inherit;
     width: 100%;
 }
@@ -106,7 +102,7 @@ a {
     width: 100%;
     -webkit-transition: height .25s linear;
 
-    @media screen and ( min-width: 1024px ) {
+    @media screen and (min-width: 1024px) {
         left: 0;
         padding-left: 24px;
         position: absolute;
@@ -118,8 +114,7 @@ a {
     }
 }
 
-.expanded 
-.sub-nav {
+.expanded .sub-nav {
     display: inline-block;
     height: 236px;
     z-index: 4;
@@ -141,12 +136,11 @@ a {
     @include sprite-arrow-hover;
 }
 
-.sub-nav-item{
+.sub-nav-item {
     margin: 20px -6px;
     width: 100%;
 
-    &:hover 
-    a {
+    &:hover a {
         color: #359e97;
         text-decoration: underline;
     }
@@ -169,17 +163,16 @@ a {
         width: 100%;
     }
 
-    @media screen and ( min-width: 1024px ) {
+    @media screen and (min-width: 1024px) {
         display: none;
     }
 }
 
-//Navigation menu button
 .show-menu {
     color: #f2f2f2;
     display: inline-block;
     float: right;
-    font-family: "Iceland", serif;
+    font-family: $title-text;
     font-size: 24px;
     margin: 20px;
     overflow: hidden;
@@ -187,19 +180,13 @@ a {
     text-align: center;
     @include sprite;
 
-    @media screen and ( min-width: 1024px ) {
+    @media screen and (min-width: 1024px) {
         display: none;
     }
 }
 
-.header-games{
-    @media screen and ( min-width: 1024px ) {
-        height: 95px;
-    }
-}
-
 .main-nav{
-    @media screen and ( min-width: 1024px ) {
+    @media screen and (min-width: 1024px) {
         @include sprite;
         float: left;
         margin: 1% 2%;

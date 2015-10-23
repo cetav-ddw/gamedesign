@@ -1,47 +1,14 @@
-.header-logo {
-    display: block;
-    margin: 180px auto 130px;
-    width: 80%;
-
-    @media ( min-width: 1024px )  {
-        margin: 10% auto;
-        width: initial;
-    }
-}
-
-//About//
 .about {
     padding: 4% 0 4.5%;
 }
 
-.about span{
+.about span {
     color: #ff6e3a;
 }
 
-@media ( min-width: 1024px) {
-    .about 
-    p:first-child {
+@media (min-width: 1024px) {
+    .about p:first-child {
         font-size: 2.3rem;
-    }
-}
-
-/*Partners*/
-.partners{
-    background-color: #fff;
-    padding: 20px 20px 15px 20px;
-    text-align: center;
-}
-
-.partner-item {
-    display: inline-block;
-
-    @media ( min-width: 1024px )  {
-        width: inherit;
-    }
-
-    img {
-        vertical-align: middle;
-        width: 60%;
     }
 }
 
@@ -50,8 +17,38 @@
     margin-top: 4%;
 }
 
+.header-logo {
+    display: block;
+    margin: 180px auto 130px;
+    width: 80%;
+
+    @media (min-width: 1024px) {
+        margin: 10% auto;
+        width: initial;
+    }
+}
+
 .overlay-about {
     background: #f4f4f4;
     display: inline-block;
     height: 327px;
+}
+
+.partners {
+    background-color: #fff;
+    padding: 20px 20px 15px;
+    text-align: center;
+}
+
+.partner-item {
+    display: inline-block;
+
+    @media (min-width: 1024px) {
+        width: inherit;
+    }
+
+    img {
+        vertical-align: middle;
+        width: 60%;
+    }
 }

@@ -1,12 +1,9 @@
-//
 // Estilos de Juegos
-//
-
 .games-banners {
     margin: 0 auto;
     max-width: 415px;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         max-width: 875px;
     }
 }
@@ -20,7 +17,7 @@
     overflow: hidden;
     width: 100%;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         margin: 10px;
     }
 }
@@ -32,7 +29,7 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @media  ( min-width: 1024px ) {
+    @media  (min-width: 1024px) {
         &:before{
             content: "";
             display: block;
@@ -48,19 +45,19 @@
 }
 
 .game-color-two {
-	background-color:#4E9093;	
+	background-color:#4E9093;
 }
 
 .game-color-three {
-	background-color:#F59331 ;	
+	background-color:#F59331 ;
 }
 
 .game-color-four {
 	background-color:#d65f21;
 }
 
-.games-banners-overlay { 
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6); 
+.games-banners-overlay {
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .25);
     display: block;
     height: 91%;
     max-width: 100%;
@@ -70,8 +67,7 @@
     @include sprite;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, .4);
         box-shadow: none;
     }
 }
-
