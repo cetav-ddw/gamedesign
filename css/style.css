@@ -240,7 +240,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -496,7 +497,6 @@ button:active {
     width: 155px; }
     .btn-play-game:hover {
       background-position: -219px -102px; } }
-
 h1,
 h2,
 h3,
@@ -545,7 +545,6 @@ footer {
 @media (min-width: 1024px) {
   .about p:first-child {
     font-size: 2.3rem; } }
-
 .firts-text {
   font-size: 1.5rem;
   margin: 4% 0 0 0; }
@@ -664,9 +663,9 @@ footer {
   box-sizing: border-box;
   height: 0;
   overflow: hidden;
-  transition: height 0.25s linear;
+  transition: height .25s linear;
   width: 100%;
-  -webkit-transition: height 0.25s linear; }
+  -webkit-transition: height .25s linear; }
   @media screen and (min-width: 1024px) {
     .sub-nav {
       background-image: url("../img/sprite.png");
@@ -824,12 +823,13 @@ footer {
     border-left: none;
     margin: 18px 0;
     padding: 45px 0; }
+
   .middle p,
   .middle h3 {
     margin: 0 0 0 31%; }
+
   .experts-list-item p {
     width: 70%; } }
-
 .experts-item-img {
   border: 5px solid #359e97;
   box-shadow: 10px 10px 0 0 #359e97; }
@@ -839,7 +839,7 @@ footer {
   max-width: 415px; }
   @media (min-width: 1024px) {
     .games-banners {
-      max-width: 875px; } }
+      max-width: 863px; } }
 
 .games-banners-content {
   color: #fff;
