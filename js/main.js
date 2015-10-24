@@ -1,62 +1,60 @@
-// Mozilla, Opera, Webkit
-if(document.addEventListener) {
-  document.addEventListener('DOMContentLoaded', function() {
-    document.removeEventListener('DOMContentLoaded', arguments.callee, false);
-    domReady();
-  }, false );
+(function(w, d, u) {
+    // Mozilla, Opera, Webkit
+    if(document.addEventListener) {
+      document.addEventListener('DOMContentLoaded', function() {
+        document.removeEventListener('DOMContentLoaded', arguments.callee, false);
+        domReady();
+      }, false );
 
-// If IE event model is used
-} else if(document.attachEvent) {
-  // ensure firing before onload
-  document.attachEvent('onreadystatechange', function(){
-    if ( document.readyState === 'complete' ) {
-      document.detachEvent('onreadystatechange', arguments.callee );
-      domReady();
-    }
-  });
-}
-
-function domReady() {
-    var playBtn = document.getElementById('play-btn');
-    var screenWidth = screen.width;
-
-    if(document.querySelector('.grid')) {
-        var options = {
-            srcNode: 'img',             // grid items (class, node)
-            margin: '5px',              // margin in pixel, default: 0px
-            width: '100px',             // grid item width in pixel, default: 220px
-            max_width: '500px',         // dynamic gird item width if specified, (pixel)
-            resizable: true,            // re-layout if window resize
-            transition: 'all 0.5s ease' // support transition for CSS3, default: all 0.5s ease
+    // If IE event model is used
+    } else if(document.attachEvent) {
+      // ensure firing before onload
+      document.attachEvent('onreadystatechange', function(){
+        if ( document.readyState === 'complete' ) {
+          document.detachEvent('onreadystatechange', arguments.callee );
+          domReady();
         }
-        document.querySelector('.grid').gridify(options);
+      });
     }
 
-    // VideoCover
-    function videoCover() {
-        var iframe = document.getElementById('video');
-        var player = $f(iframe);
+    function domReady() {
+        var playBtn = document.getElementById('play-btn'),
+            screenWidth = screen.width;
 
-        // content to hide on click
-        var coverImg = document.getElementById('video-cover');
-        var videoLabel = document.getElementById('play-btn-label');
+        function videoCover() {
+            var iframe = document.getElementById('video'),
+                player = $f(iframe),
+                coverImg = document.getElementById('video-cover'),
+                videoLabel = document.getElementById('play-btn-label');
 
-        player.api('play');
-        coverImg.style.display = 'none';
-        playBtn.style.display = 'none';
-        videoLabel.style.display = 'none';
-    };
+            player.api('play');
+            coverImg.style.display = 'none';
+            playBtn.style.display = 'none';
+            videoLabel.style.display = 'none';
+        };
 
-    if(playBtn) {
-        document.getElementById('play-btn').addEventListener('click', function() {
-            videoCover();
-        });
-    }
+        if(document.querySelector('.grid')) {
+            var options = {
+                    srcNode: 'img',
+                    margin: '5px',
+                    width: '100px',
+                    max_width: '500px',
+                    resizable: true,
+                    transition: 'all 0.5s ease'
+                }
+            document.querySelector('.grid').gridify(options);
+        }
 
-    // Dropdown
-    if (screenWidth < 1024) {
-        document.getElementById('games-item').onclick = function() {
-            this.classList.toggle('expanded');
+        if(playBtn) {
+            document.getElementById('play-btn').addEventListener('click', function() {
+                videoCover();
+            });
+        }
+
+        if(screenWidth < 1024) {
+            document.getElementById('games-item').onclick = function() {
+                this.classList.toggle('expanded');
+            }
         }
     }
-}
+})(window, document);
