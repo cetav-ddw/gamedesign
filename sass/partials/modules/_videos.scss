@@ -11,44 +11,42 @@
 }
 
 .play-demo {
+    @include sprite;
+    @include sprite-button-play-mobile;
     background-color: transparent;
     border: none;
     color: transparent;
-    top: 50%;
-    right: 62%;
     position: absolute;
+    right: 62%;
+    top: 50%;
     z-index: 3;
-    @include sprite;
-    @include sprite-button-play-mobile;
 
     @media(min-width: 640px) {
-        top: 50%;
-        left: 0;
-        bottom: 0;
-        right: 50%;
-        margin-left: auto;
-        margin-right: auto;
         @include sprite-button-play;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+        right: 50%;
+        top: 50%;
     }
 
     @media(min-width: 1024px) {
-        top: 65%;
-        left: 0;
         bottom: 0;
+        left: 0;
         right: 65%;
+        top: 65%;
     }
 }
 
 .play-gallery {
+    @include sprite;
+    @include sprite-button-play-mobile;
     background-color: transparent;
     border: none;
     color: transparent;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     z-index: 3;
-    @include sprite;
-    @include sprite-button-play-mobile;
 
     @media(min-width: 768px) {
         @include sprite-button-play;
@@ -58,7 +56,7 @@
 .video {
     margin: 0 auto;
     overflow: hidden;
-    padding-bottom: 56.25%;
+    padding: 0 0 56.25% 0;
     position: relative;
     z-index: 1;
 
@@ -76,7 +74,7 @@
     position: absolute;
     width: 100%;
 
-    @media ( min-width: 1024px ) {
+    @media (min-width: 1024px) {
         height: 516px;
         margin: 2% auto;
         position: inherit;
@@ -165,6 +163,6 @@
 }
 
 .video-button {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }

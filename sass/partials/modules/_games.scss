@@ -31,11 +31,11 @@
 
     @media  (min-width: 1024px) {
         &:before{
+            @include sprite;
+            @include sprite-control;
             content: "";
             display: block;
             margin: 0 auto;
-            @include sprite;
-            @include sprite-control;
         }
     }
 }
@@ -57,14 +57,14 @@
 }
 
 .games-banners-overlay {
+    @include sprite;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, .25);
     display: block;
     height: 91%;
-    max-width: 100%;
     margin: 2.4% auto;
+    max-width: 100%;
     text-align: center;
     width: 94%;
-    @include sprite;
 
     &:hover {
         background-color: rgba(0, 0, 0, .4);
