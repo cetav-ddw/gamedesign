@@ -14,7 +14,7 @@
 
 .firts-text {
     font-size: 1.5rem;
-    margin: 4% 0 0 0;
+    margin: 4% 0 0;
 }
 
 .header-logo {
@@ -24,7 +24,7 @@
 
     @media (min-width: 1024px) {
         margin: 10% auto;
-        width: initial;
+        width: auto; // http://caniuse.com/#feat=css-initial-value
     }
 }
 
@@ -42,10 +42,6 @@
 
 .partner-item {
     display: inline-block;
-
-    @media (min-width: 1024px) {
-        width: inherit;
-    }
 
     img {
         vertical-align: middle;

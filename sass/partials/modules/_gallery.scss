@@ -1,8 +1,15 @@
 .gallery {
     margin: 4% auto;
+    overflow: hidden;
     width: 85%;
 
     @media (min-width: 1334px) {
         width: 75%;
     }
+}
+
+.grid img {
+    height: auto;
+    margin-bottom: 10px;
+    max-width: 100%;
 }

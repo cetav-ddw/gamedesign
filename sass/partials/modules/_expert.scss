@@ -65,8 +65,7 @@
     display: block;
     margin: 0 auto;
 
-    @media (min-width: 1024px)  {
-        display: inherit;
+    @media (min-width: 1024px) {
         float: left;
         margin: 10px;
     }
