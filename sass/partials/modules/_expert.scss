@@ -8,21 +8,19 @@
         width: 900px;
 
         &:before {
-            content: "";
-            margin-left: -22px;
-            margin-top: -52px;
-            position: absolute;
             @include sprite;
             @include sprite-ship;
+            content: "";
+            margin: -52px 0 0 -22px;
+            position: absolute;
         }
 
         &:after {
-            content: "";
-            margin-left: -22px;
-            margin-top: 11px;
-            position: absolute;
             @include sprite;
             @include sprite-invader;
+            content: "";
+            margin: 11px 0 0 -22px;
+            position: absolute;
         }
     }
 }
@@ -42,12 +40,12 @@
 
     @media (min-width: 1024px) {
         &:before{
-            content: "";
-            display: inline-block;
-            margin-right: 10px;
-            vertical-align: middle;
             @include sprite;
             @include sprite-trophy;
+            content: "";
+            display: inline-block;
+            margin: 0 10px 0 0;
+            vertical-align: middle;
         }
     }
 }
@@ -83,7 +81,7 @@
     }
     .middle p,
     .middle h3 {
-        margin-left: 31%;
+        margin: 0 0 0 31%;
     }
     .experts-list-item p {
         width: 70%;

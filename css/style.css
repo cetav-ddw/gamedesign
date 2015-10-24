@@ -240,7 +240,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -358,6 +359,10 @@ td,
 th {
   padding: 0; }
 
+.sprite {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat; }
+
 .sprite-bg-menu {
   background-position: -390px -208px;
   height: 54px;
@@ -381,18 +386,10 @@ th {
 .sprite-owak {
   background-position: 0 -209px; }
 
-.sprite-button {
-  background-position: -173px 0;
-  height: 60px;
-  width: 155px; }
-  .sprite-button:hover {
-    background-position: -219px -102px;
-    height: 51px; }
-
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
-  font-family: Arial,Verdana,sans-serif; }
+  font-family: Arial,Verdana,sans-serif;
+  font-size: 62.5%; }
 
 *,
 *:before,
@@ -403,9 +400,9 @@ body {
   background-color: #f4f4f4; }
 
 a {
+  color: #fff;
   font-family: "Iceland", serif;
-  text-decoration: none;
-  color: #fff; }
+  text-decoration: none; }
 
 button:focus,
 button:active {
@@ -430,14 +427,14 @@ button:active {
   font-family: "Iceland", serif;
   font-size: 7rem;
   margin: 8%;
-  padding-bottom: 15px;
+  padding: 0 0 15px 0;
   text-align: center;
   text-shadow: -4px 4px 0 #000; }
   @media (min-width: 1334px) {
     .title-main {
       font-size: 10rem;
       margin: 2% auto;
-      padding-bottom: 35px;
+      padding: 0 0 35px 0;
       width: 70%; } }
 
 .text-footer {
@@ -447,53 +444,59 @@ button:active {
   .text-footer p {
     font-family: "Iceland", serif;
     font-size: 2.3rem;
-    padding-top: 20px; }
+    padding: 20px 0 0 0; }
     @media (min-width: 1334px) {
       .text-footer p {
-        padding-top: 0;
         margin: 0 auto;
+        padding: 0;
         width: 64%; } }
   .text-footer:after {
-    content: "";
-    float: right;
-    margin-right: -10px;
-    margin-top: -45px;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     background-position: -93px 0;
     width: 80px;
-    height: 102px; }
+    height: 102px;
+    content: "";
+    float: right;
+    margin: 0 -10px 0 0;
+    margin: -45px 0 0 0; }
     @media (min-width: 1334px) {
       .text-footer:after {
-        margin-top: -100px;
-        margin-right: initial; } }
+        margin: -100px initial 0 0; } }
   .text-footer:before {
-    content: "";
-    float: left;
-    margin-top: -62px;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     height: 94px;
-    width: 93px; }
+    width: 93px;
+    content: "";
+    float: left;
+    margin: -62px 0 0 0; }
   .text-footer .strong {
-    font-size: 3rem;
-    color: #FD7949; }
+    color: #FD7949;
+    font-size: 3rem; }
   @media (min-width: 1334px) {
     .text-footer {
-      padding-top: 20px;
+      padding: 20px 0 0 0;
       width: 60%; } }
 
 .content-info-footer {
   margin: 60px 0; }
 
-.gallery {
-  margin: 4% auto;
-  width: 85%; }
-  @media (min-width: 1334px) {
-    .gallery {
-      width: 75%; } }
-
+@media (min-width: 1024px) {
+  .btn-play-game {
+    background-position: -173px 0;
+    color: #fff;
+    display: inline-block;
+    font-family: "Iceland", serif;
+    font-size: 3rem;
+    height: 51px;
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    width: 155px; }
+    .btn-play-game:hover {
+      background-position: -219px -102px; } }
 h1,
 h2,
 h3,
@@ -521,17 +524,30 @@ ul {
 
 footer {
   background: #353535;
-  background-image: url(../img/background-general.gif);
-  margin-top: 5%;
+  background-image: url("../img/background-general.gif");
+  margin: 5% 0 0 0;
   overflow: hidden;
   padding: 4% 0;
   text-align: center; }
 
 .header {
-  background: url(../img/background-general.gif);
+  background: #000 url("../img/background-general.gif");
   border-bottom: 6px solid #ff6e3a;
   overflow: hidden;
   width: 100%; }
+
+.about {
+  padding: 4% 0 4.5%; }
+
+.about span {
+  color: #ff6e3a; }
+
+@media (min-width: 1024px) {
+  .about p:first-child {
+    font-size: 2.3rem; } }
+.firts-text {
+  font-size: 1.5rem;
+  margin: 4% 0 0 0; }
 
 .header-logo {
   display: block;
@@ -542,21 +558,14 @@ footer {
       margin: 10% auto;
       width: initial; } }
 
-.about {
-  padding: 4% 0 4.5%; }
+.overlay-about {
+  background: #f4f4f4;
+  display: inline-block;
+  height: 327px; }
 
-.about span {
-  color: #ff6e3a; }
-
-@media (min-width: 1024px) {
-  .about
-p:first-child {
-    font-size: 2.3rem; } }
-
-/*Partners*/
 .partners {
   background-color: #fff;
-  padding: 20px 20px 15px 20px;
+  padding: 20px 20px 15px;
   text-align: center; }
 
 .partner-item {
@@ -568,20 +577,10 @@ p:first-child {
     vertical-align: middle;
     width: 60%; }
 
-.firts-text {
-  font-size: 1.5rem;
-  margin-top: 4%; }
-
-.overlay-about {
-  background: #f4f4f4;
-  display: inline-block;
-  height: 327px; }
-
 .menu-toggle[type=checkbox] {
   display: none; }
 
-.menu-toggle[type=checkbox]:checked ~
-nav {
+.menu-toggle[type=checkbox]:checked ~ nav {
   display: block; }
 
 .nav,
@@ -610,33 +609,28 @@ nav {
   position: relative; }
   @media screen and (min-width: 1024px) {
     .nav-item {
-      border: none;
+      border: 0;
       box-sizing: border-box;
       float: left;
       margin: 0 20px;
       width: 123px; }
-      .nav-item:hover
-.sub-nav {
+      .nav-item:hover .sub-nav {
         display: inline-block;
         height: 238px; } }
 
-.nav-item >
-a {
+.nav-item > a {
   color: #fff;
   font-size: 3.2rem;
   padding: 2px;
   text-decoration: none;
   text-transform: capitalize; }
-  .nav-item >
-a:hover {
+  .nav-item > a:hover {
     color: #359e97; }
 
-.nav-item
-a {
+.nav-item a {
   font-size: 3.2rem; }
 
-.nav-item:hover
-.subnav {
+.nav-item:hover .subnav {
   position: inherit;
   width: 100%; }
 
@@ -647,18 +641,18 @@ a {
       display: block;
       float: left;
       height: auto;
-      margin-top: 10px;
+      margin: 10px 0 0 0;
       max-width: 10%; } }
 
 .page-arrow:before {
-  content: "";
-  display: inline-block;
-  margin-right: 8px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 0 -102px;
   height: 17px;
-  width: 15px; }
+  width: 15px;
+  content: "";
+  display: inline-block;
+  margin: 0 8px 0 0; }
 
 .page-arrow:hover:before {
   background-position: 0 -121px;
@@ -669,42 +663,41 @@ a {
   box-sizing: border-box;
   height: 0;
   overflow: hidden;
-  transition: height 0.25s linear;
+  transition: height .25s linear;
   width: 100%;
-  -webkit-transition: height 0.25s linear; }
+  -webkit-transition: height .25s linear; }
   @media screen and (min-width: 1024px) {
     .sub-nav {
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
       left: 0;
-      padding-left: 24px;
+      padding: 0 0 0 24px;
       position: absolute;
       text-align: left;
       top: 44px;
       width: 402px;
-      z-index: 3;
-      background-image: url("../img/sprite.png");
-      background-repeat: no-repeat; } }
+      z-index: 3; } }
 
-.expanded
-.sub-nav {
+.expanded .sub-nav {
   display: inline-block;
   height: 236px;
   z-index: 4; }
 
 .games-item:after {
-  content: "";
-  display: inline-block;
-  margin-left: 12px;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Chrome, Safari, Opera */
-  -moz-transform: rotate(90deg);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 0 -102px;
   height: 17px;
-  width: 15px; }
+  width: 15px;
+  content: "";
+  display: inline-block;
+  margin: 0 0 0 12px;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */ }
 
 .games-item:hover:after {
   background-position: 0 -121px;
@@ -714,8 +707,7 @@ a {
 .sub-nav-item {
   margin: 20px -6px;
   width: 100%; }
-  .sub-nav-item:hover
-a {
+  .sub-nav-item:hover a {
     color: #359e97;
     text-decoration: underline; }
   .sub-nav-item a {
@@ -736,6 +728,8 @@ a {
       display: none; } }
 
 .show-menu {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   color: #f2f2f2;
   display: inline-block;
   float: right;
@@ -743,17 +737,11 @@ a {
   font-size: 24px;
   margin: 20px;
   overflow: hidden;
-  padding-top: 13px;
-  text-align: center;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat; }
+  padding: 13px 0 0 0;
+  text-align: center; }
   @media screen and (min-width: 1024px) {
     .show-menu {
       display: none; } }
-
-@media screen and (min-width: 1024px) {
-  .header-games {
-    height: 95px; } }
 
 @media screen and (min-width: 1024px) {
   .main-nav {
@@ -771,49 +759,45 @@ a {
       margin: 90px auto;
       width: 900px; }
       .experts-list:before {
-        content: "";
-        margin-left: -22px;
-        margin-top: -52px;
-        position: absolute;
         background-image: url("../img/sprite.png");
         background-repeat: no-repeat;
         background-position: -77px -102px;
         height: 35px;
-        width: 48px; }
-      .experts-list:after {
+        width: 48px;
         content: "";
-        margin-left: -22px;
-        margin-top: 11px;
-        position: absolute;
+        margin: -52px 0 0 -22px;
+        position: absolute; }
+      .experts-list:after {
         background-image: url("../img/sprite.png");
         background-repeat: no-repeat;
         background-position: -175px -102px;
         height: 44px;
-        width: 44px; } }
+        width: 44px;
+        content: "";
+        margin: 11px 0 0 -22px;
+        position: absolute; } }
 
 .experts-list-item {
   overflow: hidden;
-  padding: 0 0 10% 0; }
+  padding: 0 0 10%; }
   @media (min-width: 1024px) {
     .experts-list-item {
       border-left: 3px dashed #359E97;
       padding: 0 0 0 45px; } }
 
-.experts-list-item
-h3 {
+.experts-list-item h3 {
   margin: 20px 0; }
   @media (min-width: 1024px) {
-    .experts-list-item
-h3:before {
-      content: "";
-      display: inline-block;
-      margin-right: 10px;
-      vertical-align: middle;
+    .experts-list-item h3:before {
       background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
       background-position: -37px -102px;
       height: 29px;
-      width: 40px; } }
+      width: 40px;
+      content: "";
+      display: inline-block;
+      margin: 0 10px 0 0;
+      vertical-align: middle; } }
 
 .expert-img {
   display: block;
@@ -824,34 +808,28 @@ h3:before {
       float: right;
       margin: 10px; } }
 
-.middle
-img {
+.middle img {
   display: block;
   margin: 0 auto; }
   @media (min-width: 1024px) {
-    .middle
-img {
+    .middle img {
       display: inherit;
       float: left;
       margin: 10px; } }
 
 @media (min-width: 1024px) {
   .middle {
-    border-bottom: 3px dashed #359E97;
+    border: 3px dashed #359E97;
     border-left: none;
-    border-right: 3px dashed #359E97;
-    border-top: 3px dashed #359E97;
     margin: 18px 0;
-    padding: 45px 0 45px 0; }
-  .middle
-p,
-  .middle
-h3 {
-    margin-left: 31%; }
-  .experts-list-item
-p {
-    width: 70%; } }
+    padding: 45px 0; }
 
+  .middle p,
+  .middle h3 {
+    margin: 0 0 0 31%; }
+
+  .experts-list-item p {
+    width: 70%; } }
 .experts-item-img {
   border: 5px solid #359e97;
   box-shadow: 10px 10px 0 0 #359e97; }
@@ -861,7 +839,7 @@ p {
   max-width: 415px; }
   @media (min-width: 1024px) {
     .games-banners {
-      max-width: 875px; } }
+      max-width: 863px; } }
 
 .games-banners-content {
   color: #fff;
@@ -883,14 +861,14 @@ p {
   transform: translateY(-50%); }
   @media (min-width: 1024px) {
     .games-banners-name:before {
-      content: "";
-      display: block;
-      margin: 0 auto;
       background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
       background-position: -125px -102px;
       height: 39px;
-      width: 50px; } }
+      width: 50px;
+      content: "";
+      display: block;
+      margin: 0 auto; } }
 
 .game-color-one {
   background-color: #4DB558; }
@@ -905,18 +883,24 @@ p {
   background-color: #d65f21; }
 
 .games-banners-overlay {
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   display: block;
   height: 91%;
-  max-width: 100%;
   margin: 2.4% auto;
+  max-width: 100%;
   text-align: center;
-  width: 94%;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat; }
+  width: 94%; }
   .games-banners-overlay:hover {
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: none; }
+
+.header-games {
+  border: 0; }
+  @media screen and (min-width: 1024px) {
+    .header-games {
+      height: 95px; } }
 
 @media (min-width: 1024px) {
   .demo {
@@ -924,26 +908,26 @@ p {
 
 .demo-content-text {
   display: inline-block;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   width: 100%; }
   @media (min-width: 1024px) {
     .demo-content-text {
       float: right;
       font-size: 1.8rem;
-      margin-left: 5%;
+      margin: 0 0 0 5%;
       width: 45%; } }
-  .demo-content-text h3 {
-    color: #359e97;
-    font-size: 3rem;
-    margin: 31px 0; }
   .demo-content-text h2 {
     color: #d2643b;
     font-size: 3.8rem;
     margin: 10px 0; }
+  .demo-content-text h3 {
+    color: #359e97;
+    font-size: 3rem;
+    margin: 31px 0; }
 
 @media (min-width: 1024px) {
   .demo-content-play {
-    margin-top: 80px; } }
+    margin: 80px 0 0 0; } }
 
 .demo-content-play,
 .demo-play-note {
@@ -957,7 +941,7 @@ p {
   .demo-play-note {
     font-family: "Iceland", serif;
     font-size: 2rem;
-    margin-top: 15px; }
+    margin: 15px 0 0 0; }
     .demo-play-note span {
       text-transform: uppercase; } }
 
@@ -970,91 +954,138 @@ p {
     font-size: 1.2rem;
     line-height: 2.5rem; }
 
-.demo-content-team
-li:before {
-  content: "";
-  display: inline-block;
-  margin-right: 17px;
-  vertical-align: middle;
+.demo-content-team li:before {
   background-position: -15px -102px;
   width: 17px;
   height: 25px;
   background-image: url("../img/sprite.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  margin: 0 17px 0 0;
+  vertical-align: middle; }
 
-.demo-content-team
-img {
-  margin-bottom: 20px;
+.demo-content-team img {
+  margin: 0 0 20px 0;
   width: 100%; }
   @media (min-width: 1024px) {
-    .demo-content-team
-img {
+    .demo-content-team img {
       border: 5px solid #359e97;
       box-shadow: 10px 10px 0 0 #359e97; } }
 
 .demo-content-team {
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
   width: 100%; }
   .demo-content-team h3 {
     color: #359e97;
     font-size: 4rem;
-    margin-bottom: 15px; }
+    margin: 0 0 15px 0; }
   .demo-content-team li {
     font-size: 1.6rem;
     line-height: 1.5rem;
-    margin-bottom: 10px; }
+    margin: 0 0 10px 0; }
   @media (min-width: 1024px) {
     .demo-content-team {
       float: left;
       width: 50%; }
       .demo-content-team h3 {
         margin: 3% 0; }
-      .demo-content-team ul {
-        float: left;
-        margin-right: 10%; }
       .demo-content-team li {
         font-size: 1.6rem;
         line-height: 2.4rem;
-        margin-bottom: 5px; } }
+        margin: 0 0 5px 0; }
+      .demo-content-team ul {
+        float: left;
+        margin: 0 10% 0 0; } }
 
-/*Estilos de los Botones*/
-@media (min-width: 1024px) {
-  .main {
-    color: #fff;
-    display: inline-block;
-    font-family: "Iceland", serif;
-    font-size: 3rem;
-    padding-top: 8px;
-    text-align: center;
-    text-decoration: none;
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat; } }
+.gallery {
+  margin: 4% auto;
+  width: 85%; }
+  @media (min-width: 1334px) {
+    .gallery {
+      width: 75%; } }
+
+.gallery-cover-background {
+  background-image: url("../img/background-general.gif");
+  background-repeat: repeat;
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 3; }
+
+.play-demo {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -385px 0px;
+  height: 56px;
+  width: 59px;
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  position: absolute;
+  right: 62%;
+  top: 50%;
+  z-index: 3; }
+  @media (min-width: 640px) {
+    .play-demo {
+      background-position: -402px -60px;
+      height: 90px;
+      width: 103px;
+      bottom: 0;
+      left: 0;
+      margin: 0 auto;
+      right: 50%;
+      top: 50%; } }
+  @media (min-width: 1024px) {
+    .play-demo {
+      bottom: 0;
+      left: 0;
+      right: 65%;
+      top: 65%; } }
+
+.play-gallery {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -385px 0px;
+  height: 56px;
+  width: 59px;
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  display: block;
+  margin: 0 auto;
+  z-index: 3; }
+  @media (min-width: 768px) {
+    .play-gallery {
+      background-position: -402px -60px;
+      height: 90px;
+      width: 103px; } }
 
 .video {
-  margin: -1% auto 0 auto;
+  margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 56.25%;
+  padding: 0 0 56.25% 0;
   position: relative;
   z-index: 1; }
   @media (min-width: 1024px) {
     .video {
       background-color: #000;
-      padding-bottom: 0%;
-      padding-left: 1%;
+      padding: 0;
       text-align: center; } }
 
-.video
-iframe {
+.video iframe {
   display: inline-block;
   height: 100%;
-  margin: 0 auto;
+  margin: 0;
   position: absolute;
   width: 100%; }
   @media (min-width: 1024px) {
-    .video
-iframe {
+    .video iframe {
       height: 516px;
-      margin: 0 auto;
+      margin: 2% auto;
       position: inherit;
       width: 900px; } }
 
@@ -1069,17 +1100,6 @@ iframe {
       top: 0;
       width: 100%; } }
 
-.gallery-cover-background {
-  background-image: url("../img/background-general.gif");
-  background-repeat: repeat;
-  display: block;
-  height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  z-index: 3; }
-
 .video-label-gallery {
   color: #359E97;
   display: block;
@@ -1091,20 +1111,20 @@ iframe {
   @media (min-width: 320px) {
     .video-label-gallery {
       font-size: 2.5em;
-      margin: 6% auto 4% auto; } }
+      margin: 6% auto 4%; } }
   @media (min-width: 640px) {
     .video-label-gallery {
       font-size: 4em;
-      margin: 10% auto 6% auto; } }
+      margin: 10% auto 6%; } }
   @media (min-width: 768px) {
     .video-label-gallery {
       font-size: 6em;
       line-height: 1.2em;
-      margin: 12% auto 6% auto; } }
+      margin: 12% auto 6%; } }
   @media (min-width: 1024px) {
     .video-label-gallery {
       font-size: 8em;
-      margin: 4% auto 4% auto;
+      margin: 4% auto;
       width: 70%; } }
 
 .video-label-demo {
@@ -1130,68 +1150,16 @@ iframe {
       width: 70%; } }
   @media (min-width: 1024px) {
     .video-label-demo {
-      bottom: 0%;
+      bottom: 0;
       font-size: 6em;
-      left: 0%;
+      left: 0;
       position: absolute;
-      right: 0%;
-      top: 0%;
+      right: 0;
+      top: 0;
       width: 50%; } }
 
-.play-demo {
-  background-color: transparent;
-  border: none;
-  color: transparent;
-  top: 50%;
-  right: 62%;
-  position: absolute;
-  z-index: 3;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -385px 0px;
-  height: 56px;
-  width: 59px; }
-  @media (min-width: 640px) {
-    .play-demo {
-      top: 50%;
-      left: 0%;
-      bottom: 0%;
-      right: 50%;
-      margin-left: auto;
-      margin-right: auto;
-      background-position: -402px -60px;
-      height: 90px;
-      width: 103px; } }
-  @media (min-width: 1024px) {
-    .play-demo {
-      top: 65%;
-      left: 0%;
-      bottom: 0%;
-      right: 65%;
-      margin-left: auto;
-      margin-right: auto; } }
-
-.play-gallery {
-  background-color: transparent;
-  border: none;
-  color: transparent;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 3;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -385px 0px;
-  height: 56px;
-  width: 59px; }
-  @media (min-width: 768px) {
-    .play-gallery {
-      background-position: -402px -60px;
-      height: 90px;
-      width: 103px; } }
-
 .video-button {
-  width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
