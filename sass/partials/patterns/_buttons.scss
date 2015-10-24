@@ -1,3 +1,14 @@
+button:focus,
+button:active {
+    outline: 0;
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
 @media (min-width: 1024px) {
     .btn-play-game {
         background-position: -173px 0;
