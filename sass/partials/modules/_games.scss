@@ -31,11 +31,11 @@
     &:before{
         @extend %sprite;
         background-position: -125px -102px;
-        height: 39px;
-        width: 50px;
         content: "";
         display: block;
+        height: 39px;
         margin: 0 auto;
+        width: 50px;
     }
 }
 

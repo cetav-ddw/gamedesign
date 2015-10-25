@@ -74,12 +74,12 @@
 .demo-content-team li:before {
     @extend %sprite;
     background-position: -15px -102px;
-    width: 17px;
-    height: 25px;
     content: "";
     display: inline-block;
+    height: 25px;
     margin-right: 17px;
     vertical-align: middle;
+    width: 17px;
 }
 
 .demo-content-team img {

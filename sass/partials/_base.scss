@@ -70,11 +70,11 @@ a {
     &:after {
         @extend %sprite;
         background-position: -93px 0;
-        width: 80px;
-        height: 102px;
         content: "";
         float: right;
+        height: 102px;
         margin: -45px 0 0;
+        width: 80px;
 
         @media (min-width: 1334px) {
             margin: -100px 0 0;
@@ -84,11 +84,11 @@ a {
     &:before {
         @extend %sprite;
         background-position: 0 0;
-        height: 94px;
-        width: 93px;
         content: "";
         float: left;
+        height: 94px;
         margin: -62px 0 0;
+        width: 93px;
     }
 
     .strong {

@@ -72,11 +72,11 @@
 .nav-item-arrow:before, .games-item:after {
     @extend %sprite;
     background-position: 0 -102px;
-    height: 17px;
-    width: 15px;
     content: "";
     display: inline-block;
+    height: 17px;
     margin-right: 8px;
+    width: 15px;
 }
 
 .nav-item-arrow:hover:before, .games-item:hover:after {

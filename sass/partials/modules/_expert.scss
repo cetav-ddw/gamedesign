@@ -7,22 +7,22 @@
         @extend %sprite;
         @media (min-width: 1024px) {
             background-position: -77px -102px;
-            height: 35px;
-            width: 48px;
             content: "";
+            height: 35px;
             margin: -52px 0 0 -22px;
             position: absolute;
+            width: 48px;
         }
     }
     &:after {
         @extend %sprite;
         @media (min-width: 1024px) {
             background-position: -175px -102px;
-            height: 44px;
-            width: 44px;
             content: "";
+            height: 44px;
             margin: 11px 0 0 -22px;
             position: absolute;
+            width: 44px;
         }
     }
 
@@ -48,12 +48,12 @@
         @extend %sprite;
         @media (min-width: 1024px) {
             background-position: -37px -102px;
-            height: 29px;
-            width: 40px;
             content: "";
             display: inline-block;
+            height: 29px;
             margin-right: 10px;
             vertical-align: middle;
+            width: 40px;
         }
     }
 }
