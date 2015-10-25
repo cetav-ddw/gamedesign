@@ -4,9 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Iceland|Muli);
-@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Iceland|Muli|Press+Start+2P);
 html {
   font-family: sans-serif;
   /* 1 */
