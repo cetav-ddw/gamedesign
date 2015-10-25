@@ -68,20 +68,17 @@
     margin: 0 auto;
     overflow: hidden;
     width: 80%;
-
-    li {
-        font-family: $text;
-        font-size: 1.2rem;
-        line-height: 2.5rem;
-    }
+    font-family: $text;
 }
 
 .demo-content-team li:before {
-    @include sprite-gem;
-    @include sprite;
+    @extend %sprite;
+    background-position: -15px -102px;
+    width: 17px;
+    height: 25px;
     content: "";
     display: inline-block;
-    margin: 0 17px 0 0;
+    margin-right: 17px;
     vertical-align: middle;
 }
 
@@ -102,12 +99,12 @@
     h3 {
         color: $title-color;
         font-size: 4rem;
-        margin: 0 0 15px;
+        margin-bottom: 15px;
     }
     li {
         font-size: 1.6rem;
         line-height: 1.5rem;
-        margin: 0 0 10px;
+        margin-bottom: 10px;
     }
 
     @media (min-width: 1024px) {
@@ -118,13 +115,12 @@
             margin: 3% 0;
         }
         li{
-            font-size: 1.6rem;
             line-height: 2.4rem;
-            margin: 0 0 5px;
+            margin-bottom: 5px;
         }
         ul {
             float: left;
-            margin: 0 10% 0 0;
+            margin-right: 10%;
         }
     }
 }

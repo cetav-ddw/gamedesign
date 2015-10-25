@@ -9,6 +9,39 @@ button:active {
     font-size: 1.6rem;
 }
 
+.btn-play {
+    background-position: -385px 0px;
+    height: 56px;
+    width: 59px;
+    @media(min-width: 640px) {
+        background-position: -402px -60px;
+        height: 90px;
+        width: 103px;
+    }
+}
+
+.btn-play-demo {
+    background-color: transparent;
+    border: 0;
+    color: transparent;
+    left: 10%;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    @media(min-width: 1024px) {
+        top: 65%;
+    }
+}
+
+.btn-play-gallery {
+    background-color: transparent;
+    border: 0;
+    color: transparent;
+    display: block;
+    margin: 0 auto;
+    z-index: 3;
+}
+
 @media (min-width: 1024px) {
     .btn-play-game {
         background-position: -173px 0;

@@ -10,41 +10,6 @@
     z-index: 3;
 }
 
-.play-demo {
-    @include sprite;
-    @include sprite-button-play-mobile;
-    background-color: transparent;
-    border: 0;
-    color: transparent;
-    left: 10%;
-    position: absolute;
-    top: 50%;
-    z-index: 3;
-
-    @media(min-width: 640px) {
-        @include sprite-button-play;
-    }
-
-    @media(min-width: 1024px) {
-        top: 65%;
-    }
-}
-
-.play-gallery {
-    @include sprite;
-    @include sprite-button-play-mobile;
-    background-color: transparent;
-    border: 0;
-    color: transparent;
-    display: block;
-    margin: 0 auto;
-    z-index: 3;
-
-    @media(min-width: 768px) {
-        @include sprite-button-play;
-    }
-}
-
 .video {
     margin: 0 auto;
     overflow: hidden;

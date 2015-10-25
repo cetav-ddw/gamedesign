@@ -69,6 +69,22 @@
     width: 100%;
 }
 
+.nav-item-arrow:before, .games-item:after {
+    @extend %sprite;
+    background-position: 0 -102px;
+    height: 17px;
+    width: 15px;
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.nav-item-arrow:hover:before, .games-item:hover:after {
+    background-position: 0 -121px;
+    height: 17px;
+    width: 15px;
+}
+
 .nav-logo {
     display: none;
 
@@ -81,30 +97,19 @@
     }
 }
 
-.page-arrow:before {
-    @include sprite;
-    @include sprite-arrow;
-    content: "";
-    display: inline-block;
-    margin: 0 8px 0 0;
-}
-
-.page-arrow:hover:before {
-    @include sprite-arrow-hover;
-}
-
 .sub-nav {
+    background-position: -600px;
     box-sizing: border-box;
     height: 0;
     overflow: hidden;
     transition: height .25s linear;
     -webkit-transition: height .25s linear;
     width: 100%;
-
+    
     @media screen and (min-width: 1024px) {
-        @include sprite;
+        background-position: 0 -1045px;
         left: 0;
-        padding: 0 0 0 24px;
+        padding-left: 24px;
         position: absolute;
         text-align: left;
         top: 44px;
@@ -120,19 +125,11 @@
 }
 
 .games-item:after {
-    @include sprite;
-    @include sprite-arrow;
-    content: "";
-    display: inline-block;
     margin: 0 0 0 12px;
     transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-}
-
-.games-item:hover:after{
-    @include sprite-arrow-hover;
 }
 
 .sub-nav-item {
@@ -168,7 +165,7 @@
 }
 
 .show-menu {
-    @include sprite;
+    background-position: -390px -208px;
     color: #f2f2f2;
     display: inline-block;
     float: right;
@@ -176,7 +173,7 @@
     font-size: 24px;
     margin: 20px;
     overflow: hidden;
-    padding: 13px 0 0;
+    padding: 15px 20px;
     text-align: center;
 
     @media screen and (min-width: 1024px) {
@@ -185,8 +182,9 @@
 }
 
 .main-nav{
+    background-position: -600px;
     @media screen and (min-width: 1024px) {
-        @include sprite;
+        background-position: 0 -153px;
         float: left;
         margin: 1% 2%;
         width: 65%;

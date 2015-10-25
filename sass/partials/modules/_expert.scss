@@ -2,26 +2,33 @@
 .experts-list {
     margin: 0 auto;
     width: 80%;
-
-    @media (min-width: 1024px) {
-        margin: 90px auto;
-        width: 900px;
-
-        &:before {
-            @include sprite;
-            @include sprite-ship;
+    
+    &:before {
+        @extend %sprite;
+        @media (min-width: 1024px) {
+            background-position: -77px -102px;
+            height: 35px;
+            width: 48px;
             content: "";
             margin: -52px 0 0 -22px;
             position: absolute;
         }
-
-        &:after {
-            @include sprite;
-            @include sprite-invader;
+    }
+    &:after {
+        @extend %sprite;
+        @media (min-width: 1024px) {
+            background-position: -175px -102px;
+            height: 44px;
+            width: 44px;
             content: "";
             margin: 11px 0 0 -22px;
             position: absolute;
         }
+    }
+
+    @media (min-width: 1024px) {
+        margin: 90px auto;
+        width: 900px;
     }
 }
 
@@ -37,14 +44,15 @@
 
 .experts-list-item h3 {
     margin: 20px 0;
-
-    @media (min-width: 1024px) {
-        &:before{
-            @include sprite;
-            @include sprite-trophy;
+    &:before{
+        @extend %sprite;
+        @media (min-width: 1024px) {
+            background-position: -37px -102px;
+            height: 29px;
+            width: 40px;
             content: "";
             display: inline-block;
-            margin: 0 10px 0 0;
+            margin-right: 10px;
             vertical-align: middle;
         }
     }
@@ -80,7 +88,7 @@
     }
     .middle p,
     .middle h3 {
-        margin: 0 0 0 31%;
+        margin-left: 31%;
     }
     .experts-list-item p {
         width: 70%;

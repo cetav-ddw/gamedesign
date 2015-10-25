@@ -68,8 +68,10 @@ a {
     }
 
     &:after {
-        @include sprite;
-        @include sprite-astronaut;
+        @extend %sprite;
+        background-position: -93px 0;
+        width: 80px;
+        height: 102px;
         content: "";
         float: right;
         margin: -45px 0 0;
@@ -80,8 +82,10 @@ a {
     }
 
     &:before {
-        @include sprite;
-        @include sprite-planet;
+        @extend %sprite;
+        background-position: 0 0;
+        height: 94px;
+        width: 93px;
         content: "";
         float: left;
         margin: -62px 0 0;
