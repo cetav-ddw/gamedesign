@@ -238,8 +238,7 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -357,7 +356,15 @@ td,
 th {
   padding: 0; }
 
-.text-footer:after, .text-footer:before, .nav-item-arrow:before, .games-item:after, .experts-list:before, .experts-list:after, .experts-list-item h3:before, .games-banners-name:before, .demo-content-team li:before,
+.text-footer:after,
+.text-footer:before,
+.nav-item-arrow:before,
+.games-item:after,
+.experts-list:before,
+.experts-list:after,
+.experts-list-item h3:before,
+.games-banners-name:before,
+.demo-content-team li:before,
 .sprite {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat; }
@@ -391,14 +398,6 @@ a {
   color: #fff;
   font-family: "Iceland", serif;
   text-decoration: none; }
-
-.content {
-  margin: 0 auto;
-  overflow: hidden;
-  width: 80%; }
-  @media (min-width: 1334px) {
-    .content {
-      width: 50%; } }
 
 .title-main {
   border-bottom: 3px solid #359E97;
@@ -466,6 +465,24 @@ button:active {
   display: inline-block;
   font-size: 1.6rem; }
 
+.btn-show-menu {
+  background-position: -390px -208px;
+  color: #f2f2f2;
+  font-family: "Iceland", serif;
+  font-size: 24px;
+  height: 54px;
+  overflow: hidden;
+  padding: 13px 0 0;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 20px;
+  width: 95px;
+  z-index: 10; }
+  @media screen and (min-width: 960px) {
+    .btn-show-menu {
+      display: none; } }
+
 .btn-play {
   background-position: -385px 0px;
   height: 56px;
@@ -484,7 +501,7 @@ button:active {
   position: absolute;
   top: 50%;
   z-index: 3; }
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     .btn-play-demo {
       top: 65%; } }
 
@@ -496,7 +513,7 @@ button:active {
   margin: 0 auto;
   z-index: 3; }
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
   .btn-play-game {
     background-position: -173px 0;
     color: #fff;
@@ -510,6 +527,7 @@ button:active {
     width: 155px; }
     .btn-play-game:hover {
       background-position: -219px -102px; } }
+
 h1,
 h2,
 h3,
@@ -545,10 +563,45 @@ footer {
   padding: 4% 0;
   text-align: center; }
 
+.content {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 90%; }
+  @media (min-width: 1280px) {
+    .content {
+      width: 50%; } }
+
+.group {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative; }
+  .group:before,
+  .group:after {
+    content: " ";
+    display: table; }
+  .group:after,
+  .group:after {
+    clear: both; }
+  @media (min-width: 1280px) {
+    .group {
+      width: 1280px; } }
+
 .header {
   border-bottom: 6px solid #ff6e3a;
-  overflow: hidden;
   width: 100%; }
+  .header:before,
+  .header:after {
+    content: " ";
+    display: table; }
+  .header:after,
+  .header:after {
+    clear: both; }
+  .header .group {
+    padding-top: 100px; }
+    @media (min-width: 960px) {
+      .header .group {
+        padding-bottom: 20px;
+        padding-top: 25px; } }
 
 .about {
   padding: 4% 0 4.5%; }
@@ -559,17 +612,19 @@ footer {
 @media (min-width: 1024px) {
   .about p:first-child {
     font-size: 2.3rem; } }
+
 .firts-text {
   font-size: 1.5rem;
   margin: 4% 0 0; }
 
 .header-logo {
   display: block;
-  margin: 180px auto 130px;
-  width: 80%; }
+  margin: 25px auto 80px;
+  width: 80%;
+  max-width: 600px; }
   @media (min-width: 1024px) {
     .header-logo {
-      margin: 10% auto;
+      margin: 10% auto 50px;
       width: auto; } }
 
 .overlay-about {
@@ -592,7 +647,13 @@ footer {
   display: none; }
 
 .menu-toggle[type=checkbox]:checked ~ nav {
-  display: block; }
+  background: rgba(0, 0, 0, 0.9);
+  background: #000;
+  display: block;
+  padding: 100px 15px;
+  position: absolute;
+  top: 0;
+  z-index: 5; }
 
 .nav,
 .main-nav,
@@ -605,41 +666,41 @@ footer {
 .nav {
   display: none;
   padding: 0; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 960px) {
     .nav {
       display: block;
-      margin: 10px 130px;
-      position: absolute;
-      width: 790px;
-      z-index: 3; } }
+      float: left;
+      margin: 10px 0 10px 20px; } }
 
 .nav-item {
   border-bottom: 1px solid #f2f2f2;
   display: inline-block;
-  padding: 8px 0 12px;
   position: relative; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 960px) {
     .nav-item {
       border: 0;
       box-sizing: border-box;
       float: left;
       margin: 0 20px;
+      padding: 8px 0 12px;
       width: 123px; }
       .nav-item:hover .sub-nav {
         display: inline-block;
         height: 238px; } }
 
-.nav-item > a {
+.nav-item a {
   color: #fff;
+  display: block;
   font-size: 3.2rem;
-  padding: 2px;
+  padding: 20px;
   text-decoration: none;
   text-transform: capitalize; }
-  .nav-item > a:hover {
+  @media screen and (min-width: 960px) {
+    .nav-item a {
+      display: inline;
+      padding: 2px; } }
+  .nav-item a:hover {
     color: #359e97; }
-
-.nav-item a {
-  font-size: 3.2rem; }
 
 .nav-item:hover .subnav {
   position: inherit;
@@ -660,7 +721,7 @@ footer {
 
 .nav-logo {
   display: none; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 960px) {
     .nav-logo {
       display: block;
       float: left;
@@ -673,10 +734,10 @@ footer {
   box-sizing: border-box;
   height: 0;
   overflow: hidden;
-  transition: height .25s linear;
-  -webkit-transition: height .25s linear;
+  transition: height 0.25s linear;
+  -webkit-transition: height 0.25s linear;
   width: 100%; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 960px) {
     .sub-nav {
       background-position: 0 -1045px;
       left: 0;
@@ -689,7 +750,7 @@ footer {
 
 .expanded .sub-nav {
   display: inline-block;
-  height: 236px;
+  height: auto;
   z-index: 4; }
 
 .games-item:after {
@@ -702,8 +763,11 @@ footer {
   /* Chrome, Safari, Opera */ }
 
 .sub-nav-item {
-  margin: 20px -6px;
+  margin: 0;
   width: 100%; }
+  @media (min-width: 960px) {
+    .sub-nav-item {
+      margin: 20px -6px; } }
   .sub-nav-item:hover a {
     color: #359e97;
     text-decoration: underline; }
@@ -712,45 +776,38 @@ footer {
 
 .mobile-logo {
   display: block;
-  float: left;
   height: 40px;
-  margin: 20px;
-  text-align: center;
-  width: 45px; }
+  position: absolute;
+  left: 25px;
+  top: 27px;
+  width: 45px;
+  z-index: 10; }
   .mobile-logo img {
     height: 100%;
     width: 100%; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 960px) {
     .mobile-logo {
       display: none; } }
 
-.show-menu {
-  background-position: -390px -208px;
-  color: #f2f2f2;
-  display: inline-block;
-  float: right;
-  font-family: "Iceland", serif;
-  font-size: 24px;
-  margin: 20px;
-  overflow: hidden;
-  padding: 15px 20px;
-  text-align: center; }
-  @media screen and (min-width: 1024px) {
-    .show-menu {
-      display: none; } }
+@media screen and (max-width: 959px) {
+  .main-nav {
+    background-image: none; } }
 
-.main-nav {
-  background-position: -600px; }
-  @media screen and (min-width: 1024px) {
-    .main-nav {
-      background-position: 0 -153px;
-      float: left;
-      margin: 1% 2%;
-      width: 65%; } }
+@media screen and (min-width: 960px) {
+  .main-nav {
+    background-position: 0 -153px;
+    float: left;
+    height: 51px;
+    margin: 1% 2%;
+    width: 513px; } }
 
 .experts-list {
   margin: 0 auto;
-  width: 80%; }
+  width: 90%; }
+  @media (min-width: 1024px) {
+    .experts-list {
+      margin: 90px auto;
+      width: 900px; } }
   @media (min-width: 1024px) {
     .experts-list:before {
       background-position: -77px -102px;
@@ -767,10 +824,6 @@ footer {
       margin: 11px 0 0 -22px;
       position: absolute;
       width: 44px; } }
-  @media (min-width: 1024px) {
-    .experts-list {
-      margin: 90px auto;
-      width: 900px; } }
 
 .experts-list-item {
   overflow: hidden;
@@ -815,13 +868,12 @@ footer {
     border-left: none;
     margin: 18px 0;
     padding: 45px 0; }
-
   .middle p,
   .middle h3 {
     margin-left: 31%; }
-
   .experts-list-item p {
     width: 70%; } }
+
 .experts-item-img {
   border: 5px solid #359e97;
   box-shadow: 10px 10px 0 0 #359e97; }
@@ -829,7 +881,7 @@ footer {
 .games-banners {
   margin: 0 auto;
   max-width: 415px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     .games-banners {
       max-width: 863px; } }
 
@@ -885,11 +937,8 @@ footer {
 
 .header-games {
   border: 0; }
-  @media screen and (min-width: 1024px) {
-    .header-games {
-      height: 95px; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
   .demo {
     margin: 2% 0; } }
 
@@ -897,7 +946,7 @@ footer {
   display: inline-block;
   margin: 0 0 30px;
   width: 100%; }
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     .demo-content-text {
       float: right;
       font-size: 1.8rem;
@@ -906,25 +955,25 @@ footer {
   .demo-content-text h2 {
     color: #d2643b;
     font-size: 3.8rem;
-    margin: 10px 0; }
+    margin: 10px 0 0; }
   .demo-content-text h3 {
     color: #359e97;
     font-size: 3rem;
-    margin: 31px 0; }
+    margin: 0 0 30px; }
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
   .demo-content-play {
     margin: 80px 0 0; } }
 
 .demo-content-play,
 .demo-play-note {
   display: none; }
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     .demo-content-play,
     .demo-play-note {
       display: block; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
   .demo-play-note {
     font-family: "Iceland", serif;
     font-size: 2rem;
@@ -933,10 +982,18 @@ footer {
       text-transform: uppercase; } }
 
 .demo-content {
+  font-family: "Muli", sans-serif;
   margin: 0 auto;
   overflow: hidden;
-  width: 80%;
-  font-family: "Muli", sans-serif; }
+  width: 90%;
+  max-width: 1068px; }
+  @media (min-width: 750px) {
+    .demo-content {
+      width: 80%; } }
+  .demo-content li {
+    font-family: "Muli", sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.5rem; }
 
 .demo-content-team li:before {
   background-position: -15px -102px;
@@ -949,8 +1006,8 @@ footer {
 
 .demo-content-team img {
   margin: 0 0 20px;
-  width: 100%; }
-  @media (min-width: 1024px) {
+  max-width: 100%; }
+  @media (min-width: 960px) {
     .demo-content-team img {
       border: 5px solid #359e97;
       box-shadow: 10px 10px 0 0 #359e97; } }
@@ -966,7 +1023,7 @@ footer {
     font-size: 1.6rem;
     line-height: 1.5rem;
     margin-bottom: 10px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     .demo-content-team {
       float: left;
       width: 50%; }
@@ -1008,6 +1065,7 @@ footer {
   overflow: hidden;
   padding: 0 0 56.25%;
   position: relative;
+  width: 100%;
   z-index: 1; }
   @media (min-width: 1024px) {
     .video {
