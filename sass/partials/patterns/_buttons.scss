@@ -45,13 +45,13 @@ button:active {
     background-color: transparent;
     border: 0;
     color: transparent;
-    left: 10%;
+    left: 45%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 3;
 
     @media(min-width: $m-width) {
-        top: 65%;
+
     }
 }
 

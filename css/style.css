@@ -238,7 +238,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -356,15 +357,7 @@ td,
 th {
   padding: 0; }
 
-.text-footer:after,
-.text-footer:before,
-.nav-item-arrow:before,
-.games-item:after,
-.experts-list:before,
-.experts-list:after,
-.experts-list-item h3:before,
-.games-banners-name:before,
-.demo-content-team li:before,
+.text-footer:after, .text-footer:before, .nav-item-arrow:before, .games-item:after, .experts-list:before, .experts-list:after, .experts-list-item h3:before, .games-banners-name:before, .demo-content-team li:before,
 .sprite {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat; }
@@ -497,13 +490,10 @@ button:active {
   background-color: transparent;
   border: 0;
   color: transparent;
-  left: 10%;
+  left: 45%;
   position: absolute;
-  top: 50%;
+  top: 45%;
   z-index: 3; }
-  @media (min-width: 960px) {
-    .btn-play-demo {
-      top: 65%; } }
 
 .btn-play-gallery {
   background-color: transparent;
@@ -527,7 +517,6 @@ button:active {
     width: 155px; }
     .btn-play-game:hover {
       background-position: -219px -102px; } }
-
 h1,
 h2,
 h3,
@@ -575,12 +564,10 @@ footer {
   margin: 0 auto;
   max-width: 1280px;
   position: relative; }
-  .group:before,
-  .group:after {
+  .group:before, .group:after {
     content: " ";
     display: table; }
-  .group:after,
-  .group:after {
+  .group:after, .group:after {
     clear: both; }
   @media (min-width: 1280px) {
     .group {
@@ -589,12 +576,10 @@ footer {
 .header {
   border-bottom: 6px solid #ff6e3a;
   width: 100%; }
-  .header:before,
-  .header:after {
+  .header:before, .header:after {
     content: " ";
     display: table; }
-  .header:after,
-  .header:after {
+  .header:after, .header:after {
     clear: both; }
   .header .group {
     padding-top: 100px; }
@@ -612,7 +597,6 @@ footer {
 @media (min-width: 1024px) {
   .about p:first-child {
     font-size: 2.3rem; } }
-
 .firts-text {
   font-size: 1.5rem;
   margin: 4% 0 0; }
@@ -734,8 +718,8 @@ footer {
   box-sizing: border-box;
   height: 0;
   overflow: hidden;
-  transition: height 0.25s linear;
-  -webkit-transition: height 0.25s linear;
+  transition: height .25s linear;
+  -webkit-transition: height .25s linear;
   width: 100%; }
   @media screen and (min-width: 960px) {
     .sub-nav {
@@ -792,7 +776,6 @@ footer {
 @media screen and (max-width: 959px) {
   .main-nav {
     background-image: none; } }
-
 @media screen and (min-width: 960px) {
   .main-nav {
     background-position: 0 -153px;
@@ -875,14 +858,16 @@ footer {
     border-left: none;
     margin: 18px 0;
     padding: 45px 0 18px 0; }
+
   .middle p,
   .middle h3 {
     margin-left: 31%; }
+
   .expert-link-middle {
     text-align: right; }
+
   .experts-list-item p {
     width: 70%; } }
-
 .experts-item-img {
   border: 5px solid #359e97;
   box-shadow: 10px 10px 0 0 #359e97; }
@@ -1099,6 +1084,7 @@ footer {
   background-color: #000;
   height: 100%;
   position: absolute;
+  width: 100%;
   z-index: 2; }
   @media (min-width: 1024px) {
     .video-cover-demo {
@@ -1134,34 +1120,80 @@ footer {
       width: 70%; } }
 
 .video-label-demo {
-  color: #359E97;
-  display: block;
-  font-family: "Press Start 2P", "Iceland";
-  font-size: 2em;
-  line-height: 1.2em;
-  margin: 0.5em;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
-  text-align: left;
-  text-shadow: 3px 3px 0 #000;
-  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 18%;
   z-index: 3; }
+
+.label-activist {
+  background-image: url("../img/demo-covers/activist-cover-logo.png");
+  height: 82px;
+  width: 310px; }
   @media (min-width: 560px) {
-    .video-label-demo {
-      font-size: 3.5em; } }
+    .label-activist {
+      width: 440px; } }
   @media (min-width: 768px) {
-    .video-label-demo {
-      font-size: 4em;
-      text-shadow: 5px 5px 0 #000;
-      width: 70%; } }
+    .label-activist {
+      width: 610px; } }
   @media (min-width: 1024px) {
-    .video-label-demo {
-      bottom: 0;
-      font-size: 6em;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 50%; } }
+    .label-activist {
+      width: 725px; } }
+
+.label-humans {
+  background-image: url("../img/demo-covers/humans-cover-logo.png");
+  height: 148px;
+  width: 122px;
+  margin-right: 10px; }
+  @media (min-width: 560px) {
+    .label-humans {
+      height: 230px;
+      width: 246px;
+      margin-right: 37px; } }
+  @media (min-width: 768px) {
+    .label-humans {
+      height: 380px;
+      margin-right: 50px; } }
+  @media (min-width: 1024px) {
+    .label-humans {
+      height: 330px;
+      width: 360px;
+      margin-right: 240px; } }
+
+.label-flood {
+  background-image: url("../img/demo-covers/flood-cover-logo.png");
+  height: 148px;
+  width: 228px;
+  top: 3%; }
+  @media (min-width: 560px) {
+    .label-flood {
+      top: 18%;
+      width: 325px; } }
+  @media (min-width: 768px) {
+    .label-flood {
+      width: 410px; } }
+  @media (min-width: 1024px) {
+    .label-flood {
+      width: 502px; } }
+
+.label-owak {
+  background-image: url("../img/demo-covers/owak-cover-logo.png");
+  height: 80px;
+  width: 111px;
+  top: 10%; }
+  @media (min-width: 560px) {
+    .label-owak {
+      height: 120px;
+      width: 203px; } }
+  @media (min-width: 768px) {
+    .label-owak {
+      height: 239px;
+      width: 305px; } }
 
 .video-button {
   height: 100%;

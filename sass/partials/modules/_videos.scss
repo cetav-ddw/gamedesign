@@ -44,6 +44,7 @@
     background-color: #000;
     height: 100%;
     position: absolute;
+    width: 100%;
     z-index: 2;
 
     @media (min-width: 1024px) {
@@ -62,23 +63,23 @@
     width: 100%;
     z-index: 3;
 
-	@media(min-width: 320px) {
+	@media (min-width: 320px) {
 		font-size: 2.5em;
     	margin: 6% auto 4%;
 	}
 
-	@media(min-width: 640px) {
+	@media (min-width: 640px) {
 		font-size: 4em;
     	margin: 10% auto 6%;
 	}
 
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
         font-size: 6em;
         line-height: 1.2em;
         margin: 12% auto 6%;
     }
 
-    @media(min-width: 1024px) {
+    @media (min-width: 1024px) {
         font-size: 8em;
         margin: 4% auto;
         width: 70%;
@@ -86,36 +87,86 @@
 }
 
 .video-label-demo {
-    color: #359E97;
-    display: block;
-    font-family: $title-videos;
-    font-size: 2em;
-    line-height: 1.2em;
-    margin: 0.5em;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
-    text-align: left;
-    text-shadow: 3px 3px 0 #000;
-    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 18%;
     z-index: 3;
+}
 
-    @media(min-width: 560px) {
-        font-size: 3.5em;
+.label-activist {
+    background-image: url( "../img/demo-covers/activist-cover-logo.png" );
+    height: 82px;
+    width: 310px;
+    @media (min-width: 560px) {
+        width: 440px;
     }
-
-    @media(min-width: 768px) {
-        font-size: 4em;
-        text-shadow: 5px 5px 0 #000;
-        width: 70%;
+    @media (min-width: 768px) {
+        width: 610px;
     }
+    @media (min-width: 1024px) {
+        width: 725px;
+    }
+}
 
-    @media(min-width: 1024px) {
-        bottom: 0;
-        font-size: 6em;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 50%;
+.label-humans {
+    background-image: url( "../img/demo-covers/humans-cover-logo.png" );
+    height: 148px;
+    width: 122px;
+    margin-right: 10px;
+    @media (min-width: 560px) {
+        height: 230px;
+        width: 246px;
+        margin-right: 37px;
+    }
+    @media (min-width: 768px) {
+        height: 380px;
+        margin-right: 50px;
+    }
+    @media (min-width: 1024px) {
+        height: 330px;
+        width: 360px;
+        margin-right: 240px;
+    }
+}
+
+.label-flood {
+    background-image: url( "../img/demo-covers/flood-cover-logo.png" );
+    height: 148px;
+    width: 228px;
+    top: 3%;
+    @media (min-width: 560px) {
+        top: 18%;
+        width: 325px;
+    }
+    @media (min-width: 768px) {
+        width: 410px;
+    }
+    @media (min-width: 1024px) {
+        width: 502px;
+    }
+}
+
+.label-owak {
+    background-image: url( "../img/demo-covers/owak-cover-logo.png" );
+    height: 80px;
+    width: 111px;
+    top: 10%;
+    @media (min-width: 560px) {
+        height: 120px;
+        width: 203px;
+    }
+    @media (min-width: 768px) {
+        height: 239px;
+        width: 305px;
+    }
+    @media (min-width: 1024px) {
+
     }
 }
 
