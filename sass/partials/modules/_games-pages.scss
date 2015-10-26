@@ -4,7 +4,7 @@
 }
 
 .demo {
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         margin: 2% 0;
     }
 }
@@ -14,7 +14,7 @@
     margin: 0 0 30px;
     width: 100%;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         float: right;
         font-size: 1.8rem;
         margin: 0 0 0 5%;
@@ -34,7 +34,7 @@
 }
 
 .demo-content-play {
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         margin: 80px 0 0;
     }
 }
@@ -43,13 +43,13 @@
 .demo-play-note {
     display: none;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         display: block;
     }
 }
 
 .demo-play-note {
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         font-family: $title-text;
         font-size: 2rem;
         margin: 15px 0 0;
@@ -61,6 +61,7 @@
 }
 
 .demo-content {
+    font-family: $text;
     margin: 0 auto;
     overflow: hidden;
     width: 90%;
@@ -78,19 +79,21 @@
 }
 
 .demo-content-team li:before {
-    @include sprite-gem;
-    @include sprite;
+    @extend %sprite;
+    background-position: -15px -102px;
     content: "";
     display: inline-block;
-    margin: 0 17px 0 0;
+    height: 25px;
+    margin-right: 17px;
     vertical-align: middle;
+    width: 17px;
 }
 
 .demo-content-team img {
     margin: 0 0 20px;
     max-width: 100%;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         border: 5px solid $title-color;
         box-shadow: 10px 10px 0 0 $title-color;
     }
@@ -103,15 +106,15 @@
     h3 {
         color: $title-color;
         font-size: 4rem;
-        margin: 0 0 15px;
+        margin-bottom: 15px;
     }
     li {
         font-size: 1.6rem;
         line-height: 1.5rem;
-        margin: 0 0 10px;
+        margin-bottom: 10px;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         float: left;
         width: 50%;
 
@@ -119,13 +122,12 @@
             margin: 3% 0;
         }
         li{
-            font-size: 1.6rem;
             line-height: 2.4rem;
-            margin: 0 0 5px;
+            margin-bottom: 5px;
         }
         ul {
             float: left;
-            margin: 0 10% 0 0;
+            margin-right: 10%;
         }
     }
 }

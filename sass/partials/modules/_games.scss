@@ -3,7 +3,7 @@
     margin: 0 auto;
     max-width: 415px;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         max-width: 863px;
     }
 }
@@ -29,39 +29,38 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @media  (min-width: 1024px) {
-        &:before{
-            @include sprite;
-            @include sprite-control;
-            content: "";
-            display: block;
-            margin: 0 auto;
-        }
+    &:before{
+        @extend %sprite;
+        background-position: -125px -102px;
+        content: "";
+        display: block;
+        height: 39px;
+        margin: 0 auto;
+        width: 50px;
     }
 }
 
-.game-color-one {
+.game-color-last {
     background-color: #4DB558;
 }
 
-.game-color-two {
-	background-color:#4E9093;
+.game-color-owak {
+	background-color: #4E9093;
 }
 
-.game-color-three {
-	background-color:#F59331 ;
+.game-color-trash {
+	background-color: #F59331;
 }
 
-.game-color-four {
-	background-color:#d65f21;
+.game-color-sorry {
+	background-color: #d65f21;
 }
 
 .games-banners-overlay {
-    @include sprite;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, .25);
     display: block;
     height: 91%;
-    margin: 2.4% auto;
+    margin: 9px auto;
     max-width: 100%;
     text-align: center;
     width: 94%;

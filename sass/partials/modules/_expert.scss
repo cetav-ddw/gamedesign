@@ -6,21 +6,30 @@
     @media (min-width: 1024px) {
         margin: 90px auto;
         width: 900px;
+    }
 
-        &:before {
-            @include sprite;
-            @include sprite-ship;
+    &:before {
+        @extend %sprite;
+
+        @media (min-width: 1024px) {
+            background-position: -77px -102px;
             content: "";
+            height: 35px;
             margin: -52px 0 0 -22px;
             position: absolute;
+            width: 48px;
         }
+    }
+    &:after {
+        @extend %sprite;
 
-        &:after {
-            @include sprite;
-            @include sprite-invader;
+        @media (min-width: 1024px) {
+            background-position: -175px -102px;
             content: "";
+            height: 44px;
             margin: 11px 0 0 -22px;
             position: absolute;
+            width: 44px;
         }
     }
 }
@@ -37,15 +46,16 @@
 
 .experts-list-item h3 {
     margin: 20px 0;
-
-    @media (min-width: 1024px) {
-        &:before{
-            @include sprite;
-            @include sprite-trophy;
+    &:before{
+        @extend %sprite;
+        @media (min-width: 1024px) {
+            background-position: -37px -102px;
             content: "";
             display: inline-block;
-            margin: 0 10px 0 0;
+            height: 29px;
+            margin-right: 10px;
             vertical-align: middle;
+            width: 40px;
         }
     }
 }
