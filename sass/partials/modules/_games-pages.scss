@@ -1,10 +1,6 @@
 // Games Pages
 .header-games{
     border: 0;
-
-    @media screen and (min-width: 1024px) {
-        height: 95px;
-    }
 }
 
 .demo {
@@ -28,12 +24,12 @@
     h2 {
         color: $title-demos;
         font-size: 3.8rem;
-        margin: 10px 0;
+        margin: 10px 0 0;
     }
     h3 {
         color: $title-color;
         font-size: 3rem;
-        margin: 31px 0;
+        margin: 0 0 30px;
     }
 }
 
@@ -67,7 +63,12 @@
 .demo-content {
     margin: 0 auto;
     overflow: hidden;
-    width: 80%;
+    width: 90%;
+    max-width: 1068px;
+
+    @media (min-width: 750px) {
+        width: 80%;
+    }
 
     li {
         font-family: $text;
@@ -87,7 +88,7 @@
 
 .demo-content-team img {
     margin: 0 0 20px;
-    width: 100%;
+    max-width: 100%;
 
     @media (min-width: 1024px) {
         border: 5px solid $title-color;

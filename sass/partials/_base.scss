@@ -22,16 +22,6 @@ a {
     text-decoration: none;
 }
 
-.content {
-    margin: 0 auto;
-    overflow: hidden;
-    width: 80%;
-
-    @media (min-width: 1334px) {
-        width: 50%;
-    }
-}
-
 .title-main {
     border-bottom: 3px solid #359E97;
     color: #359E97;

@@ -19,11 +19,12 @@
 
 .header-logo {
     display: block;
-    margin: 180px auto 130px;
+    margin: 25px auto 80px;
     width: 80%;
+    max-width: 600px;
 
     @media (min-width: 1024px) {
-        margin: 10% auto;
+        margin: 10% auto 50px;
         width: auto; // http://caniuse.com/#feat=css-initial-value
     }
 }
