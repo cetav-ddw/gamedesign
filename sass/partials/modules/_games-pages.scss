@@ -1,14 +1,10 @@
 // Games Pages
 .header-games{
     border: 0;
-
-    @media screen and (min-width: 1024px) {
-        height: 95px;
-    }
 }
 
 .demo {
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         margin: 2% 0;
     }
 }
@@ -18,7 +14,7 @@
     margin: 0 0 30px;
     width: 100%;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         float: right;
         font-size: 1.8rem;
         margin: 0 0 0 5%;
@@ -28,17 +24,17 @@
     h2 {
         color: $title-demos;
         font-size: 3.8rem;
-        margin: 10px 0;
+        margin: 10px 0 0;
     }
     h3 {
         color: $title-color;
         font-size: 3rem;
-        margin: 31px 0;
+        margin: 0 0 30px;
     }
 }
 
 .demo-content-play {
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         margin: 80px 0 0;
     }
 }
@@ -47,13 +43,13 @@
 .demo-play-note {
     display: none;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         display: block;
     }
 }
 
 .demo-play-note {
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         font-family: $title-text;
         font-size: 2rem;
         margin: 15px 0 0;
@@ -65,10 +61,21 @@
 }
 
 .demo-content {
+    font-family: $text;
     margin: 0 auto;
     overflow: hidden;
-    width: 80%;
-    font-family: $text;
+    width: 90%;
+    max-width: 1068px;
+
+    @media (min-width: 750px) {
+        width: 80%;
+    }
+
+    li {
+        font-family: $text;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
 }
 
 .demo-content-team li:before {
@@ -84,9 +91,9 @@
 
 .demo-content-team img {
     margin: 0 0 20px;
-    width: 100%;
+    max-width: 100%;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         border: 5px solid $title-color;
         box-shadow: 10px 10px 0 0 $title-color;
     }
@@ -107,7 +114,7 @@
         margin-bottom: 10px;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         float: left;
         width: 50%;
 

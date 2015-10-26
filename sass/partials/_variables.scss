@@ -8,9 +8,27 @@ $title-videos: "Press Start 2P", "Iceland";
 
 // Colors
 $grey: #f4f4f4;
-$link-colors: #fff;
+$orange: #ff6e3a;
+$white: #fff;
 $title-color: #359e97;
 $title-demos: #d2643b;
 
 //width
 $max-width: 1280px;
+$m-width: 960px;
+
+// Micro Clearfix Hack
+// --------------------
+// Based on Nicholas Gallagher clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin micro-clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after,
+    &:after {
+        clear: both;
+    }
+}

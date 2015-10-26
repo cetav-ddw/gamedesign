@@ -3,7 +3,7 @@
     margin: 0 auto;
     max-width: 415px;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $m-width) {
         max-width: 863px;
     }
 }
@@ -28,6 +28,7 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+
     &:before{
         @extend %sprite;
         background-position: -125px -102px;
@@ -44,15 +45,15 @@
 }
 
 .game-color-owak {
-	background-color:#4E9093;
+	background-color: #4E9093;
 }
 
 .game-color-trash {
-	background-color:#F59331 ;
+	background-color: #F59331;
 }
 
 .game-color-sorry {
-	background-color:#d65f21;
+	background-color: #d65f21;
 }
 
 .games-banners-overlay {

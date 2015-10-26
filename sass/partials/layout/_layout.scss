@@ -10,8 +10,39 @@ footer {
     text-align: center;
 }
 
-.header {
-    border-bottom: 6px solid #ff6e3a;
+.content {
+    margin: 0 auto;
     overflow: hidden;
+    width: 90%;
+
+    @media (min-width: $max-width) {
+        width: 50%;
+    }
+}
+
+.group {
+	@include micro-clearfix;
+	margin: 0 auto;
+	max-width: $max-width;
+	position: relative;
+
+	@media (min-width: $max-width) {
+		// Un seguro para casos de browsers que no soportan max-width
+        width: $max-width;
+    }
+}
+
+.header {
+	@include micro-clearfix;
+    border-bottom: 6px solid $orange;
     width: 100%;
+
+    .group {
+    	padding-top: 100px;
+
+    	@media (min-width: $m-width) {
+    		padding-bottom: 20px;
+			padding-top: 25px;
+    	}
+    }
 }
