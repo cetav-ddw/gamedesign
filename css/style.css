@@ -832,6 +832,12 @@ footer {
     .experts-list-item {
       border-left: 3px dashed #359E97;
       padding: 0 0 0 45px; } }
+  .experts-list-item a {
+    color: #ff6e3a;
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%; }
 
 .experts-list-item h3 {
   margin: 20px 0; }
