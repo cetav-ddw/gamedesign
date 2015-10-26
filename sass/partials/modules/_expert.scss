@@ -45,8 +45,9 @@
 
     a {
         color: $orange;
+        display: block;
         font-size: 2.5em;
-        text-align: center;
+        padding: 0 45px 18px 0;
         text-decoration: underline;
         width: 100%;
 
@@ -95,12 +96,18 @@
         border: 3px dashed #359E97;
         border-left: none;
         margin: 18px 0;
-        padding: 45px 0;
+        padding: 45px 0 18px 0;
     }
+
     .middle p,
     .middle h3 {
         margin-left: 31%;
     }
+
+    .expert-link-middle {
+        text-align: right;  
+    }
+
     .experts-list-item p {
         width: 70%;
     }
