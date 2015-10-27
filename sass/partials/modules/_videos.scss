@@ -91,8 +91,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     left: 0;
     right: 0;
     top: 18%;
@@ -100,71 +99,83 @@
 }
 
 .label-activist {
-    background-image: url( "../img/demo-covers/activist-cover-logo.png" );
+    background-image: url("../img/demo-covers/activist-cover-logo.png");
     height: 82px;
     width: 310px;
+
     @media (min-width: 560px) {
         width: 440px;
     }
+
     @media (min-width: 768px) {
         width: 610px;
     }
+
     @media (min-width: 1024px) {
         width: 725px;
     }
 }
 
 .label-humans {
-    background-image: url( "../img/demo-covers/humans-cover-logo.png" );
+    background-image: url("../img/demo-covers/humans-cover-logo.png");
     height: 148px;
+    margin: 0 10px 0 auto;
     width: 122px;
-    margin-right: 10px;
+
     @media (min-width: 560px) {
         height: 230px;
         width: 246px;
-        margin-right: 37px;
+        margin: 0 37px 0 auto;
     }
+
     @media (min-width: 768px) {
         height: 380px;
-        margin-right: 50px;
+        margin: 0 50px 0 auto;
     }
+
     @media (min-width: 1024px) {
         height: 330px;
         width: 360px;
-        margin-right: 240px;
+        margin: 0 24px 0 auto;
     }
 }
 
 .label-flood {
-    background-image: url( "../img/demo-covers/flood-cover-logo.png" );
+    background-image: url("../img/demo-covers/flood-cover-logo.png");
     height: 148px;
-    width: 228px;
     top: 3%;
+    width: 228px;
+
     @media (min-width: 560px) {
         top: 18%;
         width: 325px;
     }
+
     @media (min-width: 768px) {
         width: 410px;
     }
+
     @media (min-width: 1024px) {
         width: 502px;
     }
 }
 
 .label-owak {
-    background-image: url( "../img/demo-covers/owak-cover-logo.png" );
+    background-image: url("../img/demo-covers/owak-cover-logo.png");
     height: 80px;
-    width: 111px;
     top: 10%;
+    width: 111px;
+
     @media (min-width: 560px) {
         height: 120px;
         width: 203px;
     }
+
     @media (min-width: 768px) {
         height: 239px;
         width: 305px;
     }
+
     @media (min-width: 1024px) {
 
     }
