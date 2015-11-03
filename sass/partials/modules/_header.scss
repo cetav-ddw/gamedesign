@@ -43,9 +43,13 @@
 
 .partner-item {
     display: inline-block;
-
+    padding-bottom: 20px;
+    width: 100%;
     img {
         vertical-align: middle;
-        width: 60%;
+    }
+    @media (min-width: 1024px) {
+        width: auto;
+        padding: 0 35px;
     }
 }
