@@ -109,7 +109,6 @@
     height: 0;
     overflow: hidden;
     transition: height .25s linear;
-    -webkit-transition: height .25s linear;
     width: 100%;
 
     @media screen and (min-width: $m-width) {
@@ -133,9 +132,6 @@
 .games-item:after {
     margin: 0 0 0 12px;
     transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
 }
 
 .sub-nav-item {
@@ -165,13 +161,13 @@
     width: 45px;
     z-index: 10;
 
+    @media screen and (min-width: $m-width) {
+        display: none;
+    }
+
     img {
         height: 100%;
         width: 100%;
-    }
-
-    @media screen and (min-width: $m-width) {
-        display: none;
     }
 }
 

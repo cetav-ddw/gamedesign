@@ -34,22 +34,3 @@
     display: inline-block;
     height: 327px;
 }
-
-.partners {
-    background-color: #fff;
-    padding: 20px 20px 15px;
-    text-align: center;
-}
-
-.partner-item {
-    display: inline-block;
-    padding-bottom: 20px;
-    width: 100%;
-    img {
-        vertical-align: middle;
-    }
-    @media (min-width: 1024px) {
-        width: auto;
-        padding: 0 35px;
-    }
-}

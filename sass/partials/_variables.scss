@@ -20,7 +20,6 @@ $m-width: 960px;
 // Micro Clearfix Hack
 // --------------------
 // Based on Nicholas Gallagher clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/
-
 @mixin micro-clearfix {
     &:before,
     &:after {

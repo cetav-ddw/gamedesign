@@ -1,4 +1,3 @@
-// Estilos de Expertos
 .experts-list {
     margin: 0 auto;
     width: 90%;
@@ -46,18 +45,22 @@
     a {
         color: $orange;
         display: block;
-        font-size: 2.5em;
         padding: 0 45px 18px 0;
         text-decoration: underline;
         width: 100%;
 
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
 .experts-list-item h3 {
     margin: 20px 0;
-    &:before{
+
+    &:before {
         @extend %sprite;
+
         @media (min-width: 1024px) {
             background-position: -37px -102px;
             content: "";

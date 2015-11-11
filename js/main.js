@@ -1,39 +1,27 @@
-(function(w, d, u) {
+(function(d) {
     // Mozilla, Opera, Webkit
-    if(document.addEventListener) {
-      document.addEventListener('DOMContentLoaded', function() {
-        document.removeEventListener('DOMContentLoaded', arguments.callee, false);
+    if(d.addEventListener) {
+      d.addEventListener('DOMContentLoaded', function() {
+        d.removeEventListener('DOMContentLoaded', arguments.callee, false);
         domReady();
       }, false );
 
     // If IE event model is used
-    } else if(document.attachEvent) {
+    } else if(d.attachEvent) {
       // ensure firing before onload
-      document.attachEvent('onreadystatechange', function(){
-        if ( document.readyState === 'complete' ) {
-          document.detachEvent('onreadystatechange', arguments.callee );
+      d.attachEvent('onreadystatechange', function(){
+        if ( d.readyState === 'complete' ) {
+          d.detachEvent('onreadystatechange', arguments.callee );
           domReady();
         }
       });
     }
 
     function domReady() {
-        var playBtn = document.getElementById('play-btn'),
+        var playBtn = d.getElementById('play-btn'),
             screenWidth = screen.width;
 
-        function videoCover() {
-            var iframe = document.getElementById('video'),
-                player = $f(iframe),
-                coverImg = document.getElementById('video-cover'),
-                videoLabel = document.getElementById('play-btn-label');
-
-            player.api('play');
-            coverImg.style.display = 'none';
-            playBtn.style.display = 'none';
-            videoLabel.style.display = 'none';
-        };
-
-        if(document.querySelector('.grid')) {
+        if(d.querySelector('.grid')) {
             var options = {
                     srcNode: 'img',
                     margin: '5px',
@@ -42,19 +30,44 @@
                     resizable: true,
                     transition: 'all 0.5s ease'
                 }
-            document.querySelector('.grid').gridify(options);
+            d.querySelector('.grid').gridify(options);
         }
 
         if(playBtn) {
-            document.getElementById('play-btn').addEventListener('click', function() {
+            d.getElementById('play-btn').addEventListener('click', function() {
                 videoCover();
             });
         }
 
         if(screenWidth < 1024) {
-            document.getElementById('games-item').onclick = function() {
+            d.getElementById('games-item').onclick = function() {
                 this.classList.toggle('expanded');
             }
         }
     }
-})(window, document);
+
+    function videoCover() {
+        var iframe = d.getElementById('video'),
+            playBtn = d.getElementById('play-btn'),
+            player = $f(iframe),
+            coverImg = d.getElementById('video-cover'),
+            videoLabel = d.getElementById('play-btn-label');
+
+        loadVideo();
+
+        player.api('play');
+        coverImg.style.display = 'none';
+        playBtn.style.display = 'none';
+        videoLabel.style.display = 'none';
+    }
+
+    function loadVideo() {
+        var videoIframe = d.getElementById('video'),
+            videoSrc = videoIframe.getAttribute('data-src');
+
+        if(videoIframe.hasAttribute('data-src')) {
+            videoIframe.setAttribute('src', videoSrc);
+            videoIframe.removeAttribute('data-src');
+        }
+    }
+})(document);
