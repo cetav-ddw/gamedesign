@@ -1,0 +1,31 @@
+.press {
+   color: $orange;
+   margin-bottom: 20px;
+   text-align: center; 
+}
+
+.press-list {
+    a {
+        color: #000;
+        display: block;
+        font-family: $text;
+
+        &:hover {
+            b {
+                text-decoration: underline;
+            }
+            .arrow {
+                color: $orange;
+            }
+        }
+    }
+    b {
+        color: $orange;
+        display: block;
+        font-family: $title-text;
+        text-transform: uppercase;
+    }
+    li {
+        margin-bottom: 20px;
+    }
+}

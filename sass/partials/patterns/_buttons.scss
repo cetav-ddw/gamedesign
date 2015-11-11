@@ -30,7 +30,7 @@ button:active {
 }
 
 .btn-play {
-    background-position: -385px 0px;
+    background-position: -385px 0;
     height: 56px;
     width: 59px;
 
@@ -38,6 +38,10 @@ button:active {
         background-position: -402px -60px;
         height: 90px;
         width: 103px;
+    }
+
+    &:hover {
+        opacity: .85;
     }
 }
 
@@ -50,8 +54,8 @@ button:active {
     top: 45%;
     z-index: 3;
 
-    @media(min-width: $m-width) {
-
+    &:hover {
+        opacity: .85;
     }
 }
 
