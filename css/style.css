@@ -376,7 +376,7 @@ th {
 
 html {
   box-sizing: border-box;
-  font-family: Arial,Verdana,sans-serif;
+  font-family: "Muli", sans-serif, Arial, Verdana, sans-serif;
   font-size: 62.5%; }
 
 *,
@@ -385,7 +385,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  color: #000; }
 
 a {
   color: #fff;
@@ -410,17 +411,7 @@ a {
 
 .text-footer {
   color: #E8EBED;
-  display: inline-block;
   width: 90%; }
-  .text-footer p {
-    font-family: "Iceland", serif;
-    font-size: 2.3rem;
-    padding: 20px 0 0; }
-    @media (min-width: 1334px) {
-      .text-footer p {
-        margin: 0 auto;
-        padding: 0;
-        width: 64%; } }
   .text-footer:after {
     background-position: -93px 0;
     content: "";
@@ -438,13 +429,12 @@ a {
     height: 94px;
     margin: -62px 0 0;
     width: 93px; }
+  .text-footer p {
+    font-family: "Iceland", serif;
+    font-size: 2.3rem; }
   .text-footer .strong {
     color: #FD7949;
     font-size: 3rem; }
-  @media (min-width: 1334px) {
-    .text-footer {
-      padding: 20px 0 0;
-      width: 60%; } }
 
 .content-info-footer {
   margin: 60px 0; }
@@ -477,7 +467,7 @@ button:active {
       display: none; } }
 
 .btn-play {
-  background-position: -385px 0px;
+  background-position: -385px 0;
   height: 56px;
   width: 59px; }
   @media (min-width: 640px) {
@@ -485,6 +475,8 @@ button:active {
       background-position: -402px -60px;
       height: 90px;
       width: 103px; } }
+  .btn-play:hover {
+    opacity: .85; }
 
 .btn-play-demo {
   background-color: transparent;
@@ -494,6 +486,8 @@ button:active {
   position: absolute;
   top: 45%;
   z-index: 3; }
+  .btn-play-demo:hover {
+    opacity: .85; }
 
 .btn-play-gallery {
   background-color: transparent;
@@ -517,6 +511,7 @@ button:active {
     width: 155px; }
     .btn-play-game:hover {
       background-position: -219px -102px; } }
+
 h1,
 h2,
 h3,
@@ -530,10 +525,10 @@ h3 {
   font-family: "Iceland", serif; }
 
 li {
+  font-size: 2rem;
   list-style: none; }
 
 p {
-  font-family: "Muli", sans-serif;
   font-size: 2rem;
   margin: 20px 0;
   padding: 0; }
@@ -597,6 +592,7 @@ footer {
 @media (min-width: 1024px) {
   .about p:first-child {
     font-size: 2.3rem; } }
+
 .firts-text {
   font-size: 1.5rem;
   margin: 4% 0 0; }
@@ -615,22 +611,6 @@ footer {
   background: #f4f4f4;
   display: inline-block;
   height: 327px; }
-
-.partners {
-  background-color: #fff;
-  padding: 20px 20px 15px;
-  text-align: center; }
-
-.partner-item {
-  display: inline-block;
-  padding-bottom: 20px;
-  width: 100%; }
-  .partner-item img {
-    vertical-align: middle; }
-  @media (min-width: 1024px) {
-    .partner-item {
-      width: auto;
-      padding: 0 35px; } }
 
 .menu-toggle[type=checkbox] {
   display: none; }
@@ -724,7 +704,6 @@ footer {
   height: 0;
   overflow: hidden;
   transition: height .25s linear;
-  -webkit-transition: height .25s linear;
   width: 100%; }
   @media screen and (min-width: 960px) {
     .sub-nav {
@@ -744,12 +723,7 @@ footer {
 
 .games-item:after {
   margin: 0 0 0 12px;
-  transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Chrome, Safari, Opera */ }
+  transform: rotate(90deg); }
 
 .sub-nav-item {
   margin: 0;
@@ -771,16 +745,17 @@ footer {
   top: 27px;
   width: 45px;
   z-index: 10; }
-  .mobile-logo img {
-    height: 100%;
-    width: 100%; }
   @media screen and (min-width: 960px) {
     .mobile-logo {
       display: none; } }
+  .mobile-logo img {
+    height: 100%;
+    width: 100%; }
 
 @media screen and (max-width: 959px) {
   .main-nav {
     background-image: none; } }
+
 @media screen and (min-width: 960px) {
   .main-nav {
     background-position: 0 -153px;
@@ -823,10 +798,11 @@ footer {
   .experts-list-item a {
     color: #ff6e3a;
     display: block;
-    font-size: 2.5em;
     padding: 0 45px 18px 0;
     text-decoration: underline;
     width: 100%; }
+    .experts-list-item a:hover {
+      text-decoration: none; }
 
 .experts-list-item h3 {
   margin: 20px 0; }
@@ -863,16 +839,14 @@ footer {
     border-left: none;
     margin: 18px 0;
     padding: 45px 0 18px 0; }
-
   .middle p,
   .middle h3 {
     margin-left: 31%; }
-
   .expert-link-middle {
     text-align: right; }
-
   .experts-list-item p {
     width: 70%; } }
+
 .experts-item-img {
   border: 5px solid #359e97;
   box-shadow: 10px 10px 0 0 #359e97; }
@@ -891,6 +865,7 @@ footer {
   margin: 0 0 10px;
   max-width: 410px;
   overflow: hidden;
+  vertical-align: top;
   width: 100%; }
   @media (min-width: 1024px) {
     .games-banners-content {
@@ -939,7 +914,7 @@ footer {
 
 @media (min-width: 960px) {
   .demo {
-    margin: 2% 0; } }
+    margin: 100px 0 40px; } }
 
 .demo-content-text {
   display: inline-block;
@@ -1038,10 +1013,8 @@ footer {
 .gallery {
   margin: 4% auto;
   overflow: hidden;
-  width: 85%; }
-  @media (min-width: 1334px) {
-    .gallery {
-      width: 75%; } }
+  width: 85%;
+  max-width: 1280px; }
 
 .grid img {
   height: auto;
@@ -1057,82 +1030,6 @@ footer {
   overflow: hidden;
   position: absolute;
   width: 100%;
-  z-index: 3; }
-
-.video {
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0 0 56.25%;
-  position: relative;
-  width: 100%;
-  z-index: 1; }
-  @media (min-width: 1024px) {
-    .video {
-      background-color: #000;
-      padding: 0;
-      text-align: center; } }
-
-.video iframe {
-  display: inline-block;
-  height: 100%;
-  margin: 0;
-  position: absolute;
-  width: 100%; }
-  @media (min-width: 1024px) {
-    .video iframe {
-      height: 516px;
-      margin: 2% auto;
-      position: inherit;
-      width: 900px; } }
-
-.video-cover-demo {
-  background-color: #000;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 2; }
-  @media (min-width: 1024px) {
-    .video-cover-demo {
-      left: 0;
-      top: 0;
-      width: 100%; } }
-
-.video-label-gallery {
-  color: #359E97;
-  display: block;
-  font-family: "Press Start 2P", "Iceland";
-  text-align: center;
-  text-shadow: 2px 2px 0 #FD7948;
-  width: 100%;
-  z-index: 3; }
-  @media (min-width: 320px) {
-    .video-label-gallery {
-      font-size: 2.5em;
-      margin: 6% auto 4%; } }
-  @media (min-width: 640px) {
-    .video-label-gallery {
-      font-size: 4em;
-      margin: 10% auto 6%; } }
-  @media (min-width: 768px) {
-    .video-label-gallery {
-      font-size: 6em;
-      line-height: 1.2em;
-      margin: 12% auto 6%; } }
-  @media (min-width: 1024px) {
-    .video-label-gallery {
-      font-size: 8em;
-      margin: 4% auto;
-      width: 70%; } }
-
-.video-label-demo {
-  color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 18%;
   z-index: 3; }
 
 .label-activist {
@@ -1199,8 +1096,121 @@ footer {
       height: 239px;
       width: 305px; } }
 
+.video {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 0 56.25%;
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+  @media (min-width: 1024px) {
+    .video {
+      background-color: #000;
+      padding: 0;
+      text-align: center; } }
+
+.video iframe {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .video iframe {
+      height: 516px;
+      margin: 2% auto 0;
+      position: inherit;
+      width: 900px; } }
+
 .video-button {
   height: 100%;
   width: 100%; }
+
+.video-cover-demo {
+  background-color: #000;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2; }
+  @media (min-width: 1024px) {
+    .video-cover-demo {
+      left: 0;
+      top: 0;
+      width: 100%; } }
+
+.video-label-demo {
+  color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 18%;
+  z-index: 3; }
+
+.video-label-gallery {
+  color: #359E97;
+  display: block;
+  font-family: "Press Start 2P", "Iceland";
+  text-align: center;
+  text-shadow: 2px 2px 0 #FD7948;
+  width: 100%;
+  max-width: 1000px;
+  z-index: 3; }
+  @media (min-width: 320px) {
+    .video-label-gallery {
+      font-size: 2.5em;
+      margin: 6% auto 4%; } }
+  @media (min-width: 640px) {
+    .video-label-gallery {
+      font-size: 4em;
+      margin: 10% auto 6%; } }
+  @media (min-width: 768px) {
+    .video-label-gallery {
+      font-size: 6em;
+      line-height: 1.2em;
+      margin: 12% auto 6%; } }
+  @media (min-width: 1024px) {
+    .video-label-gallery {
+      font-size: 8em;
+      margin: 4% auto; } }
+
+.press {
+  color: #ff6e3a;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.press-list a {
+  color: #000;
+  display: block;
+  font-family: "Muli", sans-serif; }
+  .press-list a:hover b {
+    text-decoration: underline; }
+  .press-list a:hover .arrow {
+    color: #ff6e3a; }
+
+.press-list b {
+  color: #ff6e3a;
+  display: block;
+  font-family: "Iceland", serif;
+  text-transform: uppercase; }
+
+.press-list li {
+  margin-bottom: 20px; }
+
+.partners {
+  background-color: #fff;
+  padding: 20px 20px 15px;
+  text-align: center; }
+
+.partner-item {
+  display: inline-block;
+  margin: 20px 15px;
+  text-align: center;
+  vertical-align: middle;
+  width: 255px; }
+  .partner-item img {
+    vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */
