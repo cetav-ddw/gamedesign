@@ -511,7 +511,6 @@ button:active {
     width: 155px; }
     .btn-play-game:hover {
       background-position: -219px -102px; } }
-
 h1,
 h2,
 h3,
@@ -592,7 +591,6 @@ footer {
 @media (min-width: 1024px) {
   .about p:first-child {
     font-size: 2.3rem; } }
-
 .firts-text {
   font-size: 1.5rem;
   margin: 4% 0 0; }
@@ -755,7 +753,6 @@ footer {
 @media screen and (max-width: 959px) {
   .main-nav {
     background-image: none; } }
-
 @media screen and (min-width: 960px) {
   .main-nav {
     background-position: 0 -153px;
@@ -839,14 +836,16 @@ footer {
     border-left: none;
     margin: 18px 0;
     padding: 45px 0 18px 0; }
+
   .middle p,
   .middle h3 {
     margin-left: 31%; }
+
   .expert-link-middle {
     text-align: right; }
+
   .experts-list-item p {
     width: 70%; } }
-
 .experts-item-img {
   border: 5px solid #359e97;
   box-shadow: 10px 10px 0 0 #359e97; }
@@ -1189,13 +1188,11 @@ footer {
     text-decoration: underline; }
   .press-list a:hover .arrow {
     color: #ff6e3a; }
-
 .press-list b {
   color: #ff6e3a;
   display: block;
   font-family: "Iceland", serif;
   text-transform: uppercase; }
-
 .press-list li {
   margin-bottom: 20px; }
 
@@ -1205,12 +1202,17 @@ footer {
   text-align: center; }
 
 .partner-item {
-  display: inline-block;
-  margin: 20px 15px;
+  margin-top: 55px;
+  width: 100%;
   text-align: center;
-  vertical-align: middle;
-  width: 255px; }
+  vertical-align: middle; }
   .partner-item img {
     vertical-align: middle; }
+  @media (min-width: 960px) {
+    .partner-item {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 0;
+      width: auto; } }
 
 /*# sourceMappingURL=style.css.map */
