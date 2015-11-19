@@ -19,6 +19,7 @@
 
     function domReady() {
         var playBtn = d.getElementById('play-btn'),
+            closeBtn = d.getElementById('close-btn'),
             screenWidth = screen.width;
 
         if(d.querySelector('.grid')) {
@@ -35,7 +36,13 @@
 
         if(playBtn) {
             d.getElementById('play-btn').addEventListener('click', function() {
-                videoCover();
+                videoCover('play');
+            });
+        }
+
+        if(closeBtn) {
+            d.getElementById('close-btn').addEventListener('click', function() {
+                videoCover('stop');
             });
         }
 
@@ -46,19 +53,27 @@
         }
     }
 
-    function videoCover() {
+    function videoCover(option) {
         var iframe = d.getElementById('video'),
             playBtn = d.getElementById('play-btn'),
             player = $f(iframe),
             coverImg = d.getElementById('video-cover'),
             videoLabel = d.getElementById('play-btn-label');
 
-        loadVideo();
-
-        player.api('play');
-        coverImg.style.display = 'none';
-        playBtn.style.display = 'none';
-        videoLabel.style.display = 'none';
+            if (option == 'play') {
+                loadVideo();
+                player.api('play');
+                coverImg.classList.add('hidden');
+                playBtn.classList.add('hidden');
+                videoLabel.classList.add('hidden');
+            }else{
+                if (option == 'stop') {
+                    loadVideo();
+                    coverImg.classList.remove('hidden');
+                    playBtn.classList.remove('hidden');
+                    videoLabel.classList.remove('hidden');
+                }
+            }
     }
 
     function loadVideo() {
@@ -68,6 +83,11 @@
         if(videoIframe.hasAttribute('data-src')) {
             videoIframe.setAttribute('src', videoSrc);
             videoIframe.removeAttribute('data-src');
+        }else {
+            videoSrc = videoIframe.getAttribute('src');
+            videoIframe.setAttribute('data-src', videoSrc);
+            videoIframe.removeAttribute('src');
         }
     }
+
 })(document);
