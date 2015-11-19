@@ -29,6 +29,25 @@ button:active {
     }
 }
 
+.btn-close {
+    @media(min-width: 640px) {
+        background-color: transparent;
+        border: 0;
+        color: transparent;
+        background-position: -430px -270px;
+        width: 54px;
+        position: absolute;
+        top: 0;
+        height: 51px;
+        right: 0;
+        margin: 30px;
+
+        &:hover {
+            background-position: -430px -322px;
+        }
+    }
+}
+
 .btn-play {
     background-position: -385px 0;
     height: 56px;

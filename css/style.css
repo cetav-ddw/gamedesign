@@ -466,6 +466,21 @@ button:active {
     .btn-show-menu {
       display: none; } }
 
+@media (min-width: 640px) {
+  .btn-close {
+    background-color: transparent;
+    border: 0;
+    color: transparent;
+    background-position: -430px -270px;
+    width: 54px;
+    position: absolute;
+    top: 0;
+    height: 51px;
+    right: 0;
+    margin: 30px; }
+    .btn-close:hover {
+      background-position: -430px -322px; } }
+
 .btn-play {
   background-position: -385px 0;
   height: 56px;
@@ -1031,6 +1046,9 @@ footer {
   width: 100%;
   z-index: 3; }
 
+.hidden {
+  display: none; }
+
 .label-activist {
   background-image: url("../img/demo-covers/activist-cover-logo.png");
   height: 82px;
@@ -1197,8 +1215,7 @@ footer {
   margin-bottom: 20px; }
 
 .partners {
-  background-color: #fff;
-  padding: 20px 20px 15px;
+  padding-bottom: 4%;
   text-align: center; }
 
 .partner-item {
@@ -1211,7 +1228,7 @@ footer {
   @media (min-width: 960px) {
     .partner-item {
       display: inline-block;
-      margin-right: 15px;
+      margin-right: 20px;
       margin-top: 0;
       width: auto; } }
 
