@@ -33,8 +33,30 @@ module.exports = function (grunt) {
                   outputStyle: 'compressed'
                 },
                 files: {
-                    'css/style.css': 'sass/style.scss'
+                  'css/style.css': 'sass/style.scss'
                 }
+            }
+        },
+
+        copy: {
+          main: {
+            files: [
+              {expand: true, flatten: true, src: ['css/**'], dest: 'css-src/', filter: 'isFile'},
+            ]
+          }
+        },
+
+        postcss: {
+            options: {
+              map: true,
+              processors: [
+                require('autoprefixer')({browsers: ['last 3 version']}),
+                require('postcss-discard-comments')(),
+                require('postcss-clean')(),
+              ]
+            },
+            dist: {
+              src: 'css-src/*.css'
             }
         },
 
@@ -65,5 +87,5 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', ['sass:dist', 'watch', 'uglify:dev']);
-    grunt.registerTask('prod', ['sass:prod', 'uglify:prod']);
+    grunt.registerTask('prod', ['sass:prod', 'copy', 'postcss', 'uglify:prod']);
 };
